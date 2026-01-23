@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../kpct_radio_app_common"
+		}
+	],
+	"settings": {}
+}
