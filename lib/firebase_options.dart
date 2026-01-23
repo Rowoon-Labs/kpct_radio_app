@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -50,19 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC8ycCYiq0i9IqLN3s5uRle4g3VegQM8Kw',
-    appId: '1:849598464051:android:35499cafc1320f4bbde346',
-    messagingSenderId: '849598464051',
-    projectId: 'rowoonlabs-kpct-radio',
-    storageBucket: 'rowoonlabs-kpct-radio.appspot.com',
+    apiKey: 'AIzaSyDqDdVvgxyjTBiaMAoM9HiLWkK2rL6mku0',
+    appId: '1:147716726105:android:e508d011d4b801d74c4048',
+    messagingSenderId: '147716726105',
+    projectId: 'kpct-radio-app',
+    storageBucket: 'kpct-radio-app.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCDXBfNA-O9m0Du-vFfhb6k_0RtGx4FeV4',
-    appId: '1:849598464051:ios:c1d90e587a20cf07bde346',
-    messagingSenderId: '849598464051',
-    projectId: 'rowoonlabs-kpct-radio',
-    storageBucket: 'rowoonlabs-kpct-radio.appspot.com',
-    iosBundleId: 'com.rowoonlabs.kpctRadio',
+    apiKey: 'AIzaSyBlm1251v9Dfh33fFJeFS8TrAerT6Cp8kc',
+    appId: '1:147716726105:ios:920527c26c88d6174c4048',
+    messagingSenderId: '147716726105',
+    projectId: 'kpct-radio-app',
+    storageBucket: 'kpct-radio-app.firebasestorage.app',
+    iosBundleId: 'com.kpct.dao.radioApp',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDmxBFq5KaIulJUIiTZ-g_HiK6y6Zirj-0',
+    appId: '1:147716726105:web:deee05d52eb6a81b4c4048',
+    messagingSenderId: '147716726105',
+    projectId: 'kpct-radio-app',
+    authDomain: 'kpct-radio-app.firebaseapp.com',
+    storageBucket: 'kpct-radio-app.firebasestorage.app',
+  );
+
 }
