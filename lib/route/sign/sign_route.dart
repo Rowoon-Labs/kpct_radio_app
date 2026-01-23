@@ -47,8 +47,7 @@ class SignRoute extends StatelessWidget {
                             ),
                           ),
                           PositionedDirectional(
-                            // bottom: converter.h(40 + 16),
-                            bottom: converter.h(16),
+                            bottom: converter.h(40 + 16),
                             start: converter.hcx(259),
                             width: converter.w(259),
                             height: converter.h(40),
@@ -63,21 +62,22 @@ class SignRoute extends StatelessWidget {
                                   ),
                             ),
                           ),
-                          // PositionedDirectional(
-                          //   bottom: 0,
-                          //   start: converter.hcx(259),
-                          //   width: converter.w(259),
-                          //   height: converter.h(40),
-                          //   child: _buildSignButton(
-                          //     context: context,
-                          //     converter: converter,
-                          //     text: "Sign in with Apple",
-                          //     icon: Assets.icon.appleIcon,
-                          //     onPressed: () => context
-                          //         .read<SignBloc>()
-                          //         .add(const SignEvent.signInWithApple()),
-                          //   ),
-                          // ),
+                          PositionedDirectional(
+                            bottom: 0,
+                            start: converter.hcx(259),
+                            width: converter.w(259),
+                            height: converter.h(40),
+                            child: _buildSignButton(
+                              context: context,
+                              converter: converter,
+                              text: "Sign in with Apple",
+                              icon: Assets.icon.appleIcon,
+                              onPressed:
+                                  () => context.read<SignBloc>().add(
+                                    const SignEvent.signInWithApple(),
+                                  ),
+                            ),
+                          ),
                         ],
                       ),
                 ),

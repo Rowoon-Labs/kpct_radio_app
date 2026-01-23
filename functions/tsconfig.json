@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "target": "es2017",
+    "strict": true, // compulsory
+    "esModuleInterop": true,
+    "noUncheckedIndexedAccess": true, // compulsory
+    "exactOptionalPropertyTypes": true // optional and does not affect how Firelord works but recommended
+  },
+  "compileOnSave": true,
+  "include": [
+    "src",
+  ]
+}
