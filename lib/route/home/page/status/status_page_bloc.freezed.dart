@@ -12,7 +12,8 @@ part of 'status_page_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$StatusPageEvent {
@@ -20,35 +21,29 @@ mixin _$StatusPageEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(Completer<int?> completer) tryTakeSsp,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(Completer<int?> completer)? tryTakeSsp,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(Completer<int?> completer)? tryTakeSsp,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_tryTakeSsp value) tryTakeSsp,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_tryTakeSsp value)? tryTakeSsp,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_tryTakeSsp value)? tryTakeSsp,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 
   /// Create a copy of StatusPageEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -60,8 +55,9 @@ mixin _$StatusPageEvent {
 /// @nodoc
 abstract class $StatusPageEventCopyWith<$Res> {
   factory $StatusPageEventCopyWith(
-          StatusPageEvent value, $Res Function(StatusPageEvent) then) =
-      _$StatusPageEventCopyWithImpl<$Res, StatusPageEvent>;
+    StatusPageEvent value,
+    $Res Function(StatusPageEvent) then,
+  ) = _$StatusPageEventCopyWithImpl<$Res, StatusPageEvent>;
   @useResult
   $Res call({Completer<int?> completer});
 }
@@ -80,15 +76,17 @@ class _$StatusPageEventCopyWithImpl<$Res, $Val extends StatusPageEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? completer = null,
-  }) {
-    return _then(_value.copyWith(
-      completer: null == completer
-          ? _value.completer
-          : completer // ignore: cast_nullable_to_non_nullable
-              as Completer<int?>,
-    ) as $Val);
+  $Res call({Object? completer = null}) {
+    return _then(
+      _value.copyWith(
+            completer:
+                null == completer
+                    ? _value.completer
+                    : completer // ignore: cast_nullable_to_non_nullable
+                        as Completer<int?>,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -96,8 +94,9 @@ class _$StatusPageEventCopyWithImpl<$Res, $Val extends StatusPageEvent>
 abstract class _$$tryTakeSspImplCopyWith<$Res>
     implements $StatusPageEventCopyWith<$Res> {
   factory _$$tryTakeSspImplCopyWith(
-          _$tryTakeSspImpl value, $Res Function(_$tryTakeSspImpl) then) =
-      __$$tryTakeSspImplCopyWithImpl<$Res>;
+    _$tryTakeSspImpl value,
+    $Res Function(_$tryTakeSspImpl) then,
+  ) = __$$tryTakeSspImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({Completer<int?> completer});
@@ -108,22 +107,24 @@ class __$$tryTakeSspImplCopyWithImpl<$Res>
     extends _$StatusPageEventCopyWithImpl<$Res, _$tryTakeSspImpl>
     implements _$$tryTakeSspImplCopyWith<$Res> {
   __$$tryTakeSspImplCopyWithImpl(
-      _$tryTakeSspImpl _value, $Res Function(_$tryTakeSspImpl) _then)
-      : super(_value, _then);
+    _$tryTakeSspImpl _value,
+    $Res Function(_$tryTakeSspImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of StatusPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? completer = null,
-  }) {
-    return _then(_$tryTakeSspImpl(
-      completer: null == completer
-          ? _value.completer
-          : completer // ignore: cast_nullable_to_non_nullable
-              as Completer<int?>,
-    ));
+  $Res call({Object? completer = null}) {
+    return _then(
+      _$tryTakeSspImpl(
+        completer:
+            null == completer
+                ? _value.completer
+                : completer // ignore: cast_nullable_to_non_nullable
+                    as Completer<int?>,
+      ),
+    );
   }
 }
 
@@ -246,8 +247,9 @@ mixin _$StatusPageState {
 /// @nodoc
 abstract class $StatusPageStateCopyWith<$Res> {
   factory $StatusPageStateCopyWith(
-          StatusPageState value, $Res Function(StatusPageState) then) =
-      _$StatusPageStateCopyWithImpl<$Res, StatusPageState>;
+    StatusPageState value,
+    $Res Function(StatusPageState) then,
+  ) = _$StatusPageStateCopyWithImpl<$Res, StatusPageState>;
   @useResult
   $Res call({bool tryingTakeSsp});
 }
@@ -266,24 +268,27 @@ class _$StatusPageStateCopyWithImpl<$Res, $Val extends StatusPageState>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? tryingTakeSsp = null,
-  }) {
-    return _then(_value.copyWith(
-      tryingTakeSsp: null == tryingTakeSsp
-          ? _value.tryingTakeSsp
-          : tryingTakeSsp // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
+  $Res call({Object? tryingTakeSsp = null}) {
+    return _then(
+      _value.copyWith(
+            tryingTakeSsp:
+                null == tryingTakeSsp
+                    ? _value.tryingTakeSsp
+                    : tryingTakeSsp // ignore: cast_nullable_to_non_nullable
+                        as bool,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$StatusPageStateImplCopyWith<$Res>
     implements $StatusPageStateCopyWith<$Res> {
-  factory _$$StatusPageStateImplCopyWith(_$StatusPageStateImpl value,
-          $Res Function(_$StatusPageStateImpl) then) =
-      __$$StatusPageStateImplCopyWithImpl<$Res>;
+  factory _$$StatusPageStateImplCopyWith(
+    _$StatusPageStateImpl value,
+    $Res Function(_$StatusPageStateImpl) then,
+  ) = __$$StatusPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool tryingTakeSsp});
@@ -294,22 +299,24 @@ class __$$StatusPageStateImplCopyWithImpl<$Res>
     extends _$StatusPageStateCopyWithImpl<$Res, _$StatusPageStateImpl>
     implements _$$StatusPageStateImplCopyWith<$Res> {
   __$$StatusPageStateImplCopyWithImpl(
-      _$StatusPageStateImpl _value, $Res Function(_$StatusPageStateImpl) _then)
-      : super(_value, _then);
+    _$StatusPageStateImpl _value,
+    $Res Function(_$StatusPageStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of StatusPageState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? tryingTakeSsp = null,
-  }) {
-    return _then(_$StatusPageStateImpl(
-      tryingTakeSsp: null == tryingTakeSsp
-          ? _value.tryingTakeSsp
-          : tryingTakeSsp // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
+  $Res call({Object? tryingTakeSsp = null}) {
+    return _then(
+      _$StatusPageStateImpl(
+        tryingTakeSsp:
+            null == tryingTakeSsp
+                ? _value.tryingTakeSsp
+                : tryingTakeSsp // ignore: cast_nullable_to_non_nullable
+                    as bool,
+      ),
+    );
   }
 }
 
@@ -346,7 +353,9 @@ class _$StatusPageStateImpl implements _StatusPageState {
   @pragma('vm:prefer-inline')
   _$$StatusPageStateImplCopyWith<_$StatusPageStateImpl> get copyWith =>
       __$$StatusPageStateImplCopyWithImpl<_$StatusPageStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _StatusPageState implements StatusPageState {

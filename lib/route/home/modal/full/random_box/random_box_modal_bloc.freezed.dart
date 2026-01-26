@@ -12,49 +12,45 @@ part of 'random_box_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$RandomBoxModalEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $RandomBoxModalEventCopyWith<$Res> {
   factory $RandomBoxModalEventCopyWith(
-          RandomBoxModalEvent value, $Res Function(RandomBoxModalEvent) then) =
-      _$RandomBoxModalEventCopyWithImpl<$Res, RandomBoxModalEvent>;
+    RandomBoxModalEvent value,
+    $Res Function(RandomBoxModalEvent) then,
+  ) = _$RandomBoxModalEventCopyWithImpl<$Res, RandomBoxModalEvent>;
 }
 
 /// @nodoc
@@ -74,8 +70,9 @@ class _$RandomBoxModalEventCopyWithImpl<$Res, $Val extends RandomBoxModalEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -83,8 +80,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$RandomBoxModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of RandomBoxModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -184,8 +182,9 @@ mixin _$RandomBoxModalState {
 /// @nodoc
 abstract class $RandomBoxModalStateCopyWith<$Res> {
   factory $RandomBoxModalStateCopyWith(
-          RandomBoxModalState value, $Res Function(RandomBoxModalState) then) =
-      _$RandomBoxModalStateCopyWithImpl<$Res, RandomBoxModalState>;
+    RandomBoxModalState value,
+    $Res Function(RandomBoxModalState) then,
+  ) = _$RandomBoxModalStateCopyWithImpl<$Res, RandomBoxModalState>;
   @useResult
   $Res call({bool initialized});
 }
@@ -204,24 +203,27 @@ class _$RandomBoxModalStateCopyWithImpl<$Res, $Val extends RandomBoxModalState>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$RandomBoxModalStateImplCopyWith<$Res>
     implements $RandomBoxModalStateCopyWith<$Res> {
-  factory _$$RandomBoxModalStateImplCopyWith(_$RandomBoxModalStateImpl value,
-          $Res Function(_$RandomBoxModalStateImpl) then) =
-      __$$RandomBoxModalStateImplCopyWithImpl<$Res>;
+  factory _$$RandomBoxModalStateImplCopyWith(
+    _$RandomBoxModalStateImpl value,
+    $Res Function(_$RandomBoxModalStateImpl) then,
+  ) = __$$RandomBoxModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool initialized});
@@ -231,23 +233,25 @@ abstract class _$$RandomBoxModalStateImplCopyWith<$Res>
 class __$$RandomBoxModalStateImplCopyWithImpl<$Res>
     extends _$RandomBoxModalStateCopyWithImpl<$Res, _$RandomBoxModalStateImpl>
     implements _$$RandomBoxModalStateImplCopyWith<$Res> {
-  __$$RandomBoxModalStateImplCopyWithImpl(_$RandomBoxModalStateImpl _value,
-      $Res Function(_$RandomBoxModalStateImpl) _then)
-      : super(_value, _then);
+  __$$RandomBoxModalStateImplCopyWithImpl(
+    _$RandomBoxModalStateImpl _value,
+    $Res Function(_$RandomBoxModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of RandomBoxModalState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_$RandomBoxModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _$RandomBoxModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+      ),
+    );
   }
 }
 
@@ -284,7 +288,9 @@ class _$RandomBoxModalStateImpl implements _RandomBoxModalState {
   @pragma('vm:prefer-inline')
   _$$RandomBoxModalStateImplCopyWith<_$RandomBoxModalStateImpl> get copyWith =>
       __$$RandomBoxModalStateImplCopyWithImpl<_$RandomBoxModalStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _RandomBoxModalState implements RandomBoxModalState {

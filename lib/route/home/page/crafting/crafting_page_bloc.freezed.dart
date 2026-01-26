@@ -12,7 +12,8 @@ part of 'crafting_page_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$CraftingPageEvent {
@@ -23,8 +24,7 @@ mixin _$CraftingPageEvent {
     required TResult Function(Kit kit) elementPressed,
     required TResult Function() craftPressed,
     required TResult Function(List<Kit> kits) onKitsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
@@ -32,8 +32,7 @@ mixin _$CraftingPageEvent {
     TResult? Function(Kit kit)? elementPressed,
     TResult? Function()? craftPressed,
     TResult? Function(List<Kit> kits)? onKitsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
@@ -42,8 +41,7 @@ mixin _$CraftingPageEvent {
     TResult Function()? craftPressed,
     TResult Function(List<Kit> kits)? onKitsChanges,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
@@ -51,8 +49,7 @@ mixin _$CraftingPageEvent {
     required TResult Function(_elementPressed value) elementPressed,
     required TResult Function(_craftPressed value) craftPressed,
     required TResult Function(_onPacksChanges value) onKitsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
@@ -60,8 +57,7 @@ mixin _$CraftingPageEvent {
     TResult? Function(_elementPressed value)? elementPressed,
     TResult? Function(_craftPressed value)? craftPressed,
     TResult? Function(_onPacksChanges value)? onKitsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
@@ -70,15 +66,15 @@ mixin _$CraftingPageEvent {
     TResult Function(_craftPressed value)? craftPressed,
     TResult Function(_onPacksChanges value)? onKitsChanges,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $CraftingPageEventCopyWith<$Res> {
   factory $CraftingPageEventCopyWith(
-          CraftingPageEvent value, $Res Function(CraftingPageEvent) then) =
-      _$CraftingPageEventCopyWithImpl<$Res, CraftingPageEvent>;
+    CraftingPageEvent value,
+    $Res Function(CraftingPageEvent) then,
+  ) = _$CraftingPageEventCopyWithImpl<$Res, CraftingPageEvent>;
 }
 
 /// @nodoc
@@ -98,8 +94,9 @@ class _$CraftingPageEventCopyWithImpl<$Res, $Val extends CraftingPageEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -107,8 +104,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$CraftingPageEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CraftingPageEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -221,8 +219,9 @@ abstract class _initialize implements CraftingPageEvent {
 /// @nodoc
 abstract class _$$tabPressedImplCopyWith<$Res> {
   factory _$$tabPressedImplCopyWith(
-          _$tabPressedImpl value, $Res Function(_$tabPressedImpl) then) =
-      __$$tabPressedImplCopyWithImpl<$Res>;
+    _$tabPressedImpl value,
+    $Res Function(_$tabPressedImpl) then,
+  ) = __$$tabPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({GearCategory gearCategory});
 }
@@ -232,22 +231,24 @@ class __$$tabPressedImplCopyWithImpl<$Res>
     extends _$CraftingPageEventCopyWithImpl<$Res, _$tabPressedImpl>
     implements _$$tabPressedImplCopyWith<$Res> {
   __$$tabPressedImplCopyWithImpl(
-      _$tabPressedImpl _value, $Res Function(_$tabPressedImpl) _then)
-      : super(_value, _then);
+    _$tabPressedImpl _value,
+    $Res Function(_$tabPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CraftingPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? gearCategory = null,
-  }) {
-    return _then(_$tabPressedImpl(
-      gearCategory: null == gearCategory
-          ? _value.gearCategory
-          : gearCategory // ignore: cast_nullable_to_non_nullable
-              as GearCategory,
-    ));
+  $Res call({Object? gearCategory = null}) {
+    return _then(
+      _$tabPressedImpl(
+        gearCategory:
+            null == gearCategory
+                ? _value.gearCategory
+                : gearCategory // ignore: cast_nullable_to_non_nullable
+                    as GearCategory,
+      ),
+    );
   }
 }
 
@@ -380,9 +381,10 @@ abstract class _tabPressed implements CraftingPageEvent {
 
 /// @nodoc
 abstract class _$$elementPressedImplCopyWith<$Res> {
-  factory _$$elementPressedImplCopyWith(_$elementPressedImpl value,
-          $Res Function(_$elementPressedImpl) then) =
-      __$$elementPressedImplCopyWithImpl<$Res>;
+  factory _$$elementPressedImplCopyWith(
+    _$elementPressedImpl value,
+    $Res Function(_$elementPressedImpl) then,
+  ) = __$$elementPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Kit kit});
 
@@ -394,22 +396,24 @@ class __$$elementPressedImplCopyWithImpl<$Res>
     extends _$CraftingPageEventCopyWithImpl<$Res, _$elementPressedImpl>
     implements _$$elementPressedImplCopyWith<$Res> {
   __$$elementPressedImplCopyWithImpl(
-      _$elementPressedImpl _value, $Res Function(_$elementPressedImpl) _then)
-      : super(_value, _then);
+    _$elementPressedImpl _value,
+    $Res Function(_$elementPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CraftingPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? kit = null,
-  }) {
-    return _then(_$elementPressedImpl(
-      kit: null == kit
-          ? _value.kit
-          : kit // ignore: cast_nullable_to_non_nullable
-              as Kit,
-    ));
+  $Res call({Object? kit = null}) {
+    return _then(
+      _$elementPressedImpl(
+        kit:
+            null == kit
+                ? _value.kit
+                : kit // ignore: cast_nullable_to_non_nullable
+                    as Kit,
+      ),
+    );
   }
 
   /// Create a copy of CraftingPageEvent
@@ -454,7 +458,9 @@ class _$elementPressedImpl implements _elementPressed {
   @pragma('vm:prefer-inline')
   _$$elementPressedImplCopyWith<_$elementPressedImpl> get copyWith =>
       __$$elementPressedImplCopyWithImpl<_$elementPressedImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -553,8 +559,9 @@ abstract class _elementPressed implements CraftingPageEvent {
 /// @nodoc
 abstract class _$$craftPressedImplCopyWith<$Res> {
   factory _$$craftPressedImplCopyWith(
-          _$craftPressedImpl value, $Res Function(_$craftPressedImpl) then) =
-      __$$craftPressedImplCopyWithImpl<$Res>;
+    _$craftPressedImpl value,
+    $Res Function(_$craftPressedImpl) then,
+  ) = __$$craftPressedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -562,8 +569,9 @@ class __$$craftPressedImplCopyWithImpl<$Res>
     extends _$CraftingPageEventCopyWithImpl<$Res, _$craftPressedImpl>
     implements _$$craftPressedImplCopyWith<$Res> {
   __$$craftPressedImplCopyWithImpl(
-      _$craftPressedImpl _value, $Res Function(_$craftPressedImpl) _then)
-      : super(_value, _then);
+    _$craftPressedImpl _value,
+    $Res Function(_$craftPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CraftingPageEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -675,9 +683,10 @@ abstract class _craftPressed implements CraftingPageEvent {
 
 /// @nodoc
 abstract class _$$onPacksChangesImplCopyWith<$Res> {
-  factory _$$onPacksChangesImplCopyWith(_$onPacksChangesImpl value,
-          $Res Function(_$onPacksChangesImpl) then) =
-      __$$onPacksChangesImplCopyWithImpl<$Res>;
+  factory _$$onPacksChangesImplCopyWith(
+    _$onPacksChangesImpl value,
+    $Res Function(_$onPacksChangesImpl) then,
+  ) = __$$onPacksChangesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Kit> kits});
 }
@@ -687,22 +696,24 @@ class __$$onPacksChangesImplCopyWithImpl<$Res>
     extends _$CraftingPageEventCopyWithImpl<$Res, _$onPacksChangesImpl>
     implements _$$onPacksChangesImplCopyWith<$Res> {
   __$$onPacksChangesImplCopyWithImpl(
-      _$onPacksChangesImpl _value, $Res Function(_$onPacksChangesImpl) _then)
-      : super(_value, _then);
+    _$onPacksChangesImpl _value,
+    $Res Function(_$onPacksChangesImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CraftingPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? kits = null,
-  }) {
-    return _then(_$onPacksChangesImpl(
-      kits: null == kits
-          ? _value._kits
-          : kits // ignore: cast_nullable_to_non_nullable
-              as List<Kit>,
-    ));
+  $Res call({Object? kits = null}) {
+    return _then(
+      _$onPacksChangesImpl(
+        kits:
+            null == kits
+                ? _value._kits
+                : kits // ignore: cast_nullable_to_non_nullable
+                    as List<Kit>,
+      ),
+    );
   }
 }
 
@@ -743,7 +754,9 @@ class _$onPacksChangesImpl implements _onPacksChanges {
   @pragma('vm:prefer-inline')
   _$$onPacksChangesImplCopyWith<_$onPacksChangesImpl> get copyWith =>
       __$$onPacksChangesImplCopyWithImpl<_$onPacksChangesImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -855,11 +868,15 @@ mixin _$CraftingPageState {
 /// @nodoc
 abstract class $CraftingPageStateCopyWith<$Res> {
   factory $CraftingPageStateCopyWith(
-          CraftingPageState value, $Res Function(CraftingPageState) then) =
-      _$CraftingPageStateCopyWithImpl<$Res, CraftingPageState>;
+    CraftingPageState value,
+    $Res Function(CraftingPageState) then,
+  ) = _$CraftingPageStateCopyWithImpl<$Res, CraftingPageState>;
   @useResult
-  $Res call(
-      {GearCategory selectedGearCategory, Kit? selectedKit, List<Kit> kits});
+  $Res call({
+    GearCategory selectedGearCategory,
+    Kit? selectedKit,
+    List<Kit> kits,
+  });
 
   $KitCopyWith<$Res>? get selectedKit;
 }
@@ -883,20 +900,26 @@ class _$CraftingPageStateCopyWithImpl<$Res, $Val extends CraftingPageState>
     Object? selectedKit = freezed,
     Object? kits = null,
   }) {
-    return _then(_value.copyWith(
-      selectedGearCategory: null == selectedGearCategory
-          ? _value.selectedGearCategory
-          : selectedGearCategory // ignore: cast_nullable_to_non_nullable
-              as GearCategory,
-      selectedKit: freezed == selectedKit
-          ? _value.selectedKit
-          : selectedKit // ignore: cast_nullable_to_non_nullable
-              as Kit?,
-      kits: null == kits
-          ? _value.kits
-          : kits // ignore: cast_nullable_to_non_nullable
-              as List<Kit>,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            selectedGearCategory:
+                null == selectedGearCategory
+                    ? _value.selectedGearCategory
+                    : selectedGearCategory // ignore: cast_nullable_to_non_nullable
+                        as GearCategory,
+            selectedKit:
+                freezed == selectedKit
+                    ? _value.selectedKit
+                    : selectedKit // ignore: cast_nullable_to_non_nullable
+                        as Kit?,
+            kits:
+                null == kits
+                    ? _value.kits
+                    : kits // ignore: cast_nullable_to_non_nullable
+                        as List<Kit>,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of CraftingPageState
@@ -917,13 +940,17 @@ class _$CraftingPageStateCopyWithImpl<$Res, $Val extends CraftingPageState>
 /// @nodoc
 abstract class _$$CraftingPageStateImplCopyWith<$Res>
     implements $CraftingPageStateCopyWith<$Res> {
-  factory _$$CraftingPageStateImplCopyWith(_$CraftingPageStateImpl value,
-          $Res Function(_$CraftingPageStateImpl) then) =
-      __$$CraftingPageStateImplCopyWithImpl<$Res>;
+  factory _$$CraftingPageStateImplCopyWith(
+    _$CraftingPageStateImpl value,
+    $Res Function(_$CraftingPageStateImpl) then,
+  ) = __$$CraftingPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {GearCategory selectedGearCategory, Kit? selectedKit, List<Kit> kits});
+  $Res call({
+    GearCategory selectedGearCategory,
+    Kit? selectedKit,
+    List<Kit> kits,
+  });
 
   @override
   $KitCopyWith<$Res>? get selectedKit;
@@ -933,9 +960,10 @@ abstract class _$$CraftingPageStateImplCopyWith<$Res>
 class __$$CraftingPageStateImplCopyWithImpl<$Res>
     extends _$CraftingPageStateCopyWithImpl<$Res, _$CraftingPageStateImpl>
     implements _$$CraftingPageStateImplCopyWith<$Res> {
-  __$$CraftingPageStateImplCopyWithImpl(_$CraftingPageStateImpl _value,
-      $Res Function(_$CraftingPageStateImpl) _then)
-      : super(_value, _then);
+  __$$CraftingPageStateImplCopyWithImpl(
+    _$CraftingPageStateImpl _value,
+    $Res Function(_$CraftingPageStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CraftingPageState
   /// with the given fields replaced by the non-null parameter values.
@@ -946,31 +974,36 @@ class __$$CraftingPageStateImplCopyWithImpl<$Res>
     Object? selectedKit = freezed,
     Object? kits = null,
   }) {
-    return _then(_$CraftingPageStateImpl(
-      selectedGearCategory: null == selectedGearCategory
-          ? _value.selectedGearCategory
-          : selectedGearCategory // ignore: cast_nullable_to_non_nullable
-              as GearCategory,
-      selectedKit: freezed == selectedKit
-          ? _value.selectedKit
-          : selectedKit // ignore: cast_nullable_to_non_nullable
-              as Kit?,
-      kits: null == kits
-          ? _value._kits
-          : kits // ignore: cast_nullable_to_non_nullable
-              as List<Kit>,
-    ));
+    return _then(
+      _$CraftingPageStateImpl(
+        selectedGearCategory:
+            null == selectedGearCategory
+                ? _value.selectedGearCategory
+                : selectedGearCategory // ignore: cast_nullable_to_non_nullable
+                    as GearCategory,
+        selectedKit:
+            freezed == selectedKit
+                ? _value.selectedKit
+                : selectedKit // ignore: cast_nullable_to_non_nullable
+                    as Kit?,
+        kits:
+            null == kits
+                ? _value._kits
+                : kits // ignore: cast_nullable_to_non_nullable
+                    as List<Kit>,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$CraftingPageStateImpl implements _CraftingPageState {
-  const _$CraftingPageStateImpl(
-      {this.selectedGearCategory = GearCategory.radioSkin,
-      this.selectedKit = null,
-      final List<Kit> kits = const []})
-      : _kits = kits;
+  const _$CraftingPageStateImpl({
+    this.selectedGearCategory = GearCategory.radioSkin,
+    this.selectedKit = null,
+    final List<Kit> kits = const [],
+  }) : _kits = kits;
 
   @override
   @JsonKey()
@@ -1005,8 +1038,12 @@ class _$CraftingPageStateImpl implements _CraftingPageState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, selectedGearCategory,
-      selectedKit, const DeepCollectionEquality().hash(_kits));
+  int get hashCode => Object.hash(
+    runtimeType,
+    selectedGearCategory,
+    selectedKit,
+    const DeepCollectionEquality().hash(_kits),
+  );
 
   /// Create a copy of CraftingPageState
   /// with the given fields replaced by the non-null parameter values.
@@ -1015,14 +1052,17 @@ class _$CraftingPageStateImpl implements _CraftingPageState {
   @pragma('vm:prefer-inline')
   _$$CraftingPageStateImplCopyWith<_$CraftingPageStateImpl> get copyWith =>
       __$$CraftingPageStateImplCopyWithImpl<_$CraftingPageStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _CraftingPageState implements CraftingPageState {
-  const factory _CraftingPageState(
-      {final GearCategory selectedGearCategory,
-      final Kit? selectedKit,
-      final List<Kit> kits}) = _$CraftingPageStateImpl;
+  const factory _CraftingPageState({
+    final GearCategory selectedGearCategory,
+    final Kit? selectedKit,
+    final List<Kit> kits,
+  }) = _$CraftingPageStateImpl;
 
   @override
   GearCategory get selectedGearCategory;

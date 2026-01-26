@@ -7,13 +7,13 @@ part of 'draw.dart';
 // **************************************************************************
 
 _$DrawImpl _$$DrawImplFromJson(Map<String, dynamic> json) => _$DrawImpl(
-      id: json['id'] as String,
-      rate: const StringToIntConverter().fromJson(json['Rate']),
-      drawId: $enumDecode(_$DrawIdEnumMap, json['draw_ID']),
-      max: const StringToIntConverter().fromJson(json['max']),
-      mn: const StringToIntConverter().fromJson(json['mn']),
-      result: json['result'] as String,
-    );
+  id: json['id'] as String,
+  rate: const StringToIntConverter().fromJson(json['Rate']),
+  drawId: $enumDecode(_$DrawIdEnumMap, json['draw_ID']),
+  max: const StringToIntConverter().fromJson(json['max']),
+  mn: const StringToIntConverter().fromJson(json['mn']),
+  result: json['result'] as String,
+);
 
 Map<String, dynamic> _$$DrawImplToJson(_$DrawImpl instance) =>
     <String, dynamic>{

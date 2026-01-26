@@ -7,22 +7,23 @@ part of 'level.dart';
 // **************************************************************************
 
 _$LevelImpl _$$LevelImplFromJson(Map<String, dynamic> json) => _$LevelImpl(
-      id: json['id'] as String,
-      condition1: const HourConverterFromString().fromJson(json['Condition1']),
-      condition2: const StringToIntConverter().fromJson(json['Condition2']),
-      limitSsp: const StringToIntConverter().fromJson(json['Limit_SSP']),
-      rewardSsp: const StringToIntConverter().fromJson(json['Reward_SSP']),
-      stamina: const StringToIntConverter().fromJson(json['stamina']),
-      limitEp: const StringToIntConverter().fromJson(json['Limit_EP']),
-      costEp: const StringToIntConverter().fromJson(json['Cost_EP']),
-      costSsp: const StringToIntConverter().fromJson(json['Cost_SSP']),
-      rewardCount: const StringToIntConverter().fromJson(json['Reward_Count']),
-      rewardEp: const StringToIntConverter().fromJson(json['Reward_EP']),
-      exp: const StringToIntConverter().fromJson(json['exp']),
-      level: const StringToIntConverter().fromJson(json['level']),
-      limitProbability:
-          const StringToIntConverter().fromJson(json['Limit_Probability']),
-    );
+  id: json['id'] as String,
+  condition1: const HourConverterFromString().fromJson(json['Condition1']),
+  condition2: const StringToIntConverter().fromJson(json['Condition2']),
+  limitSsp: const StringToIntConverter().fromJson(json['Limit_SSP']),
+  rewardSsp: const StringToIntConverter().fromJson(json['Reward_SSP']),
+  stamina: const StringToIntConverter().fromJson(json['stamina']),
+  limitEp: const StringToIntConverter().fromJson(json['Limit_EP']),
+  costEp: const StringToIntConverter().fromJson(json['Cost_EP']),
+  costSsp: const StringToIntConverter().fromJson(json['Cost_SSP']),
+  rewardCount: const StringToIntConverter().fromJson(json['Reward_Count']),
+  rewardEp: const StringToIntConverter().fromJson(json['Reward_EP']),
+  exp: const StringToIntConverter().fromJson(json['exp']),
+  level: const StringToIntConverter().fromJson(json['level']),
+  limitProbability: const StringToIntConverter().fromJson(
+    json['Limit_Probability'],
+  ),
+);
 
 Map<String, dynamic> _$$LevelImplToJson(_$LevelImpl instance) =>
     <String, dynamic>{
@@ -39,6 +40,7 @@ Map<String, dynamic> _$$LevelImplToJson(_$LevelImpl instance) =>
       'Reward_EP': const StringToIntConverter().toJson(instance.rewardEp),
       'exp': const StringToIntConverter().toJson(instance.exp),
       'level': const StringToIntConverter().toJson(instance.level),
-      'Limit_Probability':
-          const StringToIntConverter().toJson(instance.limitProbability),
+      'Limit_Probability': const StringToIntConverter().toJson(
+        instance.limitProbability,
+      ),
     };

@@ -12,7 +12,8 @@ part of 'unlock.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 Unlock _$UnlockFromJson(Map<String, dynamic> json) {
   return _Unlock.fromJson(json);
@@ -84,34 +85,25 @@ abstract class $UnlockCopyWith<$Res> {
   factory $UnlockCopyWith(Unlock value, $Res Function(Unlock) then) =
       _$UnlockCopyWithImpl<$Res, Unlock>;
   @useResult
-  $Res call(
-      {String id,
-      @StringToGearTierConverter() @JsonKey(name: 'tier') GearTier tier,
-      @StringToIntConverter() @JsonKey(name: 's1cost_EP') int s1costEp,
-      @StringToIntConverter() @JsonKey(name: 's2cost_EP') int s2costEp,
-      @StringToIntConverter() @JsonKey(name: 's3cost_EP') int s3costEp,
-      @StringToIntConverter() @JsonKey(name: 's4cost_EP') int s4costEp,
-      @StringToIntConverter() @JsonKey(name: 's5cost_EP') int s5costEp,
-      @StringToIntConverter() @JsonKey(name: 's1cost_SSP') int s1costSsp,
-      @StringToIntConverter() @JsonKey(name: 's2cost_SSP') int s2costSsp,
-      @StringToIntConverter() @JsonKey(name: 's3cost_SSP') int s3costSsp,
-      @StringToIntConverter() @JsonKey(name: 's4cost_SSP') int s4costSsp,
-      @StringToIntConverter() @JsonKey(name: 's5cost_SSP') int s5costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's1_Probability')
-      int s1Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's2_Probability')
-      int s2Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's3_Probability')
-      int s3Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's4_Probability')
-      int s4Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's5_Probability')
-      int s5Probability});
+  $Res call({
+    String id,
+    @StringToGearTierConverter() @JsonKey(name: 'tier') GearTier tier,
+    @StringToIntConverter() @JsonKey(name: 's1cost_EP') int s1costEp,
+    @StringToIntConverter() @JsonKey(name: 's2cost_EP') int s2costEp,
+    @StringToIntConverter() @JsonKey(name: 's3cost_EP') int s3costEp,
+    @StringToIntConverter() @JsonKey(name: 's4cost_EP') int s4costEp,
+    @StringToIntConverter() @JsonKey(name: 's5cost_EP') int s5costEp,
+    @StringToIntConverter() @JsonKey(name: 's1cost_SSP') int s1costSsp,
+    @StringToIntConverter() @JsonKey(name: 's2cost_SSP') int s2costSsp,
+    @StringToIntConverter() @JsonKey(name: 's3cost_SSP') int s3costSsp,
+    @StringToIntConverter() @JsonKey(name: 's4cost_SSP') int s4costSsp,
+    @StringToIntConverter() @JsonKey(name: 's5cost_SSP') int s5costSsp,
+    @StringToIntConverter() @JsonKey(name: 's1_Probability') int s1Probability,
+    @StringToIntConverter() @JsonKey(name: 's2_Probability') int s2Probability,
+    @StringToIntConverter() @JsonKey(name: 's3_Probability') int s3Probability,
+    @StringToIntConverter() @JsonKey(name: 's4_Probability') int s4Probability,
+    @StringToIntConverter() @JsonKey(name: 's5_Probability') int s5Probability,
+  });
 }
 
 /// @nodoc
@@ -147,114 +139,126 @@ class _$UnlockCopyWithImpl<$Res, $Val extends Unlock>
     Object? s4Probability = null,
     Object? s5Probability = null,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      tier: null == tier
-          ? _value.tier
-          : tier // ignore: cast_nullable_to_non_nullable
-              as GearTier,
-      s1costEp: null == s1costEp
-          ? _value.s1costEp
-          : s1costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s2costEp: null == s2costEp
-          ? _value.s2costEp
-          : s2costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s3costEp: null == s3costEp
-          ? _value.s3costEp
-          : s3costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s4costEp: null == s4costEp
-          ? _value.s4costEp
-          : s4costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s5costEp: null == s5costEp
-          ? _value.s5costEp
-          : s5costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s1costSsp: null == s1costSsp
-          ? _value.s1costSsp
-          : s1costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s2costSsp: null == s2costSsp
-          ? _value.s2costSsp
-          : s2costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s3costSsp: null == s3costSsp
-          ? _value.s3costSsp
-          : s3costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s4costSsp: null == s4costSsp
-          ? _value.s4costSsp
-          : s4costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s5costSsp: null == s5costSsp
-          ? _value.s5costSsp
-          : s5costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s1Probability: null == s1Probability
-          ? _value.s1Probability
-          : s1Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s2Probability: null == s2Probability
-          ? _value.s2Probability
-          : s2Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s3Probability: null == s3Probability
-          ? _value.s3Probability
-          : s3Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s4Probability: null == s4Probability
-          ? _value.s4Probability
-          : s4Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s5Probability: null == s5Probability
-          ? _value.s5Probability
-          : s5Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            id:
+                null == id
+                    ? _value.id
+                    : id // ignore: cast_nullable_to_non_nullable
+                        as String,
+            tier:
+                null == tier
+                    ? _value.tier
+                    : tier // ignore: cast_nullable_to_non_nullable
+                        as GearTier,
+            s1costEp:
+                null == s1costEp
+                    ? _value.s1costEp
+                    : s1costEp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s2costEp:
+                null == s2costEp
+                    ? _value.s2costEp
+                    : s2costEp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s3costEp:
+                null == s3costEp
+                    ? _value.s3costEp
+                    : s3costEp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s4costEp:
+                null == s4costEp
+                    ? _value.s4costEp
+                    : s4costEp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s5costEp:
+                null == s5costEp
+                    ? _value.s5costEp
+                    : s5costEp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s1costSsp:
+                null == s1costSsp
+                    ? _value.s1costSsp
+                    : s1costSsp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s2costSsp:
+                null == s2costSsp
+                    ? _value.s2costSsp
+                    : s2costSsp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s3costSsp:
+                null == s3costSsp
+                    ? _value.s3costSsp
+                    : s3costSsp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s4costSsp:
+                null == s4costSsp
+                    ? _value.s4costSsp
+                    : s4costSsp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s5costSsp:
+                null == s5costSsp
+                    ? _value.s5costSsp
+                    : s5costSsp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s1Probability:
+                null == s1Probability
+                    ? _value.s1Probability
+                    : s1Probability // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s2Probability:
+                null == s2Probability
+                    ? _value.s2Probability
+                    : s2Probability // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s3Probability:
+                null == s3Probability
+                    ? _value.s3Probability
+                    : s3Probability // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s4Probability:
+                null == s4Probability
+                    ? _value.s4Probability
+                    : s4Probability // ignore: cast_nullable_to_non_nullable
+                        as int,
+            s5Probability:
+                null == s5Probability
+                    ? _value.s5Probability
+                    : s5Probability // ignore: cast_nullable_to_non_nullable
+                        as int,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$UnlockImplCopyWith<$Res> implements $UnlockCopyWith<$Res> {
   factory _$$UnlockImplCopyWith(
-          _$UnlockImpl value, $Res Function(_$UnlockImpl) then) =
-      __$$UnlockImplCopyWithImpl<$Res>;
+    _$UnlockImpl value,
+    $Res Function(_$UnlockImpl) then,
+  ) = __$$UnlockImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String id,
-      @StringToGearTierConverter() @JsonKey(name: 'tier') GearTier tier,
-      @StringToIntConverter() @JsonKey(name: 's1cost_EP') int s1costEp,
-      @StringToIntConverter() @JsonKey(name: 's2cost_EP') int s2costEp,
-      @StringToIntConverter() @JsonKey(name: 's3cost_EP') int s3costEp,
-      @StringToIntConverter() @JsonKey(name: 's4cost_EP') int s4costEp,
-      @StringToIntConverter() @JsonKey(name: 's5cost_EP') int s5costEp,
-      @StringToIntConverter() @JsonKey(name: 's1cost_SSP') int s1costSsp,
-      @StringToIntConverter() @JsonKey(name: 's2cost_SSP') int s2costSsp,
-      @StringToIntConverter() @JsonKey(name: 's3cost_SSP') int s3costSsp,
-      @StringToIntConverter() @JsonKey(name: 's4cost_SSP') int s4costSsp,
-      @StringToIntConverter() @JsonKey(name: 's5cost_SSP') int s5costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's1_Probability')
-      int s1Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's2_Probability')
-      int s2Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's3_Probability')
-      int s3Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's4_Probability')
-      int s4Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's5_Probability')
-      int s5Probability});
+  $Res call({
+    String id,
+    @StringToGearTierConverter() @JsonKey(name: 'tier') GearTier tier,
+    @StringToIntConverter() @JsonKey(name: 's1cost_EP') int s1costEp,
+    @StringToIntConverter() @JsonKey(name: 's2cost_EP') int s2costEp,
+    @StringToIntConverter() @JsonKey(name: 's3cost_EP') int s3costEp,
+    @StringToIntConverter() @JsonKey(name: 's4cost_EP') int s4costEp,
+    @StringToIntConverter() @JsonKey(name: 's5cost_EP') int s5costEp,
+    @StringToIntConverter() @JsonKey(name: 's1cost_SSP') int s1costSsp,
+    @StringToIntConverter() @JsonKey(name: 's2cost_SSP') int s2costSsp,
+    @StringToIntConverter() @JsonKey(name: 's3cost_SSP') int s3costSsp,
+    @StringToIntConverter() @JsonKey(name: 's4cost_SSP') int s4costSsp,
+    @StringToIntConverter() @JsonKey(name: 's5cost_SSP') int s5costSsp,
+    @StringToIntConverter() @JsonKey(name: 's1_Probability') int s1Probability,
+    @StringToIntConverter() @JsonKey(name: 's2_Probability') int s2Probability,
+    @StringToIntConverter() @JsonKey(name: 's3_Probability') int s3Probability,
+    @StringToIntConverter() @JsonKey(name: 's4_Probability') int s4Probability,
+    @StringToIntConverter() @JsonKey(name: 's5_Probability') int s5Probability,
+  });
 }
 
 /// @nodoc
@@ -262,8 +266,9 @@ class __$$UnlockImplCopyWithImpl<$Res>
     extends _$UnlockCopyWithImpl<$Res, _$UnlockImpl>
     implements _$$UnlockImplCopyWith<$Res> {
   __$$UnlockImplCopyWithImpl(
-      _$UnlockImpl _value, $Res Function(_$UnlockImpl) _then)
-      : super(_value, _then);
+    _$UnlockImpl _value,
+    $Res Function(_$UnlockImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of Unlock
   /// with the given fields replaced by the non-null parameter values.
@@ -288,131 +293,140 @@ class __$$UnlockImplCopyWithImpl<$Res>
     Object? s4Probability = null,
     Object? s5Probability = null,
   }) {
-    return _then(_$UnlockImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      tier: null == tier
-          ? _value.tier
-          : tier // ignore: cast_nullable_to_non_nullable
-              as GearTier,
-      s1costEp: null == s1costEp
-          ? _value.s1costEp
-          : s1costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s2costEp: null == s2costEp
-          ? _value.s2costEp
-          : s2costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s3costEp: null == s3costEp
-          ? _value.s3costEp
-          : s3costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s4costEp: null == s4costEp
-          ? _value.s4costEp
-          : s4costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s5costEp: null == s5costEp
-          ? _value.s5costEp
-          : s5costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s1costSsp: null == s1costSsp
-          ? _value.s1costSsp
-          : s1costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s2costSsp: null == s2costSsp
-          ? _value.s2costSsp
-          : s2costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s3costSsp: null == s3costSsp
-          ? _value.s3costSsp
-          : s3costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s4costSsp: null == s4costSsp
-          ? _value.s4costSsp
-          : s4costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s5costSsp: null == s5costSsp
-          ? _value.s5costSsp
-          : s5costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      s1Probability: null == s1Probability
-          ? _value.s1Probability
-          : s1Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s2Probability: null == s2Probability
-          ? _value.s2Probability
-          : s2Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s3Probability: null == s3Probability
-          ? _value.s3Probability
-          : s3Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s4Probability: null == s4Probability
-          ? _value.s4Probability
-          : s4Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-      s5Probability: null == s5Probability
-          ? _value.s5Probability
-          : s5Probability // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+    return _then(
+      _$UnlockImpl(
+        id:
+            null == id
+                ? _value.id
+                : id // ignore: cast_nullable_to_non_nullable
+                    as String,
+        tier:
+            null == tier
+                ? _value.tier
+                : tier // ignore: cast_nullable_to_non_nullable
+                    as GearTier,
+        s1costEp:
+            null == s1costEp
+                ? _value.s1costEp
+                : s1costEp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s2costEp:
+            null == s2costEp
+                ? _value.s2costEp
+                : s2costEp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s3costEp:
+            null == s3costEp
+                ? _value.s3costEp
+                : s3costEp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s4costEp:
+            null == s4costEp
+                ? _value.s4costEp
+                : s4costEp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s5costEp:
+            null == s5costEp
+                ? _value.s5costEp
+                : s5costEp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s1costSsp:
+            null == s1costSsp
+                ? _value.s1costSsp
+                : s1costSsp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s2costSsp:
+            null == s2costSsp
+                ? _value.s2costSsp
+                : s2costSsp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s3costSsp:
+            null == s3costSsp
+                ? _value.s3costSsp
+                : s3costSsp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s4costSsp:
+            null == s4costSsp
+                ? _value.s4costSsp
+                : s4costSsp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s5costSsp:
+            null == s5costSsp
+                ? _value.s5costSsp
+                : s5costSsp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s1Probability:
+            null == s1Probability
+                ? _value.s1Probability
+                : s1Probability // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s2Probability:
+            null == s2Probability
+                ? _value.s2Probability
+                : s2Probability // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s3Probability:
+            null == s3Probability
+                ? _value.s3Probability
+                : s3Probability // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s4Probability:
+            null == s4Probability
+                ? _value.s4Probability
+                : s4Probability // ignore: cast_nullable_to_non_nullable
+                    as int,
+        s5Probability:
+            null == s5Probability
+                ? _value.s5Probability
+                : s5Probability // ignore: cast_nullable_to_non_nullable
+                    as int,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$UnlockImpl extends _Unlock {
-  const _$UnlockImpl(
-      {required this.id,
-      @StringToGearTierConverter() @JsonKey(name: 'tier') required this.tier,
-      @StringToIntConverter()
-      @JsonKey(name: 's1cost_EP')
-      required this.s1costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's2cost_EP')
-      required this.s2costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's3cost_EP')
-      required this.s3costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's4cost_EP')
-      required this.s4costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's5cost_EP')
-      required this.s5costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's1cost_SSP')
-      required this.s1costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's2cost_SSP')
-      required this.s2costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's3cost_SSP')
-      required this.s3costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's4cost_SSP')
-      required this.s4costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's5cost_SSP')
-      required this.s5costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's1_Probability')
-      required this.s1Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's2_Probability')
-      required this.s2Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's3_Probability')
-      required this.s3Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's4_Probability')
-      required this.s4Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's5_Probability')
-      required this.s5Probability})
-      : super._();
+  const _$UnlockImpl({
+    required this.id,
+    @StringToGearTierConverter() @JsonKey(name: 'tier') required this.tier,
+    @StringToIntConverter() @JsonKey(name: 's1cost_EP') required this.s1costEp,
+    @StringToIntConverter() @JsonKey(name: 's2cost_EP') required this.s2costEp,
+    @StringToIntConverter() @JsonKey(name: 's3cost_EP') required this.s3costEp,
+    @StringToIntConverter() @JsonKey(name: 's4cost_EP') required this.s4costEp,
+    @StringToIntConverter() @JsonKey(name: 's5cost_EP') required this.s5costEp,
+    @StringToIntConverter()
+    @JsonKey(name: 's1cost_SSP')
+    required this.s1costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's2cost_SSP')
+    required this.s2costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's3cost_SSP')
+    required this.s3costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's4cost_SSP')
+    required this.s4costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's5cost_SSP')
+    required this.s5costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's1_Probability')
+    required this.s1Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's2_Probability')
+    required this.s2Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's3_Probability')
+    required this.s3Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's4_Probability')
+    required this.s4Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's5_Probability')
+    required this.s5Probability,
+  }) : super._();
 
   factory _$UnlockImpl.fromJson(Map<String, dynamic> json) =>
       _$$UnlockImplFromJson(json);
@@ -531,24 +545,25 @@ class _$UnlockImpl extends _Unlock {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      tier,
-      s1costEp,
-      s2costEp,
-      s3costEp,
-      s4costEp,
-      s5costEp,
-      s1costSsp,
-      s2costSsp,
-      s3costSsp,
-      s4costSsp,
-      s5costSsp,
-      s1Probability,
-      s2Probability,
-      s3Probability,
-      s4Probability,
-      s5Probability);
+    runtimeType,
+    id,
+    tier,
+    s1costEp,
+    s2costEp,
+    s3costEp,
+    s4costEp,
+    s5costEp,
+    s1costSsp,
+    s2costSsp,
+    s3costSsp,
+    s4costSsp,
+    s5costSsp,
+    s1Probability,
+    s2Probability,
+    s3Probability,
+    s4Probability,
+    s5Probability,
+  );
 
   /// Create a copy of Unlock
   /// with the given fields replaced by the non-null parameter values.
@@ -560,63 +575,62 @@ class _$UnlockImpl extends _Unlock {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$UnlockImplToJson(
-      this,
-    );
+    return _$$UnlockImplToJson(this);
   }
 }
 
 abstract class _Unlock extends Unlock {
-  const factory _Unlock(
-      {required final String id,
-      @StringToGearTierConverter()
-      @JsonKey(name: 'tier')
-      required final GearTier tier,
-      @StringToIntConverter()
-      @JsonKey(name: 's1cost_EP')
-      required final int s1costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's2cost_EP')
-      required final int s2costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's3cost_EP')
-      required final int s3costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's4cost_EP')
-      required final int s4costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's5cost_EP')
-      required final int s5costEp,
-      @StringToIntConverter()
-      @JsonKey(name: 's1cost_SSP')
-      required final int s1costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's2cost_SSP')
-      required final int s2costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's3cost_SSP')
-      required final int s3costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's4cost_SSP')
-      required final int s4costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's5cost_SSP')
-      required final int s5costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: 's1_Probability')
-      required final int s1Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's2_Probability')
-      required final int s2Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's3_Probability')
-      required final int s3Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's4_Probability')
-      required final int s4Probability,
-      @StringToIntConverter()
-      @JsonKey(name: 's5_Probability')
-      required final int s5Probability}) = _$UnlockImpl;
+  const factory _Unlock({
+    required final String id,
+    @StringToGearTierConverter()
+    @JsonKey(name: 'tier')
+    required final GearTier tier,
+    @StringToIntConverter()
+    @JsonKey(name: 's1cost_EP')
+    required final int s1costEp,
+    @StringToIntConverter()
+    @JsonKey(name: 's2cost_EP')
+    required final int s2costEp,
+    @StringToIntConverter()
+    @JsonKey(name: 's3cost_EP')
+    required final int s3costEp,
+    @StringToIntConverter()
+    @JsonKey(name: 's4cost_EP')
+    required final int s4costEp,
+    @StringToIntConverter()
+    @JsonKey(name: 's5cost_EP')
+    required final int s5costEp,
+    @StringToIntConverter()
+    @JsonKey(name: 's1cost_SSP')
+    required final int s1costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's2cost_SSP')
+    required final int s2costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's3cost_SSP')
+    required final int s3costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's4cost_SSP')
+    required final int s4costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's5cost_SSP')
+    required final int s5costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: 's1_Probability')
+    required final int s1Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's2_Probability')
+    required final int s2Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's3_Probability')
+    required final int s3Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's4_Probability')
+    required final int s4Probability,
+    @StringToIntConverter()
+    @JsonKey(name: 's5_Probability')
+    required final int s5Probability,
+  }) = _$UnlockImpl;
   const _Unlock._() : super._();
 
   factory _Unlock.fromJson(Map<String, dynamic> json) = _$UnlockImpl.fromJson;

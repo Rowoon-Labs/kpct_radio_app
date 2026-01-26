@@ -39,6 +39,11 @@ export const onUserCreate = functions
   .region(region)
   .auth.user()
   .onCreate(async (user) => {
+    functions.logger.info("🚀 [onUserCreate Triggered]", {
+      uid: user.uid,
+      email: user.email,
+    });
+    console.log(`[onUserCreate Start] UID: ${user.uid}, Email: ${user.email}`);
     const email = user.email ?? "";
 
     let bonded = false;
@@ -46,50 +51,71 @@ export const onUserCreate = functions
     let walletAddress = null;
     let profileImageUrl = null;
 
-    try {
-      const myInfo: MyInfo = await getMyInfo(email);
-      if (myInfo.result == 1) {
-        bonded = true;
-        hodSsp = myInfo.user_ssp;
-        walletAddress = myInfo.wallet_addr;
-        profileImageUrl = myInfo.pfp_url;
+    if (email) {
+      try {
+        console.log(
+          `[onUserCreate] Fetching info starting for email: ${email}`,
+        );
+        const myInfo: MyInfo = await getMyInfo(email);
+        console.log(
+          `[onUserCreate] getMyInfo result: ${JSON.stringify(myInfo)}`,
+        );
+
+        if (myInfo.result == 1) {
+          bonded = true;
+          hodSsp = myInfo.user_ssp;
+          walletAddress = myInfo.wallet_addr;
+          profileImageUrl = myInfo.pfp_url;
+        }
+      } catch (exception) {
+        console.error(`[onUserCreate Error] getMyInfo failed: ${exception}`);
       }
-    } catch (exception) {
-      //
     }
 
-    await createDoc(userReference.doc(user.uid), {
-      bonded: bonded,
-      role: CustomUserRole.User,
-      profileImageUrl: profileImageUrl,
-      email: user.email ?? "",
-      createdAt: serverTimestamp(),
-      walletAddress: walletAddress,
-      level: 1,
-      stamina: 10000,
-      maxStamina: 10000,
-      consumedStamina: 0,
-      exp: 0,
-      maxExp: 1000,
-      listeningGauge: 0,
-      ep: 0,
-      accumulatedEp: 0,
-      accumulatedPlayDuration: 0,
-      radioSsp: 0,
-      accumulatedRadioSsp: 0,
-      hodSsp: hodSsp,
-      referralCode: null,
-      nextRandomBoxAt: serverTimestamp(),
-      nextPeriodic12: null,
-      nextPeriodic24: null,
-      installedEquipments: {
-        LG: null,
-        Radio: null,
-        Accessory: null,
-      },
-      items: [],
-      overcomeLevels: Array<number>(),
-    });
+    try {
+      console.log(
+        `[onUserCreate] Creating Firestore document for UID: ${user.uid}`,
+      );
+      await createDoc(userReference.doc(user.uid), {
+        bonded: bonded,
+        role: CustomUserRole.User,
+        profileImageUrl: profileImageUrl,
+        email: user.email ?? "",
+        createdAt: serverTimestamp(),
+        walletAddress: walletAddress,
+        level: 1,
+        stamina: 10000,
+        maxStamina: 10000,
+        consumedStamina: 0,
+        exp: 0,
+        maxExp: 1000,
+        listeningGauge: 0,
+        ep: 0,
+        accumulatedEp: 0,
+        accumulatedPlayDuration: 0,
+        radioSsp: 0,
+        accumulatedRadioSsp: 0,
+        hodSsp: hodSsp,
+        referralCode: null,
+        nextRandomBoxAt: serverTimestamp(),
+        nextPeriodic12: null,
+        nextPeriodic24: null,
+        installedEquipments: {
+          LG: null,
+          Radio: null,
+          Accessory: null,
+        },
+        items: [],
+        overcomeLevels: Array<number>(),
+      });
+      console.log(
+        `[onUserCreate Success] Document created for UID: ${user.uid}`,
+      );
+    } catch (error) {
+      console.error(
+        `[onUserCreate Error] Firestore createDoc failed: ${error}`,
+      );
+    }
   });
 
 export const onTransctionLogCreated = onDocumentCreated(
@@ -475,8 +501,7 @@ export const uploadCSVToFirestore = onCall(
         throw new HttpsError("invalid-argument", "유효하지 않은 파일명입니다");
       }
 
-      const finalCollectionName =
-        "new_reserved/" + collectionName + "/elements";
+      const finalCollectionName = "reserved/" + collectionName + "/elements";
 
       if (!ALLOWED_CSV_COLLECTIONS.includes(collectionName)) {
         console.log(`허용되지 않은 컬렉션 이름입니다: ${collectionName}`);

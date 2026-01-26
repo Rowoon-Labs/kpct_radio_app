@@ -12,7 +12,8 @@ part of 'chat_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ChatModalEvent {
@@ -23,8 +24,7 @@ mixin _$ChatModalEvent {
     required TResult Function(String value) onChanged,
     required TResult Function() send,
     required TResult Function(Chat value) receive,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
@@ -32,8 +32,7 @@ mixin _$ChatModalEvent {
     TResult? Function(String value)? onChanged,
     TResult? Function()? send,
     TResult? Function(Chat value)? receive,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
@@ -42,8 +41,7 @@ mixin _$ChatModalEvent {
     TResult Function()? send,
     TResult Function(Chat value)? receive,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
@@ -51,8 +49,7 @@ mixin _$ChatModalEvent {
     required TResult Function(_onChanged value) onChanged,
     required TResult Function(_send value) send,
     required TResult Function(_receive value) receive,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
@@ -60,8 +57,7 @@ mixin _$ChatModalEvent {
     TResult? Function(_onChanged value)? onChanged,
     TResult? Function(_send value)? send,
     TResult? Function(_receive value)? receive,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
@@ -70,15 +66,15 @@ mixin _$ChatModalEvent {
     TResult Function(_send value)? send,
     TResult Function(_receive value)? receive,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ChatModalEventCopyWith<$Res> {
   factory $ChatModalEventCopyWith(
-          ChatModalEvent value, $Res Function(ChatModalEvent) then) =
-      _$ChatModalEventCopyWithImpl<$Res, ChatModalEvent>;
+    ChatModalEvent value,
+    $Res Function(ChatModalEvent) then,
+  ) = _$ChatModalEventCopyWithImpl<$Res, ChatModalEvent>;
 }
 
 /// @nodoc
@@ -98,8 +94,9 @@ class _$ChatModalEventCopyWithImpl<$Res, $Val extends ChatModalEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -107,8 +104,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$ChatModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ChatModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -221,8 +219,9 @@ abstract class _initialize implements ChatModalEvent {
 /// @nodoc
 abstract class _$$loadImplCopyWith<$Res> {
   factory _$$loadImplCopyWith(
-          _$loadImpl value, $Res Function(_$loadImpl) then) =
-      __$$loadImplCopyWithImpl<$Res>;
+    _$loadImpl value,
+    $Res Function(_$loadImpl) then,
+  ) = __$$loadImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Completer<void>? completer});
 }
@@ -232,21 +231,22 @@ class __$$loadImplCopyWithImpl<$Res>
     extends _$ChatModalEventCopyWithImpl<$Res, _$loadImpl>
     implements _$$loadImplCopyWith<$Res> {
   __$$loadImplCopyWithImpl(_$loadImpl _value, $Res Function(_$loadImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of ChatModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? completer = freezed,
-  }) {
-    return _then(_$loadImpl(
-      completer: freezed == completer
-          ? _value.completer
-          : completer // ignore: cast_nullable_to_non_nullable
-              as Completer<void>?,
-    ));
+  $Res call({Object? completer = freezed}) {
+    return _then(
+      _$loadImpl(
+        completer:
+            freezed == completer
+                ? _value.completer
+                : completer // ignore: cast_nullable_to_non_nullable
+                    as Completer<void>?,
+      ),
+    );
   }
 }
 
@@ -379,8 +379,9 @@ abstract class _load implements ChatModalEvent {
 /// @nodoc
 abstract class _$$onChangedImplCopyWith<$Res> {
   factory _$$onChangedImplCopyWith(
-          _$onChangedImpl value, $Res Function(_$onChangedImpl) then) =
-      __$$onChangedImplCopyWithImpl<$Res>;
+    _$onChangedImpl value,
+    $Res Function(_$onChangedImpl) then,
+  ) = __$$onChangedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String value});
 }
@@ -390,22 +391,24 @@ class __$$onChangedImplCopyWithImpl<$Res>
     extends _$ChatModalEventCopyWithImpl<$Res, _$onChangedImpl>
     implements _$$onChangedImplCopyWith<$Res> {
   __$$onChangedImplCopyWithImpl(
-      _$onChangedImpl _value, $Res Function(_$onChangedImpl) _then)
-      : super(_value, _then);
+    _$onChangedImpl _value,
+    $Res Function(_$onChangedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ChatModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? value = null,
-  }) {
-    return _then(_$onChangedImpl(
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+  $Res call({Object? value = null}) {
+    return _then(
+      _$onChangedImpl(
+        value:
+            null == value
+                ? _value.value
+                : value // ignore: cast_nullable_to_non_nullable
+                    as String,
+      ),
+    );
   }
 }
 
@@ -537,8 +540,9 @@ abstract class _onChanged implements ChatModalEvent {
 /// @nodoc
 abstract class _$$sendImplCopyWith<$Res> {
   factory _$$sendImplCopyWith(
-          _$sendImpl value, $Res Function(_$sendImpl) then) =
-      __$$sendImplCopyWithImpl<$Res>;
+    _$sendImpl value,
+    $Res Function(_$sendImpl) then,
+  ) = __$$sendImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -546,7 +550,7 @@ class __$$sendImplCopyWithImpl<$Res>
     extends _$ChatModalEventCopyWithImpl<$Res, _$sendImpl>
     implements _$$sendImplCopyWith<$Res> {
   __$$sendImplCopyWithImpl(_$sendImpl _value, $Res Function(_$sendImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of ChatModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -659,8 +663,9 @@ abstract class _send implements ChatModalEvent {
 /// @nodoc
 abstract class _$$receiveImplCopyWith<$Res> {
   factory _$$receiveImplCopyWith(
-          _$receiveImpl value, $Res Function(_$receiveImpl) then) =
-      __$$receiveImplCopyWithImpl<$Res>;
+    _$receiveImpl value,
+    $Res Function(_$receiveImpl) then,
+  ) = __$$receiveImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Chat value});
 
@@ -672,22 +677,24 @@ class __$$receiveImplCopyWithImpl<$Res>
     extends _$ChatModalEventCopyWithImpl<$Res, _$receiveImpl>
     implements _$$receiveImplCopyWith<$Res> {
   __$$receiveImplCopyWithImpl(
-      _$receiveImpl _value, $Res Function(_$receiveImpl) _then)
-      : super(_value, _then);
+    _$receiveImpl _value,
+    $Res Function(_$receiveImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ChatModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? value = null,
-  }) {
-    return _then(_$receiveImpl(
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as Chat,
-    ));
+  $Res call({Object? value = null}) {
+    return _then(
+      _$receiveImpl(
+        value:
+            null == value
+                ? _value.value
+                : value // ignore: cast_nullable_to_non_nullable
+                    as Chat,
+      ),
+    );
   }
 
   /// Create a copy of ChatModalEvent
@@ -844,15 +851,17 @@ mixin _$ChatModalState {
 /// @nodoc
 abstract class $ChatModalStateCopyWith<$Res> {
   factory $ChatModalStateCopyWith(
-          ChatModalState value, $Res Function(ChatModalState) then) =
-      _$ChatModalStateCopyWithImpl<$Res, ChatModalState>;
+    ChatModalState value,
+    $Res Function(ChatModalState) then,
+  ) = _$ChatModalStateCopyWithImpl<$Res, ChatModalState>;
   @useResult
-  $Res call(
-      {bool initialized,
-      String input,
-      bool hasMore,
-      bool loading,
-      List<Chat> chats});
+  $Res call({
+    bool initialized,
+    String input,
+    bool hasMore,
+    bool loading,
+    List<Chat> chats,
+  });
 }
 
 /// @nodoc
@@ -876,45 +885,55 @@ class _$ChatModalStateCopyWithImpl<$Res, $Val extends ChatModalState>
     Object? loading = null,
     Object? chats = null,
   }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      input: null == input
-          ? _value.input
-          : input // ignore: cast_nullable_to_non_nullable
-              as String,
-      hasMore: null == hasMore
-          ? _value.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool,
-      loading: null == loading
-          ? _value.loading
-          : loading // ignore: cast_nullable_to_non_nullable
-              as bool,
-      chats: null == chats
-          ? _value.chats
-          : chats // ignore: cast_nullable_to_non_nullable
-              as List<Chat>,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            input:
+                null == input
+                    ? _value.input
+                    : input // ignore: cast_nullable_to_non_nullable
+                        as String,
+            hasMore:
+                null == hasMore
+                    ? _value.hasMore
+                    : hasMore // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            loading:
+                null == loading
+                    ? _value.loading
+                    : loading // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            chats:
+                null == chats
+                    ? _value.chats
+                    : chats // ignore: cast_nullable_to_non_nullable
+                        as List<Chat>,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$ChatModalStateImplCopyWith<$Res>
     implements $ChatModalStateCopyWith<$Res> {
-  factory _$$ChatModalStateImplCopyWith(_$ChatModalStateImpl value,
-          $Res Function(_$ChatModalStateImpl) then) =
-      __$$ChatModalStateImplCopyWithImpl<$Res>;
+  factory _$$ChatModalStateImplCopyWith(
+    _$ChatModalStateImpl value,
+    $Res Function(_$ChatModalStateImpl) then,
+  ) = __$$ChatModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool initialized,
-      String input,
-      bool hasMore,
-      bool loading,
-      List<Chat> chats});
+  $Res call({
+    bool initialized,
+    String input,
+    bool hasMore,
+    bool loading,
+    List<Chat> chats,
+  });
 }
 
 /// @nodoc
@@ -922,8 +941,9 @@ class __$$ChatModalStateImplCopyWithImpl<$Res>
     extends _$ChatModalStateCopyWithImpl<$Res, _$ChatModalStateImpl>
     implements _$$ChatModalStateImplCopyWith<$Res> {
   __$$ChatModalStateImplCopyWithImpl(
-      _$ChatModalStateImpl _value, $Res Function(_$ChatModalStateImpl) _then)
-      : super(_value, _then);
+    _$ChatModalStateImpl _value,
+    $Res Function(_$ChatModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ChatModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -936,41 +956,48 @@ class __$$ChatModalStateImplCopyWithImpl<$Res>
     Object? loading = null,
     Object? chats = null,
   }) {
-    return _then(_$ChatModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      input: null == input
-          ? _value.input
-          : input // ignore: cast_nullable_to_non_nullable
-              as String,
-      hasMore: null == hasMore
-          ? _value.hasMore
-          : hasMore // ignore: cast_nullable_to_non_nullable
-              as bool,
-      loading: null == loading
-          ? _value.loading
-          : loading // ignore: cast_nullable_to_non_nullable
-              as bool,
-      chats: null == chats
-          ? _value._chats
-          : chats // ignore: cast_nullable_to_non_nullable
-              as List<Chat>,
-    ));
+    return _then(
+      _$ChatModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        input:
+            null == input
+                ? _value.input
+                : input // ignore: cast_nullable_to_non_nullable
+                    as String,
+        hasMore:
+            null == hasMore
+                ? _value.hasMore
+                : hasMore // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        loading:
+            null == loading
+                ? _value.loading
+                : loading // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        chats:
+            null == chats
+                ? _value._chats
+                : chats // ignore: cast_nullable_to_non_nullable
+                    as List<Chat>,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$ChatModalStateImpl implements _ChatModalState {
-  const _$ChatModalStateImpl(
-      {this.initialized = false,
-      this.input = "",
-      this.hasMore = true,
-      this.loading = false,
-      final List<Chat> chats = const []})
-      : _chats = chats;
+  const _$ChatModalStateImpl({
+    this.initialized = false,
+    this.input = "",
+    this.hasMore = true,
+    this.loading = false,
+    final List<Chat> chats = const [],
+  }) : _chats = chats;
 
   @override
   @JsonKey()
@@ -1012,8 +1039,14 @@ class _$ChatModalStateImpl implements _ChatModalState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, initialized, input, hasMore,
-      loading, const DeepCollectionEquality().hash(_chats));
+  int get hashCode => Object.hash(
+    runtimeType,
+    initialized,
+    input,
+    hasMore,
+    loading,
+    const DeepCollectionEquality().hash(_chats),
+  );
 
   /// Create a copy of ChatModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -1022,16 +1055,19 @@ class _$ChatModalStateImpl implements _ChatModalState {
   @pragma('vm:prefer-inline')
   _$$ChatModalStateImplCopyWith<_$ChatModalStateImpl> get copyWith =>
       __$$ChatModalStateImplCopyWithImpl<_$ChatModalStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _ChatModalState implements ChatModalState {
-  const factory _ChatModalState(
-      {final bool initialized,
-      final String input,
-      final bool hasMore,
-      final bool loading,
-      final List<Chat> chats}) = _$ChatModalStateImpl;
+  const factory _ChatModalState({
+    final bool initialized,
+    final String input,
+    final bool hasMore,
+    final bool loading,
+    final List<Chat> chats,
+  }) = _$ChatModalStateImpl;
 
   @override
   bool get initialized;

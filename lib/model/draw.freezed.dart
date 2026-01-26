@@ -12,7 +12,8 @@ part of 'draw.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 Draw _$DrawFromJson(Map<String, dynamic> json) {
   return _Draw.fromJson(json);
@@ -49,13 +50,14 @@ abstract class $DrawCopyWith<$Res> {
   factory $DrawCopyWith(Draw value, $Res Function(Draw) then) =
       _$DrawCopyWithImpl<$Res, Draw>;
   @useResult
-  $Res call(
-      {String id,
-      @StringToIntConverter() @JsonKey(name: "Rate") int rate,
-      @JsonKey(name: "draw_ID") DrawId drawId,
-      @StringToIntConverter() @JsonKey(name: "max") int max,
-      @StringToIntConverter() @JsonKey(name: "mn") int mn,
-      @JsonKey(name: "result") String result});
+  $Res call({
+    String id,
+    @StringToIntConverter() @JsonKey(name: "Rate") int rate,
+    @JsonKey(name: "draw_ID") DrawId drawId,
+    @StringToIntConverter() @JsonKey(name: "max") int max,
+    @StringToIntConverter() @JsonKey(name: "mn") int mn,
+    @JsonKey(name: "result") String result,
+  });
 }
 
 /// @nodoc
@@ -80,49 +82,60 @@ class _$DrawCopyWithImpl<$Res, $Val extends Draw>
     Object? mn = null,
     Object? result = null,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      rate: null == rate
-          ? _value.rate
-          : rate // ignore: cast_nullable_to_non_nullable
-              as int,
-      drawId: null == drawId
-          ? _value.drawId
-          : drawId // ignore: cast_nullable_to_non_nullable
-              as DrawId,
-      max: null == max
-          ? _value.max
-          : max // ignore: cast_nullable_to_non_nullable
-              as int,
-      mn: null == mn
-          ? _value.mn
-          : mn // ignore: cast_nullable_to_non_nullable
-              as int,
-      result: null == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            id:
+                null == id
+                    ? _value.id
+                    : id // ignore: cast_nullable_to_non_nullable
+                        as String,
+            rate:
+                null == rate
+                    ? _value.rate
+                    : rate // ignore: cast_nullable_to_non_nullable
+                        as int,
+            drawId:
+                null == drawId
+                    ? _value.drawId
+                    : drawId // ignore: cast_nullable_to_non_nullable
+                        as DrawId,
+            max:
+                null == max
+                    ? _value.max
+                    : max // ignore: cast_nullable_to_non_nullable
+                        as int,
+            mn:
+                null == mn
+                    ? _value.mn
+                    : mn // ignore: cast_nullable_to_non_nullable
+                        as int,
+            result:
+                null == result
+                    ? _value.result
+                    : result // ignore: cast_nullable_to_non_nullable
+                        as String,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$DrawImplCopyWith<$Res> implements $DrawCopyWith<$Res> {
   factory _$$DrawImplCopyWith(
-          _$DrawImpl value, $Res Function(_$DrawImpl) then) =
-      __$$DrawImplCopyWithImpl<$Res>;
+    _$DrawImpl value,
+    $Res Function(_$DrawImpl) then,
+  ) = __$$DrawImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String id,
-      @StringToIntConverter() @JsonKey(name: "Rate") int rate,
-      @JsonKey(name: "draw_ID") DrawId drawId,
-      @StringToIntConverter() @JsonKey(name: "max") int max,
-      @StringToIntConverter() @JsonKey(name: "mn") int mn,
-      @JsonKey(name: "result") String result});
+  $Res call({
+    String id,
+    @StringToIntConverter() @JsonKey(name: "Rate") int rate,
+    @JsonKey(name: "draw_ID") DrawId drawId,
+    @StringToIntConverter() @JsonKey(name: "max") int max,
+    @StringToIntConverter() @JsonKey(name: "mn") int mn,
+    @JsonKey(name: "result") String result,
+  });
 }
 
 /// @nodoc
@@ -130,7 +143,7 @@ class __$$DrawImplCopyWithImpl<$Res>
     extends _$DrawCopyWithImpl<$Res, _$DrawImpl>
     implements _$$DrawImplCopyWith<$Res> {
   __$$DrawImplCopyWithImpl(_$DrawImpl _value, $Res Function(_$DrawImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of Draw
   /// with the given fields replaced by the non-null parameter values.
@@ -144,46 +157,54 @@ class __$$DrawImplCopyWithImpl<$Res>
     Object? mn = null,
     Object? result = null,
   }) {
-    return _then(_$DrawImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      rate: null == rate
-          ? _value.rate
-          : rate // ignore: cast_nullable_to_non_nullable
-              as int,
-      drawId: null == drawId
-          ? _value.drawId
-          : drawId // ignore: cast_nullable_to_non_nullable
-              as DrawId,
-      max: null == max
-          ? _value.max
-          : max // ignore: cast_nullable_to_non_nullable
-              as int,
-      mn: null == mn
-          ? _value.mn
-          : mn // ignore: cast_nullable_to_non_nullable
-              as int,
-      result: null == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+    return _then(
+      _$DrawImpl(
+        id:
+            null == id
+                ? _value.id
+                : id // ignore: cast_nullable_to_non_nullable
+                    as String,
+        rate:
+            null == rate
+                ? _value.rate
+                : rate // ignore: cast_nullable_to_non_nullable
+                    as int,
+        drawId:
+            null == drawId
+                ? _value.drawId
+                : drawId // ignore: cast_nullable_to_non_nullable
+                    as DrawId,
+        max:
+            null == max
+                ? _value.max
+                : max // ignore: cast_nullable_to_non_nullable
+                    as int,
+        mn:
+            null == mn
+                ? _value.mn
+                : mn // ignore: cast_nullable_to_non_nullable
+                    as int,
+        result:
+            null == result
+                ? _value.result
+                : result // ignore: cast_nullable_to_non_nullable
+                    as String,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$DrawImpl extends _Draw {
-  const _$DrawImpl(
-      {required this.id,
-      @StringToIntConverter() @JsonKey(name: "Rate") required this.rate,
-      @JsonKey(name: "draw_ID") required this.drawId,
-      @StringToIntConverter() @JsonKey(name: "max") required this.max,
-      @StringToIntConverter() @JsonKey(name: "mn") required this.mn,
-      @JsonKey(name: "result") required this.result})
-      : super._();
+  const _$DrawImpl({
+    required this.id,
+    @StringToIntConverter() @JsonKey(name: "Rate") required this.rate,
+    @JsonKey(name: "draw_ID") required this.drawId,
+    @StringToIntConverter() @JsonKey(name: "max") required this.max,
+    @StringToIntConverter() @JsonKey(name: "mn") required this.mn,
+    @JsonKey(name: "result") required this.result,
+  }) : super._();
 
   factory _$DrawImpl.fromJson(Map<String, dynamic> json) =>
       _$$DrawImplFromJson(json);
@@ -242,20 +263,19 @@ class _$DrawImpl extends _Draw {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DrawImplToJson(
-      this,
-    );
+    return _$$DrawImplToJson(this);
   }
 }
 
 abstract class _Draw extends Draw {
-  const factory _Draw(
-      {required final String id,
-      @StringToIntConverter() @JsonKey(name: "Rate") required final int rate,
-      @JsonKey(name: "draw_ID") required final DrawId drawId,
-      @StringToIntConverter() @JsonKey(name: "max") required final int max,
-      @StringToIntConverter() @JsonKey(name: "mn") required final int mn,
-      @JsonKey(name: "result") required final String result}) = _$DrawImpl;
+  const factory _Draw({
+    required final String id,
+    @StringToIntConverter() @JsonKey(name: "Rate") required final int rate,
+    @JsonKey(name: "draw_ID") required final DrawId drawId,
+    @StringToIntConverter() @JsonKey(name: "max") required final int max,
+    @StringToIntConverter() @JsonKey(name: "mn") required final int mn,
+    @JsonKey(name: "result") required final String result,
+  }) = _$DrawImpl;
   const _Draw._() : super._();
 
   factory _Draw.fromJson(Map<String, dynamic> json) = _$DrawImpl.fromJson;

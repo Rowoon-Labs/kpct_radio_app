@@ -12,49 +12,43 @@ part of 'user_info_pod_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$UserInfoPodEvent {
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() mock,
-  }) =>
+  TResult when<TResult extends Object?>({required TResult Function() mock}) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? mock,
-  }) =>
+  TResult? whenOrNull<TResult extends Object?>({TResult? Function()? mock}) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? mock,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_mock value) mock,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_mock value)? mock,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_mock value)? mock,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $UserInfoPodEventCopyWith<$Res> {
   factory $UserInfoPodEventCopyWith(
-          UserInfoPodEvent value, $Res Function(UserInfoPodEvent) then) =
-      _$UserInfoPodEventCopyWithImpl<$Res, UserInfoPodEvent>;
+    UserInfoPodEvent value,
+    $Res Function(UserInfoPodEvent) then,
+  ) = _$UserInfoPodEventCopyWithImpl<$Res, UserInfoPodEvent>;
 }
 
 /// @nodoc
@@ -74,8 +68,9 @@ class _$UserInfoPodEventCopyWithImpl<$Res, $Val extends UserInfoPodEvent>
 /// @nodoc
 abstract class _$$mockImplCopyWith<$Res> {
   factory _$$mockImplCopyWith(
-          _$mockImpl value, $Res Function(_$mockImpl) then) =
-      __$$mockImplCopyWithImpl<$Res>;
+    _$mockImpl value,
+    $Res Function(_$mockImpl) then,
+  ) = __$$mockImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -83,7 +78,7 @@ class __$$mockImplCopyWithImpl<$Res>
     extends _$UserInfoPodEventCopyWithImpl<$Res, _$mockImpl>
     implements _$$mockImplCopyWith<$Res> {
   __$$mockImplCopyWithImpl(_$mockImpl _value, $Res Function(_$mockImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of UserInfoPodEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -110,17 +105,13 @@ class _$mockImpl implements _mock {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() mock,
-  }) {
+  TResult when<TResult extends Object?>({required TResult Function() mock}) {
     return mock();
   }
 
   @override
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? mock,
-  }) {
+  TResult? whenOrNull<TResult extends Object?>({TResult? Function()? mock}) {
     return mock?.call();
   }
 
@@ -175,8 +166,9 @@ mixin _$UserInfoPodState {}
 /// @nodoc
 abstract class $UserInfoPodStateCopyWith<$Res> {
   factory $UserInfoPodStateCopyWith(
-          UserInfoPodState value, $Res Function(UserInfoPodState) then) =
-      _$UserInfoPodStateCopyWithImpl<$Res, UserInfoPodState>;
+    UserInfoPodState value,
+    $Res Function(UserInfoPodState) then,
+  ) = _$UserInfoPodStateCopyWithImpl<$Res, UserInfoPodState>;
 }
 
 /// @nodoc
@@ -195,18 +187,20 @@ class _$UserInfoPodStateCopyWithImpl<$Res, $Val extends UserInfoPodState>
 
 /// @nodoc
 abstract class _$$UserInfoPodStateImplCopyWith<$Res> {
-  factory _$$UserInfoPodStateImplCopyWith(_$UserInfoPodStateImpl value,
-          $Res Function(_$UserInfoPodStateImpl) then) =
-      __$$UserInfoPodStateImplCopyWithImpl<$Res>;
+  factory _$$UserInfoPodStateImplCopyWith(
+    _$UserInfoPodStateImpl value,
+    $Res Function(_$UserInfoPodStateImpl) then,
+  ) = __$$UserInfoPodStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$UserInfoPodStateImplCopyWithImpl<$Res>
     extends _$UserInfoPodStateCopyWithImpl<$Res, _$UserInfoPodStateImpl>
     implements _$$UserInfoPodStateImplCopyWith<$Res> {
-  __$$UserInfoPodStateImplCopyWithImpl(_$UserInfoPodStateImpl _value,
-      $Res Function(_$UserInfoPodStateImpl) _then)
-      : super(_value, _then);
+  __$$UserInfoPodStateImplCopyWithImpl(
+    _$UserInfoPodStateImpl _value,
+    $Res Function(_$UserInfoPodStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of UserInfoPodState
   /// with the given fields replaced by the non-null parameter values.

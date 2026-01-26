@@ -7,13 +7,14 @@ part of 'chat.dart';
 // **************************************************************************
 
 _$ChatImpl _$$ChatImplFromJson(Map<String, dynamic> json) => _$ChatImpl(
-      id: json['id'] as String,
-      uid: json['uid'] as String,
-      nickName: json['nickName'] as String,
-      content: json['content'] as String,
-      createdAt:
-          const TimestampConverter().fromJson(json['createdAt'] as Timestamp),
-    );
+  id: json['id'] as String,
+  uid: json['uid'] as String,
+  nickName: json['nickName'] as String,
+  content: json['content'] as String,
+  createdAt: const TimestampConverter().fromJson(
+    json['createdAt'] as Timestamp,
+  ),
+);
 
 Map<String, dynamic> _$$ChatImplToJson(_$ChatImpl instance) =>
     <String, dynamic>{

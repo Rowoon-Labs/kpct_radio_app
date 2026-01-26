@@ -127,7 +127,7 @@ class _ShopPage extends StatelessWidget {
                                                   width: converter.w(66),
                                                   height: converter.h(66),
                                                   child: AssetGenImage(
-                                                    "assets/item/${shopItem.icon}.png",
+                                                    "assets/item/${shopItem.icon ?? ""}.png",
                                                   ).image(
                                                     width: converter.w(66),
                                                     height: converter.h(66),
@@ -143,7 +143,7 @@ class _ShopPage extends StatelessWidget {
                                                     alignment:
                                                         Alignment.centerLeft,
                                                     child: Text(
-                                                      shopItem.name,
+                                                      shopItem.name ?? "",
                                                       maxLines: 1,
                                                       softWrap: false,
                                                       textAlign:
@@ -175,7 +175,7 @@ class _ShopPage extends StatelessWidget {
                                                     alignment:
                                                         Alignment.centerLeft,
                                                     child: Text(
-                                                      shopItem.desc +
+                                                      (shopItem.desc ?? "") +
                                                           (adjustedItem
                                                                       .remainEffectiveDuration !=
                                                                   null

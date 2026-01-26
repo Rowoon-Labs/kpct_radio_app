@@ -12,7 +12,8 @@ part of 'gear_page_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$GearPageEvent {
@@ -27,8 +28,7 @@ mixin _$GearPageEvent {
     required TResult Function() releaseSocket,
     required TResult Function(String equipmentId) install,
     required TResult Function(String equipmentId) uninstall,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
@@ -40,8 +40,7 @@ mixin _$GearPageEvent {
     TResult? Function()? releaseSocket,
     TResult? Function(String equipmentId)? install,
     TResult? Function(String equipmentId)? uninstall,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
@@ -54,8 +53,7 @@ mixin _$GearPageEvent {
     TResult Function(String equipmentId)? install,
     TResult Function(String equipmentId)? uninstall,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
@@ -67,8 +65,7 @@ mixin _$GearPageEvent {
     required TResult Function(_releaseSocket value) releaseSocket,
     required TResult Function(_mount value) install,
     required TResult Function(_unmount value) uninstall,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
@@ -80,8 +77,7 @@ mixin _$GearPageEvent {
     TResult? Function(_releaseSocket value)? releaseSocket,
     TResult? Function(_mount value)? install,
     TResult? Function(_unmount value)? uninstall,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
@@ -94,15 +90,15 @@ mixin _$GearPageEvent {
     TResult Function(_mount value)? install,
     TResult Function(_unmount value)? uninstall,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $GearPageEventCopyWith<$Res> {
   factory $GearPageEventCopyWith(
-          GearPageEvent value, $Res Function(GearPageEvent) then) =
-      _$GearPageEventCopyWithImpl<$Res, GearPageEvent>;
+    GearPageEvent value,
+    $Res Function(GearPageEvent) then,
+  ) = _$GearPageEventCopyWithImpl<$Res, GearPageEvent>;
 }
 
 /// @nodoc
@@ -122,8 +118,9 @@ class _$GearPageEventCopyWithImpl<$Res, $Val extends GearPageEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -131,8 +128,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -269,8 +267,9 @@ abstract class _initialize implements GearPageEvent {
 /// @nodoc
 abstract class _$$tabPressedImplCopyWith<$Res> {
   factory _$$tabPressedImplCopyWith(
-          _$tabPressedImpl value, $Res Function(_$tabPressedImpl) then) =
-      __$$tabPressedImplCopyWithImpl<$Res>;
+    _$tabPressedImpl value,
+    $Res Function(_$tabPressedImpl) then,
+  ) = __$$tabPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({GearCategory gearCategory});
 }
@@ -280,22 +279,24 @@ class __$$tabPressedImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$tabPressedImpl>
     implements _$$tabPressedImplCopyWith<$Res> {
   __$$tabPressedImplCopyWithImpl(
-      _$tabPressedImpl _value, $Res Function(_$tabPressedImpl) _then)
-      : super(_value, _then);
+    _$tabPressedImpl _value,
+    $Res Function(_$tabPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? gearCategory = null,
-  }) {
-    return _then(_$tabPressedImpl(
-      gearCategory: null == gearCategory
-          ? _value.gearCategory
-          : gearCategory // ignore: cast_nullable_to_non_nullable
-              as GearCategory,
-    ));
+  $Res call({Object? gearCategory = null}) {
+    return _then(
+      _$tabPressedImpl(
+        gearCategory:
+            null == gearCategory
+                ? _value.gearCategory
+                : gearCategory // ignore: cast_nullable_to_non_nullable
+                    as GearCategory,
+      ),
+    );
   }
 }
 
@@ -453,8 +454,9 @@ abstract class _tabPressed implements GearPageEvent {
 /// @nodoc
 abstract class _$$gemPressedImplCopyWith<$Res> {
   factory _$$gemPressedImplCopyWith(
-          _$gemPressedImpl value, $Res Function(_$gemPressedImpl) then) =
-      __$$gemPressedImplCopyWithImpl<$Res>;
+    _$gemPressedImpl value,
+    $Res Function(_$gemPressedImpl) then,
+  ) = __$$gemPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Pack pack});
 
@@ -466,22 +468,24 @@ class __$$gemPressedImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$gemPressedImpl>
     implements _$$gemPressedImplCopyWith<$Res> {
   __$$gemPressedImplCopyWithImpl(
-      _$gemPressedImpl _value, $Res Function(_$gemPressedImpl) _then)
-      : super(_value, _then);
+    _$gemPressedImpl _value,
+    $Res Function(_$gemPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? pack = null,
-  }) {
-    return _then(_$gemPressedImpl(
-      pack: null == pack
-          ? _value.pack
-          : pack // ignore: cast_nullable_to_non_nullable
-              as Pack,
-    ));
+  $Res call({Object? pack = null}) {
+    return _then(
+      _$gemPressedImpl(
+        pack:
+            null == pack
+                ? _value.pack
+                : pack // ignore: cast_nullable_to_non_nullable
+                    as Pack,
+      ),
+    );
   }
 
   /// Create a copy of GearPageEvent
@@ -646,9 +650,10 @@ abstract class _gemPressed implements GearPageEvent {
 
 /// @nodoc
 abstract class _$$elementPressedImplCopyWith<$Res> {
-  factory _$$elementPressedImplCopyWith(_$elementPressedImpl value,
-          $Res Function(_$elementPressedImpl) then) =
-      __$$elementPressedImplCopyWithImpl<$Res>;
+  factory _$$elementPressedImplCopyWith(
+    _$elementPressedImpl value,
+    $Res Function(_$elementPressedImpl) then,
+  ) = __$$elementPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Pack pack});
 
@@ -660,22 +665,24 @@ class __$$elementPressedImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$elementPressedImpl>
     implements _$$elementPressedImplCopyWith<$Res> {
   __$$elementPressedImplCopyWithImpl(
-      _$elementPressedImpl _value, $Res Function(_$elementPressedImpl) _then)
-      : super(_value, _then);
+    _$elementPressedImpl _value,
+    $Res Function(_$elementPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? pack = null,
-  }) {
-    return _then(_$elementPressedImpl(
-      pack: null == pack
-          ? _value.pack
-          : pack // ignore: cast_nullable_to_non_nullable
-              as Pack,
-    ));
+  $Res call({Object? pack = null}) {
+    return _then(
+      _$elementPressedImpl(
+        pack:
+            null == pack
+                ? _value.pack
+                : pack // ignore: cast_nullable_to_non_nullable
+                    as Pack,
+      ),
+    );
   }
 
   /// Create a copy of GearPageEvent
@@ -720,7 +727,9 @@ class _$elementPressedImpl implements _elementPressed {
   @pragma('vm:prefer-inline')
   _$$elementPressedImplCopyWith<_$elementPressedImpl> get copyWith =>
       __$$elementPressedImplCopyWithImpl<_$elementPressedImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -843,8 +852,9 @@ abstract class _elementPressed implements GearPageEvent {
 /// @nodoc
 abstract class _$$onKitsChangesImplCopyWith<$Res> {
   factory _$$onKitsChangesImplCopyWith(
-          _$onKitsChangesImpl value, $Res Function(_$onKitsChangesImpl) then) =
-      __$$onKitsChangesImplCopyWithImpl<$Res>;
+    _$onKitsChangesImpl value,
+    $Res Function(_$onKitsChangesImpl) then,
+  ) = __$$onKitsChangesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Pack> packs});
 }
@@ -854,22 +864,24 @@ class __$$onKitsChangesImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$onKitsChangesImpl>
     implements _$$onKitsChangesImplCopyWith<$Res> {
   __$$onKitsChangesImplCopyWithImpl(
-      _$onKitsChangesImpl _value, $Res Function(_$onKitsChangesImpl) _then)
-      : super(_value, _then);
+    _$onKitsChangesImpl _value,
+    $Res Function(_$onKitsChangesImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? packs = null,
-  }) {
-    return _then(_$onKitsChangesImpl(
-      packs: null == packs
-          ? _value._packs
-          : packs // ignore: cast_nullable_to_non_nullable
-              as List<Pack>,
-    ));
+  $Res call({Object? packs = null}) {
+    return _then(
+      _$onKitsChangesImpl(
+        packs:
+            null == packs
+                ? _value._packs
+                : packs // ignore: cast_nullable_to_non_nullable
+                    as List<Pack>,
+      ),
+    );
   }
 }
 
@@ -1032,8 +1044,9 @@ abstract class _onKitsChanges implements GearPageEvent {
 /// @nodoc
 abstract class _$$socketPressedImplCopyWith<$Res> {
   factory _$$socketPressedImplCopyWith(
-          _$socketPressedImpl value, $Res Function(_$socketPressedImpl) then) =
-      __$$socketPressedImplCopyWithImpl<$Res>;
+    _$socketPressedImpl value,
+    $Res Function(_$socketPressedImpl) then,
+  ) = __$$socketPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int index});
 }
@@ -1043,22 +1056,24 @@ class __$$socketPressedImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$socketPressedImpl>
     implements _$$socketPressedImplCopyWith<$Res> {
   __$$socketPressedImplCopyWithImpl(
-      _$socketPressedImpl _value, $Res Function(_$socketPressedImpl) _then)
-      : super(_value, _then);
+    _$socketPressedImpl _value,
+    $Res Function(_$socketPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? index = null,
-  }) {
-    return _then(_$socketPressedImpl(
-      index: null == index
-          ? _value.index
-          : index // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+  $Res call({Object? index = null}) {
+    return _then(
+      _$socketPressedImpl(
+        index:
+            null == index
+                ? _value.index
+                : index // ignore: cast_nullable_to_non_nullable
+                    as int,
+      ),
+    );
   }
 }
 
@@ -1215,8 +1230,9 @@ abstract class _socketPressed implements GearPageEvent {
 /// @nodoc
 abstract class _$$releaseSocketImplCopyWith<$Res> {
   factory _$$releaseSocketImplCopyWith(
-          _$releaseSocketImpl value, $Res Function(_$releaseSocketImpl) then) =
-      __$$releaseSocketImplCopyWithImpl<$Res>;
+    _$releaseSocketImpl value,
+    $Res Function(_$releaseSocketImpl) then,
+  ) = __$$releaseSocketImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -1224,8 +1240,9 @@ class __$$releaseSocketImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$releaseSocketImpl>
     implements _$$releaseSocketImplCopyWith<$Res> {
   __$$releaseSocketImplCopyWithImpl(
-      _$releaseSocketImpl _value, $Res Function(_$releaseSocketImpl) _then)
-      : super(_value, _then);
+    _$releaseSocketImpl _value,
+    $Res Function(_$releaseSocketImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -1362,8 +1379,9 @@ abstract class _releaseSocket implements GearPageEvent {
 /// @nodoc
 abstract class _$$mountImplCopyWith<$Res> {
   factory _$$mountImplCopyWith(
-          _$mountImpl value, $Res Function(_$mountImpl) then) =
-      __$$mountImplCopyWithImpl<$Res>;
+    _$mountImpl value,
+    $Res Function(_$mountImpl) then,
+  ) = __$$mountImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String equipmentId});
 }
@@ -1373,22 +1391,24 @@ class __$$mountImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$mountImpl>
     implements _$$mountImplCopyWith<$Res> {
   __$$mountImplCopyWithImpl(
-      _$mountImpl _value, $Res Function(_$mountImpl) _then)
-      : super(_value, _then);
+    _$mountImpl _value,
+    $Res Function(_$mountImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? equipmentId = null,
-  }) {
-    return _then(_$mountImpl(
-      equipmentId: null == equipmentId
-          ? _value.equipmentId
-          : equipmentId // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+  $Res call({Object? equipmentId = null}) {
+    return _then(
+      _$mountImpl(
+        equipmentId:
+            null == equipmentId
+                ? _value.equipmentId
+                : equipmentId // ignore: cast_nullable_to_non_nullable
+                    as String,
+      ),
+    );
   }
 }
 
@@ -1545,8 +1565,9 @@ abstract class _mount implements GearPageEvent {
 /// @nodoc
 abstract class _$$unmountImplCopyWith<$Res> {
   factory _$$unmountImplCopyWith(
-          _$unmountImpl value, $Res Function(_$unmountImpl) then) =
-      __$$unmountImplCopyWithImpl<$Res>;
+    _$unmountImpl value,
+    $Res Function(_$unmountImpl) then,
+  ) = __$$unmountImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String equipmentId});
 }
@@ -1556,22 +1577,24 @@ class __$$unmountImplCopyWithImpl<$Res>
     extends _$GearPageEventCopyWithImpl<$Res, _$unmountImpl>
     implements _$$unmountImplCopyWith<$Res> {
   __$$unmountImplCopyWithImpl(
-      _$unmountImpl _value, $Res Function(_$unmountImpl) _then)
-      : super(_value, _then);
+    _$unmountImpl _value,
+    $Res Function(_$unmountImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? equipmentId = null,
-  }) {
-    return _then(_$unmountImpl(
-      equipmentId: null == equipmentId
-          ? _value.equipmentId
-          : equipmentId // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+  $Res call({Object? equipmentId = null}) {
+    return _then(
+      _$unmountImpl(
+        equipmentId:
+            null == equipmentId
+                ? _value.equipmentId
+                : equipmentId // ignore: cast_nullable_to_non_nullable
+                    as String,
+      ),
+    );
   }
 }
 
@@ -1743,15 +1766,17 @@ mixin _$GearPageState {
 /// @nodoc
 abstract class $GearPageStateCopyWith<$Res> {
   factory $GearPageStateCopyWith(
-          GearPageState value, $Res Function(GearPageState) then) =
-      _$GearPageStateCopyWithImpl<$Res, GearPageState>;
+    GearPageState value,
+    $Res Function(GearPageState) then,
+  ) = _$GearPageStateCopyWithImpl<$Res, GearPageState>;
   @useResult
-  $Res call(
-      {GearCategory selectedGearCategory,
-      int? selectedSocketIndex,
-      Pack? selectedGemPack,
-      Pack? selectedPack,
-      List<Pack> packs});
+  $Res call({
+    GearCategory selectedGearCategory,
+    int? selectedSocketIndex,
+    Pack? selectedGemPack,
+    Pack? selectedPack,
+    List<Pack> packs,
+  });
 
   $PackCopyWith<$Res>? get selectedGemPack;
   $PackCopyWith<$Res>? get selectedPack;
@@ -1778,28 +1803,36 @@ class _$GearPageStateCopyWithImpl<$Res, $Val extends GearPageState>
     Object? selectedPack = freezed,
     Object? packs = null,
   }) {
-    return _then(_value.copyWith(
-      selectedGearCategory: null == selectedGearCategory
-          ? _value.selectedGearCategory
-          : selectedGearCategory // ignore: cast_nullable_to_non_nullable
-              as GearCategory,
-      selectedSocketIndex: freezed == selectedSocketIndex
-          ? _value.selectedSocketIndex
-          : selectedSocketIndex // ignore: cast_nullable_to_non_nullable
-              as int?,
-      selectedGemPack: freezed == selectedGemPack
-          ? _value.selectedGemPack
-          : selectedGemPack // ignore: cast_nullable_to_non_nullable
-              as Pack?,
-      selectedPack: freezed == selectedPack
-          ? _value.selectedPack
-          : selectedPack // ignore: cast_nullable_to_non_nullable
-              as Pack?,
-      packs: null == packs
-          ? _value.packs
-          : packs // ignore: cast_nullable_to_non_nullable
-              as List<Pack>,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            selectedGearCategory:
+                null == selectedGearCategory
+                    ? _value.selectedGearCategory
+                    : selectedGearCategory // ignore: cast_nullable_to_non_nullable
+                        as GearCategory,
+            selectedSocketIndex:
+                freezed == selectedSocketIndex
+                    ? _value.selectedSocketIndex
+                    : selectedSocketIndex // ignore: cast_nullable_to_non_nullable
+                        as int?,
+            selectedGemPack:
+                freezed == selectedGemPack
+                    ? _value.selectedGemPack
+                    : selectedGemPack // ignore: cast_nullable_to_non_nullable
+                        as Pack?,
+            selectedPack:
+                freezed == selectedPack
+                    ? _value.selectedPack
+                    : selectedPack // ignore: cast_nullable_to_non_nullable
+                        as Pack?,
+            packs:
+                null == packs
+                    ? _value.packs
+                    : packs // ignore: cast_nullable_to_non_nullable
+                        as List<Pack>,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of GearPageState
@@ -1835,16 +1868,18 @@ class _$GearPageStateCopyWithImpl<$Res, $Val extends GearPageState>
 abstract class _$$GearPageStateImplCopyWith<$Res>
     implements $GearPageStateCopyWith<$Res> {
   factory _$$GearPageStateImplCopyWith(
-          _$GearPageStateImpl value, $Res Function(_$GearPageStateImpl) then) =
-      __$$GearPageStateImplCopyWithImpl<$Res>;
+    _$GearPageStateImpl value,
+    $Res Function(_$GearPageStateImpl) then,
+  ) = __$$GearPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {GearCategory selectedGearCategory,
-      int? selectedSocketIndex,
-      Pack? selectedGemPack,
-      Pack? selectedPack,
-      List<Pack> packs});
+  $Res call({
+    GearCategory selectedGearCategory,
+    int? selectedSocketIndex,
+    Pack? selectedGemPack,
+    Pack? selectedPack,
+    List<Pack> packs,
+  });
 
   @override
   $PackCopyWith<$Res>? get selectedGemPack;
@@ -1857,8 +1892,9 @@ class __$$GearPageStateImplCopyWithImpl<$Res>
     extends _$GearPageStateCopyWithImpl<$Res, _$GearPageStateImpl>
     implements _$$GearPageStateImplCopyWith<$Res> {
   __$$GearPageStateImplCopyWithImpl(
-      _$GearPageStateImpl _value, $Res Function(_$GearPageStateImpl) _then)
-      : super(_value, _then);
+    _$GearPageStateImpl _value,
+    $Res Function(_$GearPageStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of GearPageState
   /// with the given fields replaced by the non-null parameter values.
@@ -1871,41 +1907,48 @@ class __$$GearPageStateImplCopyWithImpl<$Res>
     Object? selectedPack = freezed,
     Object? packs = null,
   }) {
-    return _then(_$GearPageStateImpl(
-      selectedGearCategory: null == selectedGearCategory
-          ? _value.selectedGearCategory
-          : selectedGearCategory // ignore: cast_nullable_to_non_nullable
-              as GearCategory,
-      selectedSocketIndex: freezed == selectedSocketIndex
-          ? _value.selectedSocketIndex
-          : selectedSocketIndex // ignore: cast_nullable_to_non_nullable
-              as int?,
-      selectedGemPack: freezed == selectedGemPack
-          ? _value.selectedGemPack
-          : selectedGemPack // ignore: cast_nullable_to_non_nullable
-              as Pack?,
-      selectedPack: freezed == selectedPack
-          ? _value.selectedPack
-          : selectedPack // ignore: cast_nullable_to_non_nullable
-              as Pack?,
-      packs: null == packs
-          ? _value._packs
-          : packs // ignore: cast_nullable_to_non_nullable
-              as List<Pack>,
-    ));
+    return _then(
+      _$GearPageStateImpl(
+        selectedGearCategory:
+            null == selectedGearCategory
+                ? _value.selectedGearCategory
+                : selectedGearCategory // ignore: cast_nullable_to_non_nullable
+                    as GearCategory,
+        selectedSocketIndex:
+            freezed == selectedSocketIndex
+                ? _value.selectedSocketIndex
+                : selectedSocketIndex // ignore: cast_nullable_to_non_nullable
+                    as int?,
+        selectedGemPack:
+            freezed == selectedGemPack
+                ? _value.selectedGemPack
+                : selectedGemPack // ignore: cast_nullable_to_non_nullable
+                    as Pack?,
+        selectedPack:
+            freezed == selectedPack
+                ? _value.selectedPack
+                : selectedPack // ignore: cast_nullable_to_non_nullable
+                    as Pack?,
+        packs:
+            null == packs
+                ? _value._packs
+                : packs // ignore: cast_nullable_to_non_nullable
+                    as List<Pack>,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$GearPageStateImpl implements _GearPageState {
-  const _$GearPageStateImpl(
-      {this.selectedGearCategory = GearCategory.radioSkin,
-      this.selectedSocketIndex = null,
-      this.selectedGemPack = null,
-      this.selectedPack = null,
-      final List<Pack> packs = const []})
-      : _packs = packs;
+  const _$GearPageStateImpl({
+    this.selectedGearCategory = GearCategory.radioSkin,
+    this.selectedSocketIndex = null,
+    this.selectedGemPack = null,
+    this.selectedPack = null,
+    final List<Pack> packs = const [],
+  }) : _packs = packs;
 
   @override
   @JsonKey()
@@ -1951,12 +1994,13 @@ class _$GearPageStateImpl implements _GearPageState {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      selectedGearCategory,
-      selectedSocketIndex,
-      selectedGemPack,
-      selectedPack,
-      const DeepCollectionEquality().hash(_packs));
+    runtimeType,
+    selectedGearCategory,
+    selectedSocketIndex,
+    selectedGemPack,
+    selectedPack,
+    const DeepCollectionEquality().hash(_packs),
+  );
 
   /// Create a copy of GearPageState
   /// with the given fields replaced by the non-null parameter values.
@@ -1968,12 +2012,13 @@ class _$GearPageStateImpl implements _GearPageState {
 }
 
 abstract class _GearPageState implements GearPageState {
-  const factory _GearPageState(
-      {final GearCategory selectedGearCategory,
-      final int? selectedSocketIndex,
-      final Pack? selectedGemPack,
-      final Pack? selectedPack,
-      final List<Pack> packs}) = _$GearPageStateImpl;
+  const factory _GearPageState({
+    final GearCategory selectedGearCategory,
+    final int? selectedSocketIndex,
+    final Pack? selectedGemPack,
+    final Pack? selectedPack,
+    final List<Pack> packs,
+  }) = _$GearPageStateImpl;
 
   @override
   GearCategory get selectedGearCategory;

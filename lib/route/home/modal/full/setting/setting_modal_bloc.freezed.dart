@@ -12,49 +12,45 @@ part of 'setting_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$SettingModalEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SettingModalEventCopyWith<$Res> {
   factory $SettingModalEventCopyWith(
-          SettingModalEvent value, $Res Function(SettingModalEvent) then) =
-      _$SettingModalEventCopyWithImpl<$Res, SettingModalEvent>;
+    SettingModalEvent value,
+    $Res Function(SettingModalEvent) then,
+  ) = _$SettingModalEventCopyWithImpl<$Res, SettingModalEvent>;
 }
 
 /// @nodoc
@@ -74,8 +70,9 @@ class _$SettingModalEventCopyWithImpl<$Res, $Val extends SettingModalEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -83,8 +80,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$SettingModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SettingModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -184,8 +182,9 @@ mixin _$SettingModalState {
 /// @nodoc
 abstract class $SettingModalStateCopyWith<$Res> {
   factory $SettingModalStateCopyWith(
-          SettingModalState value, $Res Function(SettingModalState) then) =
-      _$SettingModalStateCopyWithImpl<$Res, SettingModalState>;
+    SettingModalState value,
+    $Res Function(SettingModalState) then,
+  ) = _$SettingModalStateCopyWithImpl<$Res, SettingModalState>;
   @useResult
   $Res call({bool initialized});
 }
@@ -204,24 +203,27 @@ class _$SettingModalStateCopyWithImpl<$Res, $Val extends SettingModalState>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$SettingModalStateImplCopyWith<$Res>
     implements $SettingModalStateCopyWith<$Res> {
-  factory _$$SettingModalStateImplCopyWith(_$SettingModalStateImpl value,
-          $Res Function(_$SettingModalStateImpl) then) =
-      __$$SettingModalStateImplCopyWithImpl<$Res>;
+  factory _$$SettingModalStateImplCopyWith(
+    _$SettingModalStateImpl value,
+    $Res Function(_$SettingModalStateImpl) then,
+  ) = __$$SettingModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool initialized});
@@ -231,23 +233,25 @@ abstract class _$$SettingModalStateImplCopyWith<$Res>
 class __$$SettingModalStateImplCopyWithImpl<$Res>
     extends _$SettingModalStateCopyWithImpl<$Res, _$SettingModalStateImpl>
     implements _$$SettingModalStateImplCopyWith<$Res> {
-  __$$SettingModalStateImplCopyWithImpl(_$SettingModalStateImpl _value,
-      $Res Function(_$SettingModalStateImpl) _then)
-      : super(_value, _then);
+  __$$SettingModalStateImplCopyWithImpl(
+    _$SettingModalStateImpl _value,
+    $Res Function(_$SettingModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SettingModalState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_$SettingModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _$SettingModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+      ),
+    );
   }
 }
 
@@ -284,7 +288,9 @@ class _$SettingModalStateImpl implements _SettingModalState {
   @pragma('vm:prefer-inline')
   _$$SettingModalStateImplCopyWith<_$SettingModalStateImpl> get copyWith =>
       __$$SettingModalStateImplCopyWithImpl<_$SettingModalStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _SettingModalState implements SettingModalState {

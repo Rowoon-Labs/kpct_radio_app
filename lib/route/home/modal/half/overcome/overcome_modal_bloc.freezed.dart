@@ -12,7 +12,8 @@ part of 'overcome_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$OvercomeModalEvent {
@@ -21,52 +22,47 @@ mixin _$OvercomeModalEvent {
     required TResult Function() initialize,
     required TResult Function(int nextLevel) process,
     required TResult Function() onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(int nextLevel)? process,
     TResult? Function()? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(int nextLevel)? process,
     TResult Function()? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
     required TResult Function(_process value) process,
     required TResult Function(_onTick value) onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_process value)? process,
     TResult? Function(_onTick value)? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     TResult Function(_process value)? process,
     TResult Function(_onTick value)? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $OvercomeModalEventCopyWith<$Res> {
   factory $OvercomeModalEventCopyWith(
-          OvercomeModalEvent value, $Res Function(OvercomeModalEvent) then) =
-      _$OvercomeModalEventCopyWithImpl<$Res, OvercomeModalEvent>;
+    OvercomeModalEvent value,
+    $Res Function(OvercomeModalEvent) then,
+  ) = _$OvercomeModalEventCopyWithImpl<$Res, OvercomeModalEvent>;
 }
 
 /// @nodoc
@@ -86,8 +82,9 @@ class _$OvercomeModalEventCopyWithImpl<$Res, $Val extends OvercomeModalEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -95,8 +92,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$OvercomeModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of OvercomeModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -197,8 +195,9 @@ abstract class _initialize implements OvercomeModalEvent {
 /// @nodoc
 abstract class _$$processImplCopyWith<$Res> {
   factory _$$processImplCopyWith(
-          _$processImpl value, $Res Function(_$processImpl) then) =
-      __$$processImplCopyWithImpl<$Res>;
+    _$processImpl value,
+    $Res Function(_$processImpl) then,
+  ) = __$$processImplCopyWithImpl<$Res>;
   @useResult
   $Res call({int nextLevel});
 }
@@ -208,22 +207,24 @@ class __$$processImplCopyWithImpl<$Res>
     extends _$OvercomeModalEventCopyWithImpl<$Res, _$processImpl>
     implements _$$processImplCopyWith<$Res> {
   __$$processImplCopyWithImpl(
-      _$processImpl _value, $Res Function(_$processImpl) _then)
-      : super(_value, _then);
+    _$processImpl _value,
+    $Res Function(_$processImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of OvercomeModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? nextLevel = null,
-  }) {
-    return _then(_$processImpl(
-      nextLevel: null == nextLevel
-          ? _value.nextLevel
-          : nextLevel // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+  $Res call({Object? nextLevel = null}) {
+    return _then(
+      _$processImpl(
+        nextLevel:
+            null == nextLevel
+                ? _value.nextLevel
+                : nextLevel // ignore: cast_nullable_to_non_nullable
+                    as int,
+      ),
+    );
   }
 }
 
@@ -344,8 +345,9 @@ abstract class _process implements OvercomeModalEvent {
 /// @nodoc
 abstract class _$$onTickImplCopyWith<$Res> {
   factory _$$onTickImplCopyWith(
-          _$onTickImpl value, $Res Function(_$onTickImpl) then) =
-      __$$onTickImplCopyWithImpl<$Res>;
+    _$onTickImpl value,
+    $Res Function(_$onTickImpl) then,
+  ) = __$$onTickImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -353,8 +355,9 @@ class __$$onTickImplCopyWithImpl<$Res>
     extends _$OvercomeModalEventCopyWithImpl<$Res, _$onTickImpl>
     implements _$$onTickImplCopyWith<$Res> {
   __$$onTickImplCopyWithImpl(
-      _$onTickImpl _value, $Res Function(_$onTickImpl) _then)
-      : super(_value, _then);
+    _$onTickImpl _value,
+    $Res Function(_$onTickImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of OvercomeModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -469,14 +472,16 @@ mixin _$OvercomeModalState {
 /// @nodoc
 abstract class $OvercomeModalStateCopyWith<$Res> {
   factory $OvercomeModalStateCopyWith(
-          OvercomeModalState value, $Res Function(OvercomeModalState) then) =
-      _$OvercomeModalStateCopyWithImpl<$Res, OvercomeModalState>;
+    OvercomeModalState value,
+    $Res Function(OvercomeModalState) then,
+  ) = _$OvercomeModalStateCopyWithImpl<$Res, OvercomeModalState>;
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      OvercomeModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    OvercomeModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
@@ -499,49 +504,59 @@ class _$OvercomeModalStateCopyWithImpl<$Res, $Val extends OvercomeModalState>
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as OvercomeModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            elapsedDuration:
+                null == elapsedDuration
+                    ? _value.elapsedDuration
+                    : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                        as int,
+            status:
+                null == status
+                    ? _value.status
+                    : status // ignore: cast_nullable_to_non_nullable
+                        as OvercomeModalStatus,
+            result:
+                freezed == result
+                    ? _value.result
+                    : result // ignore: cast_nullable_to_non_nullable
+                        as String?,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$OvercomeModalStateImplCopyWith<$Res>
     implements $OvercomeModalStateCopyWith<$Res> {
-  factory _$$OvercomeModalStateImplCopyWith(_$OvercomeModalStateImpl value,
-          $Res Function(_$OvercomeModalStateImpl) then) =
-      __$$OvercomeModalStateImplCopyWithImpl<$Res>;
+  factory _$$OvercomeModalStateImplCopyWith(
+    _$OvercomeModalStateImpl value,
+    $Res Function(_$OvercomeModalStateImpl) then,
+  ) = __$$OvercomeModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      OvercomeModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    OvercomeModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
 class __$$OvercomeModalStateImplCopyWithImpl<$Res>
     extends _$OvercomeModalStateCopyWithImpl<$Res, _$OvercomeModalStateImpl>
     implements _$$OvercomeModalStateImplCopyWith<$Res> {
-  __$$OvercomeModalStateImplCopyWithImpl(_$OvercomeModalStateImpl _value,
-      $Res Function(_$OvercomeModalStateImpl) _then)
-      : super(_value, _then);
+  __$$OvercomeModalStateImplCopyWithImpl(
+    _$OvercomeModalStateImpl _value,
+    $Res Function(_$OvercomeModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of OvercomeModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -553,35 +568,42 @@ class __$$OvercomeModalStateImplCopyWithImpl<$Res>
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_$OvercomeModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as OvercomeModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+    return _then(
+      _$OvercomeModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        elapsedDuration:
+            null == elapsedDuration
+                ? _value.elapsedDuration
+                : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                    as int,
+        status:
+            null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                    as OvercomeModalStatus,
+        result:
+            freezed == result
+                ? _value.result
+                : result // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$OvercomeModalStateImpl implements _OvercomeModalState {
-  const _$OvercomeModalStateImpl(
-      {this.initialized = false,
-      this.elapsedDuration = 0,
-      this.status = OvercomeModalStatus.prepare,
-      this.result = null});
+  const _$OvercomeModalStateImpl({
+    this.initialized = false,
+    this.elapsedDuration = 0,
+    this.status = OvercomeModalStatus.prepare,
+    this.result = null,
+  });
 
   @override
   @JsonKey()
@@ -625,15 +647,18 @@ class _$OvercomeModalStateImpl implements _OvercomeModalState {
   @pragma('vm:prefer-inline')
   _$$OvercomeModalStateImplCopyWith<_$OvercomeModalStateImpl> get copyWith =>
       __$$OvercomeModalStateImplCopyWithImpl<_$OvercomeModalStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _OvercomeModalState implements OvercomeModalState {
-  const factory _OvercomeModalState(
-      {final bool initialized,
-      final int elapsedDuration,
-      final OvercomeModalStatus status,
-      final String? result}) = _$OvercomeModalStateImpl;
+  const factory _OvercomeModalState({
+    final bool initialized,
+    final int elapsedDuration,
+    final OvercomeModalStatus status,
+    final String? result,
+  }) = _$OvercomeModalStateImpl;
 
   @override
   bool get initialized;

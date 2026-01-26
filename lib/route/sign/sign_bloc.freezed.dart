@@ -12,7 +12,8 @@ part of 'sign_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$SignEvent {
@@ -21,45 +22,39 @@ mixin _$SignEvent {
     required TResult Function(BuildContext context) initialize,
     required TResult Function() signInWithGoogle,
     required TResult Function() signInWithApple,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(BuildContext context)? initialize,
     TResult? Function()? signInWithGoogle,
     TResult? Function()? signInWithApple,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(BuildContext context)? initialize,
     TResult Function()? signInWithGoogle,
     TResult Function()? signInWithApple,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
     required TResult Function(_signInWithGoogle value) signInWithGoogle,
     required TResult Function(_signInWithApple value) signInWithApple,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_signInWithGoogle value)? signInWithGoogle,
     TResult? Function(_signInWithApple value)? signInWithApple,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     TResult Function(_signInWithGoogle value)? signInWithGoogle,
     TResult Function(_signInWithApple value)? signInWithApple,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -85,8 +80,9 @@ class _$SignEventCopyWithImpl<$Res, $Val extends SignEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
   @useResult
   $Res call({BuildContext context});
 }
@@ -96,22 +92,24 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$SignEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SignEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? context = null,
-  }) {
-    return _then(_$initializeImpl(
-      context: null == context
-          ? _value.context
-          : context // ignore: cast_nullable_to_non_nullable
-              as BuildContext,
-    ));
+  $Res call({Object? context = null}) {
+    return _then(
+      _$initializeImpl(
+        context:
+            null == context
+                ? _value.context
+                : context // ignore: cast_nullable_to_non_nullable
+                    as BuildContext,
+      ),
+    );
   }
 }
 
@@ -231,18 +229,20 @@ abstract class _initialize implements SignEvent {
 
 /// @nodoc
 abstract class _$$signInWithGoogleImplCopyWith<$Res> {
-  factory _$$signInWithGoogleImplCopyWith(_$signInWithGoogleImpl value,
-          $Res Function(_$signInWithGoogleImpl) then) =
-      __$$signInWithGoogleImplCopyWithImpl<$Res>;
+  factory _$$signInWithGoogleImplCopyWith(
+    _$signInWithGoogleImpl value,
+    $Res Function(_$signInWithGoogleImpl) then,
+  ) = __$$signInWithGoogleImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$signInWithGoogleImplCopyWithImpl<$Res>
     extends _$SignEventCopyWithImpl<$Res, _$signInWithGoogleImpl>
     implements _$$signInWithGoogleImplCopyWith<$Res> {
-  __$$signInWithGoogleImplCopyWithImpl(_$signInWithGoogleImpl _value,
-      $Res Function(_$signInWithGoogleImpl) _then)
-      : super(_value, _then);
+  __$$signInWithGoogleImplCopyWithImpl(
+    _$signInWithGoogleImpl _value,
+    $Res Function(_$signInWithGoogleImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SignEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -342,9 +342,10 @@ abstract class _signInWithGoogle implements SignEvent {
 
 /// @nodoc
 abstract class _$$signInWithAppleImplCopyWith<$Res> {
-  factory _$$signInWithAppleImplCopyWith(_$signInWithAppleImpl value,
-          $Res Function(_$signInWithAppleImpl) then) =
-      __$$signInWithAppleImplCopyWithImpl<$Res>;
+  factory _$$signInWithAppleImplCopyWith(
+    _$signInWithAppleImpl value,
+    $Res Function(_$signInWithAppleImpl) then,
+  ) = __$$signInWithAppleImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -352,8 +353,9 @@ class __$$signInWithAppleImplCopyWithImpl<$Res>
     extends _$SignEventCopyWithImpl<$Res, _$signInWithAppleImpl>
     implements _$$signInWithAppleImplCopyWith<$Res> {
   __$$signInWithAppleImplCopyWithImpl(
-      _$signInWithAppleImpl _value, $Res Function(_$signInWithAppleImpl) _then)
-      : super(_value, _then);
+    _$signInWithAppleImpl _value,
+    $Res Function(_$signInWithAppleImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SignEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -484,15 +486,17 @@ class _$SignStateCopyWithImpl<$Res, $Val extends SignState>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -500,8 +504,9 @@ class _$SignStateCopyWithImpl<$Res, $Val extends SignState>
 abstract class _$$SignStateImplCopyWith<$Res>
     implements $SignStateCopyWith<$Res> {
   factory _$$SignStateImplCopyWith(
-          _$SignStateImpl value, $Res Function(_$SignStateImpl) then) =
-      __$$SignStateImplCopyWithImpl<$Res>;
+    _$SignStateImpl value,
+    $Res Function(_$SignStateImpl) then,
+  ) = __$$SignStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool initialized});
@@ -512,22 +517,24 @@ class __$$SignStateImplCopyWithImpl<$Res>
     extends _$SignStateCopyWithImpl<$Res, _$SignStateImpl>
     implements _$$SignStateImplCopyWith<$Res> {
   __$$SignStateImplCopyWithImpl(
-      _$SignStateImpl _value, $Res Function(_$SignStateImpl) _then)
-      : super(_value, _then);
+    _$SignStateImpl _value,
+    $Res Function(_$SignStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SignState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_$SignStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _$SignStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+      ),
+    );
   }
 }
 

@@ -1,3 +1,5 @@
+// dart format width=80
+
 /// GENERATED CODE - DO NOT MODIFY BY HAND
 /// *****************************************************
 ///  FlutterGen
@@ -5,7 +7,7 @@
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
+// ignore_for_file: deprecated_member_use,directives_ordering,implicit_dynamic_list_literal,unnecessary_import
 
 import 'package:flutter/widgets.dart';
 
@@ -49,63 +51,63 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/bottom_navigation_rail_chat_off.png
   AssetGenImage get bottomNavigationRailChatOff => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_chat_off.png',
-      );
+    'assets/component/bottom_navigation_rail_chat_off.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_chat_on.png
   AssetGenImage get bottomNavigationRailChatOn => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_chat_on.png',
-      );
+    'assets/component/bottom_navigation_rail_chat_on.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_crafting_off.png
   AssetGenImage get bottomNavigationRailCraftingOff => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_crafting_off.png',
-      );
+    'assets/component/bottom_navigation_rail_crafting_off.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_crafting_on.png
   AssetGenImage get bottomNavigationRailCraftingOn => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_crafting_on.png',
-      );
+    'assets/component/bottom_navigation_rail_crafting_on.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_gear_off.png
   AssetGenImage get bottomNavigationRailGearOff => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_gear_off.png',
-      );
+    'assets/component/bottom_navigation_rail_gear_off.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_gear_on.png
   AssetGenImage get bottomNavigationRailGearOn => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_gear_on.png',
-      );
+    'assets/component/bottom_navigation_rail_gear_on.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_idle_off.png
   AssetGenImage get bottomNavigationRailIdleOff => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_idle_off.png',
-      );
+    'assets/component/bottom_navigation_rail_idle_off.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_idle_on.png
   AssetGenImage get bottomNavigationRailIdleOn => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_idle_on.png',
-      );
+    'assets/component/bottom_navigation_rail_idle_on.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_shop_off.png
   AssetGenImage get bottomNavigationRailShopOff => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_shop_off.png',
-      );
+    'assets/component/bottom_navigation_rail_shop_off.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_shop_on.png
   AssetGenImage get bottomNavigationRailShopOn => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_shop_on.png',
-      );
+    'assets/component/bottom_navigation_rail_shop_on.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_status_off.png
   AssetGenImage get bottomNavigationRailStatusOff => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_status_off.png',
-      );
+    'assets/component/bottom_navigation_rail_status_off.png',
+  );
 
   /// File path: assets/component/bottom_navigation_rail_status_on.png
   AssetGenImage get bottomNavigationRailStatusOn => const AssetGenImage(
-        'assets/component/bottom_navigation_rail_status_on.png',
-      );
+    'assets/component/bottom_navigation_rail_status_on.png',
+  );
 
   /// File path: assets/component/cancel_circle_button.png
   AssetGenImage get cancelCircleButton =>
@@ -177,13 +179,13 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/crafting_circle_button_disabled.png
   AssetGenImage get craftingCircleButtonDisabled => const AssetGenImage(
-        'assets/component/crafting_circle_button_disabled.png',
-      );
+    'assets/component/crafting_circle_button_disabled.png',
+  );
 
   /// File path: assets/component/crafting_circle_button_enabled.png
   AssetGenImage get craftingCircleButtonEnabled => const AssetGenImage(
-        'assets/component/crafting_circle_button_enabled.png',
-      );
+    'assets/component/crafting_circle_button_enabled.png',
+  );
 
   /// File path: assets/component/crafting_header.png
   AssetGenImage get craftingHeader =>
@@ -191,13 +193,13 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/decomposition_circle_button_disabled.png
   AssetGenImage get decompositionCircleButtonDisabled => const AssetGenImage(
-        'assets/component/decomposition_circle_button_disabled.png',
-      );
+    'assets/component/decomposition_circle_button_disabled.png',
+  );
 
   /// File path: assets/component/decomposition_circle_button_enabled.png
   AssetGenImage get decompositionCircleButtonEnabled => const AssetGenImage(
-        'assets/component/decomposition_circle_button_enabled.png',
-      );
+    'assets/component/decomposition_circle_button_enabled.png',
+  );
 
   /// File path: assets/component/ep_box.png
   AssetGenImage get epBox => const AssetGenImage('assets/component/ep_box.png');
@@ -224,18 +226,18 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/free_box_listening_gear_button_disabled.png
   AssetGenImage get freeBoxListeningGearButtonDisabled => const AssetGenImage(
-        'assets/component/free_box_listening_gear_button_disabled.png',
-      );
+    'assets/component/free_box_listening_gear_button_disabled.png',
+  );
 
   /// File path: assets/component/free_box_listening_gear_button_enabled.png
   AssetGenImage get freeBoxListeningGearButtonEnabled => const AssetGenImage(
-        'assets/component/free_box_listening_gear_button_enabled.png',
-      );
+    'assets/component/free_box_listening_gear_button_enabled.png',
+  );
 
   /// File path: assets/component/free_box_radio_button_disabled.png
   AssetGenImage get freeBoxRadioButtonDisabled => const AssetGenImage(
-        'assets/component/free_box_radio_button_disabled.png',
-      );
+    'assets/component/free_box_radio_button_disabled.png',
+  );
 
   /// File path: assets/component/free_box_radio_button_enabled.png
   AssetGenImage get freeBoxRadioButtonEnabled =>
@@ -251,13 +253,13 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/insetting_gem_circle_button_disabled.png
   AssetGenImage get insettingGemCircleButtonDisabled => const AssetGenImage(
-        'assets/component/insetting_gem_circle_button_disabled.png',
-      );
+    'assets/component/insetting_gem_circle_button_disabled.png',
+  );
 
   /// File path: assets/component/insetting_gem_circle_button_enabled.png
   AssetGenImage get insettingGemCircleButtonEnabled => const AssetGenImage(
-        'assets/component/insetting_gem_circle_button_enabled.png',
-      );
+    'assets/component/insetting_gem_circle_button_enabled.png',
+  );
 
   /// File path: assets/component/item_slot_pod.png
   AssetGenImage get itemSlotPod =>
@@ -265,13 +267,13 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/level_up_circle_button_disabled.png
   AssetGenImage get levelUpCircleButtonDisabled => const AssetGenImage(
-        'assets/component/level_up_circle_button_disabled.png',
-      );
+    'assets/component/level_up_circle_button_disabled.png',
+  );
 
   /// File path: assets/component/level_up_circle_button_enabled.png
   AssetGenImage get levelUpCircleButtonEnabled => const AssetGenImage(
-        'assets/component/level_up_circle_button_enabled.png',
-      );
+    'assets/component/level_up_circle_button_enabled.png',
+  );
 
   /// File path: assets/component/listening_gauge_reward_circle_button_disabled.png
   AssetGenImage get listeningGaugeRewardCircleButtonDisabled =>
@@ -295,13 +297,13 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/overcome_circle_button_disabled.png
   AssetGenImage get overcomeCircleButtonDisabled => const AssetGenImage(
-        'assets/component/overcome_circle_button_disabled.png',
-      );
+    'assets/component/overcome_circle_button_disabled.png',
+  );
 
   /// File path: assets/component/overcome_circle_button_enabled.png
   AssetGenImage get overcomeCircleButtonEnabled => const AssetGenImage(
-        'assets/component/overcome_circle_button_enabled.png',
-      );
+    'assets/component/overcome_circle_button_enabled.png',
+  );
 
   /// File path: assets/component/pack_selection.png
   AssetGenImage get packSelection =>
@@ -349,13 +351,13 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/random_box_circle_button_disabled.png
   AssetGenImage get randomBoxCircleButtonDisabled => const AssetGenImage(
-        'assets/component/random_box_circle_button_disabled.png',
-      );
+    'assets/component/random_box_circle_button_disabled.png',
+  );
 
   /// File path: assets/component/random_box_circle_button_enabled.png
   AssetGenImage get randomBoxCircleButtonEnabled => const AssetGenImage(
-        'assets/component/random_box_circle_button_enabled.png',
-      );
+    'assets/component/random_box_circle_button_enabled.png',
+  );
 
   /// File path: assets/component/setting_account.png
   AssetGenImage get settingAccount =>
@@ -411,13 +413,13 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/ssp_box_listening_gear_button_disabled.png
   AssetGenImage get sspBoxListeningGearButtonDisabled => const AssetGenImage(
-        'assets/component/ssp_box_listening_gear_button_disabled.png',
-      );
+    'assets/component/ssp_box_listening_gear_button_disabled.png',
+  );
 
   /// File path: assets/component/ssp_box_listening_gear_button_enabled.png
   AssetGenImage get sspBoxListeningGearButtonEnabled => const AssetGenImage(
-        'assets/component/ssp_box_listening_gear_button_enabled.png',
-      );
+    'assets/component/ssp_box_listening_gear_button_enabled.png',
+  );
 
   /// File path: assets/component/ssp_box_radio_button_disabled.png
   AssetGenImage get sspBoxRadioButtonDisabled =>
@@ -443,18 +445,18 @@ class $AssetsComponentGen {
 
   /// File path: assets/component/stamina_box_listening_gear_button_enabled.png
   AssetGenImage get staminaBoxListeningGearButtonEnabled => const AssetGenImage(
-        'assets/component/stamina_box_listening_gear_button_enabled.png',
-      );
+    'assets/component/stamina_box_listening_gear_button_enabled.png',
+  );
 
   /// File path: assets/component/stamina_box_radio_button_disabled.png
   AssetGenImage get staminaBoxRadioButtonDisabled => const AssetGenImage(
-        'assets/component/stamina_box_radio_button_disabled.png',
-      );
+    'assets/component/stamina_box_radio_button_disabled.png',
+  );
 
   /// File path: assets/component/stamina_box_radio_button_enabled.png
   AssetGenImage get staminaBoxRadioButtonEnabled => const AssetGenImage(
-        'assets/component/stamina_box_radio_button_enabled.png',
-      );
+    'assets/component/stamina_box_radio_button_enabled.png',
+  );
 
   /// File path: assets/component/status_fortune.png
   AssetGenImage get statusFortune =>
@@ -562,127 +564,127 @@ class $AssetsComponentGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        bottomNavigationRail,
-        bottomNavigationRailChatOff,
-        bottomNavigationRailChatOn,
-        bottomNavigationRailCraftingOff,
-        bottomNavigationRailCraftingOn,
-        bottomNavigationRailGearOff,
-        bottomNavigationRailGearOn,
-        bottomNavigationRailIdleOff,
-        bottomNavigationRailIdleOn,
-        bottomNavigationRailShopOff,
-        bottomNavigationRailShopOn,
-        bottomNavigationRailStatusOff,
-        bottomNavigationRailStatusOn,
-        cancelCircleButton,
-        chatModalBridge,
-        chatModalCloseButton,
-        chatModalFooter,
-        chatModalHeader,
-        closeButton,
-        closeCircleButtonDisabled,
-        closeCircleButtonEnabled,
-        consoleTypeTitleCrafting,
-        consoleTypeTitleGear,
-        consoleTypeTitlePlayList,
-        consoleTypeTitleRandomBox,
-        consoleTypeTitleSetting,
-        consoleTypeTitleShop,
-        consoleTypeTitleStatus,
-        copyCircleDisabledButton,
-        copyCircleEnabledButton,
-        craftingCircleButtonDisabled,
-        craftingCircleButtonEnabled,
-        craftingHeader,
-        decompositionCircleButtonDisabled,
-        decompositionCircleButtonEnabled,
-        epBox,
-        epBoxButtonDisabled,
-        epBoxButtonEnabled,
-        epIcon,
-        equipCircleButton,
-        freeBox,
-        freeBoxListeningGearButtonDisabled,
-        freeBoxListeningGearButtonEnabled,
-        freeBoxRadioButtonDisabled,
-        freeBoxRadioButtonEnabled,
-        gearBorder,
-        gearHeader,
-        insettingGemCircleButtonDisabled,
-        insettingGemCircleButtonEnabled,
-        itemSlotPod,
-        levelUpCircleButtonDisabled,
-        levelUpCircleButtonEnabled,
-        listeningGaugeRewardCircleButtonDisabled,
-        listeningGaugeRewardCircleButtonEnabled,
-        listeningPod,
-        modalGauge,
-        overcomeCircleButtonDisabled,
-        overcomeCircleButtonEnabled,
-        packSelection,
-        playListModalTile,
-        playListPod,
-        playListPodButton,
-        playerMuteOffButton,
-        playerMuteOnButton,
-        playerPauseButton,
-        playerPlayButton,
-        playerPod,
-        playerRewindButtonDisabled,
-        playerRewindButtonEnabled,
-        randomBoxCircleButtonDisabled,
-        randomBoxCircleButtonEnabled,
-        settingAccount,
-        settingButton,
-        settingLogoutButton,
-        settingWifi,
-        settingWifiOffButton,
-        settingWifiOnButton,
-        shopEpIcon,
-        shopItemPod,
-        shopSspIcon,
-        socketLocked,
-        socketSelection,
-        socketUnlocked,
-        sspBox,
-        sspBoxListeningGearButtonDisabled,
-        sspBoxListeningGearButtonEnabled,
-        sspBoxRadioButtonDisabled,
-        sspBoxRadioButtonEnabled,
-        sspIcon,
-        staminaBox,
-        staminaBoxListeningGearButtonDisabled,
-        staminaBoxListeningGearButtonEnabled,
-        staminaBoxRadioButtonDisabled,
-        staminaBoxRadioButtonEnabled,
-        statusFortune,
-        statusListeningPower,
-        statusReferral,
-        statusRow,
-        statusSsp,
-        statusStamina,
-        statusSummary,
-        tabBar60Selected,
-        tabBar60Unselected,
-        tabBar61Selected,
-        tabBar61Unselected,
-        tabBar62Selected,
-        tabBar62Unselected,
-        tabBarViewBridge,
-        tabBarViewEdge,
-        takeCircleButton,
-        transCircleDisabledButton,
-        transCircleEnabledButton,
-        transferCircleButton,
-        unequipCircleButton,
-        unlockCircleButtonDisabled,
-        unlockCircleButtonEnabled,
-        userInfoPod,
-        userInfoProfileCover,
-        walletLinked,
-        walletUnlinked,
-      ];
+    bottomNavigationRail,
+    bottomNavigationRailChatOff,
+    bottomNavigationRailChatOn,
+    bottomNavigationRailCraftingOff,
+    bottomNavigationRailCraftingOn,
+    bottomNavigationRailGearOff,
+    bottomNavigationRailGearOn,
+    bottomNavigationRailIdleOff,
+    bottomNavigationRailIdleOn,
+    bottomNavigationRailShopOff,
+    bottomNavigationRailShopOn,
+    bottomNavigationRailStatusOff,
+    bottomNavigationRailStatusOn,
+    cancelCircleButton,
+    chatModalBridge,
+    chatModalCloseButton,
+    chatModalFooter,
+    chatModalHeader,
+    closeButton,
+    closeCircleButtonDisabled,
+    closeCircleButtonEnabled,
+    consoleTypeTitleCrafting,
+    consoleTypeTitleGear,
+    consoleTypeTitlePlayList,
+    consoleTypeTitleRandomBox,
+    consoleTypeTitleSetting,
+    consoleTypeTitleShop,
+    consoleTypeTitleStatus,
+    copyCircleDisabledButton,
+    copyCircleEnabledButton,
+    craftingCircleButtonDisabled,
+    craftingCircleButtonEnabled,
+    craftingHeader,
+    decompositionCircleButtonDisabled,
+    decompositionCircleButtonEnabled,
+    epBox,
+    epBoxButtonDisabled,
+    epBoxButtonEnabled,
+    epIcon,
+    equipCircleButton,
+    freeBox,
+    freeBoxListeningGearButtonDisabled,
+    freeBoxListeningGearButtonEnabled,
+    freeBoxRadioButtonDisabled,
+    freeBoxRadioButtonEnabled,
+    gearBorder,
+    gearHeader,
+    insettingGemCircleButtonDisabled,
+    insettingGemCircleButtonEnabled,
+    itemSlotPod,
+    levelUpCircleButtonDisabled,
+    levelUpCircleButtonEnabled,
+    listeningGaugeRewardCircleButtonDisabled,
+    listeningGaugeRewardCircleButtonEnabled,
+    listeningPod,
+    modalGauge,
+    overcomeCircleButtonDisabled,
+    overcomeCircleButtonEnabled,
+    packSelection,
+    playListModalTile,
+    playListPod,
+    playListPodButton,
+    playerMuteOffButton,
+    playerMuteOnButton,
+    playerPauseButton,
+    playerPlayButton,
+    playerPod,
+    playerRewindButtonDisabled,
+    playerRewindButtonEnabled,
+    randomBoxCircleButtonDisabled,
+    randomBoxCircleButtonEnabled,
+    settingAccount,
+    settingButton,
+    settingLogoutButton,
+    settingWifi,
+    settingWifiOffButton,
+    settingWifiOnButton,
+    shopEpIcon,
+    shopItemPod,
+    shopSspIcon,
+    socketLocked,
+    socketSelection,
+    socketUnlocked,
+    sspBox,
+    sspBoxListeningGearButtonDisabled,
+    sspBoxListeningGearButtonEnabled,
+    sspBoxRadioButtonDisabled,
+    sspBoxRadioButtonEnabled,
+    sspIcon,
+    staminaBox,
+    staminaBoxListeningGearButtonDisabled,
+    staminaBoxListeningGearButtonEnabled,
+    staminaBoxRadioButtonDisabled,
+    staminaBoxRadioButtonEnabled,
+    statusFortune,
+    statusListeningPower,
+    statusReferral,
+    statusRow,
+    statusSsp,
+    statusStamina,
+    statusSummary,
+    tabBar60Selected,
+    tabBar60Unselected,
+    tabBar61Selected,
+    tabBar61Unselected,
+    tabBar62Selected,
+    tabBar62Unselected,
+    tabBarViewBridge,
+    tabBarViewEdge,
+    takeCircleButton,
+    transCircleDisabledButton,
+    transCircleEnabledButton,
+    transferCircleButton,
+    unequipCircleButton,
+    unlockCircleButtonDisabled,
+    unlockCircleButtonEnabled,
+    userInfoPod,
+    userInfoProfileCover,
+    walletLinked,
+    walletUnlinked,
+  ];
 }
 
 class $AssetsGearGen {
@@ -729,27 +731,46 @@ class $AssetsIconGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        appleIcon,
-        clock,
-        forward,
-        googleIcon,
-        lock,
-        note,
-      ];
+    appleIcon,
+    clock,
+    forward,
+    googleIcon,
+    lock,
+    note,
+  ];
 }
 
 class $AssetsItemGen {
   const $AssetsItemGen();
 
-  /// File path: assets/item/listening_power.png
-  AssetGenImage get listeningPower =>
-      const AssetGenImage('assets/item/listening_power.png');
+  /// File path: assets/item/shopicon_ep_up.png
+  AssetGenImage get shopiconEpUp =>
+      const AssetGenImage('assets/item/shopicon_ep_up.png');
 
-  /// File path: assets/item/stamina.png
-  AssetGenImage get stamina => const AssetGenImage('assets/item/stamina.png');
+  /// File path: assets/item/shopicon_exp_up.png
+  AssetGenImage get shopiconExpUp =>
+      const AssetGenImage('assets/item/shopicon_exp_up.png');
+
+  /// File path: assets/item/shopicon_guage_pause.png
+  AssetGenImage get shopiconGuagePause =>
+      const AssetGenImage('assets/item/shopicon_guage_pause.png');
+
+  /// File path: assets/item/shopicon_listening_up.png
+  AssetGenImage get shopiconListeningUp =>
+      const AssetGenImage('assets/item/shopicon_listening_up.png');
+
+  /// File path: assets/item/shopicon_stamina_charge.png
+  AssetGenImage get shopiconStaminaCharge =>
+      const AssetGenImage('assets/item/shopicon_stamina_charge.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [listeningPower, stamina];
+  List<AssetGenImage> get values => [
+    shopiconEpUp,
+    shopiconExpUp,
+    shopiconGuagePause,
+    shopiconListeningUp,
+    shopiconStaminaCharge,
+  ];
 }
 
 class $AssetsSymbolGen {
@@ -806,14 +827,14 @@ class $AssetsTierGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        tier1,
-        tier2,
-        tier3,
-        tier4,
-        tier5,
-        tier6,
-        tier7,
-      ];
+    tier1,
+    tier2,
+    tier3,
+    tier4,
+    tier5,
+    tier6,
+    tier7,
+  ];
 }
 
 class $AssetsGearAccessoryGen {
@@ -1181,97 +1202,97 @@ class $AssetsGearAccessoryGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        acce11,
-        acce110,
-        acce12,
-        acce13,
-        acce14,
-        acce15,
-        acce16,
-        acce17,
-        acce18,
-        acce19,
-        acce21,
-        acce210,
-        acce22,
-        acce23,
-        acce24,
-        acce25,
-        acce26,
-        acce27,
-        acce28,
-        acce29,
-        acce31,
-        acce310,
-        acce32,
-        acce33,
-        acce34,
-        acce35,
-        acce36,
-        acce37,
-        acce38,
-        acce39,
-        acce41,
-        acce410,
-        acce411,
-        acce412,
-        acce413,
-        acce414,
-        acce415,
-        acce416,
-        acce417,
-        acce418,
-        acce419,
-        acce42,
-        acce420,
-        acce43,
-        acce44,
-        acce45,
-        acce46,
-        acce47,
-        acce48,
-        acce49,
-        acce51,
-        acce510,
-        acce511,
-        acce512,
-        acce513,
-        acce514,
-        acce515,
-        acce516,
-        acce517,
-        acce518,
-        acce519,
-        acce52,
-        acce520,
-        acce53,
-        acce54,
-        acce55,
-        acce56,
-        acce57,
-        acce58,
-        acce59,
-        acce61,
-        acce610,
-        acce62,
-        acce63,
-        acce64,
-        acce65,
-        acce66,
-        acce67,
-        acce68,
-        acce69,
-        acce71,
-        acce710,
-        acce72,
-        acce73,
-        acce74,
-        acce75,
-        acce76,
-        acce77,
-        acce78,
-        acce79,
-      ];
+    acce11,
+    acce110,
+    acce12,
+    acce13,
+    acce14,
+    acce15,
+    acce16,
+    acce17,
+    acce18,
+    acce19,
+    acce21,
+    acce210,
+    acce22,
+    acce23,
+    acce24,
+    acce25,
+    acce26,
+    acce27,
+    acce28,
+    acce29,
+    acce31,
+    acce310,
+    acce32,
+    acce33,
+    acce34,
+    acce35,
+    acce36,
+    acce37,
+    acce38,
+    acce39,
+    acce41,
+    acce410,
+    acce411,
+    acce412,
+    acce413,
+    acce414,
+    acce415,
+    acce416,
+    acce417,
+    acce418,
+    acce419,
+    acce42,
+    acce420,
+    acce43,
+    acce44,
+    acce45,
+    acce46,
+    acce47,
+    acce48,
+    acce49,
+    acce51,
+    acce510,
+    acce511,
+    acce512,
+    acce513,
+    acce514,
+    acce515,
+    acce516,
+    acce517,
+    acce518,
+    acce519,
+    acce52,
+    acce520,
+    acce53,
+    acce54,
+    acce55,
+    acce56,
+    acce57,
+    acce58,
+    acce59,
+    acce61,
+    acce610,
+    acce62,
+    acce63,
+    acce64,
+    acce65,
+    acce66,
+    acce67,
+    acce68,
+    acce69,
+    acce71,
+    acce710,
+    acce72,
+    acce73,
+    acce74,
+    acce75,
+    acce76,
+    acce77,
+    acce78,
+    acce79,
+  ];
 }
 
 class $AssetsGearGemGen {
@@ -1339,27 +1360,27 @@ class $AssetsGearGemGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        gemA3,
-        gemA4,
-        gemA5,
-        gemA6,
-        gemA7,
-        gemB3,
-        gemB4,
-        gemB5,
-        gemB6,
-        gemB7,
-        gemC3,
-        gemC4,
-        gemC5,
-        gemC6,
-        gemC7,
-        gemE3,
-        gemE4,
-        gemE5,
-        gemE6,
-        gemE7,
-      ];
+    gemA3,
+    gemA4,
+    gemA5,
+    gemA6,
+    gemA7,
+    gemB3,
+    gemB4,
+    gemB5,
+    gemB6,
+    gemB7,
+    gemC3,
+    gemC4,
+    gemC5,
+    gemC6,
+    gemC7,
+    gemE3,
+    gemE4,
+    gemE5,
+    gemE6,
+    gemE7,
+  ];
 }
 
 class $AssetsGearLgGen {
@@ -1637,97 +1658,97 @@ class $AssetsGearLgGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        lg11,
-        lg110,
-        lg12,
-        lg13,
-        lg14,
-        lg15,
-        lg16,
-        lg17,
-        lg18,
-        lg19,
-        lg21,
-        lg210,
-        lg22,
-        lg23,
-        lg24,
-        lg25,
-        lg26,
-        lg27,
-        lg28,
-        lg29,
-        lg31,
-        lg310,
-        lg32,
-        lg33,
-        lg34,
-        lg35,
-        lg36,
-        lg37,
-        lg38,
-        lg39,
-        lg41,
-        lg410,
-        lg411,
-        lg412,
-        lg413,
-        lg414,
-        lg415,
-        lg416,
-        lg417,
-        lg418,
-        lg419,
-        lg42,
-        lg420,
-        lg43,
-        lg44,
-        lg45,
-        lg46,
-        lg47,
-        lg48,
-        lg49,
-        lg51,
-        lg510,
-        lg511,
-        lg512,
-        lg513,
-        lg514,
-        lg515,
-        lg516,
-        lg517,
-        lg518,
-        lg519,
-        lg52,
-        lg520,
-        lg53,
-        lg54,
-        lg55,
-        lg56,
-        lg57,
-        lg58,
-        lg59,
-        lg61,
-        lg610,
-        lg62,
-        lg63,
-        lg64,
-        lg65,
-        lg66,
-        lg67,
-        lg68,
-        lg69,
-        lg71,
-        lg710,
-        lg72,
-        lg73,
-        lg74,
-        lg75,
-        lg76,
-        lg77,
-        lg78,
-        lg79,
-      ];
+    lg11,
+    lg110,
+    lg12,
+    lg13,
+    lg14,
+    lg15,
+    lg16,
+    lg17,
+    lg18,
+    lg19,
+    lg21,
+    lg210,
+    lg22,
+    lg23,
+    lg24,
+    lg25,
+    lg26,
+    lg27,
+    lg28,
+    lg29,
+    lg31,
+    lg310,
+    lg32,
+    lg33,
+    lg34,
+    lg35,
+    lg36,
+    lg37,
+    lg38,
+    lg39,
+    lg41,
+    lg410,
+    lg411,
+    lg412,
+    lg413,
+    lg414,
+    lg415,
+    lg416,
+    lg417,
+    lg418,
+    lg419,
+    lg42,
+    lg420,
+    lg43,
+    lg44,
+    lg45,
+    lg46,
+    lg47,
+    lg48,
+    lg49,
+    lg51,
+    lg510,
+    lg511,
+    lg512,
+    lg513,
+    lg514,
+    lg515,
+    lg516,
+    lg517,
+    lg518,
+    lg519,
+    lg52,
+    lg520,
+    lg53,
+    lg54,
+    lg55,
+    lg56,
+    lg57,
+    lg58,
+    lg59,
+    lg61,
+    lg610,
+    lg62,
+    lg63,
+    lg64,
+    lg65,
+    lg66,
+    lg67,
+    lg68,
+    lg69,
+    lg71,
+    lg710,
+    lg72,
+    lg73,
+    lg74,
+    lg75,
+    lg76,
+    lg77,
+    lg78,
+    lg79,
+  ];
 }
 
 class $AssetsGearPartsGen {
@@ -2131,106 +2152,106 @@ class $AssetsGearPartsGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        parts11,
-        parts110,
-        parts12,
-        parts13,
-        parts14,
-        parts16,
-        parts17,
-        parts18,
-        parts19,
-        parts21,
-        parts210,
-        parts22,
-        parts23,
-        parts24,
-        parts25,
-        parts26,
-        parts27,
-        parts28,
-        parts29,
-        parts31,
-        parts310,
-        parts32,
-        parts33,
-        parts34,
-        parts35,
-        parts36,
-        parts37,
-        parts38,
-        parts39,
-        parts41,
-        parts410,
-        parts411,
-        parts412,
-        parts413,
-        parts414,
-        parts415,
-        parts416,
-        parts417,
-        parts418,
-        parts419,
-        parts42,
-        parts420,
-        parts43,
-        parts44,
-        parts45,
-        parts46,
-        parts47,
-        parts48,
-        parts49,
-        parts51,
-        parts510,
-        parts511,
-        parts512,
-        parts513,
-        parts514,
-        parts515,
-        parts516,
-        parts517,
-        parts518,
-        parts519,
-        parts52,
-        parts520,
-        parts53,
-        parts54,
-        parts55,
-        parts56,
-        parts57,
-        parts58,
-        parts59,
-        parts61,
-        parts610,
-        parts611,
-        parts612,
-        parts613,
-        parts614,
-        parts615,
-        parts62,
-        parts63,
-        parts64,
-        parts65,
-        parts66,
-        parts67,
-        parts68,
-        parts69,
-        parts71,
-        parts710,
-        parts711,
-        parts712,
-        parts713,
-        parts714,
-        parts715,
-        parts72,
-        parts73,
-        parts74,
-        parts75,
-        parts76,
-        parts77,
-        parts78,
-        parts79,
-      ];
+    parts11,
+    parts110,
+    parts12,
+    parts13,
+    parts14,
+    parts16,
+    parts17,
+    parts18,
+    parts19,
+    parts21,
+    parts210,
+    parts22,
+    parts23,
+    parts24,
+    parts25,
+    parts26,
+    parts27,
+    parts28,
+    parts29,
+    parts31,
+    parts310,
+    parts32,
+    parts33,
+    parts34,
+    parts35,
+    parts36,
+    parts37,
+    parts38,
+    parts39,
+    parts41,
+    parts410,
+    parts411,
+    parts412,
+    parts413,
+    parts414,
+    parts415,
+    parts416,
+    parts417,
+    parts418,
+    parts419,
+    parts42,
+    parts420,
+    parts43,
+    parts44,
+    parts45,
+    parts46,
+    parts47,
+    parts48,
+    parts49,
+    parts51,
+    parts510,
+    parts511,
+    parts512,
+    parts513,
+    parts514,
+    parts515,
+    parts516,
+    parts517,
+    parts518,
+    parts519,
+    parts52,
+    parts520,
+    parts53,
+    parts54,
+    parts55,
+    parts56,
+    parts57,
+    parts58,
+    parts59,
+    parts61,
+    parts610,
+    parts611,
+    parts612,
+    parts613,
+    parts614,
+    parts615,
+    parts62,
+    parts63,
+    parts64,
+    parts65,
+    parts66,
+    parts67,
+    parts68,
+    parts69,
+    parts71,
+    parts710,
+    parts711,
+    parts712,
+    parts713,
+    parts714,
+    parts715,
+    parts72,
+    parts73,
+    parts74,
+    parts75,
+    parts76,
+    parts77,
+    parts78,
+    parts79,
+  ];
 }
 
 class $AssetsGearRadioGen {
@@ -2598,97 +2619,97 @@ class $AssetsGearRadioGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        radio11,
-        radio110,
-        radio12,
-        radio13,
-        radio14,
-        radio15,
-        radio16,
-        radio17,
-        radio18,
-        radio19,
-        radio21,
-        radio210,
-        radio22,
-        radio23,
-        radio24,
-        radio25,
-        radio26,
-        radio27,
-        radio28,
-        radio29,
-        radio31,
-        radio310,
-        radio32,
-        radio33,
-        radio34,
-        radio35,
-        radio36,
-        radio37,
-        radio38,
-        radio39,
-        radio41,
-        radio410,
-        radio411,
-        radio412,
-        radio413,
-        radio414,
-        radio415,
-        radio416,
-        radio417,
-        radio418,
-        radio419,
-        radio42,
-        radio420,
-        radio43,
-        radio44,
-        radio45,
-        radio46,
-        radio47,
-        radio48,
-        radio49,
-        radio51,
-        radio510,
-        radio511,
-        radio512,
-        radio513,
-        radio514,
-        radio515,
-        radio516,
-        radio517,
-        radio518,
-        radio519,
-        radio52,
-        radio520,
-        radio53,
-        radio54,
-        radio55,
-        radio56,
-        radio57,
-        radio58,
-        radio59,
-        radio61,
-        radio610,
-        radio62,
-        radio63,
-        radio64,
-        radio65,
-        radio66,
-        radio67,
-        radio68,
-        radio69,
-        radio71,
-        radio710,
-        radio72,
-        radio73,
-        radio74,
-        radio75,
-        radio76,
-        radio77,
-        radio78,
-        radio79,
-      ];
+    radio11,
+    radio110,
+    radio12,
+    radio13,
+    radio14,
+    radio15,
+    radio16,
+    radio17,
+    radio18,
+    radio19,
+    radio21,
+    radio210,
+    radio22,
+    radio23,
+    radio24,
+    radio25,
+    radio26,
+    radio27,
+    radio28,
+    radio29,
+    radio31,
+    radio310,
+    radio32,
+    radio33,
+    radio34,
+    radio35,
+    radio36,
+    radio37,
+    radio38,
+    radio39,
+    radio41,
+    radio410,
+    radio411,
+    radio412,
+    radio413,
+    radio414,
+    radio415,
+    radio416,
+    radio417,
+    radio418,
+    radio419,
+    radio42,
+    radio420,
+    radio43,
+    radio44,
+    radio45,
+    radio46,
+    radio47,
+    radio48,
+    radio49,
+    radio51,
+    radio510,
+    radio511,
+    radio512,
+    radio513,
+    radio514,
+    radio515,
+    radio516,
+    radio517,
+    radio518,
+    radio519,
+    radio52,
+    radio520,
+    radio53,
+    radio54,
+    radio55,
+    radio56,
+    radio57,
+    radio58,
+    radio59,
+    radio61,
+    radio610,
+    radio62,
+    radio63,
+    radio64,
+    radio65,
+    radio66,
+    radio67,
+    radio68,
+    radio69,
+    radio71,
+    radio710,
+    radio72,
+    radio73,
+    radio74,
+    radio75,
+    radio76,
+    radio77,
+    radio78,
+    radio79,
+  ];
 }
 
 class Assets {
@@ -2705,12 +2726,18 @@ class Assets {
 }
 
 class AssetGenImage {
-  const AssetGenImage(this._assetName, {this.size, this.flavors = const {}});
+  const AssetGenImage(
+    this._assetName, {
+    this.size,
+    this.flavors = const {},
+    this.animation,
+  });
 
   final String _assetName;
 
   final Size? size;
   final Set<String> flavors;
+  final AssetGenImageAnimation? animation;
 
   Image image({
     Key? key,
@@ -2772,4 +2799,16 @@ class AssetGenImage {
   String get path => _assetName;
 
   String get keyName => _assetName;
+}
+
+class AssetGenImageAnimation {
+  const AssetGenImageAnimation({
+    required this.isAnimation,
+    required this.duration,
+    required this.frames,
+  });
+
+  final bool isAnimation;
+  final Duration duration;
+  final int frames;
 }

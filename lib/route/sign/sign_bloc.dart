@@ -15,24 +15,42 @@ class SignBloc extends Bloc<SignEvent, SignState> {
         signInWithGoogle: (event) async {
           App.instance.overlay.cover(on: true);
 
-          await App.instance.auth.signInWithGoogle().then((value) {
-            if (value != null) {
-              App.instance.overlay.cover(on: false, message: value);
+          try {
+            final error = await App.instance.auth.signInWithGoogle();
+            if (error == null) {
+              App.instance.log.i("Google Sign-In Success");
             } else {
-              App.instance.log.d(value);
+              App.instance.log.w("Google Sign-In Error: $error");
+              App.instance.overlay.cover(on: false, message: error);
             }
-          });
+          } catch (e, stack) {
+            App.instance.log.e(
+              "Google Sign-In Exception: $e",
+              error: e,
+              stackTrace: stack,
+            );
+            App.instance.overlay.cover(on: false, message: "로그인 중 오류가 발생했습니다.");
+          }
         },
         signInWithApple: (event) async {
           App.instance.overlay.cover(on: true);
 
-          await App.instance.auth.signInWithApple().then((value) {
-            if (value != null) {
-              App.instance.overlay.cover(on: false, message: value);
+          try {
+            final error = await App.instance.auth.signInWithApple();
+            if (error == null) {
+              App.instance.log.i("Apple Sign-In Success");
             } else {
-              App.instance.log.d(value);
+              App.instance.log.w("Apple Sign-In Error: $error");
+              App.instance.overlay.cover(on: false, message: error);
             }
-          });
+          } catch (e, stack) {
+            App.instance.log.e(
+              "Apple Sign-In Exception: $e",
+              error: e,
+              stackTrace: stack,
+            );
+            App.instance.overlay.cover(on: false, message: "로그인 중 오류가 발생했습니다.");
+          }
         },
       );
     });

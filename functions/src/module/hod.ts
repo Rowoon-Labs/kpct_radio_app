@@ -18,6 +18,7 @@ const _getToken = async (): Promise<string> =>
     await axios.request({
       method: "post",
       url: `${HOD_API_BASE_URL}/oauth/token`,
+      timeout: 3000,
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization: "Basic dGVzdGJiYjp0ZXN0YWFh",
@@ -34,6 +35,7 @@ export const getMyInfo = async (email: string): Promise<MyInfo> =>
     await axios.request({
       method: "post",
       url: `${HOD_API_BASE_URL}/lte/myinfo`,
+      timeout: 3000,
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization: `Bearer ${await _getToken()}`,
@@ -52,6 +54,7 @@ export const saveUpSsp = async (
     await axios.request({
       method: "post",
       url: `${HOD_API_BASE_URL}/lte/ssp/save`,
+      timeout: 3000,
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization: `Bearer ${await _getToken()}`,
@@ -69,6 +72,7 @@ export const useSsp = async (email: string, amount: number): Promise<number> =>
     await axios.request({
       method: "post",
       url: `${HOD_API_BASE_URL}/lte/ssp/use`,
+      timeout: 3000,
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization: `Bearer ${await _getToken()}`,

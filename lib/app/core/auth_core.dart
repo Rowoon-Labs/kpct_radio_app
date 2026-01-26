@@ -42,8 +42,13 @@ class AuthCore {
   void _onAuthStateChanges(User? user) async {
     if (user != null) {
       _currentUser = user;
+      print(
+        "🔐 AuthCore: _onAuthStateChanges(${user.uid}) - Reserved 데이터 로딩 시작",
+      );
 
       await App.instance.reserved.load;
+      print("🔐 AuthCore: Reserved 데이터 로딩 완료. 유저 문서 감시 시작");
+
       _userDocumentChanges = FirebaseFirestore.instance
           .collection("users")
           .withConverter(
@@ -209,10 +214,12 @@ class Synchronizer {
       _syncedCustomUserStreamController = StreamController.broadcast();
 
   void _onUserDocumentChanges(DocumentSnapshot<CustomUser> documentSnapshot) {
+    print(
+      "👤 AuthCore: _onUserDocumentChanges 수신 (Exists: ${documentSnapshot.exists})",
+    );
     if (documentSnapshot.exists && (documentSnapshot.data() != null)) {
       final CustomUser customUser = documentSnapshot.data()!;
-
-      // _customUserStreamController.add(_customUser = customUser);
+      print("👤 AuthCore: 유저 데이터 확인됨 (${customUser.email})");
 
       if (_syncedCustomUser != null) {
         _syncedFromRemote(customUser: customUser);
@@ -224,13 +231,19 @@ class Synchronizer {
           _periodicTick,
         );
 
+        print("🚀 AuthCore: 홈으로 이동");
         App.instance.navigator.go("/home");
         App.instance.overlay.cover(on: false);
       }
     } else {
-      // unreachable
-      // _customUser = null;
-      // _customUserStreamController.add(_customUser);
+      print(
+        "⚠️ AuthCore: Firestore에 유저 문서가 없습니다. (ID: ${documentSnapshot.id})",
+      );
+      // Functions가 문서를 생성할 때까지 기다리거나, 실패했음을 알림
+      App.instance.overlay.cover(
+        on: true,
+        message: "유저 정보를 생성 중이거나 찾을 수 없습니다.\n잠시만 기다려 주세요...",
+      );
     }
   }
 

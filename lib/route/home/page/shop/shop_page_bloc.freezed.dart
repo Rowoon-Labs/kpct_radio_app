@@ -12,7 +12,8 @@ part of 'shop_page_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ShopPageEvent {
@@ -20,35 +21,29 @@ mixin _$ShopPageEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(ShopItem shopItem) tryBuy,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(ShopItem shopItem)? tryBuy,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(ShopItem shopItem)? tryBuy,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_tryBuy value) tryBuy,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_tryBuy value)? tryBuy,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_tryBuy value)? tryBuy,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 
   /// Create a copy of ShopPageEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -60,8 +55,9 @@ mixin _$ShopPageEvent {
 /// @nodoc
 abstract class $ShopPageEventCopyWith<$Res> {
   factory $ShopPageEventCopyWith(
-          ShopPageEvent value, $Res Function(ShopPageEvent) then) =
-      _$ShopPageEventCopyWithImpl<$Res, ShopPageEvent>;
+    ShopPageEvent value,
+    $Res Function(ShopPageEvent) then,
+  ) = _$ShopPageEventCopyWithImpl<$Res, ShopPageEvent>;
   @useResult
   $Res call({ShopItem shopItem});
 
@@ -82,15 +78,17 @@ class _$ShopPageEventCopyWithImpl<$Res, $Val extends ShopPageEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? shopItem = null,
-  }) {
-    return _then(_value.copyWith(
-      shopItem: null == shopItem
-          ? _value.shopItem
-          : shopItem // ignore: cast_nullable_to_non_nullable
-              as ShopItem,
-    ) as $Val);
+  $Res call({Object? shopItem = null}) {
+    return _then(
+      _value.copyWith(
+            shopItem:
+                null == shopItem
+                    ? _value.shopItem
+                    : shopItem // ignore: cast_nullable_to_non_nullable
+                        as ShopItem,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of ShopPageEvent
@@ -108,8 +106,9 @@ class _$ShopPageEventCopyWithImpl<$Res, $Val extends ShopPageEvent>
 abstract class _$$tryBuyImplCopyWith<$Res>
     implements $ShopPageEventCopyWith<$Res> {
   factory _$$tryBuyImplCopyWith(
-          _$tryBuyImpl value, $Res Function(_$tryBuyImpl) then) =
-      __$$tryBuyImplCopyWithImpl<$Res>;
+    _$tryBuyImpl value,
+    $Res Function(_$tryBuyImpl) then,
+  ) = __$$tryBuyImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({ShopItem shopItem});
@@ -123,22 +122,24 @@ class __$$tryBuyImplCopyWithImpl<$Res>
     extends _$ShopPageEventCopyWithImpl<$Res, _$tryBuyImpl>
     implements _$$tryBuyImplCopyWith<$Res> {
   __$$tryBuyImplCopyWithImpl(
-      _$tryBuyImpl _value, $Res Function(_$tryBuyImpl) _then)
-      : super(_value, _then);
+    _$tryBuyImpl _value,
+    $Res Function(_$tryBuyImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ShopPageEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? shopItem = null,
-  }) {
-    return _then(_$tryBuyImpl(
-      shopItem: null == shopItem
-          ? _value.shopItem
-          : shopItem // ignore: cast_nullable_to_non_nullable
-              as ShopItem,
-    ));
+  $Res call({Object? shopItem = null}) {
+    return _then(
+      _$tryBuyImpl(
+        shopItem:
+            null == shopItem
+                ? _value.shopItem
+                : shopItem // ignore: cast_nullable_to_non_nullable
+                    as ShopItem,
+      ),
+    );
   }
 }
 
@@ -260,8 +261,9 @@ mixin _$ShopPageState {
 /// @nodoc
 abstract class $ShopPageStateCopyWith<$Res> {
   factory $ShopPageStateCopyWith(
-          ShopPageState value, $Res Function(ShopPageState) then) =
-      _$ShopPageStateCopyWithImpl<$Res, ShopPageState>;
+    ShopPageState value,
+    $Res Function(ShopPageState) then,
+  ) = _$ShopPageStateCopyWithImpl<$Res, ShopPageState>;
   @useResult
   $Res call({List<ShopItemId> processing});
 }
@@ -280,15 +282,17 @@ class _$ShopPageStateCopyWithImpl<$Res, $Val extends ShopPageState>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? processing = null,
-  }) {
-    return _then(_value.copyWith(
-      processing: null == processing
-          ? _value.processing
-          : processing // ignore: cast_nullable_to_non_nullable
-              as List<ShopItemId>,
-    ) as $Val);
+  $Res call({Object? processing = null}) {
+    return _then(
+      _value.copyWith(
+            processing:
+                null == processing
+                    ? _value.processing
+                    : processing // ignore: cast_nullable_to_non_nullable
+                        as List<ShopItemId>,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -296,8 +300,9 @@ class _$ShopPageStateCopyWithImpl<$Res, $Val extends ShopPageState>
 abstract class _$$ShopPageStateImplCopyWith<$Res>
     implements $ShopPageStateCopyWith<$Res> {
   factory _$$ShopPageStateImplCopyWith(
-          _$ShopPageStateImpl value, $Res Function(_$ShopPageStateImpl) then) =
-      __$$ShopPageStateImplCopyWithImpl<$Res>;
+    _$ShopPageStateImpl value,
+    $Res Function(_$ShopPageStateImpl) then,
+  ) = __$$ShopPageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<ShopItemId> processing});
@@ -308,22 +313,24 @@ class __$$ShopPageStateImplCopyWithImpl<$Res>
     extends _$ShopPageStateCopyWithImpl<$Res, _$ShopPageStateImpl>
     implements _$$ShopPageStateImplCopyWith<$Res> {
   __$$ShopPageStateImplCopyWithImpl(
-      _$ShopPageStateImpl _value, $Res Function(_$ShopPageStateImpl) _then)
-      : super(_value, _then);
+    _$ShopPageStateImpl _value,
+    $Res Function(_$ShopPageStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ShopPageState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? processing = null,
-  }) {
-    return _then(_$ShopPageStateImpl(
-      processing: null == processing
-          ? _value._processing
-          : processing // ignore: cast_nullable_to_non_nullable
-              as List<ShopItemId>,
-    ));
+  $Res call({Object? processing = null}) {
+    return _then(
+      _$ShopPageStateImpl(
+        processing:
+            null == processing
+                ? _value._processing
+                : processing // ignore: cast_nullable_to_non_nullable
+                    as List<ShopItemId>,
+      ),
+    );
   }
 }
 
@@ -331,7 +338,7 @@ class __$$ShopPageStateImplCopyWithImpl<$Res>
 
 class _$ShopPageStateImpl implements _ShopPageState {
   const _$ShopPageStateImpl({final List<ShopItemId> processing = const []})
-      : _processing = processing;
+    : _processing = processing;
 
   final List<ShopItemId> _processing;
   @override
@@ -352,13 +359,17 @@ class _$ShopPageStateImpl implements _ShopPageState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ShopPageStateImpl &&
-            const DeepCollectionEquality()
-                .equals(other._processing, _processing));
+            const DeepCollectionEquality().equals(
+              other._processing,
+              _processing,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_processing));
+    runtimeType,
+    const DeepCollectionEquality().hash(_processing),
+  );
 
   /// Create a copy of ShopPageState
   /// with the given fields replaced by the non-null parameter values.

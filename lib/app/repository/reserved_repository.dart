@@ -45,7 +45,7 @@ class ReservedRepository {
     if (type == "global" || type == "playList") {
       return "reserved/$type/elements";
     }
-    return "new_reserved/$type/elements";
+    return "reserved/$type/elements";
   }
 
   ReservedRepository()
@@ -75,17 +75,56 @@ class ReservedRepository {
   Decomposition? decomposition({required String? id}) =>
       (id != null) ? _decompositionMap[id] : null;
 
-  Future<bool> get load async => await Future.wait([
-    _loadGlobal,
-    _loadDraws,
-    _loadGears,
-    _loadLevels,
-    _loadRecipes,
-    _loadUnlocks,
-    _loadPlayLists,
-    _loadShopItems,
-    _loadDecompositions,
-  ]).then((value) => !value.contains(false)).catchError((error) => false);
+  Future<bool> get load async {
+    print("📊 ReservedRepository: 전제 데이터 로딩 시작...");
+    return await Future.wait([
+          _loadGlobal.then((v) {
+            print("📊 ReservedRepository: Global 완료 ($v)");
+            return v;
+          }),
+          _loadDraws.then((v) {
+            print("📊 ReservedRepository: Draws 완료 ($v)");
+            return v;
+          }),
+          _loadGears.then((v) {
+            print("📊 ReservedRepository: Gears 완료 ($v)");
+            return v;
+          }),
+          _loadLevels.then((v) {
+            print("📊 ReservedRepository: Levels 완료 ($v)");
+            return v;
+          }),
+          _loadRecipes.then((v) {
+            print("📊 ReservedRepository: Recipes 완료 ($v)");
+            return v;
+          }),
+          _loadUnlocks.then((v) {
+            print("📊 ReservedRepository: Unlocks 완료 ($v)");
+            return v;
+          }),
+          _loadPlayLists.then((v) {
+            print("📊 ReservedRepository: PlayLists 완료 ($v)");
+            return v;
+          }),
+          _loadShopItems.then((v) {
+            print("📊 ReservedRepository: ShopItems 완료 ($v)");
+            return v;
+          }),
+          _loadDecompositions.then((v) {
+            print("📊 ReservedRepository: Decompositions 완료 ($v)");
+            return v;
+          }),
+        ])
+        .then((value) {
+          final result = !value.contains(false);
+          print("📊 ReservedRepository: 전체 데이터 로딩 종료 (결과: $result)");
+          return result;
+        })
+        .catchError((error) {
+          print("❌ ReservedRepository: 전체 로딩 중 치명적 에러: $error");
+          return false;
+        });
+  }
 
   Future<bool> get _loadGlobal async => await FirebaseFirestore.instance
       .doc("reserved/global")
@@ -93,7 +132,7 @@ class ReservedRepository {
         fromFirestore: Global.fromFirstore,
         toFirestore: Global.toFirestore,
       )
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
         _global = value.data() ?? Global.generateDefault();
         return true;
@@ -111,7 +150,7 @@ class ReservedRepository {
         fromFirestore: Draw.fromFirstore,
         toFirestore: Draw.toFirestore,
       )
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
         draws
           ..clear()
@@ -141,13 +180,14 @@ class ReservedRepository {
 
   Future<bool> get _loadGears async {
     try {
-      final value = await FirebaseFirestore.instance
-          .collection(_collectionPath(type: "gear"))
-          .withConverter(
-            fromFirestore: Gear.fromFirstore,
-            toFirestore: Gear.toFirestore,
-          )
-          .get(const GetOptions(source: Source.server));
+      final value =
+          await FirebaseFirestore.instance
+              .collection(_collectionPath(type: "gear"))
+              .withConverter(
+                fromFirestore: Gear.fromFirstore,
+                toFirestore: Gear.toFirestore,
+              )
+              .get();
 
       gears
         ..clear()
@@ -201,7 +241,7 @@ class ReservedRepository {
         fromFirestore: Level.fromFirstore,
         toFirestore: Level.toFirestore,
       )
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
         levels
           ..clear()
@@ -269,7 +309,7 @@ class ReservedRepository {
         fromFirestore: Recipe.fromFirstore,
         toFirestore: Recipe.toFirestore,
       )
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
         recipes
           ..clear()
@@ -312,7 +352,7 @@ class ReservedRepository {
         fromFirestore: Unlock.fromFirstore,
         toFirestore: Unlock.toFirestore,
       )
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
         unlocks
           ..clear()
@@ -362,7 +402,7 @@ class ReservedRepository {
         fromFirestore: Decomposition.fromFirstore,
         toFirestore: Decomposition.toFirestore,
       )
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
         decompositions
           ..clear()
@@ -409,7 +449,7 @@ class ReservedRepository {
         fromFirestore: PlayList.fromFirstore,
         toFirestore: PlayList.toFirestore,
       )
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
         playLists
           ..clear()
@@ -426,36 +466,29 @@ class ReservedRepository {
 
   Future<bool> get _loadShopItems async => await FirebaseFirestore.instance
       .collection(_collectionPath(type: "shop"))
-      .get(const GetOptions(source: Source.server))
+      .get()
       .then((value) {
-        // 변환된 데이터 로딩
-        final convertedDocs =
-            value.docs.map((doc) => ShopItem.fromFirstore(doc, null)).toList();
+        shopItems.clear();
 
-        shopItems
-          ..clear()
-          ..addAll(convertedDocs);
+        for (var doc in value.docs) {
+          try {
+            shopItems.add(ShopItem.fromFirstore(doc, null));
+          } catch (e) {
+            if (kDebugMode) {
+              print("⚠️ ShopItem 파싱 실패 (ID: ${doc.id}): $e");
+            }
+          }
+        }
 
         if (kDebugMode) {
           print("📊 ShopItem 로딩 완료: 총 ${shopItems.length}개");
-          // for (ShopItem shopItem in shopItems) {
-          //   print("id : ${shopItem.id}");
-          //   print("costEp : ${shopItem.costEp}");
-          //   print("name : ${shopItem.name}");
-          //   print("icon : ${shopItem.icon}");
-          //   print("buyLimit : ${shopItem.buyLimit}");
-          //   print("costSsp : ${shopItem.costSsp}");
-          //   print("desc : ${shopItem.desc}");
-          //   print("effectDuration : ${shopItem.effectDuration}");
-          //   print("--------------------------------");
-          // }
         }
 
         return true;
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ ShopItem 로딩 에러: $error");
+          print("❌ ShopItem 전체 로딩 에러: $error");
         }
         App.instance.log.d(error);
         return false;

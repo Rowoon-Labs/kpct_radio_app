@@ -12,7 +12,8 @@ part of 'listening_pod_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ListeningPodEvent {
@@ -24,8 +25,7 @@ mixin _$ListeningPodEvent {
     required TResult Function() onTapCancelListeningRewardButton,
     required TResult Function() onTapUpListeningRewardButton,
     required TResult Function() onTapDownListeningRewardButton,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? onTapCancelRandomBoxButton,
@@ -34,8 +34,7 @@ mixin _$ListeningPodEvent {
     TResult? Function()? onTapCancelListeningRewardButton,
     TResult? Function()? onTapUpListeningRewardButton,
     TResult? Function()? onTapDownListeningRewardButton,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? onTapCancelRandomBoxButton,
@@ -45,61 +44,58 @@ mixin _$ListeningPodEvent {
     TResult Function()? onTapUpListeningRewardButton,
     TResult Function()? onTapDownListeningRewardButton,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onTapCancelRandomBoxButton value)
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     required TResult Function(_onTapUpRandomBoxButton value)
-        onTapUpRandomBoxButton,
+    onTapUpRandomBoxButton,
     required TResult Function(_onTapDownRandomBoxButton value)
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     required TResult Function(_onTapCancelListeningRewardButton value)
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     required TResult Function(_onTapUpListeningRewardButton value)
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     required TResult Function(_onTapDownListeningRewardButton value)
-        onTapDownListeningRewardButton,
-  }) =>
-      throw _privateConstructorUsedError;
+    onTapDownListeningRewardButton,
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult? Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult? Function(_onTapDownRandomBoxButton value)?
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     TResult? Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult? Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult? Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
-  }) =>
-      throw _privateConstructorUsedError;
+    onTapDownListeningRewardButton,
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult Function(_onTapDownRandomBoxButton value)? onTapDownRandomBoxButton,
     TResult Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ListeningPodEventCopyWith<$Res> {
   factory $ListeningPodEventCopyWith(
-          ListeningPodEvent value, $Res Function(ListeningPodEvent) then) =
-      _$ListeningPodEventCopyWithImpl<$Res, ListeningPodEvent>;
+    ListeningPodEvent value,
+    $Res Function(ListeningPodEvent) then,
+  ) = _$ListeningPodEventCopyWithImpl<$Res, ListeningPodEvent>;
 }
 
 /// @nodoc
@@ -119,20 +115,20 @@ class _$ListeningPodEventCopyWithImpl<$Res, $Val extends ListeningPodEvent>
 /// @nodoc
 abstract class _$$onTapCancelRandomBoxButtonImplCopyWith<$Res> {
   factory _$$onTapCancelRandomBoxButtonImplCopyWith(
-          _$onTapCancelRandomBoxButtonImpl value,
-          $Res Function(_$onTapCancelRandomBoxButtonImpl) then) =
-      __$$onTapCancelRandomBoxButtonImplCopyWithImpl<$Res>;
+    _$onTapCancelRandomBoxButtonImpl value,
+    $Res Function(_$onTapCancelRandomBoxButtonImpl) then,
+  ) = __$$onTapCancelRandomBoxButtonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$onTapCancelRandomBoxButtonImplCopyWithImpl<$Res>
-    extends _$ListeningPodEventCopyWithImpl<$Res,
-        _$onTapCancelRandomBoxButtonImpl>
+    extends
+        _$ListeningPodEventCopyWithImpl<$Res, _$onTapCancelRandomBoxButtonImpl>
     implements _$$onTapCancelRandomBoxButtonImplCopyWith<$Res> {
   __$$onTapCancelRandomBoxButtonImplCopyWithImpl(
-      _$onTapCancelRandomBoxButtonImpl _value,
-      $Res Function(_$onTapCancelRandomBoxButtonImpl) _then)
-      : super(_value, _then);
+    _$onTapCancelRandomBoxButtonImpl _value,
+    $Res Function(_$onTapCancelRandomBoxButtonImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningPodEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -205,17 +201,17 @@ class _$onTapCancelRandomBoxButtonImpl implements _onTapCancelRandomBoxButton {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onTapCancelRandomBoxButton value)
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     required TResult Function(_onTapUpRandomBoxButton value)
-        onTapUpRandomBoxButton,
+    onTapUpRandomBoxButton,
     required TResult Function(_onTapDownRandomBoxButton value)
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     required TResult Function(_onTapCancelListeningRewardButton value)
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     required TResult Function(_onTapUpListeningRewardButton value)
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     required TResult Function(_onTapDownListeningRewardButton value)
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapCancelRandomBoxButton(this);
   }
@@ -224,16 +220,16 @@ class _$onTapCancelRandomBoxButtonImpl implements _onTapCancelRandomBoxButton {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult? Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult? Function(_onTapDownRandomBoxButton value)?
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     TResult? Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult? Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult? Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapCancelRandomBoxButton?.call(this);
   }
@@ -242,15 +238,15 @@ class _$onTapCancelRandomBoxButtonImpl implements _onTapCancelRandomBoxButton {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult Function(_onTapDownRandomBoxButton value)? onTapDownRandomBoxButton,
     TResult Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
     required TResult orElse(),
   }) {
     if (onTapCancelRandomBoxButton != null) {
@@ -268,9 +264,9 @@ abstract class _onTapCancelRandomBoxButton implements ListeningPodEvent {
 /// @nodoc
 abstract class _$$onTapUpRandomBoxButtonImplCopyWith<$Res> {
   factory _$$onTapUpRandomBoxButtonImplCopyWith(
-          _$onTapUpRandomBoxButtonImpl value,
-          $Res Function(_$onTapUpRandomBoxButtonImpl) then) =
-      __$$onTapUpRandomBoxButtonImplCopyWithImpl<$Res>;
+    _$onTapUpRandomBoxButtonImpl value,
+    $Res Function(_$onTapUpRandomBoxButtonImpl) then,
+  ) = __$$onTapUpRandomBoxButtonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -278,9 +274,9 @@ class __$$onTapUpRandomBoxButtonImplCopyWithImpl<$Res>
     extends _$ListeningPodEventCopyWithImpl<$Res, _$onTapUpRandomBoxButtonImpl>
     implements _$$onTapUpRandomBoxButtonImplCopyWith<$Res> {
   __$$onTapUpRandomBoxButtonImplCopyWithImpl(
-      _$onTapUpRandomBoxButtonImpl _value,
-      $Res Function(_$onTapUpRandomBoxButtonImpl) _then)
-      : super(_value, _then);
+    _$onTapUpRandomBoxButtonImpl _value,
+    $Res Function(_$onTapUpRandomBoxButtonImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningPodEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -353,17 +349,17 @@ class _$onTapUpRandomBoxButtonImpl implements _onTapUpRandomBoxButton {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onTapCancelRandomBoxButton value)
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     required TResult Function(_onTapUpRandomBoxButton value)
-        onTapUpRandomBoxButton,
+    onTapUpRandomBoxButton,
     required TResult Function(_onTapDownRandomBoxButton value)
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     required TResult Function(_onTapCancelListeningRewardButton value)
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     required TResult Function(_onTapUpListeningRewardButton value)
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     required TResult Function(_onTapDownListeningRewardButton value)
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapUpRandomBoxButton(this);
   }
@@ -372,16 +368,16 @@ class _$onTapUpRandomBoxButtonImpl implements _onTapUpRandomBoxButton {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult? Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult? Function(_onTapDownRandomBoxButton value)?
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     TResult? Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult? Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult? Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapUpRandomBoxButton?.call(this);
   }
@@ -390,15 +386,15 @@ class _$onTapUpRandomBoxButtonImpl implements _onTapUpRandomBoxButton {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult Function(_onTapDownRandomBoxButton value)? onTapDownRandomBoxButton,
     TResult Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
     required TResult orElse(),
   }) {
     if (onTapUpRandomBoxButton != null) {
@@ -415,20 +411,20 @@ abstract class _onTapUpRandomBoxButton implements ListeningPodEvent {
 /// @nodoc
 abstract class _$$onTapDownRandomBoxButtonImplCopyWith<$Res> {
   factory _$$onTapDownRandomBoxButtonImplCopyWith(
-          _$onTapDownRandomBoxButtonImpl value,
-          $Res Function(_$onTapDownRandomBoxButtonImpl) then) =
-      __$$onTapDownRandomBoxButtonImplCopyWithImpl<$Res>;
+    _$onTapDownRandomBoxButtonImpl value,
+    $Res Function(_$onTapDownRandomBoxButtonImpl) then,
+  ) = __$$onTapDownRandomBoxButtonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$onTapDownRandomBoxButtonImplCopyWithImpl<$Res>
-    extends _$ListeningPodEventCopyWithImpl<$Res,
-        _$onTapDownRandomBoxButtonImpl>
+    extends
+        _$ListeningPodEventCopyWithImpl<$Res, _$onTapDownRandomBoxButtonImpl>
     implements _$$onTapDownRandomBoxButtonImplCopyWith<$Res> {
   __$$onTapDownRandomBoxButtonImplCopyWithImpl(
-      _$onTapDownRandomBoxButtonImpl _value,
-      $Res Function(_$onTapDownRandomBoxButtonImpl) _then)
-      : super(_value, _then);
+    _$onTapDownRandomBoxButtonImpl _value,
+    $Res Function(_$onTapDownRandomBoxButtonImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningPodEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -501,17 +497,17 @@ class _$onTapDownRandomBoxButtonImpl implements _onTapDownRandomBoxButton {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onTapCancelRandomBoxButton value)
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     required TResult Function(_onTapUpRandomBoxButton value)
-        onTapUpRandomBoxButton,
+    onTapUpRandomBoxButton,
     required TResult Function(_onTapDownRandomBoxButton value)
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     required TResult Function(_onTapCancelListeningRewardButton value)
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     required TResult Function(_onTapUpListeningRewardButton value)
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     required TResult Function(_onTapDownListeningRewardButton value)
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapDownRandomBoxButton(this);
   }
@@ -520,16 +516,16 @@ class _$onTapDownRandomBoxButtonImpl implements _onTapDownRandomBoxButton {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult? Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult? Function(_onTapDownRandomBoxButton value)?
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     TResult? Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult? Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult? Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapDownRandomBoxButton?.call(this);
   }
@@ -538,15 +534,15 @@ class _$onTapDownRandomBoxButtonImpl implements _onTapDownRandomBoxButton {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult Function(_onTapDownRandomBoxButton value)? onTapDownRandomBoxButton,
     TResult Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
     required TResult orElse(),
   }) {
     if (onTapDownRandomBoxButton != null) {
@@ -563,20 +559,23 @@ abstract class _onTapDownRandomBoxButton implements ListeningPodEvent {
 /// @nodoc
 abstract class _$$onTapCancelListeningRewardButtonImplCopyWith<$Res> {
   factory _$$onTapCancelListeningRewardButtonImplCopyWith(
-          _$onTapCancelListeningRewardButtonImpl value,
-          $Res Function(_$onTapCancelListeningRewardButtonImpl) then) =
-      __$$onTapCancelListeningRewardButtonImplCopyWithImpl<$Res>;
+    _$onTapCancelListeningRewardButtonImpl value,
+    $Res Function(_$onTapCancelListeningRewardButtonImpl) then,
+  ) = __$$onTapCancelListeningRewardButtonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$onTapCancelListeningRewardButtonImplCopyWithImpl<$Res>
-    extends _$ListeningPodEventCopyWithImpl<$Res,
-        _$onTapCancelListeningRewardButtonImpl>
+    extends
+        _$ListeningPodEventCopyWithImpl<
+          $Res,
+          _$onTapCancelListeningRewardButtonImpl
+        >
     implements _$$onTapCancelListeningRewardButtonImplCopyWith<$Res> {
   __$$onTapCancelListeningRewardButtonImplCopyWithImpl(
-      _$onTapCancelListeningRewardButtonImpl _value,
-      $Res Function(_$onTapCancelListeningRewardButtonImpl) _then)
-      : super(_value, _then);
+    _$onTapCancelListeningRewardButtonImpl _value,
+    $Res Function(_$onTapCancelListeningRewardButtonImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningPodEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -650,17 +649,17 @@ class _$onTapCancelListeningRewardButtonImpl
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onTapCancelRandomBoxButton value)
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     required TResult Function(_onTapUpRandomBoxButton value)
-        onTapUpRandomBoxButton,
+    onTapUpRandomBoxButton,
     required TResult Function(_onTapDownRandomBoxButton value)
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     required TResult Function(_onTapCancelListeningRewardButton value)
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     required TResult Function(_onTapUpListeningRewardButton value)
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     required TResult Function(_onTapDownListeningRewardButton value)
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapCancelListeningRewardButton(this);
   }
@@ -669,16 +668,16 @@ class _$onTapCancelListeningRewardButtonImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult? Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult? Function(_onTapDownRandomBoxButton value)?
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     TResult? Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult? Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult? Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapCancelListeningRewardButton?.call(this);
   }
@@ -687,15 +686,15 @@ class _$onTapCancelListeningRewardButtonImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult Function(_onTapDownRandomBoxButton value)? onTapDownRandomBoxButton,
     TResult Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
     required TResult orElse(),
   }) {
     if (onTapCancelListeningRewardButton != null) {
@@ -713,20 +712,23 @@ abstract class _onTapCancelListeningRewardButton implements ListeningPodEvent {
 /// @nodoc
 abstract class _$$onTapUpListeningRewardButtonImplCopyWith<$Res> {
   factory _$$onTapUpListeningRewardButtonImplCopyWith(
-          _$onTapUpListeningRewardButtonImpl value,
-          $Res Function(_$onTapUpListeningRewardButtonImpl) then) =
-      __$$onTapUpListeningRewardButtonImplCopyWithImpl<$Res>;
+    _$onTapUpListeningRewardButtonImpl value,
+    $Res Function(_$onTapUpListeningRewardButtonImpl) then,
+  ) = __$$onTapUpListeningRewardButtonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$onTapUpListeningRewardButtonImplCopyWithImpl<$Res>
-    extends _$ListeningPodEventCopyWithImpl<$Res,
-        _$onTapUpListeningRewardButtonImpl>
+    extends
+        _$ListeningPodEventCopyWithImpl<
+          $Res,
+          _$onTapUpListeningRewardButtonImpl
+        >
     implements _$$onTapUpListeningRewardButtonImplCopyWith<$Res> {
   __$$onTapUpListeningRewardButtonImplCopyWithImpl(
-      _$onTapUpListeningRewardButtonImpl _value,
-      $Res Function(_$onTapUpListeningRewardButtonImpl) _then)
-      : super(_value, _then);
+    _$onTapUpListeningRewardButtonImpl _value,
+    $Res Function(_$onTapUpListeningRewardButtonImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningPodEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -800,17 +802,17 @@ class _$onTapUpListeningRewardButtonImpl
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onTapCancelRandomBoxButton value)
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     required TResult Function(_onTapUpRandomBoxButton value)
-        onTapUpRandomBoxButton,
+    onTapUpRandomBoxButton,
     required TResult Function(_onTapDownRandomBoxButton value)
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     required TResult Function(_onTapCancelListeningRewardButton value)
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     required TResult Function(_onTapUpListeningRewardButton value)
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     required TResult Function(_onTapDownListeningRewardButton value)
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapUpListeningRewardButton(this);
   }
@@ -819,16 +821,16 @@ class _$onTapUpListeningRewardButtonImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult? Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult? Function(_onTapDownRandomBoxButton value)?
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     TResult? Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult? Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult? Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapUpListeningRewardButton?.call(this);
   }
@@ -837,15 +839,15 @@ class _$onTapUpListeningRewardButtonImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult Function(_onTapDownRandomBoxButton value)? onTapDownRandomBoxButton,
     TResult Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
     required TResult orElse(),
   }) {
     if (onTapUpListeningRewardButton != null) {
@@ -863,20 +865,23 @@ abstract class _onTapUpListeningRewardButton implements ListeningPodEvent {
 /// @nodoc
 abstract class _$$onTapDownListeningRewardButtonImplCopyWith<$Res> {
   factory _$$onTapDownListeningRewardButtonImplCopyWith(
-          _$onTapDownListeningRewardButtonImpl value,
-          $Res Function(_$onTapDownListeningRewardButtonImpl) then) =
-      __$$onTapDownListeningRewardButtonImplCopyWithImpl<$Res>;
+    _$onTapDownListeningRewardButtonImpl value,
+    $Res Function(_$onTapDownListeningRewardButtonImpl) then,
+  ) = __$$onTapDownListeningRewardButtonImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$onTapDownListeningRewardButtonImplCopyWithImpl<$Res>
-    extends _$ListeningPodEventCopyWithImpl<$Res,
-        _$onTapDownListeningRewardButtonImpl>
+    extends
+        _$ListeningPodEventCopyWithImpl<
+          $Res,
+          _$onTapDownListeningRewardButtonImpl
+        >
     implements _$$onTapDownListeningRewardButtonImplCopyWith<$Res> {
   __$$onTapDownListeningRewardButtonImplCopyWithImpl(
-      _$onTapDownListeningRewardButtonImpl _value,
-      $Res Function(_$onTapDownListeningRewardButtonImpl) _then)
-      : super(_value, _then);
+    _$onTapDownListeningRewardButtonImpl _value,
+    $Res Function(_$onTapDownListeningRewardButtonImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningPodEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -950,17 +955,17 @@ class _$onTapDownListeningRewardButtonImpl
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onTapCancelRandomBoxButton value)
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     required TResult Function(_onTapUpRandomBoxButton value)
-        onTapUpRandomBoxButton,
+    onTapUpRandomBoxButton,
     required TResult Function(_onTapDownRandomBoxButton value)
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     required TResult Function(_onTapCancelListeningRewardButton value)
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     required TResult Function(_onTapUpListeningRewardButton value)
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     required TResult Function(_onTapDownListeningRewardButton value)
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapDownListeningRewardButton(this);
   }
@@ -969,16 +974,16 @@ class _$onTapDownListeningRewardButtonImpl
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult? Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult? Function(_onTapDownRandomBoxButton value)?
-        onTapDownRandomBoxButton,
+    onTapDownRandomBoxButton,
     TResult? Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult? Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult? Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
   }) {
     return onTapDownListeningRewardButton?.call(this);
   }
@@ -987,15 +992,15 @@ class _$onTapDownListeningRewardButtonImpl
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onTapCancelRandomBoxButton value)?
-        onTapCancelRandomBoxButton,
+    onTapCancelRandomBoxButton,
     TResult Function(_onTapUpRandomBoxButton value)? onTapUpRandomBoxButton,
     TResult Function(_onTapDownRandomBoxButton value)? onTapDownRandomBoxButton,
     TResult Function(_onTapCancelListeningRewardButton value)?
-        onTapCancelListeningRewardButton,
+    onTapCancelListeningRewardButton,
     TResult Function(_onTapUpListeningRewardButton value)?
-        onTapUpListeningRewardButton,
+    onTapUpListeningRewardButton,
     TResult Function(_onTapDownListeningRewardButton value)?
-        onTapDownListeningRewardButton,
+    onTapDownListeningRewardButton,
     required TResult orElse(),
   }) {
     if (onTapDownListeningRewardButton != null) {
@@ -1026,11 +1031,14 @@ mixin _$ListeningPodState {
 /// @nodoc
 abstract class $ListeningPodStateCopyWith<$Res> {
   factory $ListeningPodStateCopyWith(
-          ListeningPodState value, $Res Function(ListeningPodState) then) =
-      _$ListeningPodStateCopyWithImpl<$Res, ListeningPodState>;
+    ListeningPodState value,
+    $Res Function(ListeningPodState) then,
+  ) = _$ListeningPodStateCopyWithImpl<$Res, ListeningPodState>;
   @useResult
-  $Res call(
-      {dynamic randomBoxButtonPressed, dynamic listeningRewardButtonPressed});
+  $Res call({
+    dynamic randomBoxButtonPressed,
+    dynamic listeningRewardButtonPressed,
+  });
 }
 
 /// @nodoc
@@ -1051,38 +1059,47 @@ class _$ListeningPodStateCopyWithImpl<$Res, $Val extends ListeningPodState>
     Object? randomBoxButtonPressed = freezed,
     Object? listeningRewardButtonPressed = freezed,
   }) {
-    return _then(_value.copyWith(
-      randomBoxButtonPressed: freezed == randomBoxButtonPressed
-          ? _value.randomBoxButtonPressed
-          : randomBoxButtonPressed // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-      listeningRewardButtonPressed: freezed == listeningRewardButtonPressed
-          ? _value.listeningRewardButtonPressed
-          : listeningRewardButtonPressed // ignore: cast_nullable_to_non_nullable
-              as dynamic,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            randomBoxButtonPressed:
+                freezed == randomBoxButtonPressed
+                    ? _value.randomBoxButtonPressed
+                    : randomBoxButtonPressed // ignore: cast_nullable_to_non_nullable
+                        as dynamic,
+            listeningRewardButtonPressed:
+                freezed == listeningRewardButtonPressed
+                    ? _value.listeningRewardButtonPressed
+                    : listeningRewardButtonPressed // ignore: cast_nullable_to_non_nullable
+                        as dynamic,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$ListeningPodStateImplCopyWith<$Res>
     implements $ListeningPodStateCopyWith<$Res> {
-  factory _$$ListeningPodStateImplCopyWith(_$ListeningPodStateImpl value,
-          $Res Function(_$ListeningPodStateImpl) then) =
-      __$$ListeningPodStateImplCopyWithImpl<$Res>;
+  factory _$$ListeningPodStateImplCopyWith(
+    _$ListeningPodStateImpl value,
+    $Res Function(_$ListeningPodStateImpl) then,
+  ) = __$$ListeningPodStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {dynamic randomBoxButtonPressed, dynamic listeningRewardButtonPressed});
+  $Res call({
+    dynamic randomBoxButtonPressed,
+    dynamic listeningRewardButtonPressed,
+  });
 }
 
 /// @nodoc
 class __$$ListeningPodStateImplCopyWithImpl<$Res>
     extends _$ListeningPodStateCopyWithImpl<$Res, _$ListeningPodStateImpl>
     implements _$$ListeningPodStateImplCopyWith<$Res> {
-  __$$ListeningPodStateImplCopyWithImpl(_$ListeningPodStateImpl _value,
-      $Res Function(_$ListeningPodStateImpl) _then)
-      : super(_value, _then);
+  __$$ListeningPodStateImplCopyWithImpl(
+    _$ListeningPodStateImpl _value,
+    $Res Function(_$ListeningPodStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningPodState
   /// with the given fields replaced by the non-null parameter values.
@@ -1092,23 +1109,28 @@ class __$$ListeningPodStateImplCopyWithImpl<$Res>
     Object? randomBoxButtonPressed = freezed,
     Object? listeningRewardButtonPressed = freezed,
   }) {
-    return _then(_$ListeningPodStateImpl(
-      randomBoxButtonPressed: freezed == randomBoxButtonPressed
-          ? _value.randomBoxButtonPressed!
-          : randomBoxButtonPressed,
-      listeningRewardButtonPressed: freezed == listeningRewardButtonPressed
-          ? _value.listeningRewardButtonPressed!
-          : listeningRewardButtonPressed,
-    ));
+    return _then(
+      _$ListeningPodStateImpl(
+        randomBoxButtonPressed:
+            freezed == randomBoxButtonPressed
+                ? _value.randomBoxButtonPressed!
+                : randomBoxButtonPressed,
+        listeningRewardButtonPressed:
+            freezed == listeningRewardButtonPressed
+                ? _value.listeningRewardButtonPressed!
+                : listeningRewardButtonPressed,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$ListeningPodStateImpl implements _ListeningPodState {
-  const _$ListeningPodStateImpl(
-      {this.randomBoxButtonPressed = false,
-      this.listeningRewardButtonPressed = false});
+  const _$ListeningPodStateImpl({
+    this.randomBoxButtonPressed = false,
+    this.listeningRewardButtonPressed = false,
+  });
 
   @override
   @JsonKey()
@@ -1127,18 +1149,22 @@ class _$ListeningPodStateImpl implements _ListeningPodState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ListeningPodStateImpl &&
-            const DeepCollectionEquality()
-                .equals(other.randomBoxButtonPressed, randomBoxButtonPressed) &&
             const DeepCollectionEquality().equals(
-                other.listeningRewardButtonPressed,
-                listeningRewardButtonPressed));
+              other.randomBoxButtonPressed,
+              randomBoxButtonPressed,
+            ) &&
+            const DeepCollectionEquality().equals(
+              other.listeningRewardButtonPressed,
+              listeningRewardButtonPressed,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(randomBoxButtonPressed),
-      const DeepCollectionEquality().hash(listeningRewardButtonPressed));
+    runtimeType,
+    const DeepCollectionEquality().hash(randomBoxButtonPressed),
+    const DeepCollectionEquality().hash(listeningRewardButtonPressed),
+  );
 
   /// Create a copy of ListeningPodState
   /// with the given fields replaced by the non-null parameter values.
@@ -1147,13 +1173,16 @@ class _$ListeningPodStateImpl implements _ListeningPodState {
   @pragma('vm:prefer-inline')
   _$$ListeningPodStateImplCopyWith<_$ListeningPodStateImpl> get copyWith =>
       __$$ListeningPodStateImplCopyWithImpl<_$ListeningPodStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _ListeningPodState implements ListeningPodState {
-  const factory _ListeningPodState(
-      {final dynamic randomBoxButtonPressed,
-      final dynamic listeningRewardButtonPressed}) = _$ListeningPodStateImpl;
+  const factory _ListeningPodState({
+    final dynamic randomBoxButtonPressed,
+    final dynamic listeningRewardButtonPressed,
+  }) = _$ListeningPodStateImpl;
 
   @override
   dynamic get randomBoxButtonPressed;

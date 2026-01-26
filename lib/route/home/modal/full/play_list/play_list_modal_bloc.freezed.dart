@@ -12,7 +12,8 @@ part of 'play_list_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$PlayListModalEvent {
@@ -20,35 +21,29 @@ mixin _$PlayListModalEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(PlayList playList) onPlayListPressed,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(PlayList playList)? onPlayListPressed,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(PlayList playList)? onPlayListPressed,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_onPlayListPressed value) onPlayListPressed,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_onPlayListPressed value)? onPlayListPressed,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_onPlayListPressed value)? onPlayListPressed,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 
   /// Create a copy of PlayListModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -60,8 +55,9 @@ mixin _$PlayListModalEvent {
 /// @nodoc
 abstract class $PlayListModalEventCopyWith<$Res> {
   factory $PlayListModalEventCopyWith(
-          PlayListModalEvent value, $Res Function(PlayListModalEvent) then) =
-      _$PlayListModalEventCopyWithImpl<$Res, PlayListModalEvent>;
+    PlayListModalEvent value,
+    $Res Function(PlayListModalEvent) then,
+  ) = _$PlayListModalEventCopyWithImpl<$Res, PlayListModalEvent>;
   @useResult
   $Res call({PlayList playList});
 
@@ -82,15 +78,17 @@ class _$PlayListModalEventCopyWithImpl<$Res, $Val extends PlayListModalEvent>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? playList = null,
-  }) {
-    return _then(_value.copyWith(
-      playList: null == playList
-          ? _value.playList
-          : playList // ignore: cast_nullable_to_non_nullable
-              as PlayList,
-    ) as $Val);
+  $Res call({Object? playList = null}) {
+    return _then(
+      _value.copyWith(
+            playList:
+                null == playList
+                    ? _value.playList
+                    : playList // ignore: cast_nullable_to_non_nullable
+                        as PlayList,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of PlayListModalEvent
@@ -107,9 +105,10 @@ class _$PlayListModalEventCopyWithImpl<$Res, $Val extends PlayListModalEvent>
 /// @nodoc
 abstract class _$$onPlayListPressedImplCopyWith<$Res>
     implements $PlayListModalEventCopyWith<$Res> {
-  factory _$$onPlayListPressedImplCopyWith(_$onPlayListPressedImpl value,
-          $Res Function(_$onPlayListPressedImpl) then) =
-      __$$onPlayListPressedImplCopyWithImpl<$Res>;
+  factory _$$onPlayListPressedImplCopyWith(
+    _$onPlayListPressedImpl value,
+    $Res Function(_$onPlayListPressedImpl) then,
+  ) = __$$onPlayListPressedImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({PlayList playList});
@@ -122,23 +121,25 @@ abstract class _$$onPlayListPressedImplCopyWith<$Res>
 class __$$onPlayListPressedImplCopyWithImpl<$Res>
     extends _$PlayListModalEventCopyWithImpl<$Res, _$onPlayListPressedImpl>
     implements _$$onPlayListPressedImplCopyWith<$Res> {
-  __$$onPlayListPressedImplCopyWithImpl(_$onPlayListPressedImpl _value,
-      $Res Function(_$onPlayListPressedImpl) _then)
-      : super(_value, _then);
+  __$$onPlayListPressedImplCopyWithImpl(
+    _$onPlayListPressedImpl _value,
+    $Res Function(_$onPlayListPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of PlayListModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? playList = null,
-  }) {
-    return _then(_$onPlayListPressedImpl(
-      playList: null == playList
-          ? _value.playList
-          : playList // ignore: cast_nullable_to_non_nullable
-              as PlayList,
-    ));
+  $Res call({Object? playList = null}) {
+    return _then(
+      _$onPlayListPressedImpl(
+        playList:
+            null == playList
+                ? _value.playList
+                : playList // ignore: cast_nullable_to_non_nullable
+                    as PlayList,
+      ),
+    );
   }
 }
 
@@ -174,7 +175,9 @@ class _$onPlayListPressedImpl implements _onPlayListPressed {
   @pragma('vm:prefer-inline')
   _$$onPlayListPressedImplCopyWith<_$onPlayListPressedImpl> get copyWith =>
       __$$onPlayListPressedImplCopyWithImpl<_$onPlayListPressedImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -264,13 +267,15 @@ mixin _$PlayListModalState {
 /// @nodoc
 abstract class $PlayListModalStateCopyWith<$Res> {
   factory $PlayListModalStateCopyWith(
-          PlayListModalState value, $Res Function(PlayListModalState) then) =
-      _$PlayListModalStateCopyWithImpl<$Res, PlayListModalState>;
+    PlayListModalState value,
+    $Res Function(PlayListModalState) then,
+  ) = _$PlayListModalStateCopyWithImpl<$Res, PlayListModalState>;
   @useResult
-  $Res call(
-      {List<PlayList> playLists,
-      PlayList? selectedPlayList,
-      Video? selectedVideo});
+  $Res call({
+    List<PlayList> playLists,
+    PlayList? selectedPlayList,
+    Video? selectedVideo,
+  });
 
   $PlayListCopyWith<$Res>? get selectedPlayList;
   $VideoCopyWith<$Res>? get selectedVideo;
@@ -295,20 +300,26 @@ class _$PlayListModalStateCopyWithImpl<$Res, $Val extends PlayListModalState>
     Object? selectedPlayList = freezed,
     Object? selectedVideo = freezed,
   }) {
-    return _then(_value.copyWith(
-      playLists: null == playLists
-          ? _value.playLists
-          : playLists // ignore: cast_nullable_to_non_nullable
-              as List<PlayList>,
-      selectedPlayList: freezed == selectedPlayList
-          ? _value.selectedPlayList
-          : selectedPlayList // ignore: cast_nullable_to_non_nullable
-              as PlayList?,
-      selectedVideo: freezed == selectedVideo
-          ? _value.selectedVideo
-          : selectedVideo // ignore: cast_nullable_to_non_nullable
-              as Video?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            playLists:
+                null == playLists
+                    ? _value.playLists
+                    : playLists // ignore: cast_nullable_to_non_nullable
+                        as List<PlayList>,
+            selectedPlayList:
+                freezed == selectedPlayList
+                    ? _value.selectedPlayList
+                    : selectedPlayList // ignore: cast_nullable_to_non_nullable
+                        as PlayList?,
+            selectedVideo:
+                freezed == selectedVideo
+                    ? _value.selectedVideo
+                    : selectedVideo // ignore: cast_nullable_to_non_nullable
+                        as Video?,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of PlayListModalState
@@ -343,15 +354,17 @@ class _$PlayListModalStateCopyWithImpl<$Res, $Val extends PlayListModalState>
 /// @nodoc
 abstract class _$$PlayListModalStateImplCopyWith<$Res>
     implements $PlayListModalStateCopyWith<$Res> {
-  factory _$$PlayListModalStateImplCopyWith(_$PlayListModalStateImpl value,
-          $Res Function(_$PlayListModalStateImpl) then) =
-      __$$PlayListModalStateImplCopyWithImpl<$Res>;
+  factory _$$PlayListModalStateImplCopyWith(
+    _$PlayListModalStateImpl value,
+    $Res Function(_$PlayListModalStateImpl) then,
+  ) = __$$PlayListModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {List<PlayList> playLists,
-      PlayList? selectedPlayList,
-      Video? selectedVideo});
+  $Res call({
+    List<PlayList> playLists,
+    PlayList? selectedPlayList,
+    Video? selectedVideo,
+  });
 
   @override
   $PlayListCopyWith<$Res>? get selectedPlayList;
@@ -363,9 +376,10 @@ abstract class _$$PlayListModalStateImplCopyWith<$Res>
 class __$$PlayListModalStateImplCopyWithImpl<$Res>
     extends _$PlayListModalStateCopyWithImpl<$Res, _$PlayListModalStateImpl>
     implements _$$PlayListModalStateImplCopyWith<$Res> {
-  __$$PlayListModalStateImplCopyWithImpl(_$PlayListModalStateImpl _value,
-      $Res Function(_$PlayListModalStateImpl) _then)
-      : super(_value, _then);
+  __$$PlayListModalStateImplCopyWithImpl(
+    _$PlayListModalStateImpl _value,
+    $Res Function(_$PlayListModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of PlayListModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -376,31 +390,36 @@ class __$$PlayListModalStateImplCopyWithImpl<$Res>
     Object? selectedPlayList = freezed,
     Object? selectedVideo = freezed,
   }) {
-    return _then(_$PlayListModalStateImpl(
-      playLists: null == playLists
-          ? _value._playLists
-          : playLists // ignore: cast_nullable_to_non_nullable
-              as List<PlayList>,
-      selectedPlayList: freezed == selectedPlayList
-          ? _value.selectedPlayList
-          : selectedPlayList // ignore: cast_nullable_to_non_nullable
-              as PlayList?,
-      selectedVideo: freezed == selectedVideo
-          ? _value.selectedVideo
-          : selectedVideo // ignore: cast_nullable_to_non_nullable
-              as Video?,
-    ));
+    return _then(
+      _$PlayListModalStateImpl(
+        playLists:
+            null == playLists
+                ? _value._playLists
+                : playLists // ignore: cast_nullable_to_non_nullable
+                    as List<PlayList>,
+        selectedPlayList:
+            freezed == selectedPlayList
+                ? _value.selectedPlayList
+                : selectedPlayList // ignore: cast_nullable_to_non_nullable
+                    as PlayList?,
+        selectedVideo:
+            freezed == selectedVideo
+                ? _value.selectedVideo
+                : selectedVideo // ignore: cast_nullable_to_non_nullable
+                    as Video?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$PlayListModalStateImpl implements _PlayListModalState {
-  const _$PlayListModalStateImpl(
-      {final List<PlayList> playLists = const [],
-      this.selectedPlayList = null,
-      this.selectedVideo = null})
-      : _playLists = playLists;
+  const _$PlayListModalStateImpl({
+    final List<PlayList> playLists = const [],
+    this.selectedPlayList = null,
+    this.selectedVideo = null,
+  }) : _playLists = playLists;
 
   final List<PlayList> _playLists;
   @override
@@ -428,8 +447,10 @@ class _$PlayListModalStateImpl implements _PlayListModalState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$PlayListModalStateImpl &&
-            const DeepCollectionEquality()
-                .equals(other._playLists, _playLists) &&
+            const DeepCollectionEquality().equals(
+              other._playLists,
+              _playLists,
+            ) &&
             (identical(other.selectedPlayList, selectedPlayList) ||
                 other.selectedPlayList == selectedPlayList) &&
             (identical(other.selectedVideo, selectedVideo) ||
@@ -438,10 +459,11 @@ class _$PlayListModalStateImpl implements _PlayListModalState {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(_playLists),
-      selectedPlayList,
-      selectedVideo);
+    runtimeType,
+    const DeepCollectionEquality().hash(_playLists),
+    selectedPlayList,
+    selectedVideo,
+  );
 
   /// Create a copy of PlayListModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -450,14 +472,17 @@ class _$PlayListModalStateImpl implements _PlayListModalState {
   @pragma('vm:prefer-inline')
   _$$PlayListModalStateImplCopyWith<_$PlayListModalStateImpl> get copyWith =>
       __$$PlayListModalStateImplCopyWithImpl<_$PlayListModalStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _PlayListModalState implements PlayListModalState {
-  const factory _PlayListModalState(
-      {final List<PlayList> playLists,
-      final PlayList? selectedPlayList,
-      final Video? selectedVideo}) = _$PlayListModalStateImpl;
+  const factory _PlayListModalState({
+    final List<PlayList> playLists,
+    final PlayList? selectedPlayList,
+    final Video? selectedVideo,
+  }) = _$PlayListModalStateImpl;
 
   @override
   List<PlayList> get playLists;

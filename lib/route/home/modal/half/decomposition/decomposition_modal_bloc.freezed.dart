@@ -12,7 +12,8 @@ part of 'decomposition_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$DecompositionModalEvent {
@@ -20,61 +21,58 @@ mixin _$DecompositionModalEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String equipmentId, String decompositionId)
-        decompositionPressed,
+    decompositionPressed,
     required TResult Function() onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult? Function()? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult Function()? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
     required TResult Function(_decompositionPressed value) decompositionPressed,
     required TResult Function(_onTick value) onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_decompositionPressed value)? decompositionPressed,
     TResult? Function(_onTick value)? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     TResult Function(_decompositionPressed value)? decompositionPressed,
     TResult Function(_onTick value)? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $DecompositionModalEventCopyWith<$Res> {
-  factory $DecompositionModalEventCopyWith(DecompositionModalEvent value,
-          $Res Function(DecompositionModalEvent) then) =
-      _$DecompositionModalEventCopyWithImpl<$Res, DecompositionModalEvent>;
+  factory $DecompositionModalEventCopyWith(
+    DecompositionModalEvent value,
+    $Res Function(DecompositionModalEvent) then,
+  ) = _$DecompositionModalEventCopyWithImpl<$Res, DecompositionModalEvent>;
 }
 
 /// @nodoc
-class _$DecompositionModalEventCopyWithImpl<$Res,
-        $Val extends DecompositionModalEvent>
+class _$DecompositionModalEventCopyWithImpl<
+  $Res,
+  $Val extends DecompositionModalEvent
+>
     implements $DecompositionModalEventCopyWith<$Res> {
   _$DecompositionModalEventCopyWithImpl(this._value, this._then);
 
@@ -90,8 +88,9 @@ class _$DecompositionModalEventCopyWithImpl<$Res,
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -99,8 +98,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$DecompositionModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of DecompositionModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -130,7 +130,7 @@ class _$initializeImpl implements _initialize {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String equipmentId, String decompositionId)
-        decompositionPressed,
+    decompositionPressed,
     required TResult Function() onTick,
   }) {
     return initialize();
@@ -141,7 +141,7 @@ class _$initializeImpl implements _initialize {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult? Function()? onTick,
   }) {
     return initialize?.call();
@@ -152,7 +152,7 @@ class _$initializeImpl implements _initialize {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult Function()? onTick,
     required TResult orElse(),
   }) {
@@ -203,48 +203,53 @@ abstract class _initialize implements DecompositionModalEvent {
 
 /// @nodoc
 abstract class _$$decompositionPressedImplCopyWith<$Res> {
-  factory _$$decompositionPressedImplCopyWith(_$decompositionPressedImpl value,
-          $Res Function(_$decompositionPressedImpl) then) =
-      __$$decompositionPressedImplCopyWithImpl<$Res>;
+  factory _$$decompositionPressedImplCopyWith(
+    _$decompositionPressedImpl value,
+    $Res Function(_$decompositionPressedImpl) then,
+  ) = __$$decompositionPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String equipmentId, String decompositionId});
 }
 
 /// @nodoc
 class __$$decompositionPressedImplCopyWithImpl<$Res>
-    extends _$DecompositionModalEventCopyWithImpl<$Res,
-        _$decompositionPressedImpl>
+    extends
+        _$DecompositionModalEventCopyWithImpl<$Res, _$decompositionPressedImpl>
     implements _$$decompositionPressedImplCopyWith<$Res> {
-  __$$decompositionPressedImplCopyWithImpl(_$decompositionPressedImpl _value,
-      $Res Function(_$decompositionPressedImpl) _then)
-      : super(_value, _then);
+  __$$decompositionPressedImplCopyWithImpl(
+    _$decompositionPressedImpl _value,
+    $Res Function(_$decompositionPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of DecompositionModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? equipmentId = null,
-    Object? decompositionId = null,
-  }) {
-    return _then(_$decompositionPressedImpl(
-      equipmentId: null == equipmentId
-          ? _value.equipmentId
-          : equipmentId // ignore: cast_nullable_to_non_nullable
-              as String,
-      decompositionId: null == decompositionId
-          ? _value.decompositionId
-          : decompositionId // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+  $Res call({Object? equipmentId = null, Object? decompositionId = null}) {
+    return _then(
+      _$decompositionPressedImpl(
+        equipmentId:
+            null == equipmentId
+                ? _value.equipmentId
+                : equipmentId // ignore: cast_nullable_to_non_nullable
+                    as String,
+        decompositionId:
+            null == decompositionId
+                ? _value.decompositionId
+                : decompositionId // ignore: cast_nullable_to_non_nullable
+                    as String,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$decompositionPressedImpl implements _decompositionPressed {
-  const _$decompositionPressedImpl(
-      {required this.equipmentId, required this.decompositionId});
+  const _$decompositionPressedImpl({
+    required this.equipmentId,
+    required this.decompositionId,
+  });
 
   @override
   final String equipmentId;
@@ -276,16 +281,18 @@ class _$decompositionPressedImpl implements _decompositionPressed {
   @override
   @pragma('vm:prefer-inline')
   _$$decompositionPressedImplCopyWith<_$decompositionPressedImpl>
-      get copyWith =>
-          __$$decompositionPressedImplCopyWithImpl<_$decompositionPressedImpl>(
-              this, _$identity);
+  get copyWith =>
+      __$$decompositionPressedImplCopyWithImpl<_$decompositionPressedImpl>(
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String equipmentId, String decompositionId)
-        decompositionPressed,
+    decompositionPressed,
     required TResult Function() onTick,
   }) {
     return decompositionPressed(equipmentId, decompositionId);
@@ -296,7 +303,7 @@ class _$decompositionPressedImpl implements _decompositionPressed {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult? Function()? onTick,
   }) {
     return decompositionPressed?.call(equipmentId, decompositionId);
@@ -307,7 +314,7 @@ class _$decompositionPressedImpl implements _decompositionPressed {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult Function()? onTick,
     required TResult orElse(),
   }) {
@@ -353,9 +360,10 @@ class _$decompositionPressedImpl implements _decompositionPressed {
 }
 
 abstract class _decompositionPressed implements DecompositionModalEvent {
-  const factory _decompositionPressed(
-      {required final String equipmentId,
-      required final String decompositionId}) = _$decompositionPressedImpl;
+  const factory _decompositionPressed({
+    required final String equipmentId,
+    required final String decompositionId,
+  }) = _$decompositionPressedImpl;
 
   String get equipmentId;
   String get decompositionId;
@@ -364,14 +372,15 @@ abstract class _decompositionPressed implements DecompositionModalEvent {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$decompositionPressedImplCopyWith<_$decompositionPressedImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$onTickImplCopyWith<$Res> {
   factory _$$onTickImplCopyWith(
-          _$onTickImpl value, $Res Function(_$onTickImpl) then) =
-      __$$onTickImplCopyWithImpl<$Res>;
+    _$onTickImpl value,
+    $Res Function(_$onTickImpl) then,
+  ) = __$$onTickImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -379,8 +388,9 @@ class __$$onTickImplCopyWithImpl<$Res>
     extends _$DecompositionModalEventCopyWithImpl<$Res, _$onTickImpl>
     implements _$$onTickImplCopyWith<$Res> {
   __$$onTickImplCopyWithImpl(
-      _$onTickImpl _value, $Res Function(_$onTickImpl) _then)
-      : super(_value, _then);
+    _$onTickImpl _value,
+    $Res Function(_$onTickImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of DecompositionModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -410,7 +420,7 @@ class _$onTickImpl implements _onTick {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String equipmentId, String decompositionId)
-        decompositionPressed,
+    decompositionPressed,
     required TResult Function() onTick,
   }) {
     return onTick();
@@ -421,7 +431,7 @@ class _$onTickImpl implements _onTick {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult? Function()? onTick,
   }) {
     return onTick?.call();
@@ -432,7 +442,7 @@ class _$onTickImpl implements _onTick {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String equipmentId, String decompositionId)?
-        decompositionPressed,
+    decompositionPressed,
     TResult Function()? onTick,
     required TResult orElse(),
   }) {
@@ -498,21 +508,25 @@ mixin _$DecompositionModalState {
 
 /// @nodoc
 abstract class $DecompositionModalStateCopyWith<$Res> {
-  factory $DecompositionModalStateCopyWith(DecompositionModalState value,
-          $Res Function(DecompositionModalState) then) =
-      _$DecompositionModalStateCopyWithImpl<$Res, DecompositionModalState>;
+  factory $DecompositionModalStateCopyWith(
+    DecompositionModalState value,
+    $Res Function(DecompositionModalState) then,
+  ) = _$DecompositionModalStateCopyWithImpl<$Res, DecompositionModalState>;
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      DecompositionModalStatus status,
-      String? result,
-      List<String> results});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    DecompositionModalStatus status,
+    String? result,
+    List<String> results,
+  });
 }
 
 /// @nodoc
-class _$DecompositionModalStateCopyWithImpl<$Res,
-        $Val extends DecompositionModalState>
+class _$DecompositionModalStateCopyWithImpl<
+  $Res,
+  $Val extends DecompositionModalState
+>
     implements $DecompositionModalStateCopyWith<$Res> {
   _$DecompositionModalStateCopyWithImpl(this._value, this._then);
 
@@ -532,28 +546,36 @@ class _$DecompositionModalStateCopyWithImpl<$Res,
     Object? result = freezed,
     Object? results = null,
   }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as DecompositionModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-      results: null == results
-          ? _value.results
-          : results // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            elapsedDuration:
+                null == elapsedDuration
+                    ? _value.elapsedDuration
+                    : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                        as int,
+            status:
+                null == status
+                    ? _value.status
+                    : status // ignore: cast_nullable_to_non_nullable
+                        as DecompositionModalStatus,
+            result:
+                freezed == result
+                    ? _value.result
+                    : result // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            results:
+                null == results
+                    ? _value.results
+                    : results // ignore: cast_nullable_to_non_nullable
+                        as List<String>,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -561,28 +583,32 @@ class _$DecompositionModalStateCopyWithImpl<$Res,
 abstract class _$$DecompositionModalStateImplCopyWith<$Res>
     implements $DecompositionModalStateCopyWith<$Res> {
   factory _$$DecompositionModalStateImplCopyWith(
-          _$DecompositionModalStateImpl value,
-          $Res Function(_$DecompositionModalStateImpl) then) =
-      __$$DecompositionModalStateImplCopyWithImpl<$Res>;
+    _$DecompositionModalStateImpl value,
+    $Res Function(_$DecompositionModalStateImpl) then,
+  ) = __$$DecompositionModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      DecompositionModalStatus status,
-      String? result,
-      List<String> results});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    DecompositionModalStatus status,
+    String? result,
+    List<String> results,
+  });
 }
 
 /// @nodoc
 class __$$DecompositionModalStateImplCopyWithImpl<$Res>
-    extends _$DecompositionModalStateCopyWithImpl<$Res,
-        _$DecompositionModalStateImpl>
+    extends
+        _$DecompositionModalStateCopyWithImpl<
+          $Res,
+          _$DecompositionModalStateImpl
+        >
     implements _$$DecompositionModalStateImplCopyWith<$Res> {
   __$$DecompositionModalStateImplCopyWithImpl(
-      _$DecompositionModalStateImpl _value,
-      $Res Function(_$DecompositionModalStateImpl) _then)
-      : super(_value, _then);
+    _$DecompositionModalStateImpl _value,
+    $Res Function(_$DecompositionModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of DecompositionModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -595,41 +621,48 @@ class __$$DecompositionModalStateImplCopyWithImpl<$Res>
     Object? result = freezed,
     Object? results = null,
   }) {
-    return _then(_$DecompositionModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as DecompositionModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-      results: null == results
-          ? _value._results
-          : results // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
+    return _then(
+      _$DecompositionModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        elapsedDuration:
+            null == elapsedDuration
+                ? _value.elapsedDuration
+                : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                    as int,
+        status:
+            null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                    as DecompositionModalStatus,
+        result:
+            freezed == result
+                ? _value.result
+                : result // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        results:
+            null == results
+                ? _value._results
+                : results // ignore: cast_nullable_to_non_nullable
+                    as List<String>,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$DecompositionModalStateImpl implements _DecompositionModalState {
-  const _$DecompositionModalStateImpl(
-      {this.initialized = false,
-      this.elapsedDuration = 0,
-      this.status = DecompositionModalStatus.prepare,
-      this.result = null,
-      final List<String> results = const []})
-      : _results = results;
+  const _$DecompositionModalStateImpl({
+    this.initialized = false,
+    this.elapsedDuration = 0,
+    this.status = DecompositionModalStatus.prepare,
+    this.result = null,
+    final List<String> results = const [],
+  }) : _results = results;
 
   @override
   @JsonKey()
@@ -672,8 +705,14 @@ class _$DecompositionModalStateImpl implements _DecompositionModalState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, initialized, elapsedDuration,
-      status, result, const DeepCollectionEquality().hash(_results));
+  int get hashCode => Object.hash(
+    runtimeType,
+    initialized,
+    elapsedDuration,
+    status,
+    result,
+    const DeepCollectionEquality().hash(_results),
+  );
 
   /// Create a copy of DecompositionModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -681,17 +720,19 @@ class _$DecompositionModalStateImpl implements _DecompositionModalState {
   @override
   @pragma('vm:prefer-inline')
   _$$DecompositionModalStateImplCopyWith<_$DecompositionModalStateImpl>
-      get copyWith => __$$DecompositionModalStateImplCopyWithImpl<
-          _$DecompositionModalStateImpl>(this, _$identity);
+  get copyWith => __$$DecompositionModalStateImplCopyWithImpl<
+    _$DecompositionModalStateImpl
+  >(this, _$identity);
 }
 
 abstract class _DecompositionModalState implements DecompositionModalState {
-  const factory _DecompositionModalState(
-      {final bool initialized,
-      final int elapsedDuration,
-      final DecompositionModalStatus status,
-      final String? result,
-      final List<String> results}) = _$DecompositionModalStateImpl;
+  const factory _DecompositionModalState({
+    final bool initialized,
+    final int elapsedDuration,
+    final DecompositionModalStatus status,
+    final String? result,
+    final List<String> results,
+  }) = _$DecompositionModalStateImpl;
 
   @override
   bool get initialized;
@@ -709,5 +750,5 @@ abstract class _DecompositionModalState implements DecompositionModalState {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DecompositionModalStateImplCopyWith<_$DecompositionModalStateImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  get copyWith => throw _privateConstructorUsedError;
 }

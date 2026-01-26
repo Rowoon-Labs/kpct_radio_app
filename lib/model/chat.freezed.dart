@@ -12,7 +12,8 @@ part of 'chat.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 Chat _$ChatFromJson(Map<String, dynamic> json) {
   return _Chat.fromJson(json);
@@ -41,12 +42,13 @@ abstract class $ChatCopyWith<$Res> {
   factory $ChatCopyWith(Chat value, $Res Function(Chat) then) =
       _$ChatCopyWithImpl<$Res, Chat>;
   @useResult
-  $Res call(
-      {String id,
-      String uid,
-      String nickName,
-      String content,
-      @TimestampConverter() DateTime createdAt});
+  $Res call({
+    String id,
+    String uid,
+    String nickName,
+    String content,
+    @TimestampConverter() DateTime createdAt,
+  });
 }
 
 /// @nodoc
@@ -70,44 +72,54 @@ class _$ChatCopyWithImpl<$Res, $Val extends Chat>
     Object? content = null,
     Object? createdAt = null,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      uid: null == uid
-          ? _value.uid
-          : uid // ignore: cast_nullable_to_non_nullable
-              as String,
-      nickName: null == nickName
-          ? _value.nickName
-          : nickName // ignore: cast_nullable_to_non_nullable
-              as String,
-      content: null == content
-          ? _value.content
-          : content // ignore: cast_nullable_to_non_nullable
-              as String,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            id:
+                null == id
+                    ? _value.id
+                    : id // ignore: cast_nullable_to_non_nullable
+                        as String,
+            uid:
+                null == uid
+                    ? _value.uid
+                    : uid // ignore: cast_nullable_to_non_nullable
+                        as String,
+            nickName:
+                null == nickName
+                    ? _value.nickName
+                    : nickName // ignore: cast_nullable_to_non_nullable
+                        as String,
+            content:
+                null == content
+                    ? _value.content
+                    : content // ignore: cast_nullable_to_non_nullable
+                        as String,
+            createdAt:
+                null == createdAt
+                    ? _value.createdAt
+                    : createdAt // ignore: cast_nullable_to_non_nullable
+                        as DateTime,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$ChatImplCopyWith<$Res> implements $ChatCopyWith<$Res> {
   factory _$$ChatImplCopyWith(
-          _$ChatImpl value, $Res Function(_$ChatImpl) then) =
-      __$$ChatImplCopyWithImpl<$Res>;
+    _$ChatImpl value,
+    $Res Function(_$ChatImpl) then,
+  ) = __$$ChatImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String id,
-      String uid,
-      String nickName,
-      String content,
-      @TimestampConverter() DateTime createdAt});
+  $Res call({
+    String id,
+    String uid,
+    String nickName,
+    String content,
+    @TimestampConverter() DateTime createdAt,
+  });
 }
 
 /// @nodoc
@@ -115,7 +127,7 @@ class __$$ChatImplCopyWithImpl<$Res>
     extends _$ChatCopyWithImpl<$Res, _$ChatImpl>
     implements _$$ChatImplCopyWith<$Res> {
   __$$ChatImplCopyWithImpl(_$ChatImpl _value, $Res Function(_$ChatImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of Chat
   /// with the given fields replaced by the non-null parameter values.
@@ -128,41 +140,48 @@ class __$$ChatImplCopyWithImpl<$Res>
     Object? content = null,
     Object? createdAt = null,
   }) {
-    return _then(_$ChatImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      uid: null == uid
-          ? _value.uid
-          : uid // ignore: cast_nullable_to_non_nullable
-              as String,
-      nickName: null == nickName
-          ? _value.nickName
-          : nickName // ignore: cast_nullable_to_non_nullable
-              as String,
-      content: null == content
-          ? _value.content
-          : content // ignore: cast_nullable_to_non_nullable
-              as String,
-      createdAt: null == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-    ));
+    return _then(
+      _$ChatImpl(
+        id:
+            null == id
+                ? _value.id
+                : id // ignore: cast_nullable_to_non_nullable
+                    as String,
+        uid:
+            null == uid
+                ? _value.uid
+                : uid // ignore: cast_nullable_to_non_nullable
+                    as String,
+        nickName:
+            null == nickName
+                ? _value.nickName
+                : nickName // ignore: cast_nullable_to_non_nullable
+                    as String,
+        content:
+            null == content
+                ? _value.content
+                : content // ignore: cast_nullable_to_non_nullable
+                    as String,
+        createdAt:
+            null == createdAt
+                ? _value.createdAt
+                : createdAt // ignore: cast_nullable_to_non_nullable
+                    as DateTime,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$ChatImpl extends _Chat {
-  const _$ChatImpl(
-      {required this.id,
-      required this.uid,
-      required this.nickName,
-      required this.content,
-      @TimestampConverter() required this.createdAt})
-      : super._();
+  const _$ChatImpl({
+    required this.id,
+    required this.uid,
+    required this.nickName,
+    required this.content,
+    @TimestampConverter() required this.createdAt,
+  }) : super._();
 
   factory _$ChatImpl.fromJson(Map<String, dynamic> json) =>
       _$$ChatImplFromJson(json);
@@ -213,19 +232,18 @@ class _$ChatImpl extends _Chat {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$ChatImplToJson(
-      this,
-    );
+    return _$$ChatImplToJson(this);
   }
 }
 
 abstract class _Chat extends Chat {
-  const factory _Chat(
-      {required final String id,
-      required final String uid,
-      required final String nickName,
-      required final String content,
-      @TimestampConverter() required final DateTime createdAt}) = _$ChatImpl;
+  const factory _Chat({
+    required final String id,
+    required final String uid,
+    required final String nickName,
+    required final String content,
+    @TimestampConverter() required final DateTime createdAt,
+  }) = _$ChatImpl;
   const _Chat._() : super._();
 
   factory _Chat.fromJson(Map<String, dynamic> json) = _$ChatImpl.fromJson;

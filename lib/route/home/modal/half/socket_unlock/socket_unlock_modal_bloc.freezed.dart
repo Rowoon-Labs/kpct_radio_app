@@ -12,7 +12,8 @@ part of 'socket_unlock_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$SocketUnlockModalEvent {
@@ -20,62 +21,62 @@ mixin _$SocketUnlockModalEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(
-            String gearId, String unlockId, String equipmentId)
-        unlockPressed,
+      String gearId,
+      String unlockId,
+      String equipmentId,
+    )
+    unlockPressed,
     required TResult Function() onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult? Function()? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult Function()? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
     required TResult Function(_craftPressed value) unlockPressed,
     required TResult Function(_onTick value) onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_craftPressed value)? unlockPressed,
     TResult? Function(_onTick value)? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     TResult Function(_craftPressed value)? unlockPressed,
     TResult Function(_onTick value)? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $SocketUnlockModalEventCopyWith<$Res> {
-  factory $SocketUnlockModalEventCopyWith(SocketUnlockModalEvent value,
-          $Res Function(SocketUnlockModalEvent) then) =
-      _$SocketUnlockModalEventCopyWithImpl<$Res, SocketUnlockModalEvent>;
+  factory $SocketUnlockModalEventCopyWith(
+    SocketUnlockModalEvent value,
+    $Res Function(SocketUnlockModalEvent) then,
+  ) = _$SocketUnlockModalEventCopyWithImpl<$Res, SocketUnlockModalEvent>;
 }
 
 /// @nodoc
-class _$SocketUnlockModalEventCopyWithImpl<$Res,
-        $Val extends SocketUnlockModalEvent>
+class _$SocketUnlockModalEventCopyWithImpl<
+  $Res,
+  $Val extends SocketUnlockModalEvent
+>
     implements $SocketUnlockModalEventCopyWith<$Res> {
   _$SocketUnlockModalEventCopyWithImpl(this._value, this._then);
 
@@ -91,8 +92,9 @@ class _$SocketUnlockModalEventCopyWithImpl<$Res,
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -100,8 +102,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$SocketUnlockModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SocketUnlockModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -131,8 +134,11 @@ class _$initializeImpl implements _initialize {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(
-            String gearId, String unlockId, String equipmentId)
-        unlockPressed,
+      String gearId,
+      String unlockId,
+      String equipmentId,
+    )
+    unlockPressed,
     required TResult Function() onTick,
   }) {
     return initialize();
@@ -143,7 +149,7 @@ class _$initializeImpl implements _initialize {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult? Function()? onTick,
   }) {
     return initialize?.call();
@@ -154,7 +160,7 @@ class _$initializeImpl implements _initialize {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult Function()? onTick,
     required TResult orElse(),
   }) {
@@ -206,8 +212,9 @@ abstract class _initialize implements SocketUnlockModalEvent {
 /// @nodoc
 abstract class _$$craftPressedImplCopyWith<$Res> {
   factory _$$craftPressedImplCopyWith(
-          _$craftPressedImpl value, $Res Function(_$craftPressedImpl) then) =
-      __$$craftPressedImplCopyWithImpl<$Res>;
+    _$craftPressedImpl value,
+    $Res Function(_$craftPressedImpl) then,
+  ) = __$$craftPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String gearId, String unlockId, String equipmentId});
 }
@@ -217,8 +224,9 @@ class __$$craftPressedImplCopyWithImpl<$Res>
     extends _$SocketUnlockModalEventCopyWithImpl<$Res, _$craftPressedImpl>
     implements _$$craftPressedImplCopyWith<$Res> {
   __$$craftPressedImplCopyWithImpl(
-      _$craftPressedImpl _value, $Res Function(_$craftPressedImpl) _then)
-      : super(_value, _then);
+    _$craftPressedImpl _value,
+    $Res Function(_$craftPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SocketUnlockModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -229,30 +237,36 @@ class __$$craftPressedImplCopyWithImpl<$Res>
     Object? unlockId = null,
     Object? equipmentId = null,
   }) {
-    return _then(_$craftPressedImpl(
-      gearId: null == gearId
-          ? _value.gearId
-          : gearId // ignore: cast_nullable_to_non_nullable
-              as String,
-      unlockId: null == unlockId
-          ? _value.unlockId
-          : unlockId // ignore: cast_nullable_to_non_nullable
-              as String,
-      equipmentId: null == equipmentId
-          ? _value.equipmentId
-          : equipmentId // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
+    return _then(
+      _$craftPressedImpl(
+        gearId:
+            null == gearId
+                ? _value.gearId
+                : gearId // ignore: cast_nullable_to_non_nullable
+                    as String,
+        unlockId:
+            null == unlockId
+                ? _value.unlockId
+                : unlockId // ignore: cast_nullable_to_non_nullable
+                    as String,
+        equipmentId:
+            null == equipmentId
+                ? _value.equipmentId
+                : equipmentId // ignore: cast_nullable_to_non_nullable
+                    as String,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$craftPressedImpl implements _craftPressed {
-  const _$craftPressedImpl(
-      {required this.gearId,
-      required this.unlockId,
-      required this.equipmentId});
+  const _$craftPressedImpl({
+    required this.gearId,
+    required this.unlockId,
+    required this.equipmentId,
+  });
 
   @override
   final String gearId;
@@ -294,8 +308,11 @@ class _$craftPressedImpl implements _craftPressed {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(
-            String gearId, String unlockId, String equipmentId)
-        unlockPressed,
+      String gearId,
+      String unlockId,
+      String equipmentId,
+    )
+    unlockPressed,
     required TResult Function() onTick,
   }) {
     return unlockPressed(gearId, unlockId, equipmentId);
@@ -306,7 +323,7 @@ class _$craftPressedImpl implements _craftPressed {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult? Function()? onTick,
   }) {
     return unlockPressed?.call(gearId, unlockId, equipmentId);
@@ -317,7 +334,7 @@ class _$craftPressedImpl implements _craftPressed {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult Function()? onTick,
     required TResult orElse(),
   }) {
@@ -363,10 +380,11 @@ class _$craftPressedImpl implements _craftPressed {
 }
 
 abstract class _craftPressed implements SocketUnlockModalEvent {
-  const factory _craftPressed(
-      {required final String gearId,
-      required final String unlockId,
-      required final String equipmentId}) = _$craftPressedImpl;
+  const factory _craftPressed({
+    required final String gearId,
+    required final String unlockId,
+    required final String equipmentId,
+  }) = _$craftPressedImpl;
 
   String get gearId;
   String get unlockId;
@@ -382,8 +400,9 @@ abstract class _craftPressed implements SocketUnlockModalEvent {
 /// @nodoc
 abstract class _$$onTickImplCopyWith<$Res> {
   factory _$$onTickImplCopyWith(
-          _$onTickImpl value, $Res Function(_$onTickImpl) then) =
-      __$$onTickImplCopyWithImpl<$Res>;
+    _$onTickImpl value,
+    $Res Function(_$onTickImpl) then,
+  ) = __$$onTickImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -391,8 +410,9 @@ class __$$onTickImplCopyWithImpl<$Res>
     extends _$SocketUnlockModalEventCopyWithImpl<$Res, _$onTickImpl>
     implements _$$onTickImplCopyWith<$Res> {
   __$$onTickImplCopyWithImpl(
-      _$onTickImpl _value, $Res Function(_$onTickImpl) _then)
-      : super(_value, _then);
+    _$onTickImpl _value,
+    $Res Function(_$onTickImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SocketUnlockModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -422,8 +442,11 @@ class _$onTickImpl implements _onTick {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(
-            String gearId, String unlockId, String equipmentId)
-        unlockPressed,
+      String gearId,
+      String unlockId,
+      String equipmentId,
+    )
+    unlockPressed,
     required TResult Function() onTick,
   }) {
     return onTick();
@@ -434,7 +457,7 @@ class _$onTickImpl implements _onTick {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult? Function()? onTick,
   }) {
     return onTick?.call();
@@ -445,7 +468,7 @@ class _$onTickImpl implements _onTick {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(String gearId, String unlockId, String equipmentId)?
-        unlockPressed,
+    unlockPressed,
     TResult Function()? onTick,
     required TResult orElse(),
   }) {
@@ -510,20 +533,24 @@ mixin _$SocketUnlockModalState {
 
 /// @nodoc
 abstract class $SocketUnlockModalStateCopyWith<$Res> {
-  factory $SocketUnlockModalStateCopyWith(SocketUnlockModalState value,
-          $Res Function(SocketUnlockModalState) then) =
-      _$SocketUnlockModalStateCopyWithImpl<$Res, SocketUnlockModalState>;
+  factory $SocketUnlockModalStateCopyWith(
+    SocketUnlockModalState value,
+    $Res Function(SocketUnlockModalState) then,
+  ) = _$SocketUnlockModalStateCopyWithImpl<$Res, SocketUnlockModalState>;
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      SocketUnlockModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    SocketUnlockModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
-class _$SocketUnlockModalStateCopyWithImpl<$Res,
-        $Val extends SocketUnlockModalState>
+class _$SocketUnlockModalStateCopyWithImpl<
+  $Res,
+  $Val extends SocketUnlockModalState
+>
     implements $SocketUnlockModalStateCopyWith<$Res> {
   _$SocketUnlockModalStateCopyWithImpl(this._value, this._then);
 
@@ -542,24 +569,31 @@ class _$SocketUnlockModalStateCopyWithImpl<$Res,
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as SocketUnlockModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            elapsedDuration:
+                null == elapsedDuration
+                    ? _value.elapsedDuration
+                    : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                        as int,
+            status:
+                null == status
+                    ? _value.status
+                    : status // ignore: cast_nullable_to_non_nullable
+                        as SocketUnlockModalStatus,
+            result:
+                freezed == result
+                    ? _value.result
+                    : result // ignore: cast_nullable_to_non_nullable
+                        as String?,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -567,27 +601,28 @@ class _$SocketUnlockModalStateCopyWithImpl<$Res,
 abstract class _$$SocketUnlockModalStateImplCopyWith<$Res>
     implements $SocketUnlockModalStateCopyWith<$Res> {
   factory _$$SocketUnlockModalStateImplCopyWith(
-          _$SocketUnlockModalStateImpl value,
-          $Res Function(_$SocketUnlockModalStateImpl) then) =
-      __$$SocketUnlockModalStateImplCopyWithImpl<$Res>;
+    _$SocketUnlockModalStateImpl value,
+    $Res Function(_$SocketUnlockModalStateImpl) then,
+  ) = __$$SocketUnlockModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      SocketUnlockModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    SocketUnlockModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
 class __$$SocketUnlockModalStateImplCopyWithImpl<$Res>
-    extends _$SocketUnlockModalStateCopyWithImpl<$Res,
-        _$SocketUnlockModalStateImpl>
+    extends
+        _$SocketUnlockModalStateCopyWithImpl<$Res, _$SocketUnlockModalStateImpl>
     implements _$$SocketUnlockModalStateImplCopyWith<$Res> {
   __$$SocketUnlockModalStateImplCopyWithImpl(
-      _$SocketUnlockModalStateImpl _value,
-      $Res Function(_$SocketUnlockModalStateImpl) _then)
-      : super(_value, _then);
+    _$SocketUnlockModalStateImpl _value,
+    $Res Function(_$SocketUnlockModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of SocketUnlockModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -599,35 +634,42 @@ class __$$SocketUnlockModalStateImplCopyWithImpl<$Res>
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_$SocketUnlockModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as SocketUnlockModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+    return _then(
+      _$SocketUnlockModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        elapsedDuration:
+            null == elapsedDuration
+                ? _value.elapsedDuration
+                : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                    as int,
+        status:
+            null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                    as SocketUnlockModalStatus,
+        result:
+            freezed == result
+                ? _value.result
+                : result // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$SocketUnlockModalStateImpl implements _SocketUnlockModalState {
-  const _$SocketUnlockModalStateImpl(
-      {this.initialized = false,
-      this.elapsedDuration = 0,
-      this.status = SocketUnlockModalStatus.prepare,
-      this.result = null});
+  const _$SocketUnlockModalStateImpl({
+    this.initialized = false,
+    this.elapsedDuration = 0,
+    this.status = SocketUnlockModalStatus.prepare,
+    this.result = null,
+  });
 
   @override
   @JsonKey()
@@ -670,16 +712,20 @@ class _$SocketUnlockModalStateImpl implements _SocketUnlockModalState {
   @override
   @pragma('vm:prefer-inline')
   _$$SocketUnlockModalStateImplCopyWith<_$SocketUnlockModalStateImpl>
-      get copyWith => __$$SocketUnlockModalStateImplCopyWithImpl<
-          _$SocketUnlockModalStateImpl>(this, _$identity);
+  get copyWith =>
+      __$$SocketUnlockModalStateImplCopyWithImpl<_$SocketUnlockModalStateImpl>(
+        this,
+        _$identity,
+      );
 }
 
 abstract class _SocketUnlockModalState implements SocketUnlockModalState {
-  const factory _SocketUnlockModalState(
-      {final bool initialized,
-      final int elapsedDuration,
-      final SocketUnlockModalStatus status,
-      final String? result}) = _$SocketUnlockModalStateImpl;
+  const factory _SocketUnlockModalState({
+    final bool initialized,
+    final int elapsedDuration,
+    final SocketUnlockModalStatus status,
+    final String? result,
+  }) = _$SocketUnlockModalStateImpl;
 
   @override
   bool get initialized;
@@ -695,5 +741,5 @@ abstract class _SocketUnlockModalState implements SocketUnlockModalState {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SocketUnlockModalStateImplCopyWith<_$SocketUnlockModalStateImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  get copyWith => throw _privateConstructorUsedError;
 }

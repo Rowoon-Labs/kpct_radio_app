@@ -12,7 +12,8 @@ part of 'decomposition.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 Decomposition _$DecompositionFromJson(Map<String, dynamic> json) {
   return _Decomposition.fromJson(json);
@@ -65,24 +66,26 @@ mixin _$Decomposition {
 /// @nodoc
 abstract class $DecompositionCopyWith<$Res> {
   factory $DecompositionCopyWith(
-          Decomposition value, $Res Function(Decomposition) then) =
-      _$DecompositionCopyWithImpl<$Res, Decomposition>;
+    Decomposition value,
+    $Res Function(Decomposition) then,
+  ) = _$DecompositionCopyWithImpl<$Res, Decomposition>;
   @useResult
-  $Res call(
-      {String id,
-      @JsonKey(name: "gear_ID") String gearId,
-      @StringToIntConverter() @JsonKey(name: "cost_EP") int costEp,
-      @StringToIntConverter() @JsonKey(name: "cost_SSP") int costSsp,
-      @StringToIntConverter() @JsonKey(name: "result_max") int resultMax,
-      @StringToIntConverter() @JsonKey(name: "result_min") int resultMin,
-      @JsonKey(name: "result1") String? result1,
-      @JsonKey(name: "result2") String? result2,
-      @JsonKey(name: "result3") String? result3,
-      @JsonKey(name: "result4") String? result4,
-      @JsonKey(name: "result5") String? result5,
-      @JsonKey(name: "result6") String? result6,
-      @JsonKey(name: "result7") String? result7,
-      @JsonKey(name: "result8") String? result8});
+  $Res call({
+    String id,
+    @JsonKey(name: "gear_ID") String gearId,
+    @StringToIntConverter() @JsonKey(name: "cost_EP") int costEp,
+    @StringToIntConverter() @JsonKey(name: "cost_SSP") int costSsp,
+    @StringToIntConverter() @JsonKey(name: "result_max") int resultMax,
+    @StringToIntConverter() @JsonKey(name: "result_min") int resultMin,
+    @JsonKey(name: "result1") String? result1,
+    @JsonKey(name: "result2") String? result2,
+    @JsonKey(name: "result3") String? result3,
+    @JsonKey(name: "result4") String? result4,
+    @JsonKey(name: "result5") String? result5,
+    @JsonKey(name: "result6") String? result6,
+    @JsonKey(name: "result7") String? result7,
+    @JsonKey(name: "result8") String? result8,
+  });
 }
 
 /// @nodoc
@@ -115,64 +118,81 @@ class _$DecompositionCopyWithImpl<$Res, $Val extends Decomposition>
     Object? result7 = freezed,
     Object? result8 = freezed,
   }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      gearId: null == gearId
-          ? _value.gearId
-          : gearId // ignore: cast_nullable_to_non_nullable
-              as String,
-      costEp: null == costEp
-          ? _value.costEp
-          : costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      costSsp: null == costSsp
-          ? _value.costSsp
-          : costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      resultMax: null == resultMax
-          ? _value.resultMax
-          : resultMax // ignore: cast_nullable_to_non_nullable
-              as int,
-      resultMin: null == resultMin
-          ? _value.resultMin
-          : resultMin // ignore: cast_nullable_to_non_nullable
-              as int,
-      result1: freezed == result1
-          ? _value.result1
-          : result1 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result2: freezed == result2
-          ? _value.result2
-          : result2 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result3: freezed == result3
-          ? _value.result3
-          : result3 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result4: freezed == result4
-          ? _value.result4
-          : result4 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result5: freezed == result5
-          ? _value.result5
-          : result5 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result6: freezed == result6
-          ? _value.result6
-          : result6 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result7: freezed == result7
-          ? _value.result7
-          : result7 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result8: freezed == result8
-          ? _value.result8
-          : result8 // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            id:
+                null == id
+                    ? _value.id
+                    : id // ignore: cast_nullable_to_non_nullable
+                        as String,
+            gearId:
+                null == gearId
+                    ? _value.gearId
+                    : gearId // ignore: cast_nullable_to_non_nullable
+                        as String,
+            costEp:
+                null == costEp
+                    ? _value.costEp
+                    : costEp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            costSsp:
+                null == costSsp
+                    ? _value.costSsp
+                    : costSsp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            resultMax:
+                null == resultMax
+                    ? _value.resultMax
+                    : resultMax // ignore: cast_nullable_to_non_nullable
+                        as int,
+            resultMin:
+                null == resultMin
+                    ? _value.resultMin
+                    : resultMin // ignore: cast_nullable_to_non_nullable
+                        as int,
+            result1:
+                freezed == result1
+                    ? _value.result1
+                    : result1 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            result2:
+                freezed == result2
+                    ? _value.result2
+                    : result2 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            result3:
+                freezed == result3
+                    ? _value.result3
+                    : result3 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            result4:
+                freezed == result4
+                    ? _value.result4
+                    : result4 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            result5:
+                freezed == result5
+                    ? _value.result5
+                    : result5 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            result6:
+                freezed == result6
+                    ? _value.result6
+                    : result6 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            result7:
+                freezed == result7
+                    ? _value.result7
+                    : result7 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            result8:
+                freezed == result8
+                    ? _value.result8
+                    : result8 // ignore: cast_nullable_to_non_nullable
+                        as String?,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -180,25 +200,27 @@ class _$DecompositionCopyWithImpl<$Res, $Val extends Decomposition>
 abstract class _$$DecompositionImplCopyWith<$Res>
     implements $DecompositionCopyWith<$Res> {
   factory _$$DecompositionImplCopyWith(
-          _$DecompositionImpl value, $Res Function(_$DecompositionImpl) then) =
-      __$$DecompositionImplCopyWithImpl<$Res>;
+    _$DecompositionImpl value,
+    $Res Function(_$DecompositionImpl) then,
+  ) = __$$DecompositionImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {String id,
-      @JsonKey(name: "gear_ID") String gearId,
-      @StringToIntConverter() @JsonKey(name: "cost_EP") int costEp,
-      @StringToIntConverter() @JsonKey(name: "cost_SSP") int costSsp,
-      @StringToIntConverter() @JsonKey(name: "result_max") int resultMax,
-      @StringToIntConverter() @JsonKey(name: "result_min") int resultMin,
-      @JsonKey(name: "result1") String? result1,
-      @JsonKey(name: "result2") String? result2,
-      @JsonKey(name: "result3") String? result3,
-      @JsonKey(name: "result4") String? result4,
-      @JsonKey(name: "result5") String? result5,
-      @JsonKey(name: "result6") String? result6,
-      @JsonKey(name: "result7") String? result7,
-      @JsonKey(name: "result8") String? result8});
+  $Res call({
+    String id,
+    @JsonKey(name: "gear_ID") String gearId,
+    @StringToIntConverter() @JsonKey(name: "cost_EP") int costEp,
+    @StringToIntConverter() @JsonKey(name: "cost_SSP") int costSsp,
+    @StringToIntConverter() @JsonKey(name: "result_max") int resultMax,
+    @StringToIntConverter() @JsonKey(name: "result_min") int resultMin,
+    @JsonKey(name: "result1") String? result1,
+    @JsonKey(name: "result2") String? result2,
+    @JsonKey(name: "result3") String? result3,
+    @JsonKey(name: "result4") String? result4,
+    @JsonKey(name: "result5") String? result5,
+    @JsonKey(name: "result6") String? result6,
+    @JsonKey(name: "result7") String? result7,
+    @JsonKey(name: "result8") String? result8,
+  });
 }
 
 /// @nodoc
@@ -206,8 +228,9 @@ class __$$DecompositionImplCopyWithImpl<$Res>
     extends _$DecompositionCopyWithImpl<$Res, _$DecompositionImpl>
     implements _$$DecompositionImplCopyWith<$Res> {
   __$$DecompositionImplCopyWithImpl(
-      _$DecompositionImpl _value, $Res Function(_$DecompositionImpl) _then)
-      : super(_value, _then);
+    _$DecompositionImpl _value,
+    $Res Function(_$DecompositionImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of Decomposition
   /// with the given fields replaced by the non-null parameter values.
@@ -229,90 +252,106 @@ class __$$DecompositionImplCopyWithImpl<$Res>
     Object? result7 = freezed,
     Object? result8 = freezed,
   }) {
-    return _then(_$DecompositionImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      gearId: null == gearId
-          ? _value.gearId
-          : gearId // ignore: cast_nullable_to_non_nullable
-              as String,
-      costEp: null == costEp
-          ? _value.costEp
-          : costEp // ignore: cast_nullable_to_non_nullable
-              as int,
-      costSsp: null == costSsp
-          ? _value.costSsp
-          : costSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      resultMax: null == resultMax
-          ? _value.resultMax
-          : resultMax // ignore: cast_nullable_to_non_nullable
-              as int,
-      resultMin: null == resultMin
-          ? _value.resultMin
-          : resultMin // ignore: cast_nullable_to_non_nullable
-              as int,
-      result1: freezed == result1
-          ? _value.result1
-          : result1 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result2: freezed == result2
-          ? _value.result2
-          : result2 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result3: freezed == result3
-          ? _value.result3
-          : result3 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result4: freezed == result4
-          ? _value.result4
-          : result4 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result5: freezed == result5
-          ? _value.result5
-          : result5 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result6: freezed == result6
-          ? _value.result6
-          : result6 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result7: freezed == result7
-          ? _value.result7
-          : result7 // ignore: cast_nullable_to_non_nullable
-              as String?,
-      result8: freezed == result8
-          ? _value.result8
-          : result8 // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+    return _then(
+      _$DecompositionImpl(
+        id:
+            null == id
+                ? _value.id
+                : id // ignore: cast_nullable_to_non_nullable
+                    as String,
+        gearId:
+            null == gearId
+                ? _value.gearId
+                : gearId // ignore: cast_nullable_to_non_nullable
+                    as String,
+        costEp:
+            null == costEp
+                ? _value.costEp
+                : costEp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        costSsp:
+            null == costSsp
+                ? _value.costSsp
+                : costSsp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        resultMax:
+            null == resultMax
+                ? _value.resultMax
+                : resultMax // ignore: cast_nullable_to_non_nullable
+                    as int,
+        resultMin:
+            null == resultMin
+                ? _value.resultMin
+                : resultMin // ignore: cast_nullable_to_non_nullable
+                    as int,
+        result1:
+            freezed == result1
+                ? _value.result1
+                : result1 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        result2:
+            freezed == result2
+                ? _value.result2
+                : result2 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        result3:
+            freezed == result3
+                ? _value.result3
+                : result3 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        result4:
+            freezed == result4
+                ? _value.result4
+                : result4 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        result5:
+            freezed == result5
+                ? _value.result5
+                : result5 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        result6:
+            freezed == result6
+                ? _value.result6
+                : result6 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        result7:
+            freezed == result7
+                ? _value.result7
+                : result7 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        result8:
+            freezed == result8
+                ? _value.result8
+                : result8 // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$DecompositionImpl extends _Decomposition {
-  const _$DecompositionImpl(
-      {required this.id,
-      @JsonKey(name: "gear_ID") required this.gearId,
-      @StringToIntConverter() @JsonKey(name: "cost_EP") required this.costEp,
-      @StringToIntConverter() @JsonKey(name: "cost_SSP") required this.costSsp,
-      @StringToIntConverter()
-      @JsonKey(name: "result_max")
-      required this.resultMax,
-      @StringToIntConverter()
-      @JsonKey(name: "result_min")
-      required this.resultMin,
-      @JsonKey(name: "result1") required this.result1,
-      @JsonKey(name: "result2") required this.result2,
-      @JsonKey(name: "result3") required this.result3,
-      @JsonKey(name: "result4") required this.result4,
-      @JsonKey(name: "result5") required this.result5,
-      @JsonKey(name: "result6") required this.result6,
-      @JsonKey(name: "result7") required this.result7,
-      @JsonKey(name: "result8") required this.result8})
-      : super._();
+  const _$DecompositionImpl({
+    required this.id,
+    @JsonKey(name: "gear_ID") required this.gearId,
+    @StringToIntConverter() @JsonKey(name: "cost_EP") required this.costEp,
+    @StringToIntConverter() @JsonKey(name: "cost_SSP") required this.costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: "result_max")
+    required this.resultMax,
+    @StringToIntConverter()
+    @JsonKey(name: "result_min")
+    required this.resultMin,
+    @JsonKey(name: "result1") required this.result1,
+    @JsonKey(name: "result2") required this.result2,
+    @JsonKey(name: "result3") required this.result3,
+    @JsonKey(name: "result4") required this.result4,
+    @JsonKey(name: "result5") required this.result5,
+    @JsonKey(name: "result6") required this.result6,
+    @JsonKey(name: "result7") required this.result7,
+    @JsonKey(name: "result8") required this.result8,
+  }) : super._();
 
   factory _$DecompositionImpl.fromJson(Map<String, dynamic> json) =>
       _$$DecompositionImplFromJson(json);
@@ -394,21 +433,22 @@ class _$DecompositionImpl extends _Decomposition {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      gearId,
-      costEp,
-      costSsp,
-      resultMax,
-      resultMin,
-      result1,
-      result2,
-      result3,
-      result4,
-      result5,
-      result6,
-      result7,
-      result8);
+    runtimeType,
+    id,
+    gearId,
+    costEp,
+    costSsp,
+    resultMax,
+    resultMin,
+    result1,
+    result2,
+    result3,
+    result4,
+    result5,
+    result6,
+    result7,
+    result8,
+  );
 
   /// Create a copy of Decomposition
   /// with the given fields replaced by the non-null parameter values.
@@ -420,37 +460,33 @@ class _$DecompositionImpl extends _Decomposition {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DecompositionImplToJson(
-      this,
-    );
+    return _$$DecompositionImplToJson(this);
   }
 }
 
 abstract class _Decomposition extends Decomposition {
-  const factory _Decomposition(
-          {required final String id,
-          @JsonKey(name: "gear_ID") required final String gearId,
-          @StringToIntConverter()
-          @JsonKey(name: "cost_EP")
-          required final int costEp,
-          @StringToIntConverter()
-          @JsonKey(name: "cost_SSP")
-          required final int costSsp,
-          @StringToIntConverter()
-          @JsonKey(name: "result_max")
-          required final int resultMax,
-          @StringToIntConverter()
-          @JsonKey(name: "result_min")
-          required final int resultMin,
-          @JsonKey(name: "result1") required final String? result1,
-          @JsonKey(name: "result2") required final String? result2,
-          @JsonKey(name: "result3") required final String? result3,
-          @JsonKey(name: "result4") required final String? result4,
-          @JsonKey(name: "result5") required final String? result5,
-          @JsonKey(name: "result6") required final String? result6,
-          @JsonKey(name: "result7") required final String? result7,
-          @JsonKey(name: "result8") required final String? result8}) =
-      _$DecompositionImpl;
+  const factory _Decomposition({
+    required final String id,
+    @JsonKey(name: "gear_ID") required final String gearId,
+    @StringToIntConverter() @JsonKey(name: "cost_EP") required final int costEp,
+    @StringToIntConverter()
+    @JsonKey(name: "cost_SSP")
+    required final int costSsp,
+    @StringToIntConverter()
+    @JsonKey(name: "result_max")
+    required final int resultMax,
+    @StringToIntConverter()
+    @JsonKey(name: "result_min")
+    required final int resultMin,
+    @JsonKey(name: "result1") required final String? result1,
+    @JsonKey(name: "result2") required final String? result2,
+    @JsonKey(name: "result3") required final String? result3,
+    @JsonKey(name: "result4") required final String? result4,
+    @JsonKey(name: "result5") required final String? result5,
+    @JsonKey(name: "result6") required final String? result6,
+    @JsonKey(name: "result7") required final String? result7,
+    @JsonKey(name: "result8") required final String? result8,
+  }) = _$DecompositionImpl;
   const _Decomposition._() : super._();
 
   factory _Decomposition.fromJson(Map<String, dynamic> json) =

@@ -12,7 +12,8 @@ part of 'workbench_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$WorkbenchModalEvent {
@@ -20,19 +21,17 @@ mixin _$WorkbenchModalEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String gearId, List<String> equipmentIds)
-        craftPressed,
+    craftPressed,
     required TResult Function() onTick,
     required TResult Function(List<Equipment> equipments) onEquipmentsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(String gearId, List<String> equipmentIds)? craftPressed,
     TResult? Function()? onTick,
     TResult? Function(List<Equipment> equipments)? onEquipmentsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
@@ -40,24 +39,21 @@ mixin _$WorkbenchModalEvent {
     TResult Function()? onTick,
     TResult Function(List<Equipment> equipments)? onEquipmentsChanges,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
     required TResult Function(_craftPressed value) craftPressed,
     required TResult Function(_onTick value) onTick,
     required TResult Function(_onEquipmentsChanges value) onEquipmentsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_craftPressed value)? craftPressed,
     TResult? Function(_onTick value)? onTick,
     TResult? Function(_onEquipmentsChanges value)? onEquipmentsChanges,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
@@ -65,15 +61,15 @@ mixin _$WorkbenchModalEvent {
     TResult Function(_onTick value)? onTick,
     TResult Function(_onEquipmentsChanges value)? onEquipmentsChanges,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $WorkbenchModalEventCopyWith<$Res> {
   factory $WorkbenchModalEventCopyWith(
-          WorkbenchModalEvent value, $Res Function(WorkbenchModalEvent) then) =
-      _$WorkbenchModalEventCopyWithImpl<$Res, WorkbenchModalEvent>;
+    WorkbenchModalEvent value,
+    $Res Function(WorkbenchModalEvent) then,
+  ) = _$WorkbenchModalEventCopyWithImpl<$Res, WorkbenchModalEvent>;
 }
 
 /// @nodoc
@@ -93,8 +89,9 @@ class _$WorkbenchModalEventCopyWithImpl<$Res, $Val extends WorkbenchModalEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -102,8 +99,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$WorkbenchModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of WorkbenchModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -133,7 +131,7 @@ class _$initializeImpl implements _initialize {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String gearId, List<String> equipmentIds)
-        craftPressed,
+    craftPressed,
     required TResult Function() onTick,
     required TResult Function(List<Equipment> equipments) onEquipmentsChanges,
   }) {
@@ -211,8 +209,9 @@ abstract class _initialize implements WorkbenchModalEvent {
 /// @nodoc
 abstract class _$$craftPressedImplCopyWith<$Res> {
   factory _$$craftPressedImplCopyWith(
-          _$craftPressedImpl value, $Res Function(_$craftPressedImpl) then) =
-      __$$craftPressedImplCopyWithImpl<$Res>;
+    _$craftPressedImpl value,
+    $Res Function(_$craftPressedImpl) then,
+  ) = __$$craftPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String gearId, List<String> equipmentIds});
 }
@@ -222,36 +221,39 @@ class __$$craftPressedImplCopyWithImpl<$Res>
     extends _$WorkbenchModalEventCopyWithImpl<$Res, _$craftPressedImpl>
     implements _$$craftPressedImplCopyWith<$Res> {
   __$$craftPressedImplCopyWithImpl(
-      _$craftPressedImpl _value, $Res Function(_$craftPressedImpl) _then)
-      : super(_value, _then);
+    _$craftPressedImpl _value,
+    $Res Function(_$craftPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of WorkbenchModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? gearId = null,
-    Object? equipmentIds = null,
-  }) {
-    return _then(_$craftPressedImpl(
-      gearId: null == gearId
-          ? _value.gearId
-          : gearId // ignore: cast_nullable_to_non_nullable
-              as String,
-      equipmentIds: null == equipmentIds
-          ? _value._equipmentIds
-          : equipmentIds // ignore: cast_nullable_to_non_nullable
-              as List<String>,
-    ));
+  $Res call({Object? gearId = null, Object? equipmentIds = null}) {
+    return _then(
+      _$craftPressedImpl(
+        gearId:
+            null == gearId
+                ? _value.gearId
+                : gearId // ignore: cast_nullable_to_non_nullable
+                    as String,
+        equipmentIds:
+            null == equipmentIds
+                ? _value._equipmentIds
+                : equipmentIds // ignore: cast_nullable_to_non_nullable
+                    as List<String>,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$craftPressedImpl implements _craftPressed {
-  const _$craftPressedImpl(
-      {required this.gearId, required final List<String> equipmentIds})
-      : _equipmentIds = equipmentIds;
+  const _$craftPressedImpl({
+    required this.gearId,
+    required final List<String> equipmentIds,
+  }) : _equipmentIds = equipmentIds;
 
   @override
   final String gearId;
@@ -274,13 +276,18 @@ class _$craftPressedImpl implements _craftPressed {
         (other.runtimeType == runtimeType &&
             other is _$craftPressedImpl &&
             (identical(other.gearId, gearId) || other.gearId == gearId) &&
-            const DeepCollectionEquality()
-                .equals(other._equipmentIds, _equipmentIds));
+            const DeepCollectionEquality().equals(
+              other._equipmentIds,
+              _equipmentIds,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, gearId, const DeepCollectionEquality().hash(_equipmentIds));
+    runtimeType,
+    gearId,
+    const DeepCollectionEquality().hash(_equipmentIds),
+  );
 
   /// Create a copy of WorkbenchModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -295,7 +302,7 @@ class _$craftPressedImpl implements _craftPressed {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String gearId, List<String> equipmentIds)
-        craftPressed,
+    craftPressed,
     required TResult Function() onTick,
     required TResult Function(List<Equipment> equipments) onEquipmentsChanges,
   }) {
@@ -367,9 +374,10 @@ class _$craftPressedImpl implements _craftPressed {
 }
 
 abstract class _craftPressed implements WorkbenchModalEvent {
-  const factory _craftPressed(
-      {required final String gearId,
-      required final List<String> equipmentIds}) = _$craftPressedImpl;
+  const factory _craftPressed({
+    required final String gearId,
+    required final List<String> equipmentIds,
+  }) = _$craftPressedImpl;
 
   String get gearId;
   List<String> get equipmentIds;
@@ -384,8 +392,9 @@ abstract class _craftPressed implements WorkbenchModalEvent {
 /// @nodoc
 abstract class _$$onTickImplCopyWith<$Res> {
   factory _$$onTickImplCopyWith(
-          _$onTickImpl value, $Res Function(_$onTickImpl) then) =
-      __$$onTickImplCopyWithImpl<$Res>;
+    _$onTickImpl value,
+    $Res Function(_$onTickImpl) then,
+  ) = __$$onTickImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -393,8 +402,9 @@ class __$$onTickImplCopyWithImpl<$Res>
     extends _$WorkbenchModalEventCopyWithImpl<$Res, _$onTickImpl>
     implements _$$onTickImplCopyWith<$Res> {
   __$$onTickImplCopyWithImpl(
-      _$onTickImpl _value, $Res Function(_$onTickImpl) _then)
-      : super(_value, _then);
+    _$onTickImpl _value,
+    $Res Function(_$onTickImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of WorkbenchModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -424,7 +434,7 @@ class _$onTickImpl implements _onTick {
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String gearId, List<String> equipmentIds)
-        craftPressed,
+    craftPressed,
     required TResult Function() onTick,
     required TResult Function(List<Equipment> equipments) onEquipmentsChanges,
   }) {
@@ -501,9 +511,10 @@ abstract class _onTick implements WorkbenchModalEvent {
 
 /// @nodoc
 abstract class _$$onEquipmentsChangesImplCopyWith<$Res> {
-  factory _$$onEquipmentsChangesImplCopyWith(_$onEquipmentsChangesImpl value,
-          $Res Function(_$onEquipmentsChangesImpl) then) =
-      __$$onEquipmentsChangesImplCopyWithImpl<$Res>;
+  factory _$$onEquipmentsChangesImplCopyWith(
+    _$onEquipmentsChangesImpl value,
+    $Res Function(_$onEquipmentsChangesImpl) then,
+  ) = __$$onEquipmentsChangesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Equipment> equipments});
 }
@@ -512,23 +523,25 @@ abstract class _$$onEquipmentsChangesImplCopyWith<$Res> {
 class __$$onEquipmentsChangesImplCopyWithImpl<$Res>
     extends _$WorkbenchModalEventCopyWithImpl<$Res, _$onEquipmentsChangesImpl>
     implements _$$onEquipmentsChangesImplCopyWith<$Res> {
-  __$$onEquipmentsChangesImplCopyWithImpl(_$onEquipmentsChangesImpl _value,
-      $Res Function(_$onEquipmentsChangesImpl) _then)
-      : super(_value, _then);
+  __$$onEquipmentsChangesImplCopyWithImpl(
+    _$onEquipmentsChangesImpl _value,
+    $Res Function(_$onEquipmentsChangesImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of WorkbenchModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? equipments = null,
-  }) {
-    return _then(_$onEquipmentsChangesImpl(
-      equipments: null == equipments
-          ? _value._equipments
-          : equipments // ignore: cast_nullable_to_non_nullable
-              as List<Equipment>,
-    ));
+  $Res call({Object? equipments = null}) {
+    return _then(
+      _$onEquipmentsChangesImpl(
+        equipments:
+            null == equipments
+                ? _value._equipments
+                : equipments // ignore: cast_nullable_to_non_nullable
+                    as List<Equipment>,
+      ),
+    );
   }
 }
 
@@ -536,7 +549,7 @@ class __$$onEquipmentsChangesImplCopyWithImpl<$Res>
 
 class _$onEquipmentsChangesImpl implements _onEquipmentsChanges {
   const _$onEquipmentsChangesImpl({required final List<Equipment> equipments})
-      : _equipments = equipments;
+    : _equipments = equipments;
 
   final List<Equipment> _equipments;
   @override
@@ -556,13 +569,17 @@ class _$onEquipmentsChangesImpl implements _onEquipmentsChanges {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$onEquipmentsChangesImpl &&
-            const DeepCollectionEquality()
-                .equals(other._equipments, _equipments));
+            const DeepCollectionEquality().equals(
+              other._equipments,
+              _equipments,
+            ));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_equipments));
+    runtimeType,
+    const DeepCollectionEquality().hash(_equipments),
+  );
 
   /// Create a copy of WorkbenchModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -571,14 +588,16 @@ class _$onEquipmentsChangesImpl implements _onEquipmentsChanges {
   @pragma('vm:prefer-inline')
   _$$onEquipmentsChangesImplCopyWith<_$onEquipmentsChangesImpl> get copyWith =>
       __$$onEquipmentsChangesImplCopyWithImpl<_$onEquipmentsChangesImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
     required TResult Function(String gearId, List<String> equipmentIds)
-        craftPressed,
+    craftPressed,
     required TResult Function() onTick,
     required TResult Function(List<Equipment> equipments) onEquipmentsChanges,
   }) {
@@ -650,8 +669,9 @@ class _$onEquipmentsChangesImpl implements _onEquipmentsChanges {
 }
 
 abstract class _onEquipmentsChanges implements WorkbenchModalEvent {
-  const factory _onEquipmentsChanges(
-      {required final List<Equipment> equipments}) = _$onEquipmentsChangesImpl;
+  const factory _onEquipmentsChanges({
+    required final List<Equipment> equipments,
+  }) = _$onEquipmentsChangesImpl;
 
   List<Equipment> get equipments;
 
@@ -680,15 +700,17 @@ mixin _$WorkbenchModalState {
 /// @nodoc
 abstract class $WorkbenchModalStateCopyWith<$Res> {
   factory $WorkbenchModalStateCopyWith(
-          WorkbenchModalState value, $Res Function(WorkbenchModalState) then) =
-      _$WorkbenchModalStateCopyWithImpl<$Res, WorkbenchModalState>;
+    WorkbenchModalState value,
+    $Res Function(WorkbenchModalState) then,
+  ) = _$WorkbenchModalStateCopyWithImpl<$Res, WorkbenchModalState>;
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      List<Stuff> stuffs,
-      WorkbenchModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    List<Stuff> stuffs,
+    WorkbenchModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
@@ -712,54 +734,65 @@ class _$WorkbenchModalStateCopyWithImpl<$Res, $Val extends WorkbenchModalState>
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      stuffs: null == stuffs
-          ? _value.stuffs
-          : stuffs // ignore: cast_nullable_to_non_nullable
-              as List<Stuff>,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as WorkbenchModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            elapsedDuration:
+                null == elapsedDuration
+                    ? _value.elapsedDuration
+                    : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                        as int,
+            stuffs:
+                null == stuffs
+                    ? _value.stuffs
+                    : stuffs // ignore: cast_nullable_to_non_nullable
+                        as List<Stuff>,
+            status:
+                null == status
+                    ? _value.status
+                    : status // ignore: cast_nullable_to_non_nullable
+                        as WorkbenchModalStatus,
+            result:
+                freezed == result
+                    ? _value.result
+                    : result // ignore: cast_nullable_to_non_nullable
+                        as String?,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$WorkbenchModalStateImplCopyWith<$Res>
     implements $WorkbenchModalStateCopyWith<$Res> {
-  factory _$$WorkbenchModalStateImplCopyWith(_$WorkbenchModalStateImpl value,
-          $Res Function(_$WorkbenchModalStateImpl) then) =
-      __$$WorkbenchModalStateImplCopyWithImpl<$Res>;
+  factory _$$WorkbenchModalStateImplCopyWith(
+    _$WorkbenchModalStateImpl value,
+    $Res Function(_$WorkbenchModalStateImpl) then,
+  ) = __$$WorkbenchModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      List<Stuff> stuffs,
-      WorkbenchModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    List<Stuff> stuffs,
+    WorkbenchModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
 class __$$WorkbenchModalStateImplCopyWithImpl<$Res>
     extends _$WorkbenchModalStateCopyWithImpl<$Res, _$WorkbenchModalStateImpl>
     implements _$$WorkbenchModalStateImplCopyWith<$Res> {
-  __$$WorkbenchModalStateImplCopyWithImpl(_$WorkbenchModalStateImpl _value,
-      $Res Function(_$WorkbenchModalStateImpl) _then)
-      : super(_value, _then);
+  __$$WorkbenchModalStateImplCopyWithImpl(
+    _$WorkbenchModalStateImpl _value,
+    $Res Function(_$WorkbenchModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of WorkbenchModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -772,41 +805,48 @@ class __$$WorkbenchModalStateImplCopyWithImpl<$Res>
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_$WorkbenchModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      stuffs: null == stuffs
-          ? _value._stuffs
-          : stuffs // ignore: cast_nullable_to_non_nullable
-              as List<Stuff>,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as WorkbenchModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+    return _then(
+      _$WorkbenchModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        elapsedDuration:
+            null == elapsedDuration
+                ? _value.elapsedDuration
+                : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                    as int,
+        stuffs:
+            null == stuffs
+                ? _value._stuffs
+                : stuffs // ignore: cast_nullable_to_non_nullable
+                    as List<Stuff>,
+        status:
+            null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                    as WorkbenchModalStatus,
+        result:
+            freezed == result
+                ? _value.result
+                : result // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$WorkbenchModalStateImpl implements _WorkbenchModalState {
-  const _$WorkbenchModalStateImpl(
-      {this.initialized = false,
-      this.elapsedDuration = 0,
-      final List<Stuff> stuffs = const [],
-      this.status = WorkbenchModalStatus.prepare,
-      this.result = null})
-      : _stuffs = stuffs;
+  const _$WorkbenchModalStateImpl({
+    this.initialized = false,
+    this.elapsedDuration = 0,
+    final List<Stuff> stuffs = const [],
+    this.status = WorkbenchModalStatus.prepare,
+    this.result = null,
+  }) : _stuffs = stuffs;
 
   @override
   @JsonKey()
@@ -850,8 +890,14 @@ class _$WorkbenchModalStateImpl implements _WorkbenchModalState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, initialized, elapsedDuration,
-      const DeepCollectionEquality().hash(_stuffs), status, result);
+  int get hashCode => Object.hash(
+    runtimeType,
+    initialized,
+    elapsedDuration,
+    const DeepCollectionEquality().hash(_stuffs),
+    status,
+    result,
+  );
 
   /// Create a copy of WorkbenchModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -860,16 +906,19 @@ class _$WorkbenchModalStateImpl implements _WorkbenchModalState {
   @pragma('vm:prefer-inline')
   _$$WorkbenchModalStateImplCopyWith<_$WorkbenchModalStateImpl> get copyWith =>
       __$$WorkbenchModalStateImplCopyWithImpl<_$WorkbenchModalStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _WorkbenchModalState implements WorkbenchModalState {
-  const factory _WorkbenchModalState(
-      {final bool initialized,
-      final int elapsedDuration,
-      final List<Stuff> stuffs,
-      final WorkbenchModalStatus status,
-      final String? result}) = _$WorkbenchModalStateImpl;
+  const factory _WorkbenchModalState({
+    final bool initialized,
+    final int elapsedDuration,
+    final List<Stuff> stuffs,
+    final WorkbenchModalStatus status,
+    final String? result,
+  }) = _$WorkbenchModalStateImpl;
 
   @override
   bool get initialized;

@@ -12,7 +12,8 @@ part of 'insetting_gem_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$InsettingGemModalEvent {
@@ -21,57 +22,54 @@ mixin _$InsettingGemModalEvent {
     required TResult Function() initialize,
     required TResult Function(bool immediately) insettingPressed,
     required TResult Function() onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function(bool immediately)? insettingPressed,
     TResult? Function()? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function(bool immediately)? insettingPressed,
     TResult Function()? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
     required TResult Function(_insettingPressed value) insettingPressed,
     required TResult Function(_onTick value) onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_insettingPressed value)? insettingPressed,
     TResult? Function(_onTick value)? onTick,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     TResult Function(_insettingPressed value)? insettingPressed,
     TResult Function(_onTick value)? onTick,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $InsettingGemModalEventCopyWith<$Res> {
-  factory $InsettingGemModalEventCopyWith(InsettingGemModalEvent value,
-          $Res Function(InsettingGemModalEvent) then) =
-      _$InsettingGemModalEventCopyWithImpl<$Res, InsettingGemModalEvent>;
+  factory $InsettingGemModalEventCopyWith(
+    InsettingGemModalEvent value,
+    $Res Function(InsettingGemModalEvent) then,
+  ) = _$InsettingGemModalEventCopyWithImpl<$Res, InsettingGemModalEvent>;
 }
 
 /// @nodoc
-class _$InsettingGemModalEventCopyWithImpl<$Res,
-        $Val extends InsettingGemModalEvent>
+class _$InsettingGemModalEventCopyWithImpl<
+  $Res,
+  $Val extends InsettingGemModalEvent
+>
     implements $InsettingGemModalEventCopyWith<$Res> {
   _$InsettingGemModalEventCopyWithImpl(this._value, this._then);
 
@@ -87,8 +85,9 @@ class _$InsettingGemModalEventCopyWithImpl<$Res,
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -96,8 +95,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$InsettingGemModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of InsettingGemModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -197,9 +197,10 @@ abstract class _initialize implements InsettingGemModalEvent {
 
 /// @nodoc
 abstract class _$$insettingPressedImplCopyWith<$Res> {
-  factory _$$insettingPressedImplCopyWith(_$insettingPressedImpl value,
-          $Res Function(_$insettingPressedImpl) then) =
-      __$$insettingPressedImplCopyWithImpl<$Res>;
+  factory _$$insettingPressedImplCopyWith(
+    _$insettingPressedImpl value,
+    $Res Function(_$insettingPressedImpl) then,
+  ) = __$$insettingPressedImplCopyWithImpl<$Res>;
   @useResult
   $Res call({bool immediately});
 }
@@ -208,23 +209,25 @@ abstract class _$$insettingPressedImplCopyWith<$Res> {
 class __$$insettingPressedImplCopyWithImpl<$Res>
     extends _$InsettingGemModalEventCopyWithImpl<$Res, _$insettingPressedImpl>
     implements _$$insettingPressedImplCopyWith<$Res> {
-  __$$insettingPressedImplCopyWithImpl(_$insettingPressedImpl _value,
-      $Res Function(_$insettingPressedImpl) _then)
-      : super(_value, _then);
+  __$$insettingPressedImplCopyWithImpl(
+    _$insettingPressedImpl _value,
+    $Res Function(_$insettingPressedImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of InsettingGemModalEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? immediately = null,
-  }) {
-    return _then(_$insettingPressedImpl(
-      immediately: null == immediately
-          ? _value.immediately
-          : immediately // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
+  $Res call({Object? immediately = null}) {
+    return _then(
+      _$insettingPressedImpl(
+        immediately:
+            null == immediately
+                ? _value.immediately
+                : immediately // ignore: cast_nullable_to_non_nullable
+                    as bool,
+      ),
+    );
   }
 }
 
@@ -261,7 +264,9 @@ class _$insettingPressedImpl implements _insettingPressed {
   @pragma('vm:prefer-inline')
   _$$insettingPressedImplCopyWith<_$insettingPressedImpl> get copyWith =>
       __$$insettingPressedImplCopyWithImpl<_$insettingPressedImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -348,8 +353,9 @@ abstract class _insettingPressed implements InsettingGemModalEvent {
 /// @nodoc
 abstract class _$$onTickImplCopyWith<$Res> {
   factory _$$onTickImplCopyWith(
-          _$onTickImpl value, $Res Function(_$onTickImpl) then) =
-      __$$onTickImplCopyWithImpl<$Res>;
+    _$onTickImpl value,
+    $Res Function(_$onTickImpl) then,
+  ) = __$$onTickImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -357,8 +363,9 @@ class __$$onTickImplCopyWithImpl<$Res>
     extends _$InsettingGemModalEventCopyWithImpl<$Res, _$onTickImpl>
     implements _$$onTickImplCopyWith<$Res> {
   __$$onTickImplCopyWithImpl(
-      _$onTickImpl _value, $Res Function(_$onTickImpl) _then)
-      : super(_value, _then);
+    _$onTickImpl _value,
+    $Res Function(_$onTickImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of InsettingGemModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -472,20 +479,24 @@ mixin _$InsettingGemModalState {
 
 /// @nodoc
 abstract class $InsettingGemModalStateCopyWith<$Res> {
-  factory $InsettingGemModalStateCopyWith(InsettingGemModalState value,
-          $Res Function(InsettingGemModalState) then) =
-      _$InsettingGemModalStateCopyWithImpl<$Res, InsettingGemModalState>;
+  factory $InsettingGemModalStateCopyWith(
+    InsettingGemModalState value,
+    $Res Function(InsettingGemModalState) then,
+  ) = _$InsettingGemModalStateCopyWithImpl<$Res, InsettingGemModalState>;
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      InsettingGemModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    InsettingGemModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
-class _$InsettingGemModalStateCopyWithImpl<$Res,
-        $Val extends InsettingGemModalState>
+class _$InsettingGemModalStateCopyWithImpl<
+  $Res,
+  $Val extends InsettingGemModalState
+>
     implements $InsettingGemModalStateCopyWith<$Res> {
   _$InsettingGemModalStateCopyWithImpl(this._value, this._then);
 
@@ -504,24 +515,31 @@ class _$InsettingGemModalStateCopyWithImpl<$Res,
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as InsettingGemModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            elapsedDuration:
+                null == elapsedDuration
+                    ? _value.elapsedDuration
+                    : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                        as int,
+            status:
+                null == status
+                    ? _value.status
+                    : status // ignore: cast_nullable_to_non_nullable
+                        as InsettingGemModalStatus,
+            result:
+                freezed == result
+                    ? _value.result
+                    : result // ignore: cast_nullable_to_non_nullable
+                        as String?,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -529,27 +547,28 @@ class _$InsettingGemModalStateCopyWithImpl<$Res,
 abstract class _$$InsettingGemModalStateImplCopyWith<$Res>
     implements $InsettingGemModalStateCopyWith<$Res> {
   factory _$$InsettingGemModalStateImplCopyWith(
-          _$InsettingGemModalStateImpl value,
-          $Res Function(_$InsettingGemModalStateImpl) then) =
-      __$$InsettingGemModalStateImplCopyWithImpl<$Res>;
+    _$InsettingGemModalStateImpl value,
+    $Res Function(_$InsettingGemModalStateImpl) then,
+  ) = __$$InsettingGemModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool initialized,
-      int elapsedDuration,
-      InsettingGemModalStatus status,
-      String? result});
+  $Res call({
+    bool initialized,
+    int elapsedDuration,
+    InsettingGemModalStatus status,
+    String? result,
+  });
 }
 
 /// @nodoc
 class __$$InsettingGemModalStateImplCopyWithImpl<$Res>
-    extends _$InsettingGemModalStateCopyWithImpl<$Res,
-        _$InsettingGemModalStateImpl>
+    extends
+        _$InsettingGemModalStateCopyWithImpl<$Res, _$InsettingGemModalStateImpl>
     implements _$$InsettingGemModalStateImplCopyWith<$Res> {
   __$$InsettingGemModalStateImplCopyWithImpl(
-      _$InsettingGemModalStateImpl _value,
-      $Res Function(_$InsettingGemModalStateImpl) _then)
-      : super(_value, _then);
+    _$InsettingGemModalStateImpl _value,
+    $Res Function(_$InsettingGemModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of InsettingGemModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -561,35 +580,42 @@ class __$$InsettingGemModalStateImplCopyWithImpl<$Res>
     Object? status = null,
     Object? result = freezed,
   }) {
-    return _then(_$InsettingGemModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as int,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as InsettingGemModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+    return _then(
+      _$InsettingGemModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        elapsedDuration:
+            null == elapsedDuration
+                ? _value.elapsedDuration
+                : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                    as int,
+        status:
+            null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                    as InsettingGemModalStatus,
+        result:
+            freezed == result
+                ? _value.result
+                : result // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$InsettingGemModalStateImpl implements _InsettingGemModalState {
-  const _$InsettingGemModalStateImpl(
-      {this.initialized = false,
-      this.elapsedDuration = 0,
-      this.status = InsettingGemModalStatus.prepare,
-      this.result = null});
+  const _$InsettingGemModalStateImpl({
+    this.initialized = false,
+    this.elapsedDuration = 0,
+    this.status = InsettingGemModalStatus.prepare,
+    this.result = null,
+  });
 
   @override
   @JsonKey()
@@ -632,16 +658,20 @@ class _$InsettingGemModalStateImpl implements _InsettingGemModalState {
   @override
   @pragma('vm:prefer-inline')
   _$$InsettingGemModalStateImplCopyWith<_$InsettingGemModalStateImpl>
-      get copyWith => __$$InsettingGemModalStateImplCopyWithImpl<
-          _$InsettingGemModalStateImpl>(this, _$identity);
+  get copyWith =>
+      __$$InsettingGemModalStateImplCopyWithImpl<_$InsettingGemModalStateImpl>(
+        this,
+        _$identity,
+      );
 }
 
 abstract class _InsettingGemModalState implements InsettingGemModalState {
-  const factory _InsettingGemModalState(
-      {final bool initialized,
-      final int elapsedDuration,
-      final InsettingGemModalStatus status,
-      final String? result}) = _$InsettingGemModalStateImpl;
+  const factory _InsettingGemModalState({
+    final bool initialized,
+    final int elapsedDuration,
+    final InsettingGemModalStatus status,
+    final String? result,
+  }) = _$InsettingGemModalStateImpl;
 
   @override
   bool get initialized;
@@ -657,5 +687,5 @@ abstract class _InsettingGemModalState implements InsettingGemModalState {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$InsettingGemModalStateImplCopyWith<_$InsettingGemModalStateImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  get copyWith => throw _privateConstructorUsedError;
 }

@@ -12,49 +12,45 @@ part of 'idle_page_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$IdlePageEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $IdlePageEventCopyWith<$Res> {
   factory $IdlePageEventCopyWith(
-          IdlePageEvent value, $Res Function(IdlePageEvent) then) =
-      _$IdlePageEventCopyWithImpl<$Res, IdlePageEvent>;
+    IdlePageEvent value,
+    $Res Function(IdlePageEvent) then,
+  ) = _$IdlePageEventCopyWithImpl<$Res, IdlePageEvent>;
 }
 
 /// @nodoc
@@ -74,8 +70,9 @@ class _$IdlePageEventCopyWithImpl<$Res, $Val extends IdlePageEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -83,8 +80,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$IdlePageEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of IdlePageEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -184,8 +182,9 @@ mixin _$IdlePageState {
 /// @nodoc
 abstract class $IdlePageStateCopyWith<$Res> {
   factory $IdlePageStateCopyWith(
-          IdlePageState value, $Res Function(IdlePageState) then) =
-      _$IdlePageStateCopyWithImpl<$Res, IdlePageState>;
+    IdlePageState value,
+    $Res Function(IdlePageState) then,
+  ) = _$IdlePageStateCopyWithImpl<$Res, IdlePageState>;
   @useResult
   $Res call({bool initialized});
 }
@@ -204,15 +203,17 @@ class _$IdlePageStateCopyWithImpl<$Res, $Val extends IdlePageState>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ) as $Val);
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -220,8 +221,9 @@ class _$IdlePageStateCopyWithImpl<$Res, $Val extends IdlePageState>
 abstract class _$$IdlePageStateImplCopyWith<$Res>
     implements $IdlePageStateCopyWith<$Res> {
   factory _$$IdlePageStateImplCopyWith(
-          _$IdlePageStateImpl value, $Res Function(_$IdlePageStateImpl) then) =
-      __$$IdlePageStateImplCopyWithImpl<$Res>;
+    _$IdlePageStateImpl value,
+    $Res Function(_$IdlePageStateImpl) then,
+  ) = __$$IdlePageStateImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({bool initialized});
@@ -232,22 +234,24 @@ class __$$IdlePageStateImplCopyWithImpl<$Res>
     extends _$IdlePageStateCopyWithImpl<$Res, _$IdlePageStateImpl>
     implements _$$IdlePageStateImplCopyWith<$Res> {
   __$$IdlePageStateImplCopyWithImpl(
-      _$IdlePageStateImpl _value, $Res Function(_$IdlePageStateImpl) _then)
-      : super(_value, _then);
+    _$IdlePageStateImpl _value,
+    $Res Function(_$IdlePageStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of IdlePageState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? initialized = null,
-  }) {
-    return _then(_$IdlePageStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
+  $Res call({Object? initialized = null}) {
+    return _then(
+      _$IdlePageStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+      ),
+    );
   }
 }
 

@@ -12,54 +12,50 @@ part of 'bottom_navigation_rail_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$BottomNavigationRailEvent {
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() mock,
-  }) =>
+  TResult when<TResult extends Object?>({required TResult Function() mock}) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? mock,
-  }) =>
+  TResult? whenOrNull<TResult extends Object?>({TResult? Function()? mock}) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? mock,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_mock value) mock,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_mock value)? mock,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_mock value)? mock,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $BottomNavigationRailEventCopyWith<$Res> {
-  factory $BottomNavigationRailEventCopyWith(BottomNavigationRailEvent value,
-          $Res Function(BottomNavigationRailEvent) then) =
-      _$BottomNavigationRailEventCopyWithImpl<$Res, BottomNavigationRailEvent>;
+  factory $BottomNavigationRailEventCopyWith(
+    BottomNavigationRailEvent value,
+    $Res Function(BottomNavigationRailEvent) then,
+  ) = _$BottomNavigationRailEventCopyWithImpl<$Res, BottomNavigationRailEvent>;
 }
 
 /// @nodoc
-class _$BottomNavigationRailEventCopyWithImpl<$Res,
-        $Val extends BottomNavigationRailEvent>
+class _$BottomNavigationRailEventCopyWithImpl<
+  $Res,
+  $Val extends BottomNavigationRailEvent
+>
     implements $BottomNavigationRailEventCopyWith<$Res> {
   _$BottomNavigationRailEventCopyWithImpl(this._value, this._then);
 
@@ -75,8 +71,9 @@ class _$BottomNavigationRailEventCopyWithImpl<$Res,
 /// @nodoc
 abstract class _$$mockImplCopyWith<$Res> {
   factory _$$mockImplCopyWith(
-          _$mockImpl value, $Res Function(_$mockImpl) then) =
-      __$$mockImplCopyWithImpl<$Res>;
+    _$mockImpl value,
+    $Res Function(_$mockImpl) then,
+  ) = __$$mockImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -84,7 +81,7 @@ class __$$mockImplCopyWithImpl<$Res>
     extends _$BottomNavigationRailEventCopyWithImpl<$Res, _$mockImpl>
     implements _$$mockImplCopyWith<$Res> {
   __$$mockImplCopyWithImpl(_$mockImpl _value, $Res Function(_$mockImpl) _then)
-      : super(_value, _then);
+    : super(_value, _then);
 
   /// Create a copy of BottomNavigationRailEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -111,17 +108,13 @@ class _$mockImpl implements _mock {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() mock,
-  }) {
+  TResult when<TResult extends Object?>({required TResult Function() mock}) {
     return mock();
   }
 
   @override
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? mock,
-  }) {
+  TResult? whenOrNull<TResult extends Object?>({TResult? Function()? mock}) {
     return mock?.call();
   }
 
@@ -175,14 +168,17 @@ mixin _$BottomNavigationRailState {}
 
 /// @nodoc
 abstract class $BottomNavigationRailStateCopyWith<$Res> {
-  factory $BottomNavigationRailStateCopyWith(BottomNavigationRailState value,
-          $Res Function(BottomNavigationRailState) then) =
-      _$BottomNavigationRailStateCopyWithImpl<$Res, BottomNavigationRailState>;
+  factory $BottomNavigationRailStateCopyWith(
+    BottomNavigationRailState value,
+    $Res Function(BottomNavigationRailState) then,
+  ) = _$BottomNavigationRailStateCopyWithImpl<$Res, BottomNavigationRailState>;
 }
 
 /// @nodoc
-class _$BottomNavigationRailStateCopyWithImpl<$Res,
-        $Val extends BottomNavigationRailState>
+class _$BottomNavigationRailStateCopyWithImpl<
+  $Res,
+  $Val extends BottomNavigationRailState
+>
     implements $BottomNavigationRailStateCopyWith<$Res> {
   _$BottomNavigationRailStateCopyWithImpl(this._value, this._then);
 
@@ -198,20 +194,23 @@ class _$BottomNavigationRailStateCopyWithImpl<$Res,
 /// @nodoc
 abstract class _$$BottomNavigationRailStateImplCopyWith<$Res> {
   factory _$$BottomNavigationRailStateImplCopyWith(
-          _$BottomNavigationRailStateImpl value,
-          $Res Function(_$BottomNavigationRailStateImpl) then) =
-      __$$BottomNavigationRailStateImplCopyWithImpl<$Res>;
+    _$BottomNavigationRailStateImpl value,
+    $Res Function(_$BottomNavigationRailStateImpl) then,
+  ) = __$$BottomNavigationRailStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
 class __$$BottomNavigationRailStateImplCopyWithImpl<$Res>
-    extends _$BottomNavigationRailStateCopyWithImpl<$Res,
-        _$BottomNavigationRailStateImpl>
+    extends
+        _$BottomNavigationRailStateCopyWithImpl<
+          $Res,
+          _$BottomNavigationRailStateImpl
+        >
     implements _$$BottomNavigationRailStateImplCopyWith<$Res> {
   __$$BottomNavigationRailStateImplCopyWithImpl(
-      _$BottomNavigationRailStateImpl _value,
-      $Res Function(_$BottomNavigationRailStateImpl) _then)
-      : super(_value, _then);
+    _$BottomNavigationRailStateImpl _value,
+    $Res Function(_$BottomNavigationRailStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of BottomNavigationRailState
   /// with the given fields replaced by the non-null parameter values.

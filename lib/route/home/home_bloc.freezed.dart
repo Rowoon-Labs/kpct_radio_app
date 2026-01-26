@@ -12,7 +12,8 @@ part of 'home_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$HomeEvent {
@@ -22,77 +23,80 @@ mixin _$HomeEvent {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
     required TResult Function() onResume,
     required TResult Function() onPause,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
     TResult? Function()? onResume,
     TResult? Function()? onPause,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
     TResult Function()? onResume,
     TResult Function()? onPause,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
@@ -106,8 +110,7 @@ mixin _$HomeEvent {
     required TResult Function(_togglePlay value) togglePlay,
     required TResult Function(_onResume value) onResume,
     required TResult Function(_onPause value) onPause,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
@@ -121,8 +124,7 @@ mixin _$HomeEvent {
     TResult? Function(_togglePlay value)? togglePlay,
     TResult? Function(_onResume value)? onResume,
     TResult? Function(_onPause value)? onPause,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
@@ -137,8 +139,7 @@ mixin _$HomeEvent {
     TResult Function(_onResume value)? onResume,
     TResult Function(_onPause value)? onPause,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -164,8 +165,9 @@ class _$HomeEventCopyWithImpl<$Res, $Val extends HomeEvent>
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -173,8 +175,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -206,19 +209,23 @@ class _$initializeImpl implements _initialize {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -235,18 +242,19 @@ class _$initializeImpl implements _initialize {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -263,18 +271,19 @@ class _$initializeImpl implements _initialize {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -354,8 +363,9 @@ abstract class _initialize implements HomeEvent {
 /// @nodoc
 abstract class _$$signOutImplCopyWith<$Res> {
   factory _$$signOutImplCopyWith(
-          _$signOutImpl value, $Res Function(_$signOutImpl) then) =
-      __$$signOutImplCopyWithImpl<$Res>;
+    _$signOutImpl value,
+    $Res Function(_$signOutImpl) then,
+  ) = __$$signOutImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -363,8 +373,9 @@ class __$$signOutImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$signOutImpl>
     implements _$$signOutImplCopyWith<$Res> {
   __$$signOutImplCopyWithImpl(
-      _$signOutImpl _value, $Res Function(_$signOutImpl) _then)
-      : super(_value, _then);
+    _$signOutImpl _value,
+    $Res Function(_$signOutImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -396,19 +407,23 @@ class _$signOutImpl implements _signOut {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -425,18 +440,19 @@ class _$signOutImpl implements _signOut {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -453,18 +469,19 @@ class _$signOutImpl implements _signOut {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -544,8 +561,9 @@ abstract class _signOut implements HomeEvent {
 /// @nodoc
 abstract class _$$switchPageImplCopyWith<$Res> {
   factory _$$switchPageImplCopyWith(
-          _$switchPageImpl value, $Res Function(_$switchPageImpl) then) =
-      __$$switchPageImplCopyWithImpl<$Res>;
+    _$switchPageImpl value,
+    $Res Function(_$switchPageImpl) then,
+  ) = __$$switchPageImplCopyWithImpl<$Res>;
   @useResult
   $Res call({BuildContext context, HomePage page});
 }
@@ -555,27 +573,29 @@ class __$$switchPageImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$switchPageImpl>
     implements _$$switchPageImplCopyWith<$Res> {
   __$$switchPageImplCopyWithImpl(
-      _$switchPageImpl _value, $Res Function(_$switchPageImpl) _then)
-      : super(_value, _then);
+    _$switchPageImpl _value,
+    $Res Function(_$switchPageImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? context = null,
-    Object? page = null,
-  }) {
-    return _then(_$switchPageImpl(
-      context: null == context
-          ? _value.context
-          : context // ignore: cast_nullable_to_non_nullable
-              as BuildContext,
-      page: null == page
-          ? _value.page
-          : page // ignore: cast_nullable_to_non_nullable
-              as HomePage,
-    ));
+  $Res call({Object? context = null, Object? page = null}) {
+    return _then(
+      _$switchPageImpl(
+        context:
+            null == context
+                ? _value.context
+                : context // ignore: cast_nullable_to_non_nullable
+                    as BuildContext,
+        page:
+            null == page
+                ? _value.page
+                : page // ignore: cast_nullable_to_non_nullable
+                    as HomePage,
+      ),
+    );
   }
 }
 
@@ -621,19 +641,23 @@ class _$switchPageImpl implements _switchPage {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -650,18 +674,19 @@ class _$switchPageImpl implements _switchPage {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -678,18 +703,19 @@ class _$switchPageImpl implements _switchPage {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -763,9 +789,10 @@ class _$switchPageImpl implements _switchPage {
 }
 
 abstract class _switchPage implements HomeEvent {
-  const factory _switchPage(
-      {required final BuildContext context,
-      required final HomePage page}) = _$switchPageImpl;
+  const factory _switchPage({
+    required final BuildContext context,
+    required final HomePage page,
+  }) = _$switchPageImpl;
 
   BuildContext get context;
   HomePage get page;
@@ -780,8 +807,9 @@ abstract class _switchPage implements HomeEvent {
 /// @nodoc
 abstract class _$$selectVideoImplCopyWith<$Res> {
   factory _$$selectVideoImplCopyWith(
-          _$selectVideoImpl value, $Res Function(_$selectVideoImpl) then) =
-      __$$selectVideoImplCopyWithImpl<$Res>;
+    _$selectVideoImpl value,
+    $Res Function(_$selectVideoImpl) then,
+  ) = __$$selectVideoImplCopyWithImpl<$Res>;
   @useResult
   $Res call({BuildContext context, PlayList? playList, Video? video});
 
@@ -794,8 +822,9 @@ class __$$selectVideoImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$selectVideoImpl>
     implements _$$selectVideoImplCopyWith<$Res> {
   __$$selectVideoImplCopyWithImpl(
-      _$selectVideoImpl _value, $Res Function(_$selectVideoImpl) _then)
-      : super(_value, _then);
+    _$selectVideoImpl _value,
+    $Res Function(_$selectVideoImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -806,20 +835,25 @@ class __$$selectVideoImplCopyWithImpl<$Res>
     Object? playList = freezed,
     Object? video = freezed,
   }) {
-    return _then(_$selectVideoImpl(
-      context: null == context
-          ? _value.context
-          : context // ignore: cast_nullable_to_non_nullable
-              as BuildContext,
-      playList: freezed == playList
-          ? _value.playList
-          : playList // ignore: cast_nullable_to_non_nullable
-              as PlayList?,
-      video: freezed == video
-          ? _value.video
-          : video // ignore: cast_nullable_to_non_nullable
-              as Video?,
-    ));
+    return _then(
+      _$selectVideoImpl(
+        context:
+            null == context
+                ? _value.context
+                : context // ignore: cast_nullable_to_non_nullable
+                    as BuildContext,
+        playList:
+            freezed == playList
+                ? _value.playList
+                : playList // ignore: cast_nullable_to_non_nullable
+                    as PlayList?,
+        video:
+            freezed == video
+                ? _value.video
+                : video // ignore: cast_nullable_to_non_nullable
+                    as Video?,
+      ),
+    );
   }
 
   /// Create a copy of HomeEvent
@@ -854,8 +888,11 @@ class __$$selectVideoImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$selectVideoImpl implements _selectVideo {
-  const _$selectVideoImpl(
-      {required this.context, required this.playList, required this.video});
+  const _$selectVideoImpl({
+    required this.context,
+    required this.playList,
+    required this.video,
+  });
 
   @override
   final BuildContext context;
@@ -898,19 +935,23 @@ class _$selectVideoImpl implements _selectVideo {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -927,18 +968,19 @@ class _$selectVideoImpl implements _selectVideo {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -955,18 +997,19 @@ class _$selectVideoImpl implements _selectVideo {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -1040,10 +1083,11 @@ class _$selectVideoImpl implements _selectVideo {
 }
 
 abstract class _selectVideo implements HomeEvent {
-  const factory _selectVideo(
-      {required final BuildContext context,
-      required final PlayList? playList,
-      required final Video? video}) = _$selectVideoImpl;
+  const factory _selectVideo({
+    required final BuildContext context,
+    required final PlayList? playList,
+    required final Video? video,
+  }) = _$selectVideoImpl;
 
   BuildContext get context;
   PlayList? get playList;
@@ -1058,9 +1102,10 @@ abstract class _selectVideo implements HomeEvent {
 
 /// @nodoc
 abstract class _$$videoStateChangesImplCopyWith<$Res> {
-  factory _$$videoStateChangesImplCopyWith(_$videoStateChangesImpl value,
-          $Res Function(_$videoStateChangesImpl) then) =
-      __$$videoStateChangesImplCopyWithImpl<$Res>;
+  factory _$$videoStateChangesImplCopyWith(
+    _$videoStateChangesImpl value,
+    $Res Function(_$videoStateChangesImpl) then,
+  ) = __$$videoStateChangesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Duration position, double loadedFraction});
 }
@@ -1069,36 +1114,40 @@ abstract class _$$videoStateChangesImplCopyWith<$Res> {
 class __$$videoStateChangesImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$videoStateChangesImpl>
     implements _$$videoStateChangesImplCopyWith<$Res> {
-  __$$videoStateChangesImplCopyWithImpl(_$videoStateChangesImpl _value,
-      $Res Function(_$videoStateChangesImpl) _then)
-      : super(_value, _then);
+  __$$videoStateChangesImplCopyWithImpl(
+    _$videoStateChangesImpl _value,
+    $Res Function(_$videoStateChangesImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? position = null,
-    Object? loadedFraction = null,
-  }) {
-    return _then(_$videoStateChangesImpl(
-      position: null == position
-          ? _value.position
-          : position // ignore: cast_nullable_to_non_nullable
-              as Duration,
-      loadedFraction: null == loadedFraction
-          ? _value.loadedFraction
-          : loadedFraction // ignore: cast_nullable_to_non_nullable
-              as double,
-    ));
+  $Res call({Object? position = null, Object? loadedFraction = null}) {
+    return _then(
+      _$videoStateChangesImpl(
+        position:
+            null == position
+                ? _value.position
+                : position // ignore: cast_nullable_to_non_nullable
+                    as Duration,
+        loadedFraction:
+            null == loadedFraction
+                ? _value.loadedFraction
+                : loadedFraction // ignore: cast_nullable_to_non_nullable
+                    as double,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$videoStateChangesImpl implements _videoStateChanges {
-  const _$videoStateChangesImpl(
-      {required this.position, required this.loadedFraction});
+  const _$videoStateChangesImpl({
+    required this.position,
+    required this.loadedFraction,
+  });
 
   @override
   final Duration position;
@@ -1131,7 +1180,9 @@ class _$videoStateChangesImpl implements _videoStateChanges {
   @pragma('vm:prefer-inline')
   _$$videoStateChangesImplCopyWith<_$videoStateChangesImpl> get copyWith =>
       __$$videoStateChangesImplCopyWithImpl<_$videoStateChangesImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -1140,19 +1191,23 @@ class _$videoStateChangesImpl implements _videoStateChanges {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -1169,18 +1224,19 @@ class _$videoStateChangesImpl implements _videoStateChanges {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -1197,18 +1253,19 @@ class _$videoStateChangesImpl implements _videoStateChanges {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -1282,9 +1339,10 @@ class _$videoStateChangesImpl implements _videoStateChanges {
 }
 
 abstract class _videoStateChanges implements HomeEvent {
-  const factory _videoStateChanges(
-      {required final Duration position,
-      required final double loadedFraction}) = _$videoStateChangesImpl;
+  const factory _videoStateChanges({
+    required final Duration position,
+    required final double loadedFraction,
+  }) = _$videoStateChangesImpl;
 
   Duration get position;
   double get loadedFraction;
@@ -1298,27 +1356,30 @@ abstract class _videoStateChanges implements HomeEvent {
 
 /// @nodoc
 abstract class _$$playerValueChangesImplCopyWith<$Res> {
-  factory _$$playerValueChangesImplCopyWith(_$playerValueChangesImpl value,
-          $Res Function(_$playerValueChangesImpl) then) =
-      __$$playerValueChangesImplCopyWithImpl<$Res>;
+  factory _$$playerValueChangesImplCopyWith(
+    _$playerValueChangesImpl value,
+    $Res Function(_$playerValueChangesImpl) then,
+  ) = __$$playerValueChangesImplCopyWithImpl<$Res>;
   @useResult
-  $Res call(
-      {bool hasError,
-      YoutubeError error,
-      FullScreenOption fullScreenOption,
-      PlayerState playerState,
-      YoutubeMetaData metaData,
-      String? playbackQuality,
-      double playbackRate});
+  $Res call({
+    bool hasError,
+    YoutubeError error,
+    FullScreenOption fullScreenOption,
+    PlayerState playerState,
+    YoutubeMetaData metaData,
+    String? playbackQuality,
+    double playbackRate,
+  });
 }
 
 /// @nodoc
 class __$$playerValueChangesImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$playerValueChangesImpl>
     implements _$$playerValueChangesImplCopyWith<$Res> {
-  __$$playerValueChangesImplCopyWithImpl(_$playerValueChangesImpl _value,
-      $Res Function(_$playerValueChangesImpl) _then)
-      : super(_value, _then);
+  __$$playerValueChangesImplCopyWithImpl(
+    _$playerValueChangesImpl _value,
+    $Res Function(_$playerValueChangesImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -1333,50 +1394,60 @@ class __$$playerValueChangesImplCopyWithImpl<$Res>
     Object? playbackQuality = freezed,
     Object? playbackRate = null,
   }) {
-    return _then(_$playerValueChangesImpl(
-      hasError: null == hasError
-          ? _value.hasError
-          : hasError // ignore: cast_nullable_to_non_nullable
-              as bool,
-      error: null == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as YoutubeError,
-      fullScreenOption: null == fullScreenOption
-          ? _value.fullScreenOption
-          : fullScreenOption // ignore: cast_nullable_to_non_nullable
-              as FullScreenOption,
-      playerState: null == playerState
-          ? _value.playerState
-          : playerState // ignore: cast_nullable_to_non_nullable
-              as PlayerState,
-      metaData: null == metaData
-          ? _value.metaData
-          : metaData // ignore: cast_nullable_to_non_nullable
-              as YoutubeMetaData,
-      playbackQuality: freezed == playbackQuality
-          ? _value.playbackQuality
-          : playbackQuality // ignore: cast_nullable_to_non_nullable
-              as String?,
-      playbackRate: null == playbackRate
-          ? _value.playbackRate
-          : playbackRate // ignore: cast_nullable_to_non_nullable
-              as double,
-    ));
+    return _then(
+      _$playerValueChangesImpl(
+        hasError:
+            null == hasError
+                ? _value.hasError
+                : hasError // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        error:
+            null == error
+                ? _value.error
+                : error // ignore: cast_nullable_to_non_nullable
+                    as YoutubeError,
+        fullScreenOption:
+            null == fullScreenOption
+                ? _value.fullScreenOption
+                : fullScreenOption // ignore: cast_nullable_to_non_nullable
+                    as FullScreenOption,
+        playerState:
+            null == playerState
+                ? _value.playerState
+                : playerState // ignore: cast_nullable_to_non_nullable
+                    as PlayerState,
+        metaData:
+            null == metaData
+                ? _value.metaData
+                : metaData // ignore: cast_nullable_to_non_nullable
+                    as YoutubeMetaData,
+        playbackQuality:
+            freezed == playbackQuality
+                ? _value.playbackQuality
+                : playbackQuality // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        playbackRate:
+            null == playbackRate
+                ? _value.playbackRate
+                : playbackRate // ignore: cast_nullable_to_non_nullable
+                    as double,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$playerValueChangesImpl implements _playerValueChanges {
-  const _$playerValueChangesImpl(
-      {required this.hasError,
-      required this.error,
-      required this.fullScreenOption,
-      required this.playerState,
-      required this.metaData,
-      required this.playbackQuality,
-      required this.playbackRate});
+  const _$playerValueChangesImpl({
+    required this.hasError,
+    required this.error,
+    required this.fullScreenOption,
+    required this.playerState,
+    required this.metaData,
+    required this.playbackQuality,
+    required this.playbackRate,
+  });
 
   @override
   final bool hasError;
@@ -1419,8 +1490,16 @@ class _$playerValueChangesImpl implements _playerValueChanges {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, hasError, error,
-      fullScreenOption, playerState, metaData, playbackQuality, playbackRate);
+  int get hashCode => Object.hash(
+    runtimeType,
+    hasError,
+    error,
+    fullScreenOption,
+    playerState,
+    metaData,
+    playbackQuality,
+    playbackRate,
+  );
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -1429,7 +1508,9 @@ class _$playerValueChangesImpl implements _playerValueChanges {
   @pragma('vm:prefer-inline')
   _$$playerValueChangesImplCopyWith<_$playerValueChangesImpl> get copyWith =>
       __$$playerValueChangesImplCopyWithImpl<_$playerValueChangesImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 
   @override
   @optionalTypeArgs
@@ -1438,27 +1519,38 @@ class _$playerValueChangesImpl implements _playerValueChanges {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
     required TResult Function() onResume,
     required TResult Function() onPause,
   }) {
-    return playerValueChanges(hasError, error, fullScreenOption, playerState,
-        metaData, playbackQuality, playbackRate);
+    return playerValueChanges(
+      hasError,
+      error,
+      fullScreenOption,
+      playerState,
+      metaData,
+      playbackQuality,
+      playbackRate,
+    );
   }
 
   @override
@@ -1468,26 +1560,34 @@ class _$playerValueChangesImpl implements _playerValueChanges {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
     TResult? Function()? onResume,
     TResult? Function()? onPause,
   }) {
-    return playerValueChanges?.call(hasError, error, fullScreenOption,
-        playerState, metaData, playbackQuality, playbackRate);
+    return playerValueChanges?.call(
+      hasError,
+      error,
+      fullScreenOption,
+      playerState,
+      metaData,
+      playbackQuality,
+      playbackRate,
+    );
   }
 
   @override
@@ -1497,18 +1597,19 @@ class _$playerValueChangesImpl implements _playerValueChanges {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -1517,8 +1618,15 @@ class _$playerValueChangesImpl implements _playerValueChanges {
     required TResult orElse(),
   }) {
     if (playerValueChanges != null) {
-      return playerValueChanges(hasError, error, fullScreenOption, playerState,
-          metaData, playbackQuality, playbackRate);
+      return playerValueChanges(
+        hasError,
+        error,
+        fullScreenOption,
+        playerState,
+        metaData,
+        playbackQuality,
+        playbackRate,
+      );
     }
     return orElse();
   }
@@ -1583,14 +1691,15 @@ class _$playerValueChangesImpl implements _playerValueChanges {
 }
 
 abstract class _playerValueChanges implements HomeEvent {
-  const factory _playerValueChanges(
-      {required final bool hasError,
-      required final YoutubeError error,
-      required final FullScreenOption fullScreenOption,
-      required final PlayerState playerState,
-      required final YoutubeMetaData metaData,
-      required final String? playbackQuality,
-      required final double playbackRate}) = _$playerValueChangesImpl;
+  const factory _playerValueChanges({
+    required final bool hasError,
+    required final YoutubeError error,
+    required final FullScreenOption fullScreenOption,
+    required final PlayerState playerState,
+    required final YoutubeMetaData metaData,
+    required final String? playbackQuality,
+    required final double playbackRate,
+  }) = _$playerValueChangesImpl;
 
   bool get hasError;
   YoutubeError get error;
@@ -1610,8 +1719,9 @@ abstract class _playerValueChanges implements HomeEvent {
 /// @nodoc
 abstract class _$$tryPlayVideoImplCopyWith<$Res> {
   factory _$$tryPlayVideoImplCopyWith(
-          _$tryPlayVideoImpl value, $Res Function(_$tryPlayVideoImpl) then) =
-      __$$tryPlayVideoImplCopyWithImpl<$Res>;
+    _$tryPlayVideoImpl value,
+    $Res Function(_$tryPlayVideoImpl) then,
+  ) = __$$tryPlayVideoImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String? videoId});
 }
@@ -1621,22 +1731,24 @@ class __$$tryPlayVideoImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$tryPlayVideoImpl>
     implements _$$tryPlayVideoImplCopyWith<$Res> {
   __$$tryPlayVideoImplCopyWithImpl(
-      _$tryPlayVideoImpl _value, $Res Function(_$tryPlayVideoImpl) _then)
-      : super(_value, _then);
+    _$tryPlayVideoImpl _value,
+    $Res Function(_$tryPlayVideoImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({
-    Object? videoId = freezed,
-  }) {
-    return _then(_$tryPlayVideoImpl(
-      videoId: freezed == videoId
-          ? _value.videoId
-          : videoId // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
+  $Res call({Object? videoId = freezed}) {
+    return _then(
+      _$tryPlayVideoImpl(
+        videoId:
+            freezed == videoId
+                ? _value.videoId
+                : videoId // ignore: cast_nullable_to_non_nullable
+                    as String?,
+      ),
+    );
   }
 }
 
@@ -1679,19 +1791,23 @@ class _$tryPlayVideoImpl implements _tryPlayVideo {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -1708,18 +1824,19 @@ class _$tryPlayVideoImpl implements _tryPlayVideo {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -1736,18 +1853,19 @@ class _$tryPlayVideoImpl implements _tryPlayVideo {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -1835,8 +1953,9 @@ abstract class _tryPlayVideo implements HomeEvent {
 /// @nodoc
 abstract class _$$toggleMuteImplCopyWith<$Res> {
   factory _$$toggleMuteImplCopyWith(
-          _$toggleMuteImpl value, $Res Function(_$toggleMuteImpl) then) =
-      __$$toggleMuteImplCopyWithImpl<$Res>;
+    _$toggleMuteImpl value,
+    $Res Function(_$toggleMuteImpl) then,
+  ) = __$$toggleMuteImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -1844,8 +1963,9 @@ class __$$toggleMuteImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$toggleMuteImpl>
     implements _$$toggleMuteImplCopyWith<$Res> {
   __$$toggleMuteImplCopyWithImpl(
-      _$toggleMuteImpl _value, $Res Function(_$toggleMuteImpl) _then)
-      : super(_value, _then);
+    _$toggleMuteImpl _value,
+    $Res Function(_$toggleMuteImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -1877,19 +1997,23 @@ class _$toggleMuteImpl implements _toggleMute {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -1906,18 +2030,19 @@ class _$toggleMuteImpl implements _toggleMute {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -1934,18 +2059,19 @@ class _$toggleMuteImpl implements _toggleMute {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -2025,8 +2151,9 @@ abstract class _toggleMute implements HomeEvent {
 /// @nodoc
 abstract class _$$togglePlayImplCopyWith<$Res> {
   factory _$$togglePlayImplCopyWith(
-          _$togglePlayImpl value, $Res Function(_$togglePlayImpl) then) =
-      __$$togglePlayImplCopyWithImpl<$Res>;
+    _$togglePlayImpl value,
+    $Res Function(_$togglePlayImpl) then,
+  ) = __$$togglePlayImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -2034,8 +2161,9 @@ class __$$togglePlayImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$togglePlayImpl>
     implements _$$togglePlayImplCopyWith<$Res> {
   __$$togglePlayImplCopyWithImpl(
-      _$togglePlayImpl _value, $Res Function(_$togglePlayImpl) _then)
-      : super(_value, _then);
+    _$togglePlayImpl _value,
+    $Res Function(_$togglePlayImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -2067,19 +2195,23 @@ class _$togglePlayImpl implements _togglePlay {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -2096,18 +2228,19 @@ class _$togglePlayImpl implements _togglePlay {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -2124,18 +2257,19 @@ class _$togglePlayImpl implements _togglePlay {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -2215,8 +2349,9 @@ abstract class _togglePlay implements HomeEvent {
 /// @nodoc
 abstract class _$$onResumeImplCopyWith<$Res> {
   factory _$$onResumeImplCopyWith(
-          _$onResumeImpl value, $Res Function(_$onResumeImpl) then) =
-      __$$onResumeImplCopyWithImpl<$Res>;
+    _$onResumeImpl value,
+    $Res Function(_$onResumeImpl) then,
+  ) = __$$onResumeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -2224,8 +2359,9 @@ class __$$onResumeImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$onResumeImpl>
     implements _$$onResumeImplCopyWith<$Res> {
   __$$onResumeImplCopyWithImpl(
-      _$onResumeImpl _value, $Res Function(_$onResumeImpl) _then)
-      : super(_value, _then);
+    _$onResumeImpl _value,
+    $Res Function(_$onResumeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -2257,19 +2393,23 @@ class _$onResumeImpl implements _onResume {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -2286,18 +2426,19 @@ class _$onResumeImpl implements _onResume {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -2314,18 +2455,19 @@ class _$onResumeImpl implements _onResume {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -2405,8 +2547,9 @@ abstract class _onResume implements HomeEvent {
 /// @nodoc
 abstract class _$$onPauseImplCopyWith<$Res> {
   factory _$$onPauseImplCopyWith(
-          _$onPauseImpl value, $Res Function(_$onPauseImpl) then) =
-      __$$onPauseImplCopyWithImpl<$Res>;
+    _$onPauseImpl value,
+    $Res Function(_$onPauseImpl) then,
+  ) = __$$onPauseImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -2414,8 +2557,9 @@ class __$$onPauseImplCopyWithImpl<$Res>
     extends _$HomeEventCopyWithImpl<$Res, _$onPauseImpl>
     implements _$$onPauseImplCopyWith<$Res> {
   __$$onPauseImplCopyWithImpl(
-      _$onPauseImpl _value, $Res Function(_$onPauseImpl) _then)
-      : super(_value, _then);
+    _$onPauseImpl _value,
+    $Res Function(_$onPauseImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -2447,19 +2591,23 @@ class _$onPauseImpl implements _onPause {
     required TResult Function() signOut,
     required TResult Function(BuildContext context, HomePage page) switchPage,
     required TResult Function(
-            BuildContext context, PlayList? playList, Video? video)
-        selectVideo,
+      BuildContext context,
+      PlayList? playList,
+      Video? video,
+    )
+    selectVideo,
     required TResult Function(Duration position, double loadedFraction)
-        videoStateChanges,
+    videoStateChanges,
     required TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )
+    playerValueChanges,
     required TResult Function(String? videoId) tryPlayVideo,
     required TResult Function() toggleMute,
     required TResult Function() togglePlay,
@@ -2476,18 +2624,19 @@ class _$onPauseImpl implements _onPause {
     TResult? Function()? signOut,
     TResult? Function(BuildContext context, HomePage page)? switchPage,
     TResult? Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult? Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult? Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult? Function(String? videoId)? tryPlayVideo,
     TResult? Function()? toggleMute,
     TResult? Function()? togglePlay,
@@ -2504,18 +2653,19 @@ class _$onPauseImpl implements _onPause {
     TResult Function()? signOut,
     TResult Function(BuildContext context, HomePage page)? switchPage,
     TResult Function(BuildContext context, PlayList? playList, Video? video)?
-        selectVideo,
+    selectVideo,
     TResult Function(Duration position, double loadedFraction)?
-        videoStateChanges,
+    videoStateChanges,
     TResult Function(
-            bool hasError,
-            YoutubeError error,
-            FullScreenOption fullScreenOption,
-            PlayerState playerState,
-            YoutubeMetaData metaData,
-            String? playbackQuality,
-            double playbackRate)?
-        playerValueChanges,
+      bool hasError,
+      YoutubeError error,
+      FullScreenOption fullScreenOption,
+      PlayerState playerState,
+      YoutubeMetaData metaData,
+      String? playbackQuality,
+      double playbackRate,
+    )?
+    playerValueChanges,
     TResult Function(String? videoId)? tryPlayVideo,
     TResult Function()? toggleMute,
     TResult Function()? togglePlay,
@@ -2610,15 +2760,17 @@ mixin _$CustomPlayerState {
 /// @nodoc
 abstract class $CustomPlayerStateCopyWith<$Res> {
   factory $CustomPlayerStateCopyWith(
-          CustomPlayerState value, $Res Function(CustomPlayerState) then) =
-      _$CustomPlayerStateCopyWithImpl<$Res, CustomPlayerState>;
+    CustomPlayerState value,
+    $Res Function(CustomPlayerState) then,
+  ) = _$CustomPlayerStateCopyWithImpl<$Res, CustomPlayerState>;
   @useResult
-  $Res call(
-      {bool muted,
-      PlayerState value,
-      Duration currentPosition,
-      Duration videoDuration,
-      Duration elapsedDuration});
+  $Res call({
+    bool muted,
+    PlayerState value,
+    Duration currentPosition,
+    Duration videoDuration,
+    Duration elapsedDuration,
+  });
 }
 
 /// @nodoc
@@ -2642,54 +2794,65 @@ class _$CustomPlayerStateCopyWithImpl<$Res, $Val extends CustomPlayerState>
     Object? videoDuration = null,
     Object? elapsedDuration = null,
   }) {
-    return _then(_value.copyWith(
-      muted: null == muted
-          ? _value.muted
-          : muted // ignore: cast_nullable_to_non_nullable
-              as bool,
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as PlayerState,
-      currentPosition: null == currentPosition
-          ? _value.currentPosition
-          : currentPosition // ignore: cast_nullable_to_non_nullable
-              as Duration,
-      videoDuration: null == videoDuration
-          ? _value.videoDuration
-          : videoDuration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            muted:
+                null == muted
+                    ? _value.muted
+                    : muted // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            value:
+                null == value
+                    ? _value.value
+                    : value // ignore: cast_nullable_to_non_nullable
+                        as PlayerState,
+            currentPosition:
+                null == currentPosition
+                    ? _value.currentPosition
+                    : currentPosition // ignore: cast_nullable_to_non_nullable
+                        as Duration,
+            videoDuration:
+                null == videoDuration
+                    ? _value.videoDuration
+                    : videoDuration // ignore: cast_nullable_to_non_nullable
+                        as Duration,
+            elapsedDuration:
+                null == elapsedDuration
+                    ? _value.elapsedDuration
+                    : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                        as Duration,
+          )
+          as $Val,
+    );
   }
 }
 
 /// @nodoc
 abstract class _$$CustomPlayerStateImplCopyWith<$Res>
     implements $CustomPlayerStateCopyWith<$Res> {
-  factory _$$CustomPlayerStateImplCopyWith(_$CustomPlayerStateImpl value,
-          $Res Function(_$CustomPlayerStateImpl) then) =
-      __$$CustomPlayerStateImplCopyWithImpl<$Res>;
+  factory _$$CustomPlayerStateImplCopyWith(
+    _$CustomPlayerStateImpl value,
+    $Res Function(_$CustomPlayerStateImpl) then,
+  ) = __$$CustomPlayerStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool muted,
-      PlayerState value,
-      Duration currentPosition,
-      Duration videoDuration,
-      Duration elapsedDuration});
+  $Res call({
+    bool muted,
+    PlayerState value,
+    Duration currentPosition,
+    Duration videoDuration,
+    Duration elapsedDuration,
+  });
 }
 
 /// @nodoc
 class __$$CustomPlayerStateImplCopyWithImpl<$Res>
     extends _$CustomPlayerStateCopyWithImpl<$Res, _$CustomPlayerStateImpl>
     implements _$$CustomPlayerStateImplCopyWith<$Res> {
-  __$$CustomPlayerStateImplCopyWithImpl(_$CustomPlayerStateImpl _value,
-      $Res Function(_$CustomPlayerStateImpl) _then)
-      : super(_value, _then);
+  __$$CustomPlayerStateImplCopyWithImpl(
+    _$CustomPlayerStateImpl _value,
+    $Res Function(_$CustomPlayerStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of CustomPlayerState
   /// with the given fields replaced by the non-null parameter values.
@@ -2702,40 +2865,48 @@ class __$$CustomPlayerStateImplCopyWithImpl<$Res>
     Object? videoDuration = null,
     Object? elapsedDuration = null,
   }) {
-    return _then(_$CustomPlayerStateImpl(
-      muted: null == muted
-          ? _value.muted
-          : muted // ignore: cast_nullable_to_non_nullable
-              as bool,
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as PlayerState,
-      currentPosition: null == currentPosition
-          ? _value.currentPosition
-          : currentPosition // ignore: cast_nullable_to_non_nullable
-              as Duration,
-      videoDuration: null == videoDuration
-          ? _value.videoDuration
-          : videoDuration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-      elapsedDuration: null == elapsedDuration
-          ? _value.elapsedDuration
-          : elapsedDuration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-    ));
+    return _then(
+      _$CustomPlayerStateImpl(
+        muted:
+            null == muted
+                ? _value.muted
+                : muted // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        value:
+            null == value
+                ? _value.value
+                : value // ignore: cast_nullable_to_non_nullable
+                    as PlayerState,
+        currentPosition:
+            null == currentPosition
+                ? _value.currentPosition
+                : currentPosition // ignore: cast_nullable_to_non_nullable
+                    as Duration,
+        videoDuration:
+            null == videoDuration
+                ? _value.videoDuration
+                : videoDuration // ignore: cast_nullable_to_non_nullable
+                    as Duration,
+        elapsedDuration:
+            null == elapsedDuration
+                ? _value.elapsedDuration
+                : elapsedDuration // ignore: cast_nullable_to_non_nullable
+                    as Duration,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$CustomPlayerStateImpl implements _CustomPlayerState {
-  const _$CustomPlayerStateImpl(
-      {this.muted = false,
-      this.value = PlayerState.unStarted,
-      this.currentPosition = Duration.zero,
-      this.videoDuration = Duration.zero,
-      this.elapsedDuration = Duration.zero});
+  const _$CustomPlayerStateImpl({
+    this.muted = false,
+    this.value = PlayerState.unStarted,
+    this.currentPosition = Duration.zero,
+    this.videoDuration = Duration.zero,
+    this.elapsedDuration = Duration.zero,
+  });
 
   @override
   @JsonKey()
@@ -2774,8 +2945,14 @@ class _$CustomPlayerStateImpl implements _CustomPlayerState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, muted, value, currentPosition,
-      videoDuration, elapsedDuration);
+  int get hashCode => Object.hash(
+    runtimeType,
+    muted,
+    value,
+    currentPosition,
+    videoDuration,
+    elapsedDuration,
+  );
 
   /// Create a copy of CustomPlayerState
   /// with the given fields replaced by the non-null parameter values.
@@ -2784,16 +2961,19 @@ class _$CustomPlayerStateImpl implements _CustomPlayerState {
   @pragma('vm:prefer-inline')
   _$$CustomPlayerStateImplCopyWith<_$CustomPlayerStateImpl> get copyWith =>
       __$$CustomPlayerStateImplCopyWithImpl<_$CustomPlayerStateImpl>(
-          this, _$identity);
+        this,
+        _$identity,
+      );
 }
 
 abstract class _CustomPlayerState implements CustomPlayerState {
-  const factory _CustomPlayerState(
-      {final bool muted,
-      final PlayerState value,
-      final Duration currentPosition,
-      final Duration videoDuration,
-      final Duration elapsedDuration}) = _$CustomPlayerStateImpl;
+  const factory _CustomPlayerState({
+    final bool muted,
+    final PlayerState value,
+    final Duration currentPosition,
+    final Duration videoDuration,
+    final Duration elapsedDuration,
+  }) = _$CustomPlayerStateImpl;
 
   @override
   bool get muted;
@@ -2835,13 +3015,14 @@ abstract class $HomeStateCopyWith<$Res> {
   factory $HomeStateCopyWith(HomeState value, $Res Function(HomeState) then) =
       _$HomeStateCopyWithImpl<$Res, HomeState>;
   @useResult
-  $Res call(
-      {HomeStatus status,
-      HomePage page,
-      PlayList? selectedPlayList,
-      Video? selectedVideo,
-      CustomPlayerState customPlayerState,
-      Duration sinceLastTickDuration});
+  $Res call({
+    HomeStatus status,
+    HomePage page,
+    PlayList? selectedPlayList,
+    Video? selectedVideo,
+    CustomPlayerState customPlayerState,
+    Duration sinceLastTickDuration,
+  });
 
   $PlayListCopyWith<$Res>? get selectedPlayList;
   $VideoCopyWith<$Res>? get selectedVideo;
@@ -2870,32 +3051,41 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     Object? customPlayerState = null,
     Object? sinceLastTickDuration = null,
   }) {
-    return _then(_value.copyWith(
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as HomeStatus,
-      page: null == page
-          ? _value.page
-          : page // ignore: cast_nullable_to_non_nullable
-              as HomePage,
-      selectedPlayList: freezed == selectedPlayList
-          ? _value.selectedPlayList
-          : selectedPlayList // ignore: cast_nullable_to_non_nullable
-              as PlayList?,
-      selectedVideo: freezed == selectedVideo
-          ? _value.selectedVideo
-          : selectedVideo // ignore: cast_nullable_to_non_nullable
-              as Video?,
-      customPlayerState: null == customPlayerState
-          ? _value.customPlayerState
-          : customPlayerState // ignore: cast_nullable_to_non_nullable
-              as CustomPlayerState,
-      sinceLastTickDuration: null == sinceLastTickDuration
-          ? _value.sinceLastTickDuration
-          : sinceLastTickDuration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            status:
+                null == status
+                    ? _value.status
+                    : status // ignore: cast_nullable_to_non_nullable
+                        as HomeStatus,
+            page:
+                null == page
+                    ? _value.page
+                    : page // ignore: cast_nullable_to_non_nullable
+                        as HomePage,
+            selectedPlayList:
+                freezed == selectedPlayList
+                    ? _value.selectedPlayList
+                    : selectedPlayList // ignore: cast_nullable_to_non_nullable
+                        as PlayList?,
+            selectedVideo:
+                freezed == selectedVideo
+                    ? _value.selectedVideo
+                    : selectedVideo // ignore: cast_nullable_to_non_nullable
+                        as Video?,
+            customPlayerState:
+                null == customPlayerState
+                    ? _value.customPlayerState
+                    : customPlayerState // ignore: cast_nullable_to_non_nullable
+                        as CustomPlayerState,
+            sinceLastTickDuration:
+                null == sinceLastTickDuration
+                    ? _value.sinceLastTickDuration
+                    : sinceLastTickDuration // ignore: cast_nullable_to_non_nullable
+                        as Duration,
+          )
+          as $Val,
+    );
   }
 
   /// Create a copy of HomeState
@@ -2941,17 +3131,19 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
 abstract class _$$HomeStateImplCopyWith<$Res>
     implements $HomeStateCopyWith<$Res> {
   factory _$$HomeStateImplCopyWith(
-          _$HomeStateImpl value, $Res Function(_$HomeStateImpl) then) =
-      __$$HomeStateImplCopyWithImpl<$Res>;
+    _$HomeStateImpl value,
+    $Res Function(_$HomeStateImpl) then,
+  ) = __$$HomeStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {HomeStatus status,
-      HomePage page,
-      PlayList? selectedPlayList,
-      Video? selectedVideo,
-      CustomPlayerState customPlayerState,
-      Duration sinceLastTickDuration});
+  $Res call({
+    HomeStatus status,
+    HomePage page,
+    PlayList? selectedPlayList,
+    Video? selectedVideo,
+    CustomPlayerState customPlayerState,
+    Duration sinceLastTickDuration,
+  });
 
   @override
   $PlayListCopyWith<$Res>? get selectedPlayList;
@@ -2966,8 +3158,9 @@ class __$$HomeStateImplCopyWithImpl<$Res>
     extends _$HomeStateCopyWithImpl<$Res, _$HomeStateImpl>
     implements _$$HomeStateImplCopyWith<$Res> {
   __$$HomeStateImplCopyWithImpl(
-      _$HomeStateImpl _value, $Res Function(_$HomeStateImpl) _then)
-      : super(_value, _then);
+    _$HomeStateImpl _value,
+    $Res Function(_$HomeStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -2981,45 +3174,54 @@ class __$$HomeStateImplCopyWithImpl<$Res>
     Object? customPlayerState = null,
     Object? sinceLastTickDuration = null,
   }) {
-    return _then(_$HomeStateImpl(
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as HomeStatus,
-      page: null == page
-          ? _value.page
-          : page // ignore: cast_nullable_to_non_nullable
-              as HomePage,
-      selectedPlayList: freezed == selectedPlayList
-          ? _value.selectedPlayList
-          : selectedPlayList // ignore: cast_nullable_to_non_nullable
-              as PlayList?,
-      selectedVideo: freezed == selectedVideo
-          ? _value.selectedVideo
-          : selectedVideo // ignore: cast_nullable_to_non_nullable
-              as Video?,
-      customPlayerState: null == customPlayerState
-          ? _value.customPlayerState
-          : customPlayerState // ignore: cast_nullable_to_non_nullable
-              as CustomPlayerState,
-      sinceLastTickDuration: null == sinceLastTickDuration
-          ? _value.sinceLastTickDuration
-          : sinceLastTickDuration // ignore: cast_nullable_to_non_nullable
-              as Duration,
-    ));
+    return _then(
+      _$HomeStateImpl(
+        status:
+            null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                    as HomeStatus,
+        page:
+            null == page
+                ? _value.page
+                : page // ignore: cast_nullable_to_non_nullable
+                    as HomePage,
+        selectedPlayList:
+            freezed == selectedPlayList
+                ? _value.selectedPlayList
+                : selectedPlayList // ignore: cast_nullable_to_non_nullable
+                    as PlayList?,
+        selectedVideo:
+            freezed == selectedVideo
+                ? _value.selectedVideo
+                : selectedVideo // ignore: cast_nullable_to_non_nullable
+                    as Video?,
+        customPlayerState:
+            null == customPlayerState
+                ? _value.customPlayerState
+                : customPlayerState // ignore: cast_nullable_to_non_nullable
+                    as CustomPlayerState,
+        sinceLastTickDuration:
+            null == sinceLastTickDuration
+                ? _value.sinceLastTickDuration
+                : sinceLastTickDuration // ignore: cast_nullable_to_non_nullable
+                    as Duration,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$HomeStateImpl implements _HomeState {
-  const _$HomeStateImpl(
-      {this.status = HomeStatus.initializing,
-      this.page = HomePage.idle,
-      this.selectedPlayList = null,
-      this.selectedVideo = null,
-      this.customPlayerState = const CustomPlayerState(),
-      this.sinceLastTickDuration = Duration.zero});
+  const _$HomeStateImpl({
+    this.status = HomeStatus.initializing,
+    this.page = HomePage.idle,
+    this.selectedPlayList = null,
+    this.selectedVideo = null,
+    this.customPlayerState = const CustomPlayerState(),
+    this.sinceLastTickDuration = Duration.zero,
+  });
 
   @override
   @JsonKey()
@@ -3063,8 +3265,15 @@ class _$HomeStateImpl implements _HomeState {
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, status, page, selectedPlayList,
-      selectedVideo, customPlayerState, sinceLastTickDuration);
+  int get hashCode => Object.hash(
+    runtimeType,
+    status,
+    page,
+    selectedPlayList,
+    selectedVideo,
+    customPlayerState,
+    sinceLastTickDuration,
+  );
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -3076,13 +3285,14 @@ class _$HomeStateImpl implements _HomeState {
 }
 
 abstract class _HomeState implements HomeState {
-  const factory _HomeState(
-      {final HomeStatus status,
-      final HomePage page,
-      final PlayList? selectedPlayList,
-      final Video? selectedVideo,
-      final CustomPlayerState customPlayerState,
-      final Duration sinceLastTickDuration}) = _$HomeStateImpl;
+  const factory _HomeState({
+    final HomeStatus status,
+    final HomePage page,
+    final PlayList? selectedPlayList,
+    final Video? selectedVideo,
+    final CustomPlayerState customPlayerState,
+    final Duration sinceLastTickDuration,
+  }) = _$HomeStateImpl;
 
   @override
   HomeStatus get status;

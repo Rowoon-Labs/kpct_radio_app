@@ -12,54 +12,52 @@ part of 'listening_reward_modal_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
+);
 
 /// @nodoc
 mixin _$ListeningRewardModalEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_initialize value) initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+  }) => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class $ListeningRewardModalEventCopyWith<$Res> {
-  factory $ListeningRewardModalEventCopyWith(ListeningRewardModalEvent value,
-          $Res Function(ListeningRewardModalEvent) then) =
-      _$ListeningRewardModalEventCopyWithImpl<$Res, ListeningRewardModalEvent>;
+  factory $ListeningRewardModalEventCopyWith(
+    ListeningRewardModalEvent value,
+    $Res Function(ListeningRewardModalEvent) then,
+  ) = _$ListeningRewardModalEventCopyWithImpl<$Res, ListeningRewardModalEvent>;
 }
 
 /// @nodoc
-class _$ListeningRewardModalEventCopyWithImpl<$Res,
-        $Val extends ListeningRewardModalEvent>
+class _$ListeningRewardModalEventCopyWithImpl<
+  $Res,
+  $Val extends ListeningRewardModalEvent
+>
     implements $ListeningRewardModalEventCopyWith<$Res> {
   _$ListeningRewardModalEventCopyWithImpl(this._value, this._then);
 
@@ -75,8 +73,9 @@ class _$ListeningRewardModalEventCopyWithImpl<$Res,
 /// @nodoc
 abstract class _$$initializeImplCopyWith<$Res> {
   factory _$$initializeImplCopyWith(
-          _$initializeImpl value, $Res Function(_$initializeImpl) then) =
-      __$$initializeImplCopyWithImpl<$Res>;
+    _$initializeImpl value,
+    $Res Function(_$initializeImpl) then,
+  ) = __$$initializeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
@@ -84,8 +83,9 @@ class __$$initializeImplCopyWithImpl<$Res>
     extends _$ListeningRewardModalEventCopyWithImpl<$Res, _$initializeImpl>
     implements _$$initializeImplCopyWith<$Res> {
   __$$initializeImplCopyWithImpl(
-      _$initializeImpl _value, $Res Function(_$initializeImpl) _then)
-      : super(_value, _then);
+    _$initializeImpl _value,
+    $Res Function(_$initializeImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningRewardModalEvent
   /// with the given fields replaced by the non-null parameter values.
@@ -188,21 +188,25 @@ mixin _$ListeningRewardModalState {
 
 /// @nodoc
 abstract class $ListeningRewardModalStateCopyWith<$Res> {
-  factory $ListeningRewardModalStateCopyWith(ListeningRewardModalState value,
-          $Res Function(ListeningRewardModalState) then) =
-      _$ListeningRewardModalStateCopyWithImpl<$Res, ListeningRewardModalState>;
+  factory $ListeningRewardModalStateCopyWith(
+    ListeningRewardModalState value,
+    $Res Function(ListeningRewardModalState) then,
+  ) = _$ListeningRewardModalStateCopyWithImpl<$Res, ListeningRewardModalState>;
   @useResult
-  $Res call(
-      {bool initialized,
-      ListeningRewardModalStatus status,
-      String? result,
-      int rewardSsp,
-      int rewardEp});
+  $Res call({
+    bool initialized,
+    ListeningRewardModalStatus status,
+    String? result,
+    int rewardSsp,
+    int rewardEp,
+  });
 }
 
 /// @nodoc
-class _$ListeningRewardModalStateCopyWithImpl<$Res,
-        $Val extends ListeningRewardModalState>
+class _$ListeningRewardModalStateCopyWithImpl<
+  $Res,
+  $Val extends ListeningRewardModalState
+>
     implements $ListeningRewardModalStateCopyWith<$Res> {
   _$ListeningRewardModalStateCopyWithImpl(this._value, this._then);
 
@@ -222,28 +226,36 @@ class _$ListeningRewardModalStateCopyWithImpl<$Res,
     Object? rewardSsp = null,
     Object? rewardEp = null,
   }) {
-    return _then(_value.copyWith(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as ListeningRewardModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rewardSsp: null == rewardSsp
-          ? _value.rewardSsp
-          : rewardSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      rewardEp: null == rewardEp
-          ? _value.rewardEp
-          : rewardEp // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
+    return _then(
+      _value.copyWith(
+            initialized:
+                null == initialized
+                    ? _value.initialized
+                    : initialized // ignore: cast_nullable_to_non_nullable
+                        as bool,
+            status:
+                null == status
+                    ? _value.status
+                    : status // ignore: cast_nullable_to_non_nullable
+                        as ListeningRewardModalStatus,
+            result:
+                freezed == result
+                    ? _value.result
+                    : result // ignore: cast_nullable_to_non_nullable
+                        as String?,
+            rewardSsp:
+                null == rewardSsp
+                    ? _value.rewardSsp
+                    : rewardSsp // ignore: cast_nullable_to_non_nullable
+                        as int,
+            rewardEp:
+                null == rewardEp
+                    ? _value.rewardEp
+                    : rewardEp // ignore: cast_nullable_to_non_nullable
+                        as int,
+          )
+          as $Val,
+    );
   }
 }
 
@@ -251,28 +263,32 @@ class _$ListeningRewardModalStateCopyWithImpl<$Res,
 abstract class _$$ListeningRewardModalStateImplCopyWith<$Res>
     implements $ListeningRewardModalStateCopyWith<$Res> {
   factory _$$ListeningRewardModalStateImplCopyWith(
-          _$ListeningRewardModalStateImpl value,
-          $Res Function(_$ListeningRewardModalStateImpl) then) =
-      __$$ListeningRewardModalStateImplCopyWithImpl<$Res>;
+    _$ListeningRewardModalStateImpl value,
+    $Res Function(_$ListeningRewardModalStateImpl) then,
+  ) = __$$ListeningRewardModalStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {bool initialized,
-      ListeningRewardModalStatus status,
-      String? result,
-      int rewardSsp,
-      int rewardEp});
+  $Res call({
+    bool initialized,
+    ListeningRewardModalStatus status,
+    String? result,
+    int rewardSsp,
+    int rewardEp,
+  });
 }
 
 /// @nodoc
 class __$$ListeningRewardModalStateImplCopyWithImpl<$Res>
-    extends _$ListeningRewardModalStateCopyWithImpl<$Res,
-        _$ListeningRewardModalStateImpl>
+    extends
+        _$ListeningRewardModalStateCopyWithImpl<
+          $Res,
+          _$ListeningRewardModalStateImpl
+        >
     implements _$$ListeningRewardModalStateImplCopyWith<$Res> {
   __$$ListeningRewardModalStateImplCopyWithImpl(
-      _$ListeningRewardModalStateImpl _value,
-      $Res Function(_$ListeningRewardModalStateImpl) _then)
-      : super(_value, _then);
+    _$ListeningRewardModalStateImpl _value,
+    $Res Function(_$ListeningRewardModalStateImpl) _then,
+  ) : super(_value, _then);
 
   /// Create a copy of ListeningRewardModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -285,40 +301,48 @@ class __$$ListeningRewardModalStateImplCopyWithImpl<$Res>
     Object? rewardSsp = null,
     Object? rewardEp = null,
   }) {
-    return _then(_$ListeningRewardModalStateImpl(
-      initialized: null == initialized
-          ? _value.initialized
-          : initialized // ignore: cast_nullable_to_non_nullable
-              as bool,
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as ListeningRewardModalStatus,
-      result: freezed == result
-          ? _value.result
-          : result // ignore: cast_nullable_to_non_nullable
-              as String?,
-      rewardSsp: null == rewardSsp
-          ? _value.rewardSsp
-          : rewardSsp // ignore: cast_nullable_to_non_nullable
-              as int,
-      rewardEp: null == rewardEp
-          ? _value.rewardEp
-          : rewardEp // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
+    return _then(
+      _$ListeningRewardModalStateImpl(
+        initialized:
+            null == initialized
+                ? _value.initialized
+                : initialized // ignore: cast_nullable_to_non_nullable
+                    as bool,
+        status:
+            null == status
+                ? _value.status
+                : status // ignore: cast_nullable_to_non_nullable
+                    as ListeningRewardModalStatus,
+        result:
+            freezed == result
+                ? _value.result
+                : result // ignore: cast_nullable_to_non_nullable
+                    as String?,
+        rewardSsp:
+            null == rewardSsp
+                ? _value.rewardSsp
+                : rewardSsp // ignore: cast_nullable_to_non_nullable
+                    as int,
+        rewardEp:
+            null == rewardEp
+                ? _value.rewardEp
+                : rewardEp // ignore: cast_nullable_to_non_nullable
+                    as int,
+      ),
+    );
   }
 }
 
 /// @nodoc
 
 class _$ListeningRewardModalStateImpl implements _ListeningRewardModalState {
-  const _$ListeningRewardModalStateImpl(
-      {this.initialized = false,
-      this.status = ListeningRewardModalStatus.processing,
-      this.result = null,
-      this.rewardSsp = 0,
-      this.rewardEp = 0});
+  const _$ListeningRewardModalStateImpl({
+    this.initialized = false,
+    this.status = ListeningRewardModalStatus.processing,
+    this.result = null,
+    this.rewardSsp = 0,
+    this.rewardEp = 0,
+  });
 
   @override
   @JsonKey()
@@ -329,7 +353,7 @@ class _$ListeningRewardModalStateImpl implements _ListeningRewardModalState {
   @override
   @JsonKey()
   final String? result;
-// reward
+  // reward
   @override
   @JsonKey()
   final int rewardSsp;
@@ -359,7 +383,13 @@ class _$ListeningRewardModalStateImpl implements _ListeningRewardModalState {
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, initialized, status, result, rewardSsp, rewardEp);
+    runtimeType,
+    initialized,
+    status,
+    result,
+    rewardSsp,
+    rewardEp,
+  );
 
   /// Create a copy of ListeningRewardModalState
   /// with the given fields replaced by the non-null parameter values.
@@ -367,17 +397,19 @@ class _$ListeningRewardModalStateImpl implements _ListeningRewardModalState {
   @override
   @pragma('vm:prefer-inline')
   _$$ListeningRewardModalStateImplCopyWith<_$ListeningRewardModalStateImpl>
-      get copyWith => __$$ListeningRewardModalStateImplCopyWithImpl<
-          _$ListeningRewardModalStateImpl>(this, _$identity);
+  get copyWith => __$$ListeningRewardModalStateImplCopyWithImpl<
+    _$ListeningRewardModalStateImpl
+  >(this, _$identity);
 }
 
 abstract class _ListeningRewardModalState implements ListeningRewardModalState {
-  const factory _ListeningRewardModalState(
-      {final bool initialized,
-      final ListeningRewardModalStatus status,
-      final String? result,
-      final int rewardSsp,
-      final int rewardEp}) = _$ListeningRewardModalStateImpl;
+  const factory _ListeningRewardModalState({
+    final bool initialized,
+    final ListeningRewardModalStatus status,
+    final String? result,
+    final int rewardSsp,
+    final int rewardEp,
+  }) = _$ListeningRewardModalStateImpl;
 
   @override
   bool get initialized;
@@ -395,5 +427,5 @@ abstract class _ListeningRewardModalState implements ListeningRewardModalState {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ListeningRewardModalStateImplCopyWith<_$ListeningRewardModalStateImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  get copyWith => throw _privateConstructorUsedError;
 }
