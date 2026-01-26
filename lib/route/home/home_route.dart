@@ -151,7 +151,7 @@ class HomeRoute extends StatelessWidget {
                                 (converter) => Column(
                                   children: [
                                     Text(
-                                      "HOD 연동 요망",
+                                      "HOD 연동 필요",
                                       textAlign: TextAlign.center,
                                       style: GoogleFonts.inter(
                                         letterSpacing: 0,
