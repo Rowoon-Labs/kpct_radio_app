@@ -60,6 +60,7 @@ class SignRoute extends StatelessWidget {
                                   () => context.read<SignBloc>().add(
                                     const SignEvent.signInWithGoogle(),
                                   ),
+                              radius: 24,
                             ),
                           ),
                           PositionedDirectional(
@@ -76,6 +77,7 @@ class SignRoute extends StatelessWidget {
                                   () => context.read<SignBloc>().add(
                                     const SignEvent.signInWithApple(),
                                   ),
+                              radius: 24,
                             ),
                           ),
                         ],
@@ -95,45 +97,34 @@ class SignRoute extends StatelessWidget {
     required AssetGenImage icon,
     required String text,
     required VoidCallback onPressed,
+    double? radius,
   }) => KpctCupertinoButton.outlinedSolid(
     color: Colors.white,
     onPressed: onPressed,
-    borderRadius: BorderRadius.all(converter.radius(8)),
+    borderRadius: BorderRadius.all(converter.radius(radius ?? 8)),
     border: Border.all(
       color: const Color(0xFF1E2432).withOpacity(0.23),
       strokeAlign: BorderSide.strokeAlignInside,
       style: BorderStyle.solid,
       width: converter.h(1),
     ),
-    child: Stack(
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        PositionedDirectional(
-          start: converter.w(16),
-          top: converter.h(9),
+        icon.image(
+          fit: BoxFit.cover,
           width: converter.h(24),
           height: converter.h(24),
-          child: icon.image(
-            fit: BoxFit.cover,
-            width: converter.h(24),
-            height: converter.h(24),
-          ),
         ),
-        PositionedDirectional(
-          start: converter.w(48),
-          top: converter.h(9),
-          height: converter.h(24),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              text,
-              style: GoogleFonts.inter(
-                height: 1,
-                color: Colors.black,
-                fontSize: converter.h(16),
-                fontWeight: FontWeightAlias.medium,
-                letterSpacing: 0,
-              ),
-            ),
+        SizedBox(width: converter.w(8)),
+        Text(
+          text,
+          style: GoogleFonts.inter(
+            height: 1,
+            color: Colors.black,
+            fontSize: converter.h(16),
+            fontWeight: FontWeightAlias.medium,
+            letterSpacing: 0,
           ),
         ),
       ],
