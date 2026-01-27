@@ -76,52 +76,52 @@ class ReservedRepository {
       (id != null) ? _decompositionMap[id] : null;
 
   Future<bool> get load async {
-    print("📊 ReservedRepository: 전제 데이터 로딩 시작...");
+    // print("ReservedRepository: 전제 데이터 로딩 시작...");
     return await Future.wait([
           _loadGlobal.then((v) {
-            print("📊 ReservedRepository: Global 완료 ($v)");
+            // print("ReservedRepository: Global 완료 ($v)");
             return v;
           }),
           _loadDraws.then((v) {
-            print("📊 ReservedRepository: Draws 완료 ($v)");
+            // print("ReservedRepository: Draws 완료 ($v)");
             return v;
           }),
           _loadGears.then((v) {
-            print("📊 ReservedRepository: Gears 완료 ($v)");
+            // print("ReservedRepository: Gears 완료 ($v)");
             return v;
           }),
           _loadLevels.then((v) {
-            print("📊 ReservedRepository: Levels 완료 ($v)");
+            // print("ReservedRepository: Levels 완료 ($v)");
             return v;
           }),
           _loadRecipes.then((v) {
-            print("📊 ReservedRepository: Recipes 완료 ($v)");
+            // print("ReservedRepository: Recipes 완료 ($v)");
             return v;
           }),
           _loadUnlocks.then((v) {
-            print("📊 ReservedRepository: Unlocks 완료 ($v)");
+            // print("ReservedRepository: Unlocks 완료 ($v)");
             return v;
           }),
           _loadPlayLists.then((v) {
-            print("📊 ReservedRepository: PlayLists 완료 ($v)");
+            // print("ReservedRepository: PlayLists 완료 ($v)");
             return v;
           }),
           _loadShopItems.then((v) {
-            print("📊 ReservedRepository: ShopItems 완료 ($v)");
+            // print("ReservedRepository: ShopItems 완료 ($v)");
             return v;
           }),
           _loadDecompositions.then((v) {
-            print("📊 ReservedRepository: Decompositions 완료 ($v)");
+            // print("ReservedRepository: Decompositions 완료 ($v)");
             return v;
           }),
         ])
         .then((value) {
           final result = !value.contains(false);
-          print("📊 ReservedRepository: 전체 데이터 로딩 종료 (결과: $result)");
+          print("ReservedRepository: 전체 데이터 로딩 종료 (결과: $result)");
           return result;
         })
         .catchError((error) {
-          print("❌ ReservedRepository: 전체 로딩 중 치명적 에러: $error");
+          print("ReservedRepository: 전체 로딩 중 치명적 에러: $error");
           return false;
         });
   }
@@ -139,7 +139,7 @@ class ReservedRepository {
       })
       .catchError((error, stacktrace) {
         if (kDebugMode) {
-          print("❌ Global 로딩 에러: $error");
+          print("Global 로딩 에러: $error");
         }
         return false;
       });
@@ -157,7 +157,7 @@ class ReservedRepository {
           ..addAll(List.of(value.docs.map((element) => element.data())));
 
         if (kDebugMode) {
-          print("📊 Draw 로딩 완료: 총 ${draws.length}개");
+          print("Draw 로딩 완료: 총 ${draws.length}개");
           // for (Draw draw in draws) {
           //   print("id : ${draw.id}");
           //   print("rate : ${draw.rate}");
@@ -173,7 +173,7 @@ class ReservedRepository {
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ Draw 로딩 에러: $error");
+          print("Draw 로딩 에러: $error");
         }
         return false;
       });
@@ -199,7 +199,7 @@ class ReservedRepository {
       }
 
       if (kDebugMode) {
-        print("📊 Gear 로딩 완료: 총 ${gears.length}개");
+        print("Gear 로딩 완료: 총 ${gears.length}개");
         // for (Gear gear in gears) {
         //   print("id : ${gear.id}");
         //   print("name : ${gear.name}");
@@ -229,7 +229,7 @@ class ReservedRepository {
       return true;
     } catch (error) {
       if (kDebugMode) {
-        print("❌ Gear 로딩 에러: $error");
+        print("Gear 로딩 에러: $error");
       }
       return false;
     }
@@ -254,8 +254,8 @@ class ReservedRepository {
         }
 
         if (kDebugMode) {
-          print("📊 Level 로딩 완료: 총 ${levels.length}개");
-          // print("📋 레벨 목록: ${levels.map((e) => e.level).toList()}");
+          print("Level 로딩 완료: 총 ${levels.length}개");
+          // print("레벨 목록: ${levels.map((e) => e.level).toList()}");
 
           // 누락된 레벨 확인 (1부터 100까지)
           final expectedLevels = List.generate(100, (index) => index + 1);
@@ -266,9 +266,9 @@ class ReservedRepository {
                   .toList();
 
           if (missingLevels.isNotEmpty) {
-            print("⚠️ 누락된 레벨: $missingLevels");
+            print("누락된 레벨: $missingLevels");
           } else {
-            print("✅ 모든 레벨이 정상적으로 로딩되었습니다.");
+            print("모든 레벨이 정상적으로 로딩되었습니다.");
 
             //   // level 순서대로 정렬
             //   final sortedLevels = levels.toList()
@@ -298,7 +298,7 @@ class ReservedRepository {
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ Level 로딩 에러: $error");
+          print("Level 로딩 에러: $error");
         }
         return false;
       });
@@ -321,7 +321,7 @@ class ReservedRepository {
         }
 
         if (kDebugMode) {
-          print("📊 Crafting 로딩 완료: 총 ${recipes.length}개");
+          print("Crafting 로딩 완료: 총 ${recipes.length}개");
           // for (Recipe recipe in recipes) {
           //   print("id : ${recipe.id}");
           //   print("gearId : ${recipe.gearId}");
@@ -341,7 +341,7 @@ class ReservedRepository {
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ Recipe 로딩 에러: $error");
+          print("Recipe 로딩 에러: $error");
         }
         return false;
       });
@@ -365,7 +365,7 @@ class ReservedRepository {
         }
 
         if (kDebugMode) {
-          print("📊 Unlock 로딩 완료: 총 ${unlocks.length}개");
+          print("Unlock 로딩 완료: 총 ${unlocks.length}개");
           // for (Unlock unlock in unlocks) {
           //   print("tier : ${unlock.tier}");
           //   print("s1costEp : ${unlock.s1costEp}");
@@ -391,7 +391,7 @@ class ReservedRepository {
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ Unlock 로딩 에러: $error");
+          print("Unlock 로딩 에러: $error");
         }
         return false;
       });
@@ -414,7 +414,7 @@ class ReservedRepository {
         }
 
         if (kDebugMode) {
-          print("📊 Decomposition 로딩 완료: 총 ${decompositions.length}개");
+          print("Decomposition 로딩 완료: 총 ${decompositions.length}개");
           // for (Decomposition decomposition in decompositions) {
           //   print("id : ${decomposition.id}");
           //   print("gearId : ${decomposition.gearId}");
@@ -438,7 +438,7 @@ class ReservedRepository {
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ Decomposition 로딩 에러: $error");
+          print("Decomposition 로딩 에러: $error");
         }
         return false;
       });
@@ -459,7 +459,7 @@ class ReservedRepository {
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ PlayList 로딩 에러: $error");
+          print("PlayList 로딩 에러: $error");
         }
         return false;
       });
@@ -475,20 +475,20 @@ class ReservedRepository {
             shopItems.add(ShopItem.fromFirstore(doc, null));
           } catch (e) {
             if (kDebugMode) {
-              print("⚠️ ShopItem 파싱 실패 (ID: ${doc.id}): $e");
+              print("ShopItem 파싱 실패 (ID: ${doc.id}): $e");
             }
           }
         }
 
         if (kDebugMode) {
-          print("📊 ShopItem 로딩 완료: 총 ${shopItems.length}개");
+          print("ShopItem 로딩 완료: 총 ${shopItems.length}개");
         }
 
         return true;
       })
       .catchError((error) {
         if (kDebugMode) {
-          print("❌ ShopItem 전체 로딩 에러: $error");
+          print("ShopItem 전체 로딩 에러: $error");
         }
         App.instance.log.d(error);
         return false;

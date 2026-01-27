@@ -44,79 +44,104 @@ export const onUserCreate = functions
       email: user.email,
     });
     console.log(`[onUserCreate Start] UID: ${user.uid}, Email: ${user.email}`);
-    const email = user.email ?? "";
 
-    let bonded = false;
-    let hodSsp = 0;
-    let walletAddress = null;
-    let profileImageUrl = null;
+    try {
+      await _initializeUser(user.uid, user.email ?? "");
+    } catch (error) {
+      console.error(`[onUserCreate Error] _initializeUser failed: ${error}`);
+    }
+  });
 
-    if (email) {
-      try {
-        console.log(
-          `[onUserCreate] Fetching info starting for email: ${email}`,
-        );
-        const myInfo: MyInfo = await getMyInfo(email);
-        console.log(
-          `[onUserCreate] getMyInfo result: ${JSON.stringify(myInfo)}`,
-        );
+export const ensureUserDocument = onCall(
+  { region: region },
+  async (request) => {
+    const uid = request.auth?.uid;
+    const email = request.auth?.token.email;
 
-        if (myInfo.result == 1) {
-          bonded = true;
-          hodSsp = myInfo.user_ssp;
-          walletAddress = myInfo.wallet_addr;
-          profileImageUrl = myInfo.pfp_url;
-        }
-      } catch (exception) {
-        console.error(`[onUserCreate Error] getMyInfo failed: ${exception}`);
-      }
+    if (uid == null) {
+      throw new HttpsError("unauthenticated", "User Id를 확인할 수 없습니다");
     }
 
     try {
-      console.log(
-        `[onUserCreate] Creating Firestore document for UID: ${user.uid}`,
-      );
-      await createDoc(userReference.doc(user.uid), {
-        bonded: bonded,
-        role: CustomUserRole.User,
-        profileImageUrl: profileImageUrl,
-        email: user.email ?? "",
-        createdAt: serverTimestamp(),
-        walletAddress: walletAddress,
-        level: 1,
-        stamina: 10000,
-        maxStamina: 10000,
-        consumedStamina: 0,
-        exp: 0,
-        maxExp: 1000,
-        listeningGauge: 0,
-        ep: 0,
-        accumulatedEp: 0,
-        accumulatedPlayDuration: 0,
-        radioSsp: 0,
-        accumulatedRadioSsp: 0,
-        hodSsp: hodSsp,
-        referralCode: null,
-        nextRandomBoxAt: serverTimestamp(),
-        nextPeriodic12: null,
-        nextPeriodic24: null,
-        installedEquipments: {
-          LG: null,
-          Radio: null,
-          Accessory: null,
-        },
-        items: [],
-        overcomeLevels: Array<number>(),
-      });
-      console.log(
-        `[onUserCreate Success] Document created for UID: ${user.uid}`,
-      );
+      const userDoc = await db.collection("users").doc(uid).get();
+      if (userDoc.exists) {
+        return { result: "already_exists" };
+      }
+
+      await _initializeUser(uid, email ?? "");
+      return { result: "created" };
     } catch (error) {
-      console.error(
-        `[onUserCreate Error] Firestore createDoc failed: ${error}`,
+      console.error(`[ensureUserDocument Error] ${error}`);
+      throw new HttpsError(
+        "internal",
+        "유저 문서 초기화 중 오류가 발생했습니다",
       );
     }
+  },
+);
+
+async function _initializeUser(uid: string, email: string) {
+  let bonded = false;
+  let hodSsp = 0;
+  let walletAddress = null;
+  let profileImageUrl = null;
+
+  if (email) {
+    try {
+      console.log(
+        `[_initializeUser] Fetching info starting for email: ${email}`,
+      );
+      const myInfo: MyInfo = await getMyInfo(email);
+      console.log(
+        `[_initializeUser] getMyInfo result: ${JSON.stringify(myInfo)}`,
+      );
+
+      if (myInfo.result == 1) {
+        bonded = true;
+        hodSsp = myInfo.user_ssp;
+        walletAddress = myInfo.wallet_addr;
+        profileImageUrl = myInfo.pfp_url;
+      }
+    } catch (exception) {
+      console.error(`[_initializeUser Error] getMyInfo failed: ${exception}`);
+    }
+  }
+
+  console.log(`[_initializeUser] Creating Firestore document for UID: ${uid}`);
+  await createDoc(userReference.doc(uid), {
+    bonded: bonded,
+    role: CustomUserRole.User,
+    profileImageUrl: profileImageUrl,
+    email: email,
+    createdAt: serverTimestamp(),
+    walletAddress: walletAddress,
+    level: 1,
+    stamina: 10000,
+    maxStamina: 10000,
+    consumedStamina: 0,
+    exp: 0,
+    maxExp: 1000,
+    listeningGauge: 0,
+    ep: 0,
+    accumulatedEp: 0,
+    accumulatedPlayDuration: 0,
+    radioSsp: 0,
+    accumulatedRadioSsp: 0,
+    hodSsp: hodSsp,
+    referralCode: null,
+    nextRandomBoxAt: serverTimestamp(),
+    nextPeriodic12: null,
+    nextPeriodic24: null,
+    installedEquipments: {
+      LG: null,
+      Radio: null,
+      Accessory: null,
+    },
+    items: [],
+    overcomeLevels: Array<number>(),
   });
+  console.log(`[_initializeUser Success] Document created for UID: ${uid}`);
+}
 
 export const onTransctionLogCreated = onDocumentCreated(
   {

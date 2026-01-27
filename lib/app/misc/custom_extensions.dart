@@ -52,9 +52,9 @@ extension GearCategoryExtension on GearCategory {
       fit: fit,
       errorBuilder: (context, error, stackTrace) {
         if (kDebugMode) {
-          print('❌ 이미지 로딩 실패: ${assetGenImage(icon: icon).path}');
-          print('❌ 에러: $error');
-          print('❌ 스택트레이스: $stackTrace');
+          print('이미지 로딩 실패: ${assetGenImage(icon: icon).path}');
+          print('에러: $error');
+          print('스택트레이스: $stackTrace');
         }
 
         // 에러 발생 시 빈 컨테이너 반환

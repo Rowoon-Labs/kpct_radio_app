@@ -2,7 +2,9 @@ import 'dart:async';
 
 import 'package:kpct_switcher/kpct_switcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:kpct_radio_app/app/app.dart';
@@ -21,6 +23,7 @@ class AuthCore {
   StreamSubscription<DocumentSnapshot<CustomUser>>? _userDocumentChanges;
 
   User? _currentUser;
+  bool _isEnsuringUserDocument = false;
   // User? get currentUser => _currentUser;
 
   Stream<List<Equipment>> get equipmentsChanges => inventory.equipmentsChanges;
@@ -42,12 +45,16 @@ class AuthCore {
   void _onAuthStateChanges(User? user) async {
     if (user != null) {
       _currentUser = user;
-      print(
-        "🔐 AuthCore: _onAuthStateChanges(${user.uid}) - Reserved 데이터 로딩 시작",
-      );
+      if (kDebugMode) {
+        print(
+          "AuthCore: _onAuthStateChanges(${user.uid}) - Reserved 데이터 로딩 시작",
+        );
+      }
 
       await App.instance.reserved.load;
-      print("🔐 AuthCore: Reserved 데이터 로딩 완료. 유저 문서 감시 시작");
+      if (kDebugMode) {
+        print("AuthCore: Reserved 데이터 로딩 완료. 유저 문서 감시 시작");
+      }
 
       _userDocumentChanges = FirebaseFirestore.instance
           .collection("users")
@@ -197,6 +204,31 @@ class AuthCore {
 
     return result;
   }
+
+  Future<void> ensureUserDocument() async {
+    if (_isEnsuringUserDocument) {
+      if (kDebugMode) {
+        print("AuthCore: ensureUserDocument 이미 실행 중입니다.");
+      }
+      return;
+    }
+
+    _isEnsuringUserDocument = true;
+    try {
+      await FirebaseFunctions.instanceFor(
+        region: "asia-northeast3",
+      ).httpsCallable("ensureUserDocument").call();
+      if (kDebugMode) {
+        print("AuthCore: ensureUserDocument 호출 성공");
+      }
+    } catch (e) {
+      if (kDebugMode) {
+        print("AuthCore: ensureUserDocument 실패: $e");
+      }
+      // 실패했을 경우 다음 이벤트나 재시도시 다시 실행할 수 있도록 플래그 초기화
+      _isEnsuringUserDocument = false;
+    }
+  }
 }
 
 class Synchronizer {
@@ -214,12 +246,16 @@ class Synchronizer {
       _syncedCustomUserStreamController = StreamController.broadcast();
 
   void _onUserDocumentChanges(DocumentSnapshot<CustomUser> documentSnapshot) {
-    print(
-      "👤 AuthCore: _onUserDocumentChanges 수신 (Exists: ${documentSnapshot.exists})",
-    );
+    if (kDebugMode) {
+      print(
+        "AuthCore: _onUserDocumentChanges 수신 (Exists: ${documentSnapshot.exists})",
+      );
+    }
     if (documentSnapshot.exists && (documentSnapshot.data() != null)) {
       final CustomUser customUser = documentSnapshot.data()!;
-      print("👤 AuthCore: 유저 데이터 확인됨 (${customUser.email})");
+      if (kDebugMode) {
+        print("AuthCore: 유저 데이터 확인됨 (${customUser.email})");
+      }
 
       if (_syncedCustomUser != null) {
         _syncedFromRemote(customUser: customUser);
@@ -231,14 +267,20 @@ class Synchronizer {
           _periodicTick,
         );
 
-        print("🚀 AuthCore: 홈으로 이동");
+        if (kDebugMode) {
+          print("AuthCore: 홈으로 이동");
+        }
         App.instance.navigator.go("/home");
         App.instance.overlay.cover(on: false);
       }
     } else {
-      print(
-        "⚠️ AuthCore: Firestore에 유저 문서가 없습니다. (ID: ${documentSnapshot.id})",
-      );
+      if (kDebugMode) {
+        print("AuthCore: Firestore에 유저 문서가 없습니다. (ID: ${documentSnapshot.id})");
+      }
+
+      // 문서가 없는 경우 서버에 생성을 요청 (멱등성 보장)
+      unawaited(App.instance.auth.ensureUserDocument());
+
       // Functions가 문서를 생성할 때까지 기다리거나, 실패했음을 알림
       App.instance.overlay.cover(
         on: true,
