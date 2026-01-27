@@ -8,7 +8,9 @@ import { PlayList } from "./model/play_list";
 admin.initializeApp();
 
 export const db = admin.firestore();
-export const bucket = admin.storage().bucket();
+export const bucket = admin
+  .storage()
+  .bucket("kpct-radio-app.firebasestorage.app");
 
 export const userReference = getFirelord<User>(db, "users");
 export const transactionLogReference = getFirelord<TransactionLog>(
