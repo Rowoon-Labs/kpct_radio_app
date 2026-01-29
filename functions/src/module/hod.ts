@@ -11,11 +11,12 @@ export interface MyInfo {
   msg: string;
 }
 
-const HOD_API_BASE_URL = "https://webserver-1.kpopctzen.io:8443";
+//const HOD_API_BASE_URL = "https://webserver-1.kpopctzen.io:8443";
+const HOD_API_BASE_URL = "https://exfunc.mydimension.io";
 
-const _getToken = async (): Promise<string> =>
-  (
-    await axios.request({
+const _getToken = async (): Promise<string> => {
+  try {
+    const response = await axios.request({
       method: "post",
       url: `${HOD_API_BASE_URL}/oauth/token`,
       timeout: 3000,
@@ -27,11 +28,19 @@ const _getToken = async (): Promise<string> =>
         grant_type: "client_credentials",
         scope: "read",
       }),
-    })
-  ).data.access_token;
+    });
 
-export const getMyInfo = async (email: string): Promise<MyInfo> =>
-  (
+    const token = response.data.access_token;
+    console.log(`[_getToken] Success: ${token.substring(0, 10)}...`);
+    return token;
+  } catch (error: any) {
+    console.error(`[_getToken] Failed: ${error.message}`);
+    throw error;
+  }
+};
+
+export const getMyInfo = async (email: string): Promise<MyInfo> => {
+  const myInfo = (
     await axios.request({
       method: "post",
       url: `${HOD_API_BASE_URL}/lte/myinfo`,
@@ -45,6 +54,13 @@ export const getMyInfo = async (email: string): Promise<MyInfo> =>
       }),
     })
   ).data;
+
+  console.log(
+    `[getMyInfo] email: ${email}, result: ${myInfo.result}, msg: ${myInfo.msg}`,
+  );
+
+  return myInfo;
+};
 
 export const saveUpSsp = async (
   email: string,

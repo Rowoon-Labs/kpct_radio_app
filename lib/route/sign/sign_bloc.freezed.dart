@@ -22,18 +22,23 @@ mixin _$SignEvent {
     required TResult Function(BuildContext context) initialize,
     required TResult Function() signInWithGoogle,
     required TResult Function() signInWithApple,
+    required TResult Function(String email, String password)
+    signInWithEmailAndPassword,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(BuildContext context)? initialize,
     TResult? Function()? signInWithGoogle,
     TResult? Function()? signInWithApple,
+    TResult? Function(String email, String password)?
+    signInWithEmailAndPassword,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(BuildContext context)? initialize,
     TResult Function()? signInWithGoogle,
     TResult Function()? signInWithApple,
+    TResult Function(String email, String password)? signInWithEmailAndPassword,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,18 +46,24 @@ mixin _$SignEvent {
     required TResult Function(_initialize value) initialize,
     required TResult Function(_signInWithGoogle value) signInWithGoogle,
     required TResult Function(_signInWithApple value) signInWithApple,
+    required TResult Function(_signInWithEmailAndPassword value)
+    signInWithEmailAndPassword,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_signInWithGoogle value)? signInWithGoogle,
     TResult? Function(_signInWithApple value)? signInWithApple,
+    TResult? Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_initialize value)? initialize,
     TResult Function(_signInWithGoogle value)? signInWithGoogle,
     TResult Function(_signInWithApple value)? signInWithApple,
+    TResult Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
     required TResult orElse(),
   }) => throw _privateConstructorUsedError;
 }
@@ -151,6 +162,8 @@ class _$initializeImpl implements _initialize {
     required TResult Function(BuildContext context) initialize,
     required TResult Function() signInWithGoogle,
     required TResult Function() signInWithApple,
+    required TResult Function(String email, String password)
+    signInWithEmailAndPassword,
   }) {
     return initialize(context);
   }
@@ -161,6 +174,8 @@ class _$initializeImpl implements _initialize {
     TResult? Function(BuildContext context)? initialize,
     TResult? Function()? signInWithGoogle,
     TResult? Function()? signInWithApple,
+    TResult? Function(String email, String password)?
+    signInWithEmailAndPassword,
   }) {
     return initialize?.call(context);
   }
@@ -171,6 +186,7 @@ class _$initializeImpl implements _initialize {
     TResult Function(BuildContext context)? initialize,
     TResult Function()? signInWithGoogle,
     TResult Function()? signInWithApple,
+    TResult Function(String email, String password)? signInWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -185,6 +201,8 @@ class _$initializeImpl implements _initialize {
     required TResult Function(_initialize value) initialize,
     required TResult Function(_signInWithGoogle value) signInWithGoogle,
     required TResult Function(_signInWithApple value) signInWithApple,
+    required TResult Function(_signInWithEmailAndPassword value)
+    signInWithEmailAndPassword,
   }) {
     return initialize(this);
   }
@@ -195,6 +213,8 @@ class _$initializeImpl implements _initialize {
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_signInWithGoogle value)? signInWithGoogle,
     TResult? Function(_signInWithApple value)? signInWithApple,
+    TResult? Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
   }) {
     return initialize?.call(this);
   }
@@ -205,6 +225,8 @@ class _$initializeImpl implements _initialize {
     TResult Function(_initialize value)? initialize,
     TResult Function(_signInWithGoogle value)? signInWithGoogle,
     TResult Function(_signInWithApple value)? signInWithApple,
+    TResult Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (initialize != null) {
@@ -273,6 +295,8 @@ class _$signInWithGoogleImpl implements _signInWithGoogle {
     required TResult Function(BuildContext context) initialize,
     required TResult Function() signInWithGoogle,
     required TResult Function() signInWithApple,
+    required TResult Function(String email, String password)
+    signInWithEmailAndPassword,
   }) {
     return signInWithGoogle();
   }
@@ -283,6 +307,8 @@ class _$signInWithGoogleImpl implements _signInWithGoogle {
     TResult? Function(BuildContext context)? initialize,
     TResult? Function()? signInWithGoogle,
     TResult? Function()? signInWithApple,
+    TResult? Function(String email, String password)?
+    signInWithEmailAndPassword,
   }) {
     return signInWithGoogle?.call();
   }
@@ -293,6 +319,7 @@ class _$signInWithGoogleImpl implements _signInWithGoogle {
     TResult Function(BuildContext context)? initialize,
     TResult Function()? signInWithGoogle,
     TResult Function()? signInWithApple,
+    TResult Function(String email, String password)? signInWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (signInWithGoogle != null) {
@@ -307,6 +334,8 @@ class _$signInWithGoogleImpl implements _signInWithGoogle {
     required TResult Function(_initialize value) initialize,
     required TResult Function(_signInWithGoogle value) signInWithGoogle,
     required TResult Function(_signInWithApple value) signInWithApple,
+    required TResult Function(_signInWithEmailAndPassword value)
+    signInWithEmailAndPassword,
   }) {
     return signInWithGoogle(this);
   }
@@ -317,6 +346,8 @@ class _$signInWithGoogleImpl implements _signInWithGoogle {
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_signInWithGoogle value)? signInWithGoogle,
     TResult? Function(_signInWithApple value)? signInWithApple,
+    TResult? Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
   }) {
     return signInWithGoogle?.call(this);
   }
@@ -327,6 +358,8 @@ class _$signInWithGoogleImpl implements _signInWithGoogle {
     TResult Function(_initialize value)? initialize,
     TResult Function(_signInWithGoogle value)? signInWithGoogle,
     TResult Function(_signInWithApple value)? signInWithApple,
+    TResult Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (signInWithGoogle != null) {
@@ -386,6 +419,8 @@ class _$signInWithAppleImpl implements _signInWithApple {
     required TResult Function(BuildContext context) initialize,
     required TResult Function() signInWithGoogle,
     required TResult Function() signInWithApple,
+    required TResult Function(String email, String password)
+    signInWithEmailAndPassword,
   }) {
     return signInWithApple();
   }
@@ -396,6 +431,8 @@ class _$signInWithAppleImpl implements _signInWithApple {
     TResult? Function(BuildContext context)? initialize,
     TResult? Function()? signInWithGoogle,
     TResult? Function()? signInWithApple,
+    TResult? Function(String email, String password)?
+    signInWithEmailAndPassword,
   }) {
     return signInWithApple?.call();
   }
@@ -406,6 +443,7 @@ class _$signInWithAppleImpl implements _signInWithApple {
     TResult Function(BuildContext context)? initialize,
     TResult Function()? signInWithGoogle,
     TResult Function()? signInWithApple,
+    TResult Function(String email, String password)? signInWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (signInWithApple != null) {
@@ -420,6 +458,8 @@ class _$signInWithAppleImpl implements _signInWithApple {
     required TResult Function(_initialize value) initialize,
     required TResult Function(_signInWithGoogle value) signInWithGoogle,
     required TResult Function(_signInWithApple value) signInWithApple,
+    required TResult Function(_signInWithEmailAndPassword value)
+    signInWithEmailAndPassword,
   }) {
     return signInWithApple(this);
   }
@@ -430,6 +470,8 @@ class _$signInWithAppleImpl implements _signInWithApple {
     TResult? Function(_initialize value)? initialize,
     TResult? Function(_signInWithGoogle value)? signInWithGoogle,
     TResult? Function(_signInWithApple value)? signInWithApple,
+    TResult? Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
   }) {
     return signInWithApple?.call(this);
   }
@@ -440,6 +482,8 @@ class _$signInWithAppleImpl implements _signInWithApple {
     TResult Function(_initialize value)? initialize,
     TResult Function(_signInWithGoogle value)? signInWithGoogle,
     TResult Function(_signInWithApple value)? signInWithApple,
+    TResult Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
     required TResult orElse(),
   }) {
     if (signInWithApple != null) {
@@ -451,6 +495,184 @@ class _$signInWithAppleImpl implements _signInWithApple {
 
 abstract class _signInWithApple implements SignEvent {
   const factory _signInWithApple() = _$signInWithAppleImpl;
+}
+
+/// @nodoc
+abstract class _$$signInWithEmailAndPasswordImplCopyWith<$Res> {
+  factory _$$signInWithEmailAndPasswordImplCopyWith(
+    _$signInWithEmailAndPasswordImpl value,
+    $Res Function(_$signInWithEmailAndPasswordImpl) then,
+  ) = __$$signInWithEmailAndPasswordImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String email, String password});
+}
+
+/// @nodoc
+class __$$signInWithEmailAndPasswordImplCopyWithImpl<$Res>
+    extends _$SignEventCopyWithImpl<$Res, _$signInWithEmailAndPasswordImpl>
+    implements _$$signInWithEmailAndPasswordImplCopyWith<$Res> {
+  __$$signInWithEmailAndPasswordImplCopyWithImpl(
+    _$signInWithEmailAndPasswordImpl _value,
+    $Res Function(_$signInWithEmailAndPasswordImpl) _then,
+  ) : super(_value, _then);
+
+  /// Create a copy of SignEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({Object? email = null, Object? password = null}) {
+    return _then(
+      _$signInWithEmailAndPasswordImpl(
+        email:
+            null == email
+                ? _value.email
+                : email // ignore: cast_nullable_to_non_nullable
+                    as String,
+        password:
+            null == password
+                ? _value.password
+                : password // ignore: cast_nullable_to_non_nullable
+                    as String,
+      ),
+    );
+  }
+}
+
+/// @nodoc
+
+class _$signInWithEmailAndPasswordImpl implements _signInWithEmailAndPassword {
+  const _$signInWithEmailAndPasswordImpl({
+    required this.email,
+    required this.password,
+  });
+
+  @override
+  final String email;
+  @override
+  final String password;
+
+  @override
+  String toString() {
+    return 'SignEvent.signInWithEmailAndPassword(email: $email, password: $password)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$signInWithEmailAndPasswordImpl &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.password, password) ||
+                other.password == password));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, email, password);
+
+  /// Create a copy of SignEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$signInWithEmailAndPasswordImplCopyWith<_$signInWithEmailAndPasswordImpl>
+  get copyWith => __$$signInWithEmailAndPasswordImplCopyWithImpl<
+    _$signInWithEmailAndPasswordImpl
+  >(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(BuildContext context) initialize,
+    required TResult Function() signInWithGoogle,
+    required TResult Function() signInWithApple,
+    required TResult Function(String email, String password)
+    signInWithEmailAndPassword,
+  }) {
+    return signInWithEmailAndPassword(email, password);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(BuildContext context)? initialize,
+    TResult? Function()? signInWithGoogle,
+    TResult? Function()? signInWithApple,
+    TResult? Function(String email, String password)?
+    signInWithEmailAndPassword,
+  }) {
+    return signInWithEmailAndPassword?.call(email, password);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(BuildContext context)? initialize,
+    TResult Function()? signInWithGoogle,
+    TResult Function()? signInWithApple,
+    TResult Function(String email, String password)? signInWithEmailAndPassword,
+    required TResult orElse(),
+  }) {
+    if (signInWithEmailAndPassword != null) {
+      return signInWithEmailAndPassword(email, password);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_initialize value) initialize,
+    required TResult Function(_signInWithGoogle value) signInWithGoogle,
+    required TResult Function(_signInWithApple value) signInWithApple,
+    required TResult Function(_signInWithEmailAndPassword value)
+    signInWithEmailAndPassword,
+  }) {
+    return signInWithEmailAndPassword(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_initialize value)? initialize,
+    TResult? Function(_signInWithGoogle value)? signInWithGoogle,
+    TResult? Function(_signInWithApple value)? signInWithApple,
+    TResult? Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
+  }) {
+    return signInWithEmailAndPassword?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_initialize value)? initialize,
+    TResult Function(_signInWithGoogle value)? signInWithGoogle,
+    TResult Function(_signInWithApple value)? signInWithApple,
+    TResult Function(_signInWithEmailAndPassword value)?
+    signInWithEmailAndPassword,
+    required TResult orElse(),
+  }) {
+    if (signInWithEmailAndPassword != null) {
+      return signInWithEmailAndPassword(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _signInWithEmailAndPassword implements SignEvent {
+  const factory _signInWithEmailAndPassword({
+    required final String email,
+    required final String password,
+  }) = _$signInWithEmailAndPasswordImpl;
+
+  String get email;
+  String get password;
+
+  /// Create a copy of SignEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$signInWithEmailAndPasswordImplCopyWith<_$signInWithEmailAndPasswordImpl>
+  get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc

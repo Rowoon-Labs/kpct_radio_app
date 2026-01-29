@@ -1,4 +1,5 @@
 import 'package:kpct_aspect_ratio/kpct_aspect_ratio.dart';
+import 'package:kpct_cupertino_button/kpct_cupertino_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -142,13 +143,14 @@ class HomeRoute extends StatelessWidget {
                     } else {
                       return Material(
                         key: ValueKey<bool>(user.bonded),
-                        color: Colors.black.withOpacity(0.6),
+                        color: Colors.black.withOpacity(0.8),
                         child: Center(
                           child: KpctAspectRatio(
                             designWidth: designWidth,
-                            designHeight: 200,
+                            designHeight: 250,
                             builder:
                                 (converter) => Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       "HOD 연동 필요",
@@ -177,6 +179,31 @@ class HomeRoute extends StatelessWidget {
                                           fontWeight: FontWeightAlias.bold,
                                           fontSize: converter.h(16),
                                           height: 1,
+                                        ),
+                                      ),
+                                    ),
+                                    Divider(
+                                      color: Colors.transparent,
+                                      thickness: 0,
+                                      height: converter.h(30),
+                                    ),
+                                    SizedBox(
+                                      width: converter.w(200),
+                                      height: converter.h(40),
+                                      child: KpctCupertinoButton.outlinedSolid(
+                                        onPressed:
+                                            () => App.instance.auth.signOut(),
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                          converter.radius(20),
+                                        ),
+                                        child: Text(
+                                          "로그아웃",
+                                          style: GoogleFonts.inter(
+                                            color: Colors.black,
+                                            fontWeight: FontWeightAlias.bold,
+                                            fontSize: converter.h(16),
+                                          ),
                                         ),
                                       ),
                                     ),

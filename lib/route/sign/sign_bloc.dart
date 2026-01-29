@@ -52,6 +52,29 @@ class SignBloc extends Bloc<SignEvent, SignState> {
             App.instance.overlay.cover(on: false, message: "로그인 중 오류가 발생했습니다.");
           }
         },
+        signInWithEmailAndPassword: (event) async {
+          App.instance.overlay.cover(on: true);
+
+          try {
+            final error = await App.instance.auth.signInWithEmailAndPassword(
+              event.email,
+              event.password,
+            );
+            if (error == null) {
+              App.instance.log.i("Email Sign-In Success");
+            } else {
+              App.instance.log.w("Email Sign-In Error: $error");
+              App.instance.overlay.cover(on: false, message: error);
+            }
+          } catch (e, stack) {
+            App.instance.log.e(
+              "Email Sign-In Exception: $e",
+              error: e,
+              stackTrace: stack,
+            );
+            App.instance.overlay.cover(on: false, message: "로그인 중 오류가 발생했습니다.");
+          }
+        },
       );
     });
   }

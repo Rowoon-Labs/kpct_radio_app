@@ -145,6 +145,26 @@ class AuthCore {
     return result;
   }
 
+  Future<String?> signInWithEmailAndPassword(
+    String email,
+    String password,
+  ) async {
+    String? result;
+
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+    } on FirebaseAuthException catch (e) {
+      result = e.message ?? e.code;
+    } catch (e) {
+      result = e.toString();
+    }
+
+    return result;
+  }
+
   Future<String?> signOut() async {
     String? result;
     App.instance.log.d(
@@ -196,7 +216,9 @@ class AuthCore {
               result = error.toString();
             });
       } else {
-        // unsupported provider id
+        await FirebaseAuth.instance.signOut().catchError((error) {
+          result = error.toString();
+        });
       }
     } else {
       result = "Not Logged In";
@@ -245,7 +267,9 @@ class Synchronizer {
     : _sync = Sync(),
       _syncedCustomUserStreamController = StreamController.broadcast();
 
-  void _onUserDocumentChanges(DocumentSnapshot<CustomUser> documentSnapshot) {
+  void _onUserDocumentChanges(
+    DocumentSnapshot<CustomUser> documentSnapshot,
+  ) async {
     if (kDebugMode) {
       print(
         "AuthCore: _onUserDocumentChanges 수신 (Exists: ${documentSnapshot.exists})",
@@ -253,6 +277,14 @@ class Synchronizer {
     }
     if (documentSnapshot.exists && (documentSnapshot.data() != null)) {
       final CustomUser customUser = documentSnapshot.data()!;
+
+      final user = FirebaseAuth.instance.currentUser;
+      final providerId = user?.providerData.firstOrNull?.providerId;
+
+      if (providerId == "password" && !customUser.bonded) {
+        unawaited(documentSnapshot.reference.update({"bonded": true}));
+      }
+
       if (kDebugMode) {
         print("AuthCore: 유저 데이터 확인됨 (${customUser.email})");
       }
@@ -278,14 +310,71 @@ class Synchronizer {
         print("AuthCore: Firestore에 유저 문서가 없습니다. (ID: ${documentSnapshot.id})");
       }
 
-      // 문서가 없는 경우 서버에 생성을 요청 (멱등성 보장)
-      unawaited(App.instance.auth.ensureUserDocument());
+      final user = FirebaseAuth.instance.currentUser;
+      final providerId = user?.providerData.firstOrNull?.providerId;
 
-      // Functions가 문서를 생성할 때까지 기다리거나, 실패했음을 알림
-      App.instance.overlay.cover(
-        on: true,
-        message: "유저 정보를 생성 중이거나 찾을 수 없습니다.\n잠시만 기다려 주세요...",
-      );
+      if (providerId == "password") {
+        if (kDebugMode) {
+          print("AuthCore: ID/Password 유저 확인됨. 유저 문서 직접 생성 시도");
+        }
+
+        final now = koreaNow();
+        final defaultStamina =
+            App.instance.reserved.level(level: 1)?.stamina ?? 100;
+        final defaultExp =
+            App.instance.reserved.level(level: 1)?.exp.toDouble() ?? 100.0;
+
+        final newUser = CustomUser(
+          id: documentSnapshot.id,
+          bonded: true,
+          role: CustomUserRole.user,
+          profileImageUrl: user?.photoURL,
+          email: user?.email ?? "",
+          createdAt: now,
+          walletAddress: null,
+          level: 1,
+          stamina: defaultStamina,
+          maxStamina: defaultStamina,
+          consumedStamina: 0,
+          exp: 0,
+          maxExp: defaultExp,
+          listeningGauge: 0,
+          ep: 0,
+          accumulatedEp: 0,
+          accumulatedPlayDuration: Duration.zero,
+          radioSsp: 0,
+          accumulatedRadioSsp: 0,
+          hodSsp: 0,
+          referralCode: null,
+          installedEquipments: {},
+          nextRandomBoxAt: now,
+          nextPeriodic12: null,
+          nextPeriodic24: null,
+          overcomeLevels: [],
+          items: [],
+        );
+
+        try {
+          await documentSnapshot.reference.set(newUser);
+          if (kDebugMode) {
+            print("AuthCore: ID/Password 유저 문서 생성 성공");
+          }
+        } catch (e) {
+          if (kDebugMode) {
+            print("AuthCore: ID/Password 유저 문서 생성 실패: $e");
+          }
+          App.instance.overlay.cover(on: false, message: "유저 정보 생성에 실패했습니다.");
+        }
+      } else {
+        // 문서가 없는 경우 서버에 생성을 요청 ( Google / Apple 로그인의 경우 )
+        unawaited(App.instance.auth.ensureUserDocument());
+
+        // Functions가 문서를 생성할 때까지 기다리거나, 실패했음을 알림
+        App.instance.overlay.cover(
+          on: true,
+          message: "유저 정보를 생성 중이거나 찾을 수 없습니다.\n잠시만 기다려 주세요...",
+        );
+      }
     }
   }
 

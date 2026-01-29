@@ -31,7 +31,7 @@ class SignRoute extends StatelessWidget {
               Center(
                 child: KpctAspectRatio(
                   designWidth: designWidth,
-                  designHeight: 347 + 83 + 40 + 16 + 40,
+                  designHeight: 347 + 83 + 40 + 16 + 40 + 16 + 40,
                   builder:
                       (converter) => Stack(
                         children: [
@@ -47,7 +47,7 @@ class SignRoute extends StatelessWidget {
                             ),
                           ),
                           PositionedDirectional(
-                            bottom: converter.h(40 + 16),
+                            bottom: converter.h(40 + 16 + 40 + 16),
                             start: converter.hcx(259),
                             width: converter.w(259),
                             height: converter.h(40),
@@ -64,7 +64,7 @@ class SignRoute extends StatelessWidget {
                             ),
                           ),
                           PositionedDirectional(
-                            bottom: 0,
+                            bottom: converter.h(40 + 16),
                             start: converter.hcx(259),
                             width: converter.w(259),
                             height: converter.h(40),
@@ -76,6 +76,24 @@ class SignRoute extends StatelessWidget {
                               onPressed:
                                   () => context.read<SignBloc>().add(
                                     const SignEvent.signInWithApple(),
+                                  ),
+                              radius: 24,
+                            ),
+                          ),
+                          PositionedDirectional(
+                            bottom: 0,
+                            start: converter.hcx(259),
+                            width: converter.w(259),
+                            height: converter.h(40),
+                            child: _buildSignButton(
+                              context: context,
+                              converter: converter,
+                              text: "Sign in with ID/PW",
+                              icon: Assets.icon.lock,
+                              onPressed:
+                                  () => _showEmailPasswordDialog(
+                                    context,
+                                    converter,
                                   ),
                               radius: 24,
                             ),
@@ -130,4 +148,51 @@ class SignRoute extends StatelessWidget {
       ],
     ),
   );
+
+  void _showEmailPasswordDialog(BuildContext context, KpctConverter converter) {
+    final emailController = TextEditingController();
+    final passwordController = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text("ID/Password Login"),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextField(
+                controller: emailController,
+                decoration: const InputDecoration(labelText: "Email"),
+                keyboardType: TextInputType.emailAddress,
+              ),
+              TextField(
+                controller: passwordController,
+                decoration: const InputDecoration(labelText: "Password"),
+                obscureText: true,
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(dialogContext).pop(),
+              child: const Text("Cancel"),
+            ),
+            TextButton(
+              onPressed: () {
+                context.read<SignBloc>().add(
+                  SignEvent.signInWithEmailAndPassword(
+                    email: emailController.text,
+                    password: passwordController.text,
+                  ),
+                );
+                Navigator.of(dialogContext).pop();
+              },
+              child: const Text("Login"),
+            ),
+          ],
+        );
+      },
+    );
+  }
 }
