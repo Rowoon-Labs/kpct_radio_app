@@ -27,7 +27,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         autoPlay: true, // 자동 재생
         params: const YoutubePlayerParams(
           loop: false,
-          mute: true, // 음소거 (원래 설정)
+          mute: false, // 소리 켬
           showControls: false, // 컨트롤 숨김 (원래 설정)
           enableCaption: false,
           enableKeyboard: false,
