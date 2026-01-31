@@ -1,4 +1,5 @@
 import 'package:bot_toast/bot_toast.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -57,9 +58,16 @@ class _Launcher extends State<Launcher> {
             context,
           ),
         ]).then(
-          (value) => Future.delayed(
-            const Duration(milliseconds: 500),
-          ).then((value) => FlutterNativeSplash.remove()),
+          (value) =>
+              Future.delayed(const Duration(milliseconds: 500)).then((value) {
+                try {
+                  FlutterNativeSplash.remove();
+                } catch (e) {
+                  if (kDebugMode) {
+                    print("Splash remove error: $e");
+                  }
+                }
+              }),
         );
       });
     });
