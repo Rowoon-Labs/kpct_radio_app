@@ -57,27 +57,29 @@ class HomeRoute extends StatelessWidget {
                   child: Scaffold(
                     body: Stack(
                       children: [
-                        YoutubePlayer(
-                          controller:
-                              context.read<HomeBloc>().youtubePlayerController,
-                          enableFullScreenOnVerticalDrag: true,
-                          backgroundColor: Colors.transparent,
-                          aspectRatio: 375 / 227.53,
-                          // gestureRecognizers: {
-                          // },
-                        ),
-                        const ColoredBox(
-                          color: Colors.black,
-                          child: TabBarView(
-                            physics: NeverScrollableScrollPhysics(),
-                            children: [
-                              IdlePage(),
-                              StatusPage(),
-                              GearPage(),
-                              CraftingPage(),
-                              ShopPage(),
-                            ],
+                        Positioned(
+                          top: 91, // IdlePage의 PlayerPod 위치에 맞춤 (85.24 + 5.76)
+                          left: 0,
+                          right: 0,
+                          child: YoutubePlayer(
+                            controller:
+                                context
+                                    .read<HomeBloc>()
+                                    .youtubePlayerController,
+                            enableFullScreenOnVerticalDrag: true,
+                            backgroundColor: Colors.transparent,
+                            aspectRatio: 375 / 227.53,
                           ),
+                        ),
+                        const TabBarView(
+                          physics: NeverScrollableScrollPhysics(),
+                          children: [
+                            IdlePage(),
+                            StatusPage(),
+                            GearPage(),
+                            CraftingPage(),
+                            ShopPage(),
+                          ],
                         ),
                       ],
                     ),

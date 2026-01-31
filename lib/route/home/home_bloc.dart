@@ -22,18 +22,22 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
   HomeBloc()
     : _dropAbnormalFrame = true,
-      youtubePlayerController = YoutubePlayerController(
+      youtubePlayerController = YoutubePlayerController.fromVideoId(
+        videoId: 'ScMzIvxBSi4',
+        autoPlay: true, // 자동 재생
         params: const YoutubePlayerParams(
           loop: false,
-          mute: false,
-          showControls: false,
+          mute: true, // 음소거 (원래 설정)
+          showControls: false, // 컨트롤 숨김 (원래 설정)
           enableCaption: false,
           enableKeyboard: false,
           showFullscreenButton: false,
           showVideoAnnotations: false,
           enableJavaScript: true,
           playsInline: true,
-          pointerEvents: PointerEvents.none,
+          pointerEvents: PointerEvents.none, // 원래 설정
+          // iOS WKWebView Error 150/152 해결: youtube-nocookie.com 사용
+          origin: 'https://www.youtube-nocookie.com',
         ),
       ),
       super(const HomeState()) {
@@ -56,33 +60,24 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       }
     });
 
-    on<_initialize>((event, emit) {
+    on<_initialize>((event, emit) async {
       emit(state.copyWith(status: HomeStatus.normal));
 
-      _youtubeVideoStateChanges = youtubePlayerController.videoStateStream.listen((
-        event,
-      ) {
-        // App.instance.log.d("State : " + event.position.toString() + " / " + event.loadedFraction.toString() + " / " + _dropAbnormalFrame.toString());
+      _youtubeVideoStateChanges = youtubePlayerController.videoStateStream
+          .listen((event) {
+            if (_dropAbnormalFrame) {
+              _dropAbnormalFrame = false;
+            } else {
+              add(
+                HomeEvent.videoStateChanges(
+                  position: event.position,
+                  loadedFraction: event.loadedFraction,
+                ),
+              );
+            }
+          });
 
-        // 첫 프레임보다, 두번째 프레임보다 position이 크기때문에 앱 최초 실행시 첫 프레임은 버려야함
-        // 근데 그 이후에는 rewind 돼든 곡을 바꾸든 해당 문제는 발생하지 않으니 상관 업음
-        if (_dropAbnormalFrame) {
-          _dropAbnormalFrame = false;
-        } else {
-          add(
-            HomeEvent.videoStateChanges(
-              position: event.position,
-              loadedFraction: event.loadedFraction,
-            ),
-          );
-          // App.instance.log.d(event.position.toString() + " / " + event.loadedFraction.toString());
-        }
-      });
-
-      // _youtubePlayerValueChanges = youtubePlayerController.stream.listen((event) {
       _youtubePlayerValueChanges = youtubePlayerController.listen((event) {
-        // App.instance.log.d("Value : " + event.playerState.toString() + " / " + event.metaData.toString() + " / " + event.error.toString() + " / "  + event.hasError.toString());
-
         add(
           HomeEvent.playerValueChanges(
             playerState: event.playerState,
@@ -106,10 +101,11 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           (event.video != null) &&
           (event.video?.id != null) &&
           (event.video != state.selectedVideo)) {
+        App.instance.log.d("Selecting video: ${event.video!.id}");
         await youtubePlayerController
-            .cueVideoById(videoId: event.video!.id, startSeconds: 0)
+            .loadVideoById(videoId: event.video!.id, startSeconds: 0)
             .then((value) async {
-              App.instance.log.d("_selectVideo");
+              App.instance.log.d("_selectVideo success: ${event.video!.id}");
               emit(
                 state.copyWith(
                   selectedPlayList: event.playList,
@@ -118,7 +114,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
               );
             })
             .catchError((error) {
-              App.instance.log.d(error);
+              App.instance.log.e("Error loading video: $error");
             });
       }
     });
@@ -131,14 +127,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
         final Duration deltaDuration =
             (event.position - state.customPlayerState.currentPosition);
 
-        ///
-        /// TICK
-        ///
         final Duration sinceLastTickDuration;
         final Duration temporalSinceLastTickDuration =
             state.sinceLastTickDuration + deltaDuration;
-
-        // App.instance.log.d("TICK ${event.position} / ${state.customPlayerState.currentPosition} / ${state.sinceLastTickDuration} / $deltaDuration");
 
         if (temporalSinceLastTickDuration <
             App.instance.reserved.global.configuration.tickSeconds) {
@@ -208,128 +199,11 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           }
           break;
       }
-
-      // switch (event.playerState) {
-      //
-      //   case PlayerState.unStarted:
-      //     // App.instance.log.d(event.playerState);
-      //     emit(state.copyWith(
-      //       customPlayerState: state.customPlayerState.copyWith(
-      //         // status: CustomPlayerStatus.idle,
-      //         currentPosition: Duration.zero,
-      //       ),
-      //     ));
-      //     break;
-      //
-      //   case PlayerState.cued:
-      //     // App.instance.log.d("${event.playerState}");
-      //     emit(state.copyWith(
-      //       customPlayerState: state.customPlayerState.copyWith(
-      //         status: CustomPlayerStatus.idle,
-      //       ),
-      //     ));
-      //     add(const HomeEvent.tryPlayVideo());
-      //     break;
-      //
-      //   case PlayerState.playing:
-      //     // App.instance.log.d("${event.playerState} ${event.error} ${event.hasError} ${event.metaData.duration} ${event.metaData.videoId}");
-      //
-      //     if (event.hasError) {
-      //       // App.instance.log.d("${event.playerState} - error : ${event.error}");
-      //       emit(state.copyWith(
-      //         customPlayerState: state.customPlayerState.copyWith(
-      //           status: CustomPlayerStatus.idle,
-      //           currentPosition: Duration.zero,
-      //         ),
-      //       ));
-      //     } else {
-      //
-      //       final String videoId = event.metaData.videoId.trim();
-      //       final Duration videoDuration = event.metaData.duration;
-      //
-      //       if (videoId.isNotEmpty && (videoDuration > Duration.zero)) {
-      //
-      //         emit(state.copyWith(
-      //           customPlayerState: state.customPlayerState.copyWith(
-      //             status: CustomPlayerStatus.playing,
-      //             videoDuration: videoDuration,
-      //           ),
-      //         ));
-      //
-      //         // if (state.customPlayerState.status != CustomPlayerStatus.playing) {
-      //         //   // if (state.customPlayerState.status == CustomPlayerStatus.idle) {
-      //         //   App.instance.log.d("${event.playerState}");
-      //         //   emit(state.copyWith(
-      //         //     customPlayerState: state.customPlayerState.copyWith(
-      //         //       status: CustomPlayerStatus.playing,
-      //         //       videoDuration: videoDuration,
-      //         //     ),
-      //         //   ));
-      //         // } else {
-      //         //   emit(state.copyWith(
-      //         //     customPlayerState: state.customPlayerState.copyWith(
-      //         //       status: CustomPlayerStatus.idle,
-      //         //       currentPosition: Duration.zero,
-      //         //     ),
-      //         //   ));
-      //         // }
-      //       } else {
-      //         emit(state.copyWith(
-      //           customPlayerState: state.customPlayerState.copyWith(
-      //             status: CustomPlayerStatus.idle,
-      //             currentPosition: Duration.zero,
-      //           ),
-      //         ));
-      //       }
-      //     }
-      //     break;
-      //
-      //   case PlayerState.ended:
-      //     // App.instance.log.d(event.playerState);
-      //     emit(state.copyWith(
-      //       customPlayerState: state.customPlayerState.copyWith(
-      //         // status: CustomPlayerStatus.idle,
-      //         currentPosition: Duration.zero,
-      //       ),
-      //     ));
-      //
-      //     if (event.playerState == PlayerState.ended) {
-      //       add(const HomeEvent.tryPlayVideo());
-      //       // await youtubePlayerController.seekTo(seconds: 0, allowSeekAhead: true);
-      //     }
-      //     break;
-      //
-      //   case PlayerState.paused:
-      //     // App.instance.log.d(event.playerState);
-      //     emit(state.copyWith(
-      //       customPlayerState: state.customPlayerState.copyWith(
-      //         status: CustomPlayerStatus.paused,
-      //       ),
-      //     ));
-      //     break;
-      //   default:
-      //   // nop
-      //   // App.instance.log.d("${event.playerState}");
-      //     break;
-      // }
     });
 
     on<_tryPlayVideo>((event, emit) async {
       if (App.instance.auth.canPlay) {
         await youtubePlayerController.playVideo();
-        // if (event.videoId != null) {
-        //
-        //   await youtubePlayerController.loadVideoById(
-        //     videoId: event.videoId ?? "",
-        //   ).then((value) {
-        //
-        //   }).catchError((error) {
-        //     App.instance.log.d(error);
-        //   });
-        // } else {
-        //
-        //   await youtubePlayerController.playVideo();
-        // }
       }
     });
     on<_togglePlay>((event, emit) async {
@@ -372,8 +246,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
   @override
   Future<void> close() {
-    _youtubePlayerValueChanges?.cancel();
     _youtubeVideoStateChanges?.cancel();
+    _youtubePlayerValueChanges?.cancel();
     _appLifecycleListener?.dispose();
     return super.close();
   }
