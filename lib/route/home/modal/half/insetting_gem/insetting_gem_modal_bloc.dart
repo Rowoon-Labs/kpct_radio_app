@@ -130,14 +130,15 @@ class InsettingGemModalBloc
                       transaction.delete(gemEquipmentReference);
 
                       transaction.update(targetEquipmentReference, {
-                        "sockets": (List.of(targetEquipment.sockets)
-                          ..[socketIndex] = Socket(
-                            gearId: gemPack.gear.gearId,
-                            getExp: (gemPack.gear.getExp ?? 0),
-                            staminaUse: (gemPack.gear.staminaUse ?? 0),
-                            listeningEp: (gemPack.gear.listeningEp ?? 0),
-                            listeningSsp: (gemPack.gear.listeningSsp ?? 0),
-                          )).map((e) => e.toJson()),
+                        "sockets":
+                            (List.of(targetEquipment.sockets)
+                              ..[socketIndex] = Socket(
+                                gearId: gemPack.gear.gearId,
+                                getExp: (gemPack.gear.getExp ?? 0),
+                                staminaUse: (gemPack.gear.staminaUse ?? 0),
+                                listeningEp: (gemPack.gear.listeningEp ?? 0),
+                                listeningSsp: (gemPack.gear.listeningSsp ?? 0),
+                              )).map((e) => e.toJson()).toList(),
                       });
 
                       return TransactionResponse<void>.success();

@@ -57,6 +57,7 @@ _$ConfigurationImpl _$$ConfigurationImplFromJson(Map<String, dynamic> json) =>
       staminaBoxRequirement: (json['staminaBoxRequirement'] as num).toInt(),
       sspBoxRequirement: (json['sspBoxRequirement'] as num).toInt(),
       epBoxRequirement: (json['epBoxRequirement'] as num).toInt(),
+      showIdPwLogin: json['showIdPwLogin'] as bool? ?? true,
     );
 
 Map<String, dynamic> _$$ConfigurationImplToJson(_$ConfigurationImpl instance) =>
@@ -67,4 +68,5 @@ Map<String, dynamic> _$$ConfigurationImplToJson(_$ConfigurationImpl instance) =>
       'staminaBoxRequirement': instance.staminaBoxRequirement,
       'sspBoxRequirement': instance.sspBoxRequirement,
       'epBoxRequirement': instance.epBoxRequirement,
+      'showIdPwLogin': instance.showIdPwLogin,
     };

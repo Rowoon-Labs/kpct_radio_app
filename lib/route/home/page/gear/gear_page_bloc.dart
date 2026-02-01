@@ -158,7 +158,8 @@ class GearPageBloc extends Bloc<GearPageEvent, GearPageState> {
                     transaction.update(userReference, {
                       "installedEquipments.${equipment.category.query}": {
                         "equipmentId": equipment.id,
-                        "sockets": equipment.sockets.map((e) => e.toJson()),
+                        "sockets":
+                            equipment.sockets.map((e) => e.toJson()).toList(),
                         ...gear.toJson()..remove("id"),
                       },
                     });

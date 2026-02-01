@@ -536,6 +536,8 @@ mixin _$Configuration {
   int get sspBoxRequirement => throw _privateConstructorUsedError;
   @JsonKey(name: "epBoxRequirement")
   int get epBoxRequirement => throw _privateConstructorUsedError;
+  @JsonKey(name: "showIdPwLogin")
+  bool get showIdPwLogin => throw _privateConstructorUsedError;
 
   /// Serializes this Configuration to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -561,6 +563,7 @@ abstract class $ConfigurationCopyWith<$Res> {
     @JsonKey(name: "staminaBoxRequirement") int staminaBoxRequirement,
     @JsonKey(name: "sspBoxRequirement") int sspBoxRequirement,
     @JsonKey(name: "epBoxRequirement") int epBoxRequirement,
+    @JsonKey(name: "showIdPwLogin") bool showIdPwLogin,
   });
 }
 
@@ -585,6 +588,7 @@ class _$ConfigurationCopyWithImpl<$Res, $Val extends Configuration>
     Object? staminaBoxRequirement = null,
     Object? sspBoxRequirement = null,
     Object? epBoxRequirement = null,
+    Object? showIdPwLogin = null,
   }) {
     return _then(
       _value.copyWith(
@@ -618,6 +622,11 @@ class _$ConfigurationCopyWithImpl<$Res, $Val extends Configuration>
                     ? _value.epBoxRequirement
                     : epBoxRequirement // ignore: cast_nullable_to_non_nullable
                         as int,
+            showIdPwLogin:
+                null == showIdPwLogin
+                    ? _value.showIdPwLogin
+                    : showIdPwLogin // ignore: cast_nullable_to_non_nullable
+                        as bool,
           )
           as $Val,
     );
@@ -640,6 +649,7 @@ abstract class _$$ConfigurationImplCopyWith<$Res>
     @JsonKey(name: "staminaBoxRequirement") int staminaBoxRequirement,
     @JsonKey(name: "sspBoxRequirement") int sspBoxRequirement,
     @JsonKey(name: "epBoxRequirement") int epBoxRequirement,
+    @JsonKey(name: "showIdPwLogin") bool showIdPwLogin,
   });
 }
 
@@ -663,6 +673,7 @@ class __$$ConfigurationImplCopyWithImpl<$Res>
     Object? staminaBoxRequirement = null,
     Object? sspBoxRequirement = null,
     Object? epBoxRequirement = null,
+    Object? showIdPwLogin = null,
   }) {
     return _then(
       _$ConfigurationImpl(
@@ -696,6 +707,11 @@ class __$$ConfigurationImplCopyWithImpl<$Res>
                 ? _value.epBoxRequirement
                 : epBoxRequirement // ignore: cast_nullable_to_non_nullable
                     as int,
+        showIdPwLogin:
+            null == showIdPwLogin
+                ? _value.showIdPwLogin
+                : showIdPwLogin // ignore: cast_nullable_to_non_nullable
+                    as bool,
       ),
     );
   }
@@ -711,6 +727,7 @@ class _$ConfigurationImpl implements _Configuration {
     @JsonKey(name: "staminaBoxRequirement") required this.staminaBoxRequirement,
     @JsonKey(name: "sspBoxRequirement") required this.sspBoxRequirement,
     @JsonKey(name: "epBoxRequirement") required this.epBoxRequirement,
+    @JsonKey(name: "showIdPwLogin") this.showIdPwLogin = true,
   });
 
   factory _$ConfigurationImpl.fromJson(Map<String, dynamic> json) =>
@@ -735,10 +752,13 @@ class _$ConfigurationImpl implements _Configuration {
   @override
   @JsonKey(name: "epBoxRequirement")
   final int epBoxRequirement;
+  @override
+  @JsonKey(name: "showIdPwLogin")
+  final bool showIdPwLogin;
 
   @override
   String toString() {
-    return 'Configuration(tickSeconds: $tickSeconds, syncTickCount: $syncTickCount, listeningGaugeGain: $listeningGaugeGain, staminaBoxRequirement: $staminaBoxRequirement, sspBoxRequirement: $sspBoxRequirement, epBoxRequirement: $epBoxRequirement)';
+    return 'Configuration(tickSeconds: $tickSeconds, syncTickCount: $syncTickCount, listeningGaugeGain: $listeningGaugeGain, staminaBoxRequirement: $staminaBoxRequirement, sspBoxRequirement: $sspBoxRequirement, epBoxRequirement: $epBoxRequirement, showIdPwLogin: $showIdPwLogin)';
   }
 
   @override
@@ -757,7 +777,9 @@ class _$ConfigurationImpl implements _Configuration {
             (identical(other.sspBoxRequirement, sspBoxRequirement) ||
                 other.sspBoxRequirement == sspBoxRequirement) &&
             (identical(other.epBoxRequirement, epBoxRequirement) ||
-                other.epBoxRequirement == epBoxRequirement));
+                other.epBoxRequirement == epBoxRequirement) &&
+            (identical(other.showIdPwLogin, showIdPwLogin) ||
+                other.showIdPwLogin == showIdPwLogin));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -770,6 +792,7 @@ class _$ConfigurationImpl implements _Configuration {
     staminaBoxRequirement,
     sspBoxRequirement,
     epBoxRequirement,
+    showIdPwLogin,
   );
 
   /// Create a copy of Configuration
@@ -797,6 +820,7 @@ abstract class _Configuration implements Configuration {
     required final int staminaBoxRequirement,
     @JsonKey(name: "sspBoxRequirement") required final int sspBoxRequirement,
     @JsonKey(name: "epBoxRequirement") required final int epBoxRequirement,
+    @JsonKey(name: "showIdPwLogin") final bool showIdPwLogin,
   }) = _$ConfigurationImpl;
 
   factory _Configuration.fromJson(Map<String, dynamic> json) =
@@ -821,6 +845,9 @@ abstract class _Configuration implements Configuration {
   @override
   @JsonKey(name: "epBoxRequirement")
   int get epBoxRequirement;
+  @override
+  @JsonKey(name: "showIdPwLogin")
+  bool get showIdPwLogin;
 
   /// Create a copy of Configuration
   /// with the given fields replaced by the non-null parameter values.

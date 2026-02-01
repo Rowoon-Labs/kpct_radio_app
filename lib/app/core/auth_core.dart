@@ -33,6 +33,7 @@ class AuthCore {
   CustomUser? get customUser => _synchronizer._syncedCustomUser;
   bool get canPlay => _synchronizer.canPlay;
   bool get tick => _synchronizer.tick;
+  Future<void> sync() => _synchronizer.sync();
 
   AuthCore() : _synchronizer = Synchronizer(), inventory = Inventory();
 
@@ -574,6 +575,19 @@ class Synchronizer {
       return (_syncedCustomUser!.stamina >= currentListeningPower);
     } else {
       return false;
+    }
+  }
+
+  Future<void> sync() async {
+    if (_sync.tick > 0) {
+      await _syncToRemote(
+        gainedExp: _sync.gainedExp,
+        consumedStamina: _sync.consumedStamina,
+        gainedListeningGauge: _sync.gainedListeningGauge,
+        elapsedPlayDuration: _sync.elapsedPlayDuration,
+      );
+
+      _sync.clear();
     }
   }
 

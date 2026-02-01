@@ -45,9 +45,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       App.instance.overlay.cover(on: true);
 
       App.instance.auth.signOut().then((value) {
-        if (value != null) {
-          App.instance.overlay.cover(on: false, message: value);
-        }
+        // 성공(null)이든 실패(에러 메시지)든 스피너를 꺼야 합니다.
+        App.instance.overlay.cover(on: false, message: value);
       });
     });
     on<_switchPage>((event, emit) {
@@ -101,6 +100,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           (event.video != null) &&
           (event.video?.id != null) &&
           (event.video != state.selectedVideo)) {
+        unawaited(App.instance.auth.sync());
+
         App.instance.log.d("Selecting video: ${event.video!.id}");
         await youtubePlayerController
             .loadVideoById(videoId: event.video!.id, startSeconds: 0)
@@ -110,6 +111,10 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
                 state.copyWith(
                   selectedPlayList: event.playList,
                   selectedVideo: event.video,
+                  customPlayerState: state.customPlayerState.copyWith(
+                    currentPosition: Duration.zero,
+                    elapsedDuration: Duration.zero,
+                  ),
                 ),
               );
             })
@@ -160,6 +165,64 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       switch (event.playerState) {
         case PlayerState.cued:
         case PlayerState.ended:
+          final currentPlayList = state.selectedPlayList;
+          final currentVideo = state.selectedVideo;
+          final allPlayLists = App.instance.reserved.playLists;
+
+          if (currentPlayList != null &&
+              currentVideo != null &&
+              allPlayLists.isNotEmpty) {
+            final videos = currentPlayList.videos;
+            final currentVideoIndex = videos.indexWhere(
+              (v) => v.id == currentVideo.id,
+            );
+
+            PlayList? nextPlayList;
+            Video? nextVideo;
+
+            if (currentVideoIndex != -1 &&
+                currentVideoIndex + 1 < videos.length) {
+              nextPlayList = currentPlayList;
+              nextVideo = videos[currentVideoIndex + 1];
+            } else {
+              final currentPlayListIndex = allPlayLists.indexWhere(
+                (p) => p.id == currentPlayList.id,
+              );
+              final nextPlayListIndex =
+                  (currentPlayListIndex + 1) % allPlayLists.length;
+              nextPlayList = allPlayLists[nextPlayListIndex];
+              nextVideo =
+                  nextPlayList.videos.isNotEmpty
+                      ? nextPlayList.videos.first
+                      : null;
+            }
+
+            if (nextPlayList != null && nextVideo != null) {
+              unawaited(App.instance.auth.sync());
+
+              App.instance.log.d("Auto-playing next video: ${nextVideo.id}");
+              await youtubePlayerController
+                  .loadVideoById(videoId: nextVideo.id, startSeconds: 0)
+                  .then((value) {
+                    emit(
+                      state.copyWith(
+                        selectedPlayList: nextPlayList,
+                        selectedVideo: nextVideo,
+                        customPlayerState: state.customPlayerState.copyWith(
+                          currentPosition: Duration.zero,
+                          elapsedDuration: Duration.zero,
+                          value: PlayerState.playing,
+                        ),
+                      ),
+                    );
+                  })
+                  .catchError((error) {
+                    App.instance.log.e("Error auto-playing next video: $error");
+                  });
+              return;
+            }
+          }
+
           emit(
             state.copyWith(
               customPlayerState: state.customPlayerState.copyWith(

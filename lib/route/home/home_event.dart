@@ -32,9 +32,7 @@ class HomeEvent with _$HomeEvent {
     required double playbackRate,
   }) = _playerValueChanges;
 
-  const factory HomeEvent.tryPlayVideo({
-    String? videoId,
-  }) = _tryPlayVideo;
+  const factory HomeEvent.tryPlayVideo({String? videoId}) = _tryPlayVideo;
 
   const factory HomeEvent.toggleMute() = _toggleMute;
   const factory HomeEvent.togglePlay() = _togglePlay;

@@ -55,6 +55,7 @@ class Global with _$Global {
       epBoxRequirement: defaultGlobalConfigurationEpBoxRequirement,
       sspBoxRequirement: defaultGlobalConfigurationSspBoxRequirement,
       staminaBoxRequirement: defaultGlobalConfigurationStaminaBoxRequirement,
+      showIdPwLogin: true,
     ),
     //
     listeningGauge: defaultGlobalListeningGauge,
@@ -92,6 +93,7 @@ class Configuration with _$Configuration {
     @JsonKey(name: "staminaBoxRequirement") required int staminaBoxRequirement,
     @JsonKey(name: "sspBoxRequirement") required int sspBoxRequirement,
     @JsonKey(name: "epBoxRequirement") required int epBoxRequirement,
+    @Default(true) @JsonKey(name: "showIdPwLogin") bool showIdPwLogin,
   }) = _Configuration;
 
   factory Configuration.fromJson(Map<String, dynamic> json) =>

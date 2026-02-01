@@ -33,71 +33,70 @@ class SignRoute extends StatelessWidget {
                   designWidth: designWidth,
                   designHeight: 347 + 83 + 40 + 16 + 40 + 16 + 40,
                   builder:
-                      (converter) => Stack(
+                      (converter) => Column(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
-                          PositionedDirectional(
-                            top: 0,
-                            start: converter.hcx(271),
+                          Assets.clipart.logo.image(
+                            fit: BoxFit.cover,
                             width: converter.w(271),
                             height: converter.h(347),
-                            child: Assets.clipart.logo.image(
-                              fit: BoxFit.cover,
-                              width: converter.w(271),
-                              height: converter.h(347),
-                            ),
                           ),
-                          PositionedDirectional(
-                            bottom: converter.h(40 + 16 + 40 + 16),
-                            start: converter.hcx(259),
+                          SizedBox(height: converter.h(83)),
+                          _buildSignButton(
+                            context: context,
+                            converter: converter,
+                            text: "Sign in with Google",
+                            icon: Assets.icon.googleIcon,
+                            iconWidth: 24,
+                            iconHeight: 24,
+                            onPressed:
+                                () => context.read<SignBloc>().add(
+                                  const SignEvent.signInWithGoogle(),
+                                ),
+                            radius: 24,
                             width: converter.w(259),
                             height: converter.h(40),
-                            child: _buildSignButton(
-                              context: context,
-                              converter: converter,
-                              text: "Sign in with Google",
-                              icon: Assets.icon.googleIcon,
-                              onPressed:
-                                  () => context.read<SignBloc>().add(
-                                    const SignEvent.signInWithGoogle(),
-                                  ),
-                              radius: 24,
-                            ),
                           ),
-                          PositionedDirectional(
-                            bottom: converter.h(40 + 16),
-                            start: converter.hcx(259),
+                          SizedBox(height: converter.h(16)),
+                          _buildSignButton(
+                            context: context,
+                            converter: converter,
+                            text: "Sign in with Apple",
+                            icon: Assets.icon.appleIcon,
+                            iconWidth: 28,
+                            iconHeight: 28,
+                            onPressed:
+                                () => context.read<SignBloc>().add(
+                                  const SignEvent.signInWithApple(),
+                                ),
+                            radius: 24,
                             width: converter.w(259),
                             height: converter.h(40),
-                            child: _buildSignButton(
-                              context: context,
-                              converter: converter,
-                              text: "Sign in with Apple",
-                              icon: Assets.icon.appleIcon,
-                              onPressed:
-                                  () => context.read<SignBloc>().add(
-                                    const SignEvent.signInWithApple(),
-                                  ),
-                              radius: 24,
-                            ),
                           ),
-                          PositionedDirectional(
-                            bottom: 0,
-                            start: converter.hcx(259),
-                            width: converter.w(259),
-                            height: converter.h(40),
-                            child: _buildSignButton(
+                          if (App
+                              .instance
+                              .reserved
+                              .global
+                              .configuration
+                              .showIdPwLogin) ...[
+                            SizedBox(height: converter.h(16)),
+                            _buildSignButton(
                               context: context,
                               converter: converter,
                               text: "Sign in with ID/PW",
                               icon: Assets.icon.lock,
+                              iconWidth: 18,
+                              iconHeight: 18,
                               onPressed:
                                   () => _showEmailPasswordDialog(
                                     context,
                                     converter,
                                   ),
                               radius: 24,
+                              width: converter.w(259),
+                              height: converter.h(40),
                             ),
-                          ),
+                          ],
                         ],
                       ),
                 ),
@@ -113,39 +112,47 @@ class SignRoute extends StatelessWidget {
     required BuildContext context,
     required KpctConverter converter,
     required AssetGenImage icon,
+    required double iconWidth,
+    required double iconHeight,
     required String text,
     required VoidCallback onPressed,
     double? radius,
-  }) => KpctCupertinoButton.outlinedSolid(
-    color: Colors.white,
-    onPressed: onPressed,
-    borderRadius: BorderRadius.all(converter.radius(radius ?? 8)),
-    border: Border.all(
-      color: const Color(0xFF1E2432).withOpacity(0.23),
-      strokeAlign: BorderSide.strokeAlignInside,
-      style: BorderStyle.solid,
-      width: converter.h(1),
-    ),
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        icon.image(
-          fit: BoxFit.cover,
-          width: converter.h(24),
-          height: converter.h(24),
-        ),
-        SizedBox(width: converter.w(8)),
-        Text(
-          text,
-          style: GoogleFonts.inter(
-            height: 1,
-            color: Colors.black,
-            fontSize: converter.h(16),
-            fontWeight: FontWeightAlias.medium,
-            letterSpacing: 0,
+    double? width,
+    double? height,
+  }) => SizedBox(
+    width: width,
+    height: height,
+    child: KpctCupertinoButton.outlinedSolid(
+      color: Colors.white,
+      onPressed: onPressed,
+      borderRadius: BorderRadius.all(converter.radius(radius ?? 8)),
+      border: Border.all(
+        color: const Color(0xFF1E2432).withOpacity(0.23),
+        strokeAlign: BorderSide.strokeAlignInside,
+        style: BorderStyle.solid,
+        width: converter.h(1),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          icon.image(
+            fit: BoxFit.contain,
+            width: converter.h(iconWidth),
+            height: converter.h(iconHeight),
           ),
-        ),
-      ],
+          SizedBox(width: converter.w(8)),
+          Text(
+            text,
+            style: GoogleFonts.inter(
+              height: 1,
+              color: Colors.black,
+              fontSize: converter.h(16),
+              fontWeight: FontWeightAlias.medium,
+              letterSpacing: 0,
+            ),
+          ),
+        ],
+      ),
     ),
   );
 

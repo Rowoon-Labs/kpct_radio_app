@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
@@ -75,6 +76,14 @@ class SocketUnlockModalBloc
                           ? equipmentSnapshot.data()
                           : null;
 
+                  print("--- Socket Unlock Transaction Start ---");
+                  print(
+                    "User: ${user?.id}, RadioSSP: ${user?.radioSsp}, EP: ${user?.ep}",
+                  );
+                  print(
+                    "Equipment: ${equipment?.id}, Sockets: ${equipment?.sockets.length}, Mounted: ${equipment?.mounted}",
+                  );
+
                   if ((user != null) && (equipment != null)) {
                     if (equipment.mounted) {
                       return TransactionResponse<void>.fail(
@@ -105,53 +114,92 @@ class SocketUnlockModalBloc
                             unlock.probabilities[indexOfSocket];
 
                         if (user.radioSsp < sspCost) {
+                          print(
+                            "Fail: Insufficient SSP (Have: ${user.radioSsp}, Need: $sspCost)",
+                          );
                           return TransactionResponse<void>.fail(
                             error: "SSP가 부족합니다",
                           );
                         } else if (user.ep < epCost) {
+                          print(
+                            "Fail: Insufficient EP (Have: ${user.ep}, Need: $epCost)",
+                          );
                           return TransactionResponse<void>.fail(
                             error: "EP가 부족합니다",
                           );
                         } else {
+                          final int defaultLuck =
+                              App.instance.reserved.global.luck;
+                          final int luckAddRate = user.adjustedLuckAddRate(
+                            defaultLuck,
+                          );
+                          final double roll = Random().nextDouble() * 100;
+                          final double adjustedProbability =
+                              probability + (probability * (luckAddRate / 100));
+
+                          print("Processing Unlock:");
+                          print(
+                            "- SSP Cost: $sspCost (Rem: ${user.radioSsp - sspCost})",
+                          );
+                          print(
+                            "- EP Cost: $epCost (Rem: ${user.ep - epCost})",
+                          );
+                          print("- Base Probability: $probability%");
+                          print("- Global Luck: $defaultLuck");
+                          print("- Luck Add Rate: $luckAddRate");
+                          print(
+                            "- Adjusted Probability: $adjustedProbability%",
+                          );
+                          print("- Roll: $roll");
+
                           transaction.update(userReference, {
                             "radioSsp": (user.radioSsp - sspCost).clamp2(),
                             "ep": (user.ep - epCost).clamp2(),
                           });
 
-                          if (user.inAdjustedLuckRange(
-                            App.instance.reserved.global.luck,
-                            probability,
-                          )) {
+                          if (roll <= adjustedProbability) {
+                            print(
+                              "Result: Success (Roll $roll <= Prob $adjustedProbability)",
+                            );
                             transaction.update(equipmentReference, {
-                              "sockets": (List.of(equipment.sockets)
-                                ..[indexOfSocket] = const Socket(
-                                  gearId: "",
-                                  getExp: 0,
-                                  staminaUse: 0,
-                                  listeningEp: 0,
-                                  listeningSsp: 0,
-                                )).map((e) => e.toJson()),
+                              "sockets":
+                                  (List.of(equipment.sockets)
+                                    ..[indexOfSocket] = const Socket(
+                                      gearId: "",
+                                      getExp: 0,
+                                      staminaUse: 0,
+                                      listeningEp: 0,
+                                      listeningSsp: 0,
+                                    )).map((e) => e.toJson()).toList(),
                             });
 
                             return TransactionResponse<void>.success();
                           } else {
+                            print(
+                              "Result: Fail (Roll $roll > Prob $adjustedProbability)",
+                            );
                             return TransactionResponse<void>.fail(
                               error: "소켓 언락 실패",
                             );
                           }
                         }
                       } else {
+                        print("Fail: Invalid indexOfSocket ($indexOfSocket)");
                         return TransactionResponse<void>.fail(error: "오류");
                       }
                     }
                   } else {
+                    print("Fail: User or Equipment is null");
                     return TransactionResponse<void>.fail(
                       error: "유저 정보를 가져올 수 없습니다",
                     );
                   }
                 })
                 .catchError((error) {
-                  return TransactionResponse<void>.fail(error: "소켓 언락 실패");
+                  print("Transaction Error: $error");
+                  return TransactionResponse<void>.fail(
+                    error: error.toString(),
+                  );
                 });
 
             if (response.error == null) {
