@@ -116,10 +116,10 @@ flutter run
 - ✅ **소스 열람 및 기여**: 누구나 소스 코드 열람, 버그 리포트, PR 제출 가능
 - 🔒 **상업적 사용**: 아래 조건 중 하나를 충족하는 홀더만 허용
 
-| 조건             | 요구사항                                                                                                                     |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| NFT 보유         | [V1](https://opensea.io/collection/kpopctzen-official) + [V2](https://opensea.io/collection/kpop-ctzen-v2) 합산 **5개 이상** |
-| HODDAO 토큰 보유 | [HODDAO](https://mint.club/token/base/HODDAO?tab=overview) **50,000개 이상** 연속 보유                                       |
+| 조건             | 요구사항                                                                                                                                                               |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| NFT 보유         | [V1](https://opensea.io/collection/kpopctzen-official) + [V2](https://opensea.io/collection/kpop-ctzen-v2) 합산 **5개 이상** (서비스 운영 전 기간 동안 연속 보유 필수) |
+| HODDAO 토큰 보유 | [HODDAO](https://mint.club/token/base/HODDAO?tab=overview) **50,000개 이상** (서비스 운영 전 기간 동안 연속 보유 필수)                                                 |
 
 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 
