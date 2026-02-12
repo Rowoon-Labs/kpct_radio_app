@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+bower_components/
+
+# Firebase cache
+.firebase/
+
+# Generated files
+lib/

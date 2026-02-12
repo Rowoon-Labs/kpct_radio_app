@@ -1,0 +1,5 @@
+﻿ID,name,desc,cost_SSP,cost_EP,buy_Limit,icon
+shopitem_01,스테미너 충전,스테미너를 100%로 충전합니다.,2000,0,5,shopitem_01
+shopitem_02,리스닝파워 강화,리스닝 파워가 20분동안 1.5배로 증가됩니다,0,500,5,shopitem_02
+shopitem_03,리스닝게이지 정지,12시간동안 음악을 듣지 않아도 리스닝 게이지가 감소하지 않습니다.,500,0,5,shopitem_03
+shopitem_04,경험치 획득 증가,60분동안 리스닝으로 획득되는 경험치가 2배로 증가합니다.,2000,0,5,shopitem_04

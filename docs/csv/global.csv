@@ -1,0 +1,12 @@
+﻿typeName,value
+stamina_Use,4
+listening_Guage,10000
+listening_GetSSP,40
+listening_GetEP,5
+listening_GetEP_Proba,5
+exp_Stamina,5
+guageDecrease_delay,300
+guageDecrease,50
+luck,1
+stamina_charge_delay,43200
+stamina_charge_rate,80

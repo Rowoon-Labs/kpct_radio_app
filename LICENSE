@@ -1,0 +1,135 @@
+KPOP CTZen Source Available License (KPCT-SAL)
+Version 1.0, February 2026
+
+Copyright (c) 2026 KPCT (KPOP CTZen)
+https://www.kpopctzen.io/
+
+================================================================================
+1. DEFINITIONS
+================================================================================
+
+"Software" refers to the source code, documentation, assets, and all associated
+files distributed under this License.
+
+"NFT" refers to the KPOP CTZen non-fungible tokens issued on the blockchain:
+  - V1: https://opensea.io/collection/kpopctzen-official
+  - V2: https://opensea.io/collection/kpop-ctzen-v2
+
+"HODDAO Token" refers to the HODDAO governance token available at:
+  - https://mint.club/token/base/HODDAO?tab=overview
+
+"Non-Commercial Use" refers to use of the Software for personal, educational,
+research, or other purposes that do not directly or indirectly generate revenue
+or commercial advantage.
+
+"Commercial Use" refers to any use of the Software intended for or directed
+toward commercial advantage, monetary compensation, or revenue generation.
+This includes, but is not limited to, operating a commercial service, selling
+products derived from the Software, or incorporating the Software into a
+commercial product.
+
+"Holder" refers to any individual or entity that owns the required digital
+assets (NFTs and/or HODDAO Tokens) as described in Section 4.
+
+================================================================================
+2. NON-COMMERCIAL USE GRANT
+================================================================================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this Software, to use, copy, modify, merge, and distribute the Software
+for Non-Commercial Use, subject to the following conditions:
+
+  (a) The above copyright notice and this entire License shall be included in
+      all copies or substantial portions of the Software.
+
+  (b) Any modified versions must clearly indicate that changes have been made
+      to the original Software.
+
+================================================================================
+3. CONTRIBUTION AND SOURCE CODE ACCESS
+================================================================================
+
+Any person may:
+
+  (a) View, read, and study the source code of this Software.
+
+  (b) Submit bug reports, feature requests, and pull requests to contribute
+      to the improvement of this Software.
+
+  (c) Fork the repository for the purpose of contributing back to the
+      original project.
+
+Contributions submitted to this project are subject to this License.
+
+================================================================================
+4. COMMERCIAL USE — SPECIAL CONDITIONS (NFT / HODDAO HOLDER REQUIREMENT)
+================================================================================
+
+This Software is provided as part of the KPOP CTZen decentralized ecosystem.
+Commercial Use of this Software is permitted ONLY to Holders who satisfy at
+least ONE of the following conditions:
+
+  CONDITION A — NFT HOLDING:
+    The Holder must own a combined total of FIVE (5) or more KPOP CTZen NFTs
+    across both the V1 and V2 collections (e.g., 3 V1 + 2 V2 = 5 total).
+
+  CONDITION B — HODDAO TOKEN HOLDING:
+    The Holder must own a minimum of FIFTY THOUSAND (50,000) HODDAO Tokens.
+
+CONTINUOUS HOLDING REQUIREMENT:
+  The qualifying assets (NFTs or HODDAO Tokens) described above must be
+  continuously held in the Holder's blockchain wallet from the date of
+  Commercial Use commencement through the date of Commercial Use termination.
+  Any transfer, sale, or reduction of holdings below the required threshold
+  during this period immediately revokes the Commercial Use license.
+
+PROOF OF OWNERSHIP:
+  The Holder bears the burden of proof to demonstrate ownership of the
+  qualifying assets. This proof must be verifiable on-chain through the
+  Holder's publicly accessible blockchain wallet address. Upon request by
+  the Licensor, the Holder must provide:
+
+    (a) The blockchain wallet address(es) containing the qualifying assets.
+
+    (b) Signed message or transaction proof demonstrating control of said
+        wallet address(es).
+
+    (c) On-chain records showing continuous holding of the qualifying assets
+        for the entire duration of Commercial Use.
+
+================================================================================
+5. TERMINATION
+================================================================================
+
+  (a) This License and the rights granted hereunder will terminate
+      automatically if the Holder fails to comply with the terms herein.
+
+  (b) Commercial Use rights terminate immediately upon the Holder's failure
+      to maintain the required asset holdings as described in Section 4.
+
+  (c) Upon termination, the Holder must cease all Commercial Use of the
+      Software within thirty (30) calendar days.
+
+  (d) Non-Commercial Use rights remain unaffected by the termination of
+      Commercial Use rights, provided all other terms are met.
+
+================================================================================
+6. DISCLAIMER OF WARRANTY
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+7. GOVERNING REFERENCES
+================================================================================
+
+  KPOP CTZen Official Website: https://www.kpopctzen.io/
+  NFT V1 Collection: https://opensea.io/collection/kpopctzen-official
+  NFT V2 Collection: https://opensea.io/collection/kpop-ctzen-v2
+  HODDAO Token: https://mint.club/token/base/HODDAO?tab=overview
